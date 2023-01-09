@@ -107,7 +107,7 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
 
 <br></br>
 
-### Want to know what my favorite mods are for 2.0? (currently)
+### My favorite mods for 2.0 (currently)
  - [Quit To Desktop](https://submodica.xyz/mods/sn1/131) - Self explanatory
  - [More Quick Slots](https://submodica.xyz/mods/sn1/106) - Oh cmon, everyones knows this one
  - [Customised Storage](https://submodica.xyz/mods/sn1/163) - Customise most storage containers in the game
