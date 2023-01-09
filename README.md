@@ -46,7 +46,7 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
             <h3>Oxygen Canisters</h3>
         </td>
         <td align="center">
-            Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Canister</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish.
+            Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Canister</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish. Also features a quick-use key for quickly consuming a Canister
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
