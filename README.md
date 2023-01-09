@@ -12,6 +12,9 @@ Well you can find it [right here]()
 
 ---
 
+### Want to be notified of beta tests for my mods?
+Make sure to get the mod tester role in the [Subnautica Modding]() discord server
+
 <br></br>
 
 ![](https://i.imgur.com/EAZJLdy.png)
