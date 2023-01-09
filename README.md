@@ -109,7 +109,7 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
         <td align="center">
             That's right, worlds first Toilet Paper mod for Subnautica! 
             Provides <code>+90</code> Food, and <code>20</code> Water when eaten
-            <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
+            Recipe consists of <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
