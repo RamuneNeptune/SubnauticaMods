@@ -75,7 +75,7 @@
         </td>
         <td align="center">
             Adds a new recipe for Enameled Glass while keeping the existing recipe in-tact. 
-            The new recipe consists of - <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
+            The new recipe consists of <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
