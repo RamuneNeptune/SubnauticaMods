@@ -85,7 +85,7 @@
     <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/sK9pQNx.png">
-            <h3>Toilet Paper (real)</h3>
+            <h3>Toilet Paper</h3>
         </td>
         <td align="center">
             That's right, worlds first Toilet Paper mod for Subnautica!<br>
