@@ -106,10 +106,10 @@
 <br></br>
 
 ### Want to know what my favorite mods are for 2.0? (currently)
+ - [More Quick Slots](https://submodica.xyz/mods/sn1/106) - Duh!
  - [Quit To Desktop](https://submodica.xyz/mods/sn1/131) - Self explanatory!
  - [Customised Storage](https://submodica.xyz/mods/sn1/163) - Customise most storage containers in the game
  - [Remove Options Buttons](https://submodica.xyz/mods/sn1/162) - No more "Redeem a Key" option!
- - [More Quick Slots](https://submodica.xyz/mods/sn1/106) - Duh!
  - [No PDA Delay](https://submodica.xyz/mods/sn1/85) - This is a no brainer
 
 <br></br>
