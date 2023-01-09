@@ -53,7 +53,7 @@
             <h3>Mega O₂ Tank</h3>
         </td>
         <td align="center">
-            Adds a new O₂ Tank that is a combination of two <code>Ultra High Capacity Tank</code>'s
+            Adds a new O₂ Tank that is a combination of 2x <code>Ultra High Capacity Tank</code>s
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
