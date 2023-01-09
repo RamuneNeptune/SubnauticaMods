@@ -10,9 +10,9 @@
 ### Need to find something quickly?
 - [Mods Loaded]()
 - [Oxygen Canisters]()
+- [Mega Capacity Tank]()
 - [BZ Enameled Glass]()
 - [BZ Titanium Ingot]()
-- [Mega Capacity Tank]()
 - [Toilet Paper]()
 
 <br></br>
@@ -41,6 +41,19 @@
         </td>
         <td align="center">
             Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Caniser</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish.
+        </td>
+        <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
+            <h3>Mega Capacity Tank</h3>
+        </td>
+        <td align="center">
+            Adds a new O2 Tank that is a combination of two <code>Ultra High Capacity Tank</code>'s
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
