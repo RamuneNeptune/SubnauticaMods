@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://i.imgur.com/vA2ZnNR.png">
-  <img src="https://i.imgur.com/g4EWVEJ.png">
+  <img src="https://i.imgur.com/omGqDYP.png">
 </p>
 
 ![](https://i.imgur.com/EAZJLdy.png)
