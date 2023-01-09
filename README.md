@@ -7,8 +7,8 @@ Follow my step-by-step guide [here]()
 
 ---
 
-### Some random
-Hello text
+### Looking for a list of updated (2.0) mods?
+Well you can find it [right here]()
 
 ---
 
