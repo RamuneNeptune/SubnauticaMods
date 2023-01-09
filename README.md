@@ -74,7 +74,7 @@
             <h3>BZ Enameled Glass</h3>
         </td>
         <td align="center">
-            Adds a new recipe for Enameled Glass while keeping the existing recipe in-tact. 
+            Adds a new recipe for Enameled Glass while keeping the existing recipe intact. 
             The new recipe consists of <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
         </td>
         <td width="10%">
