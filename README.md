@@ -27,7 +27,7 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/Cb4sM9L.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QH64Zsj.png">
             <h3>Mods Loaded</h3>
         </td>
         <td align="center">
