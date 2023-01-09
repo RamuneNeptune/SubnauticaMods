@@ -21,6 +21,8 @@
 
 <table>
     </>
+    </>
+    </>
     <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
@@ -33,6 +35,8 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
+    </>
+    </>
     </>
     <tr>
         <td width="30%" align="center">
@@ -47,6 +51,8 @@
         </td>
     </tr>
     </>
+    </>
+    </>
     <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
@@ -59,6 +65,8 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
+    </>
+    </>
     </>
     <tr>
         <td width="30%" align="center">
@@ -74,7 +82,9 @@
         </td>
     </tr>
     </>
-        <tr>
+    </>
+    </>
+    <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
             <h3>BZ Titanium Ingot</h3>
@@ -86,6 +96,8 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
+    </>
+    </>
     </>
 </table>
 
