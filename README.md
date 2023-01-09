@@ -10,6 +10,8 @@ Follow my step-by-step guide [here]()
 ### Some random
 Hello text
 
+---
+
 <br></br>
 
 ![](https://i.imgur.com/EAZJLdy.png)
