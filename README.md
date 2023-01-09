@@ -53,7 +53,7 @@
             <h3>BZ Enameled Glass</h3>
         </td>
         <td align="center">
-            Adds a new tab to your Options menu, that can be used to check with mods are currently loaded, open your mods folder, and open your log file
+            Adds a new recipe for Enameled Glass which requires <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>, while keeping the existing                   Enameled Glass recipe in-tact
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
