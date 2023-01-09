@@ -102,3 +102,14 @@
 </table>
 
 ![](https://i.imgur.com/EAZJLdy.png)
+
+<br></br>
+
+### Want to know what my favorite mods are for 2.0? (currently)
+ - [Quit To Desktop](https://submodica.xyz/mods/sn1/131)
+ - [Customised Storage](https://submodica.xyz/mods/sn1/163)
+ - [Remove Options Buttons](https://submodica.xyz/mods/sn1/162)
+ - [More Quick Slots](https://submodica.xyz/mods/sn1/106)
+ - [No PDA Delay](https://submodica.xyz/mods/sn1/85)
+
+<br></br>
