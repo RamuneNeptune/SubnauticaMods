@@ -1,24 +1,5 @@
 <br></br>
 
----
-
-### Need help setting up mods?
-Follow my step-by-step guide [here]()
-
----
-
-### Looking for a list of updated (2.0) mods?
-Well you can find it [right here]()
-
----
-
-### Want to be notified of beta tests for my mods?
-Make sure to get the mod tester role in the [Subnautica Modding]() discord server
-
----
-
-<br></br>
-
 ![](https://i.imgur.com/EAZJLdy.png)
 
 <table>
@@ -130,5 +111,26 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
  - [Customised Storage](https://submodica.xyz/mods/sn1/163) - Customise most storage containers in the game
  - [Remove Options Buttons](https://submodica.xyz/mods/sn1/162) - No more "Redeem a Key" option!
  - [No PDA Delay](https://submodica.xyz/mods/sn1/85) - Can't live without it
+
+<br></br>
+
+<br></br>
+
+---
+
+### Need help setting up mods?
+Follow my step-by-step guide [here]()
+
+---
+
+### Looking for a list of updated (2.0) mods?
+Well you can find it [right here]()
+
+---
+
+### Want to be notified of beta tests for my mods?
+Make sure to get the mod tester role in the [Subnautica Modding]() discord server
+
+---
 
 <br></br>
