@@ -40,7 +40,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/3pk5WO2.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/u9X7Rdt.png">
             <h3>Oxygen Canisters</h3>
         </td>
         <td align="center">
