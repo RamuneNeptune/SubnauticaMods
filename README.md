@@ -1,4 +1,4 @@
-### My (main) Mods
+### My mods
 - [Mods Loaded]()
 - [Oxygen Canisters]()
 - [BZ Enameled Glass]()
