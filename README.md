@@ -40,11 +40,11 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/3pk5WO2.png">
             <h3>Oxygen Canisters</h3>
         </td>
         <td align="center">
-            Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Caniser</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish.
+            Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Canister</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish.
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
@@ -55,7 +55,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/2Ffoe35.png">
             <h3>Mega O₂ Tank</h3>
         </td>
         <td align="center">
@@ -70,7 +70,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
         </td>
         <td align="center">
@@ -86,7 +86,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/dbT27Pi.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/FmZbrD1.png">
             <h3>BZ Titanium Ingot</h3>
         </td>
         <td align="center">
