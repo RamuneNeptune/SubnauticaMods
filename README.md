@@ -5,7 +5,7 @@
 ### Need help setting up mods?
 Follow my step-by-step guide [here]()
 
-<br></br>
+---
 
 ### Some random
 Hello text
