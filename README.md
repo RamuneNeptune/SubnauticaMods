@@ -1,8 +1,7 @@
 <p align="center">
   <img src="https://i.imgur.com/vA2ZnNR.png">
+  <img src="https://i.imgur.com/4YGHxrt.png">
 </p>
-
-![](https://i.imgur.com/C9jOOKc.png)
 
 ![](https://i.imgur.com/EAZJLdy.png)
 
