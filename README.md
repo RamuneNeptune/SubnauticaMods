@@ -101,6 +101,22 @@ Make sure to get the mod tester role in the [Subnautica Modding]() discord serve
     </>
     </>
     </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/FmZbrD1.png">
+            <h3>Toilet Paper</h3>
+        </td>
+        <td align="center">
+            That's right, worlds first Toilet Paper mod for Subnautica! Provides <code>FOOD +90</code> & <code>H₂0 + 20</code> 
+            <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
+        </td>
+        <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
 </table>
 
 ![](https://i.imgur.com/EAZJLdy.png)
