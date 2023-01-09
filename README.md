@@ -1,6 +1,6 @@
 <br></br>
 
-![](https://i.imgur.com/EAZJLdy.png)
+---
 
 ### Need help setting up mods?
 Follow my step-by-step guide [here]()
