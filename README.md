@@ -101,20 +101,9 @@
     </>
 </table>
 
+<br></br>
+
 ![](https://i.imgur.com/EAZJLdy.png)
-
-<br></br>
-
-### My favorite mods for 2.0 (currently)
- - [Quit To Desktop](https://submodica.xyz/mods/sn1/131) - Self explanatory
- - [More Quick Slots](https://submodica.xyz/mods/sn1/106) - Oh cmon, everyones knows this one
- - [Customised Storage](https://submodica.xyz/mods/sn1/163) - Customise most storage containers in the game
- - [Remove Options Buttons](https://submodica.xyz/mods/sn1/162) - No more "Redeem a Key" option!
- - [No PDA Delay](https://submodica.xyz/mods/sn1/85) - Can't live without it
-
-<br></br>
-
-<br></br>
 
 ---
 
@@ -132,5 +121,14 @@ Well you can find it [right here]()
 Make sure to get the mod tester role in the [Subnautica Modding]() discord server
 
 ---
+
+<br></br>
+
+### My favorite mods for 2.0 (currently)
+ - [Quit To Desktop](https://submodica.xyz/mods/sn1/131) - Self explanatory
+ - [More Quick Slots](https://submodica.xyz/mods/sn1/106) - Oh cmon, everyones knows this one
+ - [Customised Storage](https://submodica.xyz/mods/sn1/163) - Customise most storage containers in the game
+ - [Remove Options Buttons](https://submodica.xyz/mods/sn1/162) - No more "Redeem a Key" option!
+ - [No PDA Delay](https://submodica.xyz/mods/sn1/85) - Can't live without it
 
 <br></br>
