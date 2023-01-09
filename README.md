@@ -1,21 +1,14 @@
 <br></br>
 
----
+![](https://i.imgur.com/EAZJLdy.png)
 
-<h2 align="center">Welcome to my mod releases!</h2>
-<h3 align="center">Here you can find</h3>
-
-<br></br>
-
-### Need to find something quickly?
-- [Mods Loaded]()
-- [Oxygen Canisters]()
-- [Mega O₂ Tank]()
-- [BZ Enameled Glass]()
-- [BZ Titanium Ingot]()
-- [Toilet Paper]()
+### Need help setting up mods?
+Follow my step-by-step guide [here]()
 
 <br></br>
+
+### Some random
+Hello text
 
 ![](https://i.imgur.com/EAZJLdy.png)
 
