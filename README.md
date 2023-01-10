@@ -5,6 +5,9 @@
 
 ![](https://i.imgur.com/EAZJLdy.png)
 
+
+
+
 <table>
     </>
     </>
@@ -87,22 +90,9 @@
     </>
     </>
     </>
-</table>
-
-![](https://i.imgur.com/EAZJLdy.png)
-<br></br>
-
-<h1 align="center">The following mods are currently being worked on</h1>
-
-![](https://i.imgur.com/EAZJLdy.png)
-
-<table>
-    </>
-    </>
-    </>
     <tr>
         <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/2Ffoe35.png">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/8ydG3wO.png">
             <h3>Mega O₂ Tank</h3>
         </td>
         <td align="center">
@@ -113,6 +103,16 @@
     </>
     </>
 </table>
+
+
+
+
+![](https://i.imgur.com/EAZJLdy.png)
+<br></br>
+
+<h1 align="center">The following mods are currently being worked on</h1>
+
+![](https://i.imgur.com/EAZJLdy.png)
 
 
 
