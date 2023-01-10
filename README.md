@@ -12,6 +12,9 @@
     </>
     </>
     </>
+    </>
+    </>
+    </>
     <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QH64Zsj.png">
@@ -27,6 +30,39 @@
     </>
     </>
     </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/8ydG3wO.png">
+            <h3>Mega O₂ Tank</h3>
+        </td>
+        <td align="center">
+            Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/8ydG3wO.png">
+            <h3>Mega O₂ Tank</h3>
+        </td>
+        <td align="center">
+            Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
     <tr>
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/u9X7Rdt.png">
@@ -39,6 +75,9 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
+    </>
+    </>
+    </>
     </>
     </>
     </>
@@ -58,6 +97,9 @@
     </>
     </>
     </>
+    </>
+    </>
+    </>
     <tr>
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/FmZbrD1.png">
@@ -70,6 +112,9 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
+    </>
+    </>
+    </>
     </>
     </>
     </>
@@ -87,21 +132,6 @@
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
-    </>
-    </>
-    </>
-    <tr>
-        <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/8ydG3wO.png">
-            <h3>Mega O₂ Tank</h3>
-        </td>
-        <td align="center">
-            Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
-        </td>
-    </tr>
-    </>
-    </>
-    </>
 </table>
 
 
