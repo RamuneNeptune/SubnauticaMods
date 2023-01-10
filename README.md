@@ -24,7 +24,8 @@
             Adds a new tab to your Options menu, that can be used to check with mods are currently loaded, open your mods folder, and open your log file
         </td>
         <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ModsLoaded.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -43,7 +44,8 @@
             The recipe for this is <code>2x Ultra Capacity Tanks</code>, <code>1x Ion Battery</code>, <code>2x Synthetic Fibers</code> 
         </td>
           <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/MegaO2Tank.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -99,7 +101,8 @@
             The new recipe consists of <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
         </td>
         <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/BZEnameledGlass.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -117,7 +120,8 @@
             Modifies the Titanium Ingot recipe to only require <code>5x Titanium</code>, instead of the vanilla <code>10x Titanium</code>
         </td>
         <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/BZTitaniumIngot.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -137,7 +141,8 @@
             Recipe consists of <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
         </td>
         <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ToiletPaper.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
 </table>
