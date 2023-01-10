@@ -54,6 +54,24 @@
     </>
     <tr>
         <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
+            <h3>Seaglide Upgrades</h3>
+        </td>
+        <td align="center">
+            Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code>
+        </td>
+          <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/u9X7Rdt.png">
             <h3>Oxygen Canisters</h3>
         </td>
