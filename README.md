@@ -39,7 +39,7 @@
             <h3>Mega O₂ Tank</h3>
         </td>
         <td align="center">
-            Adds a new O₂ Tank that with a capacity of 360s of Oxygen!
+            Adds a new O₂ Tank that with a capacity of 360s of Oxygen! (late-game)
             The recipe for this is <code>2x Ultra Capacity Tanks</code>, <code>1x Ion Battery</code>, <code>2x Synthetic Fibers</code> 
         </td>
           <td width="10%">
