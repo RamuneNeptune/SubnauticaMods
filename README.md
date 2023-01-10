@@ -41,21 +41,6 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/2Ffoe35.png">
-            <h3>Mega O₂ Tank</h3>
-        </td>
-        <td align="center">
-            Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
-        </td>
-        <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
-        </td>
-    </tr>
-    </>
-    </>
-    </>
-    <tr>
-        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
         </td>
@@ -103,6 +88,32 @@
     </>
     </>
 </table>
+
+![](https://i.imgur.com/EAZJLdy.png)
+
+<table>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/2Ffoe35.png">
+            <h3>Mega O₂ Tank</h3>
+        </td>
+        <td align="center">
+            Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
+        </td>
+        <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+</table>
+
+
+
 
 ![](https://i.imgur.com/EAZJLdy.png)
 
