@@ -108,9 +108,6 @@
         <td align="center">
             Adds a new O₂ Tank that is a combination of 2x Ultra High Capacity Tanks
         </td>
-        <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
-        </td>
     </tr>
     </>
     </>
