@@ -58,7 +58,10 @@
             <h3>Seaglide Upgrades</h3>
         </td>
         <td align="center">
-            Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code>
+            Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code><br></br>
+            <code>MK1 : +15% Speed</code><br></br>
+            <code>MK2 : +30% Speed</code><br></br>
+            <code>MK3 : +45% Speed</code><br></br>
         </td>
           <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
