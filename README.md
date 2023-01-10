@@ -58,7 +58,7 @@
             <h3>Oxygen Canisters</h3>
         </td>
         <td align="center">
-            Adds two items to the the game, <code>Oxygen Canister</code>, and <code>Large Oxygen Canister</code>. Each has their own value of Oxygen they provide the player on consumption, and are crafted with bladderfish. Also features a quick-use key for quickly consuming a Canister
+            Adds a new item to the the game, the <code>Oxygen Canister</code>. The <code>Oxygen Caniser</code> can provide the player with <code>+35 Oxygen</code> on consumption, and is crafted with Bladderfish, Titanium, and a piece of Silicone Rubber. Also features a quick-use key for quickly consuming a Canister (default V)
         </td>
         <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
@@ -122,19 +122,6 @@
         </td>
     </tr>
 </table>
-
-
-
-
-![](https://i.imgur.com/EAZJLdy.png)
-<br></br>
-
-<h1 align="center">The following mods are currently being worked on</h1>
-
-![](https://i.imgur.com/EAZJLdy.png)
-
-
-
 
 ![](https://i.imgur.com/EAZJLdy.png)
 
