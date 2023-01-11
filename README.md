@@ -114,27 +114,6 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/sK9pQNx.png">
-            <h3>Toilet Paper</h3>
-        </td>
-        <td align="center">
-            That's right, worlds first Toilet Paper mod for Subnautica!<br>
-            The Toilet Paper provides <code>+90</code> Food, and <code>+20</code> Water when eaten<br>
-            Recipe consists of <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
-        </td>
-        <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ToiletPaper.zip">
-            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
-        </td>
-    </tr>
-    </>
-    </>
-    </>
-    </>
-    </>
-    </>
-    <tr>
-        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/anVUeNs.png">
             <h3>Faster Scanning</h3>
         </td>
@@ -161,6 +140,27 @@
         </td>
         <td width="10%">
             <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/OxygenCanisters.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/sK9pQNx.png">
+            <h3>Toilet Paper</h3>
+        </td>
+        <td align="center">
+            That's right, worlds first Toilet Paper mod for Subnautica!<br>
+            The Toilet Paper provides <code>+90</code> Food, and <code>+20</code> Water when eaten<br>
+            Recipe consists of <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
+        </td>
+        <td width="10%">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ToiletPaper.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
