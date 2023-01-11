@@ -75,6 +75,24 @@
     </>
     <tr>
         <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
+            <h3>Early Ion Battery</h3>
+        </td>
+        <td align="center">
+          Adds a config to the <code>Mods</code> tab which can be used to modify when the <code>Ion Battery</code> unlocks. Currently the three options are <code>QEP Data Terminal</code>, <code>Disease Research Facility</code>, and <code>Lost River Cache Terminal</code>
+        </td>
+          <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
         </td>
