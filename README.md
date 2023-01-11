@@ -79,7 +79,7 @@
             <h3>Early Ion-Battery</h3>
         </td>
         <td align="center">
-          Adds a config to the <code>Mods</code> tab which can be used to modify when the <code>Ion Battery</code> unlocks. Currently the three options are <code>QEP Data Terminal</code>, <code>Disease Research Facility</code>, and <code>Lost River Cache Terminal</code>
+          Adds a config to the <code>Mods</code> tab which can be used to modify when the Ion Battery unlocks. Currently the three options are <code>QEP Data Terminal</code>, <code>Disease Research Facility</code>, and <code>Lost River Cache Terminal</code>
         </td>
           <td width="10%">
             <a href=" ">
