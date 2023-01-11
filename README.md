@@ -154,17 +154,17 @@
 ---
 
 ### Need help setting up mods?
-Follow my step-by-step guide [here]()
+Follow my step-by-step guide [here](https://github.com/RamuneNeptune/ModdingInSubnautica#sn-latest)
 
 ---
 
 ### Looking for a list of updated (2.0) mods?
-Well you can find it [right here]()
+Well you can find it [right here](https://ramuneneptune.github.io/modlists/sn.html)
 
 ---
 
 ### Want to be notified of beta tests for my mods?
-Make sure to get the mod tester role in the [Subnautica Modding]() discord server
+Make sure to get the mod tester role in the [Subnautica Modding](https://discord.gg/UpWuWwq) discord server
 
 ---
 
