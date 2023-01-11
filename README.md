@@ -223,3 +223,5 @@ Make sure to get the mod tester role in the [Subnautica Modding](https://discord
  - [No PDA Delay](https://submodica.xyz/mods/sn1/85) - Can't live without it
 
 <br></br>
+
+## If you wanna buy me a packet of noodles, you can over here --> https://ko-fi.com/ramuneneptune
