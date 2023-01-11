@@ -21,7 +21,7 @@
             <h3>Mods Loaded</h3>
         </td>
         <td align="center">
-            Adds a new tab to your Options menu, that can be used to check with mods are currently loaded, open your mods folder, and open your log file
+            Adds a new tab to your Options menu that can be used to check with mods are currently loaded, open your mods folder, and open your log file
         </td>
         <td width="10%">
             <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ModsLoaded.zip">
