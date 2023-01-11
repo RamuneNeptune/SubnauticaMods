@@ -82,7 +82,8 @@
             Adds a new item to the the game, the <code>Oxygen Canister</code>. The <code>Oxygen Caniser</code> can provide the player with <code>+35 Oxygen</code> on consumption, and is crafted with Bladderfish, Titanium, and a piece of Silicone Rubber. Also features a quick-use key for quickly consuming a Canister (default V)
         </td>
         <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/OxygenCanisters.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
