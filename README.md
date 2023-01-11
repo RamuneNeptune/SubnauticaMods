@@ -121,7 +121,8 @@
           Adds a config to the <code>Mods</code> tab which can be used to set a multipler (x) for the Scanner Tool scanning speed. Default is 1x, minimum is 0.1x, maximum is 5x 
         </td>
           <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/FasterScanning.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
