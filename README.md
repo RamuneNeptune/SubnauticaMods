@@ -17,7 +17,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/bQazcSi.png">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/v6VFura.png">
             <h3>Mods Loaded</h3>
         </td>
         <td align="center">
