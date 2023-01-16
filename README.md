@@ -18,7 +18,7 @@
     <tr>
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/v6VFura.png">
-            <h3>Mods Loaded</h3>
+            <h3>Mods Loaded</h3> 
         </td>
         <td align="center">
             Adds a new tab to your Options menu that can be used to check with mods are currently loaded, open your mods folder, and open your log file
@@ -38,6 +38,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/RocjVQ4.png">
             <h3>Early Ion-Battery</h3>
+            <a href="https://submodica.xyz/mods/sn1/169">Submodica page</a>
         </td>
         <td align="center">
           Adds a config to the <code>Mods</code> tab which can be used to modify when the Ion Battery unlocks. Currently the three options are <code>QEP Data Terminal</code>, <code>Disease Research Facility</code>, and <code>Lost River Cache Terminal</code>
@@ -57,6 +58,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/8ydG3wO.png">
             <h3>Mega O₂ Tank</h3>
+            <a href="https://submodica.xyz/mods/sn1/170">Submodica page</a>
         </td>
         <td align="center">
             Adds a new O₂ Tank that with a capacity of 360s of Oxygen! (late-game)
@@ -96,6 +98,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
+            <a href="https://submodica.xyz/mods/sn1/171">Submodica page</a>
         </td>
         <td align="center">
             Adds a new recipe for Enameled Glass while keeping the existing recipe intact. 
@@ -116,6 +119,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/FmZbrD1.png">
             <h3>BZ Titanium Ingot</h3>
+            <a href="https://submodica.xyz/mods/sn1/172">Submodica page</a>
         </td>
         <td align="center">
             Modifies the Titanium Ingot recipe to only require <code>5x Titanium</code>, instead of the vanilla <code>10x Titanium</code>
@@ -135,6 +139,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/anVUeNs.png">
             <h3>Faster Scanning</h3>
+            <a href="https://submodica.xyz/mods/sn1/173">Submodica page</a>
         </td>
         <td align="center">
           Adds a config to the <code>Mods</code> tab which can be used to set a multipler (x) for the Scanner Tool scanning speed. Default is 1x, minimum is 0.1x, maximum is 5x 
@@ -154,6 +159,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/u9X7Rdt.png">
             <h3>Oxygen Canisters</h3>
+            <a href="https://submodica.xyz/mods/sn1/174">Submodica page</a>
         </td>
         <td align="center">
             Adds a new item to the the game, the <code>Oxygen Canister</code>. The <code>Oxygen Caniser</code> can provide the player with <code>+35 Oxygen</code> on consumption, and is crafted with Bladderfish, Titanium, and a piece of Silicone Rubber. Also features a quick-use key for quickly consuming a Canister (default V)
@@ -173,6 +179,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/sK9pQNx.png">
             <h3>Toilet Paper</h3>
+            <a href="https://submodica.xyz/mods/sn1/175">Submodica page</a>
         </td>
         <td align="center">
             That's right, worlds first Toilet Paper mod for Subnautica!<br>
