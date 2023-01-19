@@ -98,8 +98,8 @@
     <tr>
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
-            <h3>Decorations Fabricator</h3>
-            <h3>Not released</h3>
+            <h3>Deco Fabricator</h3>
+            <a href="">Submodica page</a>
         </td>
         <td align="center">
             Adds a new custom fabricator which can be used to craft Posters, Science Items, Dolls, the Toy Car, and more
