@@ -97,7 +97,7 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/aZgU8Cn.png">
             <h3>Deco Fabricator</h3>
             <a href="">Submodica page</a>
         </td>
