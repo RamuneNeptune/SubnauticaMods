@@ -97,6 +97,25 @@
     </>
     <tr>
         <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
+            <h3>Decorations Fabricator</h3>
+            <h3>Not released</h3>
+        </td>
+        <td align="center">
+            Adds a new custom fabricator which can be used to craft Posters, Science Items, Dolls, the Toy Car, and more
+        </td>
+          <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
             <a href="https://submodica.xyz/mods/sn1/171">Submodica page</a>
