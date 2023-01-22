@@ -137,7 +137,7 @@
     <tr>
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/ESAwLTC.png">
-            <h4>Organized Workbench</h4>
+            <h4><b>Organized Workbench</b></h4>
             <a href="">Submodica page</a>
         </td>
         <td align="center">
