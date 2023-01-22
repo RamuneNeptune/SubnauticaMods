@@ -38,7 +38,7 @@
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QnlMy2M.png">
             <h3>Developer Mode</h3> 
-            <a href="https://submodica.xyz/mods/sn1/184">Submodica page</a>
+            <a href="https://submodica.xyz/mods/sn1/18D4">Submodica page</a>
         </td>
         <td align="center">
            Enables the <code>Developer</code> tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
@@ -120,7 +120,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/aZgU8Cn.png">
             <h3>Deco Fabricator</h3>
-            <a href="">Submodica page</a>
+            <a href="https://submodica.xyz/mods/sn1/182">Submodica page</a>
         </td>
         <td align="center">
             Adds a new custom fabricator which can be used to craft Posters, Science Items, Dolls, the Toy Car, and more
