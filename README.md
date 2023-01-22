@@ -17,15 +17,14 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QnlMy2M.png">
-            <h3>Developer Mode</h3> 
-            <a href="">Submodica page</a>
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/v6VFura.png">
+            <h3>Mods Loaded</h3> 
         </td>
         <td align="center">
-           Enables the <code>Developer</code> tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
+            Adds a new tab to your Options menu that can be used to check with mods are currently loaded, open your mods folder, and open your log file
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DeveloperMode.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ModsLoaded.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -37,14 +36,15 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/v6VFura.png">
-            <h3>Mods Loaded</h3> 
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QnlMy2M.png">
+            <h3>Developer Mode</h3> 
+            <a href="https://submodica.xyz/mods/sn1/184">Submodica page</a>
         </td>
         <td align="center">
-            Adds a new tab to your Options menu that can be used to check with mods are currently loaded, open your mods folder, and open your log file
+           Enables the <code>Developer</code> tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ModsLoaded.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DeveloperMode.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -106,7 +106,8 @@
             <code>MK1: +15% Speed</code> | <code>MK2: +30% Speed</code> | <code>MK3: +45% Speed</code>
         </td>
           <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href=" ">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -125,7 +126,8 @@
             Adds a new custom fabricator which can be used to craft Posters, Science Items, Dolls, the Toy Car, and more
         </td>
           <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DecoFabricator.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
@@ -138,14 +140,15 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/ESAwLTC.png">
             <h4><b>Organized Workbench</b></h4>
-            <a href="">Submodica page</a>
+            <a href="https://submodica.xyz/mods/sn1/194">Submodica page</a>
         </td>
         <td align="center">
             Organizes the Workbench (modification station) into Tab nodes, rather than just being full of Craft nodes with no tabs. Check out the Submodica page for 
             an example
         </td>
           <td width="10%">
-            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/OrganizedWorkbench.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
     </>
