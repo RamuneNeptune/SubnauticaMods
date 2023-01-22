@@ -85,7 +85,7 @@
             The recipe for this is <code>2x Ultra Capacity Tanks</code>, <code>1x Ion Battery</code>, <code>2x Synthetic Fibers</code> 
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/MegaO2Tank.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/MegaO2Tank__1.0.3.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -168,7 +168,7 @@
             The new recipe consists of <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/BZEnameledGlass.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/BZEnameledGlass__1.0.1.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -208,7 +208,7 @@
           Adds a config to the <code>Mods</code> tab which can be used to set a multipler (x) for the Scanner Tool scanning speed. Default is 1x, minimum is 0.1x, maximum is 5x 
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/FasterScanning.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/FasterScanning__1.0.1.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -228,7 +228,7 @@
             Adds a new item to the the game, the <code>Oxygen Canister</code>. The <code>Oxygen Caniser</code> can provide the player with <code>+35 Oxygen</code> on consumption, and is crafted with Bladderfish, Titanium, and a piece of Silicone Rubber. Also features a quick-use key for quickly consuming a Canister (default V)
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/OxygenCanisters.zip">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/OxygenCanisters__1.0.1.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
