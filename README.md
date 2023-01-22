@@ -17,6 +17,26 @@
     </>
     <tr>
         <td width="30%" align="center">
+            <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/QnlMy2M.png">
+            <h3>Developer Mode</h3> 
+            <a href="">Submodica page</a>
+        </td>
+        <td align="center">
+            Enables the `Developer` tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
+        </td>
+        <td width="10%">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DeveloperMode.zip">
+            <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/v6VFura.png">
             <h3>Mods Loaded</h3> 
         </td>
