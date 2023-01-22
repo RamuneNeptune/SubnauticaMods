@@ -136,6 +136,25 @@
     </>
     <tr>
         <td width="30%" align="center">
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/aZgU8Cn.png">
+            <h3>Organized Workbench</h3>
+            <a href="">Submodica page</a>
+        </td>
+        <td align="center">
+            Organizes the Workbench (modification station) into Tab nodes, rather than just being full of Craft nodes with no Tabs
+        </td>
+          <td width="10%">
+            <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
+        </td>
+    </tr>
+    </>
+    </>
+    </>
+    </>
+    </>
+    </>
+    <tr>
+        <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/3cSHFp2.png">
             <h3>BZ Enameled Glass</h3>
             <a href="https://submodica.xyz/mods/sn1/171">Submodica page</a>
