@@ -99,7 +99,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
             <h3>Seaglide Upgrades</h3>
-            <h3>Not released</h3>
+            <a href="">Not released</a>
         </td>
         <td align="center">
             Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code><br></br>
@@ -136,8 +136,8 @@
     </>
     <tr>
         <td width="30%" align="center">
-            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/aZgU8Cn.png">
-            <h3>Organized Workbench</h3>
+            <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/ESAwLTC.png">
+            <h4>Organized Workbench</h4>
             <a href="">Submodica page</a>
         </td>
         <td align="center">
