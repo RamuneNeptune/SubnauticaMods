@@ -22,7 +22,7 @@
             <a href="">Submodica page</a>
         </td>
         <td align="center">
-            Enables the `Developer` tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
+           Enables the <code>Developer</code> tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
         </td>
         <td width="10%">
             <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DeveloperMode.zip">
