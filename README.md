@@ -142,7 +142,7 @@
         </td>
         <td align="center">
             Organizes the Workbench (modification station) into Tab nodes, rather than just being full of Craft nodes with no Tabs. Check out the Submodica page for 
-            pictures
+            an example
         </td>
           <td width="10%">
             <a href=" "><img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
