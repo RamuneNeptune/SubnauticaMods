@@ -99,14 +99,14 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
             <h3>Seaglide Upgrades</h3>
-            <a href="">Not released</a>
+            <a href="">Submodica page</a>
         </td>
         <td align="center">
             Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code><br></br>
             <code>MK1: +15% Speed</code> | <code>MK2: +30% Speed</code> | <code>MK3: +45% Speed</code>
         </td>
           <td width="10%">
-            <a href=" ">
+            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/SeaglideUpgrades.zip">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
