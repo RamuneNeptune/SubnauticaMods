@@ -64,7 +64,7 @@
           Adds a config to the <code>Mods</code> tab which can be used to modify when the Ion Battery unlocks. Currently the three options are <code>QEP Data Terminal</code>, <code>Disease Research Facility</code>, and <code>Lost River Cache Terminal</code>
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/EarlyIonBattery.zip">
+            <a href="https://submodica.xyz/mods/sn1/169">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -99,7 +99,7 @@
         <td width="30%" align="center">
             <img align="left" alt="Icon" width="30%" src="https://i.imgur.com/oX1fts0.png">
             <h3>Seaglide Upgrades</h3>
-            <a href="">Submodica page</a>
+            <a href="https://submodica.xyz/mods/sn1/195">Submodica page</a>
         </td>
         <td align="center">
             Adds three new upgraded Seaglide variants, the <code>MK1</code>, <code>MK2</code>, and <code>MK3</code><br></br>
