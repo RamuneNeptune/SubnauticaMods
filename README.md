@@ -44,7 +44,7 @@
            Enables the <code>Developer</code> tab in the pause menu, which can be used to quickly enable commands, teleport to set locations, and more
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DeveloperMode.zip">
+            <a href="https://submodica.xyz/mods/sn1/184">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -85,7 +85,7 @@
             The recipe for this is <code>2x Ultra Capacity Tanks</code>, <code>1x Ion Battery</code>, <code>2x Synthetic Fibers</code> 
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/MegaO2Tank__1.0.3.zip">
+            <a href="https://submodica.xyz/mods/sn1/170">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -106,7 +106,7 @@
             <code>MK1: +15% Speed</code> | <code>MK2: +30% Speed</code> | <code>MK3: +45% Speed</code>
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/SeaglideUpgrades.zip">
+            <a href="https://submodica.xyz/mods/sn1/195">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -126,7 +126,7 @@
             Adds a new custom fabricator which can be used to craft Posters, Science Items, Dolls, the Toy Car, and more
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/DecoFabricator.zip">
+            <a href="https://submodica.xyz/mods/sn1/182">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -147,7 +147,7 @@
             an example
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/OrganizedWorkbench.zip">
+            <a href="https://submodica.xyz/mods/sn1/194">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -168,7 +168,7 @@
             The new recipe consists of <code>1x Glass</code>, <code>1x Diamond</code>, <code>1x Lead</code>
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/BZEnameledGlass__1.0.1.zip">
+            <a href="https://submodica.xyz/mods/sn1/171">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -188,7 +188,7 @@
             Modifies the Titanium Ingot recipe to only require <code>5x Titanium</code>, instead of the vanilla <code>10x Titanium</code>
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/BZTitaniumIngot.zip">
+            <a href="https://submodica.xyz/mods/sn1/172">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -208,7 +208,7 @@
           Adds a config to the <code>Mods</code> tab which can be used to set a multipler (x) for the Scanner Tool scanning speed. Default is 1x, minimum is 0.1x, maximum is 5x 
         </td>
           <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/FasterScanning__1.0.1.zip">
+            <a href="https://submodica.xyz/mods/sn1/173">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -228,7 +228,7 @@
             Adds a new item to the the game, the <code>Oxygen Canister</code>. The <code>Oxygen Caniser</code> can provide the player with <code>+35 Oxygen</code> on consumption, and is crafted with Bladderfish, Titanium, and a piece of Silicone Rubber. Also features a quick-use key for quickly consuming a Canister (default V)
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Updates/OxygenCanisters__1.0.1.zip">
+            <a href="https://submodica.xyz/mods/sn1/174">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
@@ -250,7 +250,7 @@
             Recipe consists of <code>1x Fiber Mesh</code>, <code>1x Nutrient Block</code>, <code>1x Filtered Water</code>
         </td>
         <td width="10%">
-            <a href="https://github.com/RamuneNeptune/SubnauticaMods/releases/download/Main/ToiletPaper.zip">
+            <a href="https://submodica.xyz/mods/sn1/175">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
