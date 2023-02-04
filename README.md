@@ -58,13 +58,13 @@
         <td width="30%" align="center">
             <img align="left"  alt="Icon" width="30%" src="https://i.imgur.com/iycfK6h.png">
             <h4><b>Enable Achievements</b></h4>
-            <a href="https://submodica.xyz/mods/sn1/170">Submodica page</a>
+            <a href="https://submodica.xyz/mods/sn1/211">Submodica page</a>
         </td>
         <td align="center">
             Achievements are no longer disabled when you use console commands. Meaning you can cheat your life away and still earn achievements!
         </td>
         <td width="10%">
-            <a href="https://submodica.xyz/">
+            <a href="https://submodica.xyz/mods/sn1/211">
             <img alt="Download" src="https://i.imgur.com/145Q0Di.png"></a>
         </td>
     </tr>
