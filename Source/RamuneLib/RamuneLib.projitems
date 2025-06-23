@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>adaabe9b-d3eb-4544-a20f-32bd84cae7ab</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RamuneLib</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Initializer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Patches\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\References.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Variables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\CustomPrefabExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\GameObjectExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\RendererExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\TechTypeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\BreakableResource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Charger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Crash.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\LiveMixin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Seaglide.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Survival.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Piracy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\ImageUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\JsonUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\LoggerUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PatchingUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PingUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\PrefabUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\VehicleUtils.cs" />
+  </ItemGroup>
+</Project>
