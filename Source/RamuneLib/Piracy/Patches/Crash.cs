@@ -6,7 +6,6 @@ namespace RamuneLib.Piracy.Patches
     {
         public static void Detonate(Crash __instance)
         {
-            ///Crashfish have a 30% chance to explode into another Crashfish.
             if(UnityEngine.Random.value > 0.3f)
             {
                 return;

@@ -17,5 +17,7 @@
 		<Reference Include="System.Net.Http"/>
 		<Reference Include="System.Xml"/>
 	</ItemGroup>
-
+	
+	<Import Project="RamuneLib\RamuneLib.projitems" Label="Shared" />
+	
 </Project>

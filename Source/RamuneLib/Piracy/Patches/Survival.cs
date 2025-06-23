@@ -10,8 +10,6 @@ namespace RamuneLib.Piracy.Patches
 
             if(techType != TechType.Coffee)
                 return;
-
-            ///Coffee.. does things to the player.
             
             FMODUWE.PlayOneShotImpl("event:/sub/seamoth/pulse", Player.main.transform.position, 1f);
 

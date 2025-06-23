@@ -186,17 +186,6 @@ namespace RamuneLib.Piracy
 
         /// <summary>
         /// Runs Harmony patches and coroutines to do funny things:
-        /// <list type="bullet">
-        /// <item>Constantly displays a list of messages on-screen dedicated to pirates from community members.</item>
-        /// <item>Seaglide acceleration is increased by 0.5% everytime it is equipped.</item>
-        /// <item>Crashfish have a 30% chance to explode into another Crashfish.</item>
-        /// <item>Player becomes 1% smaller every time damage is taken.</item>
-        /// <item>Outcrops occasionally spawn a crashfish when broken.</item>
-        /// <item>Some common creatures have tweaked colors and size.</item>
-        /// <item>Chargers recharge items 15% slower.</item>
-        /// <item>Coffee.. does things to the player.</item>
-        /// <item>Day night speed is 25% slower.</item>
-        /// </list>
         /// </summary>
         private static void DoPiracyPatches()
         {

@@ -11,7 +11,6 @@ namespace RamuneLib.Piracy.Patches
                 return;
             }
 
-            ///Player becomes 1% smaller every time damage is taken.
             Player.main.transform.localScale *= 0.99f;
         }
     }

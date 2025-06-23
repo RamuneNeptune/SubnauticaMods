@@ -56,7 +56,7 @@ namespace RamuneLib
 
         public static IEnumerator UpdateCheckAsync(string modName, string currentVersion)
         {
-            var url = "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/main/Updates/" + modName + ".json";
+            var url = $"https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/main/Source/{modName}/Version.json";
 
             var request = UnityWebRequest.Get(url);
 
@@ -67,7 +67,7 @@ namespace RamuneLib
 
             if(request.isNetworkError || request.isHttpError)
             {
-                Logfile.Warning($">> Failed to check for updates: {request.error}");
+                Logfile.Warning($">> Failed to check for update: {request.error}");
                 yield break;
             }
 
@@ -75,7 +75,7 @@ namespace RamuneLib
 
             if(text == null)
             {
-                Logfile.Warning($">> Failed to read raw text from request while checking for updates");
+                Logfile.Warning($">> Failed to read text from request while checking for updates");
                 yield break;
             }
 
@@ -83,7 +83,7 @@ namespace RamuneLib
 
             if(modData == null)
             {
-                Logfile.Warning($">> Failed to serialize raw text as ModData while checking for updates");
+                Logfile.Warning($">> Failed to serialize text as ModData while checking for updates");
                 yield break;
             }
 
@@ -98,7 +98,7 @@ namespace RamuneLib
 
                 if(modData.Message != string.Empty)
                 {
-                    Logfile.Warning($">> Update for '{modData.Name}' has a message attached: \"{modData.Message}\"");
+                    Logfile.Warning($">> '{modData.Name}' has an update message: \"{modData.Message}\"");
                 }
             }
         }
