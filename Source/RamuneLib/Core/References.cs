@@ -12,6 +12,7 @@ global using UnityEngine.UI;
 global using UnityEngine.Animations;
 global using UnityEngine.Networking;
 global using UnityEngine.AddressableAssets;
+global using UnityEngine.Events;
 global using Unity.Mathematics;
 global using Object = UnityEngine.Object;
 
@@ -22,10 +23,12 @@ global using System.IO;
 global using System.Diagnostics;
 global using System.Collections;
 global using System.Collections.Generic;
+global using System.Runtime;
 global using System.Runtime.InteropServices;
-global using System.Reflection.Emit;
 global using System.Reflection;
+global using System.Reflection.Emit;
 global using System.Text;
+global using System.Text.RegularExpressions;
 global using System.Linq;
 
 

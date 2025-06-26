@@ -7,7 +7,6 @@ namespace Ramune.EasyOutcrops
     [BepInProcess("Subnautica.exe")]
     public class EasyOutcrops : BaseUnityPlugin
     {
-        public static Config config { get; } = OptionsPanelHandler.RegisterModOptions<Config>();
         public static EasyOutcrops Instance;
         public static ManualLogSource logger => Instance.Logger;
         public static readonly Harmony harmony = new(GUID);
@@ -18,7 +17,6 @@ namespace Ramune.EasyOutcrops
         public void Awake()
         {
             Initializer.Initialize(harmony, Logger, Name, Version);
-            Initializer.UpdateCheck(Name, Version, config.CheckForUpdates);
         }
     }
 }
