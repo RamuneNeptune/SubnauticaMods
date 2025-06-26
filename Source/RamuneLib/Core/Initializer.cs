@@ -93,7 +93,7 @@ namespace RamuneLib
             {
                 PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Start), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Start)), HarmonyPatchType.Postfix);
 
-                Logfile.Warning($"[Update] An update is available: {latest} @ {modData.Where}" + modData.Message != string.Empty ? $" (\"{modData.Message}\")" : "");
+                Logfile.Warning($"[Update] An update is available: {latest} @ {modData.Where}{(modData.Message != string.Empty ? $" (\"{modData.Message}\")" : "")}");
             }
             else
             {
