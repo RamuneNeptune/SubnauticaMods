@@ -134,13 +134,13 @@ namespace RamuneLib.Piracy
 
             if(GameObject.Find("IsPirated"))
             {
-                Logfile.Warning(">> Ahoy matey! Piracy was detected");
+                Logfile.Warning("Ahoy matey! Piracy was detected");
                 return true;
             }
 
             if(GameObject.Find("IsClean"))
             {
-                Logfile.Info(">> Piracy was not detected");
+                //Logfile.Info(">> Piracy was not detected");
                 return false;
             }
 
@@ -178,7 +178,7 @@ namespace RamuneLib.Piracy
                 }
             }
 
-            Logfile.Info(">> Piracy was not detected");
+            //Logfile.Info(">> Piracy was not detected");
             new GameObject("IsClean");
             return false;
         }
@@ -189,7 +189,7 @@ namespace RamuneLib.Piracy
         /// </summary>
         private static void DoPiracyPatches()
         {
-            Logfile.Warning(">> Ahoy matey! Piracy was detected");
+            Logfile.Warning("Ahoy matey! Piracy was detected");
 
 
             ///Day night speed is 25% slower.

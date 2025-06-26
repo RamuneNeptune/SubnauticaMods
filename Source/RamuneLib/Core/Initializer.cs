@@ -24,24 +24,21 @@ namespace RamuneLib
             if(Piracy.Piracy.Exists())
                 return;
 
-            string middle = $"[{name} {version}]";
-            string start = new('=', ($">> Finished loading harmony patches for ' {name} {version} '".Length - middle.Length) / 2);
-            string finish = new('=', $">> Finished loading harmony patches for ' {name} {version} '".Length);
-
-            Logfile.Info(start + middle + start);
-
             CoroutineHost.StartCoroutine(PatchingUtils.WaitForChainloader());
+
+            var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
+
+            if(isWindows) 
+                Logfile.Info($"{(isWindows ? "\x1b[32m" : "")}[{name} {version}]{(isWindows ? "\x1b[0m" : "")}");
 
             if(patchAll)
             {
-                Logfile.Info($">> Loading harmony patches for '{name} {version}'");
-
+                Logfile.Info($"Loading harmony patches for '{name} {version}'");
+                    
                 harmony.PatchAll();
 
-                Logfile.Info($">> Finished loading harmony patches for '{name} {version}'");
+                Logfile.Info($"Loaded harmony patches for '{name} {version}'");
             }
-
-            Logfile.Info(finish);
         }
 
 
@@ -67,7 +64,7 @@ namespace RamuneLib
 
             if(request.isNetworkError || request.isHttpError)
             {
-                Logfile.Warning($">> Failed to check for update: {request.error}");
+                Logfile.Error($"Failed at 1/3 to check for update (network/http error). If you are playing offline, you should disable checking for updates in the config: {request.error}");
                 yield break;
             }
 
@@ -75,7 +72,7 @@ namespace RamuneLib
 
             if(text == null)
             {
-                Logfile.Warning($">> Failed to read text from request while checking for updates");
+                Logfile.Error($"Failed at 2/3 to read text from request while checking for updates (the text is null)");
                 yield break;
             }
 
@@ -83,9 +80,11 @@ namespace RamuneLib
 
             if(modData == null)
             {
-                Logfile.Warning($">> Failed to serialize text as ModData while checking for updates");
+                Logfile.Error($"Failed at 3/3 to serialize text as ModData while checking for updates (parsing the .json as ModData failed)");
                 yield break;
             }
+
+            Patches.PlayerPatch.modData = modData;
 
             var current = new Version(currentVersion);
             var latest = new Version(modData.Latest);
@@ -94,17 +93,16 @@ namespace RamuneLib
             {
                 PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Start), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Start)), HarmonyPatchType.Postfix);
 
-                Logfile.Warning($">> An update is available! Grab version {latest} from: {modData.Where}");
-
-                if(modData.Message != string.Empty)
-                {
-                    Logfile.Warning($">> '{modData.Name}' has an update message: \"{modData.Message}\"");
-                }
+                Logfile.Warning($"[Update] An update is available: {latest} @ {modData.Where}" + modData.Message != string.Empty ? $" (\"{modData.Message}\")" : "");
+            }
+            else
+            {
+                Logfile.Info($"The latest available version of this mod ({modData.Latest}) is currently installed, there is no need to update");
             }
         }
 
 
-        private class ModData
+        public class ModData
         {
             public string Name { get; set; }
 

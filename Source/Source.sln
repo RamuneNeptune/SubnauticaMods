@@ -57,5 +57,6 @@ Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		RamuneLib\RamuneLib.projitems*{adaabe9b-d3eb-4544-a20f-32bd84cae7ab}*SharedItemsImports = 13
 		RamuneLib\RamuneLib.projitems*{b4e07352-2fe5-47ff-9653-84239ded03e4}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{cdec663f-1c3c-47e0-8fcf-643c9d96cdfe}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal

@@ -2,6 +2,7 @@
 
 namespace RamuneLib.Utils
 {
+    // rewrite this shit
     public static class VehicleUtils
     {
         public struct SpeedData
