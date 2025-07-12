@@ -40,7 +40,7 @@ namespace Ramune.FindMyUpdates.Patches
             void DoRegistration()
             {
                 var updated = $"<b><color=#ffc834>{modName}:</color></b>\n • You are using the latest version: <color=#ffc834>{currentVersion}</color>";
-                var outdated = $"<b><color=#ffc834>{modName}:</color></b>\n • An update is available: <color=#ffc834>{latestVersion}</color>! (current: <color=#ffc834>{currentVersion}</color>)\n • URL Safety: <color=#ffc834><size=70%>{(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}</size></color>";
+                var outdated = $"<b><color=#ffc834>{modName}:</color></b>\n • An update is available: <color=#ffc834>{latestVersion}</color>! (current: <color=#ffc834>{currentVersion}</color>)\n • <size=70%>URL: <color=#ffc834>{(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}</size></color>";
 
                 UpdatesTabPanel.AddHeading(UpdatesTabIndex, isUpdated ? updated : outdated);
 
@@ -66,6 +66,8 @@ namespace Ramune.FindMyUpdates.Patches
                         }
 
                         Process.Start(latestUrl);
+
+                        Screen.Message($"<b>Opened URL</b>\n<color=#ffc802><size=75%>:: {latestUrl}</size></color>");
                     });
                 }
                 else
