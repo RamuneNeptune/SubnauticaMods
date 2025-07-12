@@ -15,6 +15,9 @@ namespace Ramune.FindMyUpdates.Patches
 
         public static Queue<Action> PendingRegistrations = new();
 
+        public static bool HasWarnedOnce = false;
+
+
         [HarmonyPatch(nameof(uGUI_OptionsPanel.AddTabs)), HarmonyPostfix]
         public static void AddTabs(uGUI_OptionsPanel __instance)
         {
@@ -48,6 +51,21 @@ namespace Ramune.FindMyUpdates.Patches
 
                 if(!isUpdated)
                 {
+                    if(FindMyUpdates.config.OnScreenWarning)
+                    {
+                        if(FindMyUpdates.config.OnScreenWarningEveryTime)
+                        {
+                            Screen.Message($"You can disable these messages in the mod config");
+                            Screen.Message($"<color=#ffc834>{modName}</color> is outdated! You have: <color=#ffc834>{currentVersion}</color> (latest is: <color=#ffc834>{latestVersion}</color>)");
+                        }
+                        else if(!HasWarnedOnce)
+                        {
+                            Screen.Message($"You can disable these messages in the mod config");
+                            Screen.Message($"<color=#ffc834>{modName}</color> is outdated! You have: <color=#ffc834>{currentVersion}</color> (latest is: <color=#ffc834>{latestVersion}</color>)");
+                            HasWarnedOnce = true;
+                        }
+                    }
+
                     UpdatesTabPanel.AddButton(UpdatesTabIndex, "Update", () =>
                     {
                         if(!Uri.TryCreate(latestUrl, UriKind.Absolute, out var uri))
