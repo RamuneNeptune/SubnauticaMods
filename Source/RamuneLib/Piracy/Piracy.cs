@@ -122,6 +122,12 @@ namespace RamuneLib.Piracy
 
 
         /// <summary>
+        /// The SHA256 hash for a legitimate steam_api64.dll file
+        /// </summary>
+        private static readonly string steamapihash = "4df999c0c8cb12589f0864d52be5d4c775577aeb27fee28b49b188f9ba083eea";
+
+
+        /// <summary>
         /// Checks if this is a pirated copy of Subnautica
         /// </summary>
         /// <returns><code>true</code> If this is a pirated copy of Subnautica. <code>false</code> If this appears to be a legitimate copy of Subnautica.</returns>
@@ -140,29 +146,49 @@ namespace RamuneLib.Piracy
 
             if(GameObject.Find("IsClean"))
             {
-                //Logfile.Info(">> Piracy was not detected");
                 return false;
             }
-
 
             var directory = Environment.CurrentDirectory;
             var files = Directory.GetFiles(directory);
             var filenames = files.Select(_ => Path.GetFileName(_));
 
+            var steamDllPaths = FindAllSteamDLLs(directory);
 
-            var steamDllPath = Path.Combine(directory, "Subnautica_Data\\Plugins\\x86_64\\steam_api64.dll");
-            bool hasSteamDll = File.Exists(steamDllPath);
-
-
-            if(hasSteamDll)
+            if(steamDllPaths.Count > 0)
             {
-                var length = new FileInfo(steamDllPath);
-
-                if(length.Length > steamapisize)
+                foreach(var steamDllPath in steamDllPaths)
                 {
-                    new GameObject("IsPirated");
-                    DoPiracyPatches();
-                    return true;
+                    var length = new FileInfo(steamDllPath);
+
+                    if(length.Length > steamapisize)
+                    {
+                        new GameObject("IsPirated");
+                        DoPiracyPatches();
+                        return true;
+                    }
+
+                    using var fileStream = File.OpenRead(steamDllPath);
+
+                    using var sha256 = SHA256.Create();
+
+                    var bytes = sha256.ComputeHash(fileStream);
+
+                    if(bytes != null && bytes.Length == 0)
+                    {
+                        var builder = new StringBuilder();
+
+                        bytes.ForEach(x => builder.Append(x.ToString("x2")));
+
+                        var hash = builder.ToString();
+
+                        if(!hash.Equals(steamapihash))
+                        {
+                            new GameObject("IsPirated");
+                            DoPiracyPatches();
+                            return true;
+                        }
+                    }
                 }
             }
 
@@ -178,9 +204,26 @@ namespace RamuneLib.Piracy
                 }
             }
 
-            //Logfile.Info(">> Piracy was not detected");
             new GameObject("IsClean");
             return false;
+        }
+
+
+        /// <summary>
+        /// Searches through the game directory & subfolders to find the paths for all "steam_api64.dll" files
+        /// </summary>
+        /// <param name="rootFolder"></param>
+        /// <returns></returns>
+        public static List<string> FindAllSteamDLLs(string directory)
+        {
+            try
+            {
+                return Directory.Exists(directory) ? Directory.EnumerateFiles(directory, "steam_api64.dll", SearchOption.AllDirectories).ToList() : new List<string>();
+            }
+            catch
+            {
+                return new List<string>();
+            }
         }
 
 

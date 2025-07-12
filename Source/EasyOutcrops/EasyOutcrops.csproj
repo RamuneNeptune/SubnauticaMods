@@ -333,6 +333,7 @@
     <None Include="Version.json" />
   </ItemGroup>
   <ItemGroup />
+  <Import Project="..\RamuneLib\RamuneLib.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets" Condition="Exists('..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -347,7 +348,6 @@
 mkdir "C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)"
 
 copy /Y "$(TargetPath)" %25TargetDirectory%25
-copy /Y "$(ProjectDir)Version.json" %25TargetDirectory%25
 
 if exist %25TargetDirectory%25\$(TargetName).zip (del %25TargetDirectory%25\$(TargetName).zip)
 

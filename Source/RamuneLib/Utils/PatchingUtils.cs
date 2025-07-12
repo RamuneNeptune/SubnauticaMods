@@ -7,20 +7,13 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
-        public static bool IsChainloaderReady = false;
-
-
-        /// <summary>
-        /// 
-        /// </summary>
         /// <returns></returns>
         public static IEnumerator WaitForChainloader()
         {
-            Type chainloader = typeof(BepInEx.Bootstrap.Chainloader);
+            Type chainloader = typeof(Chainloader);
             FieldInfo loaded = chainloader.GetField("_loaded", BindingFlags.NonPublic | BindingFlags.Static);
 
             yield return new WaitUntil(() => (bool)loaded.GetValue(null));
-            IsChainloaderReady = true;
         }
 
 

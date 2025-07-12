@@ -24,13 +24,6 @@ namespace RamuneLib
             if(Piracy.Piracy.Exists())
                 return;
 
-            CoroutineHost.StartCoroutine(PatchingUtils.WaitForChainloader());
-
-            var isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
-
-            if(isWindows)
-                Logfile.Info($"{(isWindows ? "\x1b[32m" : "")}[{name} {version}]{(isWindows ? "\x1b[0m" : "")}");
-
             if(patchAll)
             {
                 Logfile.Info($"Loading harmony patches for '{name} {version}'");

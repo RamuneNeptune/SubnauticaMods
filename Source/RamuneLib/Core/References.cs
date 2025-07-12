@@ -2,6 +2,7 @@
 
 /*      BepInEx      */
 global using BepInEx;
+global using BepInEx.Bootstrap;
 global using BepInEx.Logging;
 global using HarmonyLib;
 
@@ -27,6 +28,7 @@ global using System.Runtime;
 global using System.Runtime.InteropServices;
 global using System.Reflection;
 global using System.Reflection.Emit;
+global using System.Security.Cryptography;
 global using System.Text;
 global using System.Text.RegularExpressions;
 global using System.Linq;

@@ -10,7 +10,7 @@ namespace Ramune.EnableAchievements.Patches
         {
             PlatformUtils.main.GetServices().UnlockAchievement(id);
 
-            Logfile.Info($">> Unlocked '{id}' (if you already have this achievement that's fine, the game runs this code anyways)");
+            Logfile.Info($"Unlocked achievement ID: {id}");
 
             return false;
         }
