@@ -31,7 +31,6 @@ namespace RamuneLib.Piracy.Patches
         /// </summary>
         public static string PiracyMessages =
 @"<color=#ffba1d><b>LeviathanKraken</b> says:</color> Monkey D. Luffy approves
-<color=#ffba1d><b>RamuneNeptune</b> says:</color> 
 <color=#ffba1d><b>KooKoo</b> says:</color> you scallywag!!
 <color=#ffba1d><b>Dreamanchik</b> says:</color> ⚠ goober
 <color=#ffba1d><b>Unknown</b> says:</color> Your mother

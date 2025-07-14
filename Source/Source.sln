@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mods", "Mods", "{3B38F874-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AP - Release", "AP - Release", "{01B24A0E-1188-420D-9A92-933521ABAFD1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DV - Incomplete", "DV - Incomplete", "{6F06D842-3210-4192-A6EF-671A090F1FA1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DV - In-progress", "DV - In-progress", "{6F06D842-3210-4192-A6EF-671A090F1FA1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EX - Experimental", "EX - Experimental", "{6FE1B89A-10CE-407A-9346-8928E6B389D5}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMyUpdates", "FindMyUpdates\FindMyUpdates.csproj", "{7DAA9076-4349-4B94-B61D-83F15EA9C8CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableTelemetry", "DisableTelemetry\DisableTelemetry.csproj", "{DCFA0940-AE31-48AD-AC52-DA856E0675F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZEnameledGlass", "BZEnameledGlass\BZEnameledGlass.csproj", "{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DCFA0940-AE31-48AD-AC52-DA856E0675F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCFA0940-AE31-48AD-AC52-DA856E0675F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCFA0940-AE31-48AD-AC52-DA856E0675F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{CDEC663F-1C3C-47E0-8FCF-643C9D96CDFE} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
 		{7DAA9076-4349-4B94-B61D-83F15EA9C8CB} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
 		{DCFA0940-AE31-48AD-AC52-DA856E0675F3} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
+		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
