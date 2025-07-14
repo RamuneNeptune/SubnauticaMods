@@ -15,7 +15,7 @@ namespace Ramune.StalkersDropTeethWhenTheyDie.Patches
             if(stalker == null || stalker.toothPrefab == null || stalker.loseToothDropLocation == null)
                 return;
 
-            for(int i = 0; i < StalkersDropTeethWhenTheyDie.config.teethToDrop; i++)
+            for(int i = 0; i < StalkersDropTeethWhenTheyDie.config.TeethToDrop; i++)
             {
                 GameObject gameObject = Object.Instantiate(stalker.toothPrefab);
 
