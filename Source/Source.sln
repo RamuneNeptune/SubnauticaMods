@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableTelemetry", "Disable
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZEnameledGlass", "BZEnameledGlass\BZEnameledGlass.csproj", "{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BZTitaniumIngot", "BZTitaniumIngot\BZTitaniumIngot.csproj", "{CDDBC2AB-BD34-49F6-AAA5-C7A752036119}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDDBC2AB-BD34-49F6-AAA5-C7A752036119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDBC2AB-BD34-49F6-AAA5-C7A752036119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDBC2AB-BD34-49F6-AAA5-C7A752036119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDBC2AB-BD34-49F6-AAA5-C7A752036119}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +77,7 @@ Global
 		{7DAA9076-4349-4B94-B61D-83F15EA9C8CB} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
 		{DCFA0940-AE31-48AD-AC52-DA856E0675F3} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
 		{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
+		{CDDBC2AB-BD34-49F6-AAA5-C7A752036119} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
