@@ -330,6 +330,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Recipes\BuildableBrainCoral.json" />
     <None Include="Version.json" />
   </ItemGroup>
   <ItemGroup />

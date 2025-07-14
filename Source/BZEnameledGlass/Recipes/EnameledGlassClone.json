@@ -1,0 +1,20 @@
+{
+  "craftAmount": 0,
+  "Ingredients": [
+    {
+      "techType": "Glass",
+      "amount": 1
+    },
+    {
+      "techType": "Lead",
+      "amount": 1
+    },
+    {
+      "techType": "Diamond",
+      "amount": 1
+    }
+  ],
+  "LinkedItems": [ 
+    "EnameledGlass" 
+  ]
+}

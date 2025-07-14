@@ -18,7 +18,7 @@ namespace Ramune.BuildableBrainCoral.Items
                 {
                     var model = go.transform.Find("Coral_reef_purple_brain_coral_01").gameObject;
 
-                    model.transform.rotation = Quaternion.Euler(180, 0, 0);
+                    model.transform.rotation = Quaternion.Euler(-90, 0, 0);
 
                     Utility.ConstructableFlags constructableFlags = Utility.ConstructableFlags.Outside | Utility.ConstructableFlags.Ground | Utility.ConstructableFlags.Rotatable;
 

@@ -330,7 +330,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Recipes\test.json" />
+    <None Include="Recipes\EnameledGlassClone.json" />
     <None Include="Version.json" />
   </ItemGroup>
   <ItemGroup />
