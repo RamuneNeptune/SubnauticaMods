@@ -1,8 +1,8 @@
 ﻿
 
-namespace Ramune.BZEnameledGlass
+namespace Ramune.BuildableBrainCoral
 {
-    [Menu("BZEnameledGlass")]
+    [Menu("BuildableBrainCoral")]
     public class Config : ConfigFile
     {
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
@@ -12,6 +12,6 @@ namespace Ramune.BZEnameledGlass
         public bool EnableThisMod = true;
 
         [Button("Open recipe file")]
-        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Variables.Paths.RecipeFolder, "EnameledGlassClone.json"));
+        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Variables.Paths.RecipeFolder, "BuildableBrainCoral.json"));
     }
 }

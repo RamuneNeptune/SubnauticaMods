@@ -330,6 +330,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Recipes\test.json" />
     <None Include="Version.json" />
   </ItemGroup>
   <ItemGroup />
@@ -347,6 +348,10 @@
 mkdir "C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)"
 
 copy /Y "$(TargetPath)" %25TargetDirectory%25
+
+if exist "$(ProjectDir)Recipes" xcopy /E /I /Y "$(ProjectDir)Recipes" %25TargetDirectory%25\Recipes
+
+if exist "$(ProjectDir)Assets" xcopy /E /I /Y "$(ProjectDir)Assets" %25TargetDirectory%25\Assets
 
 if exist %25TargetDirectory%25\$(TargetName).zip (del %25TargetDirectory%25\$(TargetName).zip)
 

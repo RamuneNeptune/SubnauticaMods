@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Released", "Released", "{D4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FOVSlider", "FOVSlider\FOVSlider.csproj", "{B5F670CA-078F-4760-B7CA-A0466D3267CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildableBrainCoral", "BuildableBrainCoral\BuildableBrainCoral.csproj", "{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{B5F670CA-078F-4760-B7CA-A0466D3267CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5F670CA-078F-4760-B7CA-A0466D3267CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5F670CA-078F-4760-B7CA-A0466D3267CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -133,11 +139,13 @@ Global
 		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
 		{D4E1B515-7902-4136-A706-60F7A5BAC99D} = {01B24A0E-1188-420D-9A92-933521ABAFD1}
 		{B5F670CA-078F-4760-B7CA-A0466D3267CC} = {D4E1B515-7902-4136-A706-60F7A5BAC99D}
+		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RamuneLib\RamuneLib.projitems*{11de5fc0-ce56-46bf-9bba-e26ae9c7aff3}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{14e7dad9-c158-406e-b7a9-01cecb537ae6}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{2640f59c-7a06-4f61-af9f-cb6461c33b9a}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{783ac8fb-3efa-4a69-9845-cedb58f8da1a}*SharedItemsImports = 4
