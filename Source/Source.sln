@@ -138,10 +138,19 @@ Global
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RamuneLib\RamuneLib.projitems*{14e7dad9-c158-406e-b7a9-01cecb537ae6}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{2640f59c-7a06-4f61-af9f-cb6461c33b9a}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{783ac8fb-3efa-4a69-9845-cedb58f8da1a}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{7daa9076-4349-4b94-b61d-83f15ea9c8cb}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{8d299554-df4a-4dc7-8536-6b896b055abd}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{adaabe9b-d3eb-4544-a20f-32bd84cae7ab}*SharedItemsImports = 13
 		RamuneLib\RamuneLib.projitems*{b4e07352-2fe5-47ff-9653-84239ded03e4}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{b5f670ca-078f-4760-b7ca-a0466d3267cc}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{c89db7c5-161a-4096-a0fc-fb28a740ccb1}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{cddbc2ab-bd34-49f6-aaa5-c7a752036119}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{cdec663f-1c3c-47e0-8fcf-643c9d96cdfe}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{d4f8f196-4fec-4e02-9cca-65148f4ba7c5}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{dcfa0940-ae31-48ad-ac52-da856e0675f3}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{ef6add11-6838-474d-b5e7-45c4037e1863}*SharedItemsImports = 4
 	EndGlobalSection
 EndGlobal
