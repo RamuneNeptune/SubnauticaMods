@@ -17,7 +17,7 @@ namespace Ramune.FOVSlider
 
         public void Awake()
         {
-            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/HideMaskInPDA/Version.json");
+            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/FOVSlider/Version.json");
 
             if(!config.EnableThisMod)
             {
