@@ -13,7 +13,7 @@ namespace Ramune.BZEnameledGlass
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.BZEnameledGlass";
         public const string Name = "BZEnameledGlass";
-        public const string Version = "4.0.0";
+        public const string Version = "4.0.1";
 
         public void Awake()
         {
