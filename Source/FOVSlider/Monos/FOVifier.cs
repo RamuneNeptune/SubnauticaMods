@@ -4,18 +4,28 @@ namespace Ramune.FOVSlider.Monos
 {
     public class FOVifier : MonoBehaviour
     {
+        public float targetFov = 60f;
+
+        public float prevTargetFov = -1f;
+
+
         public void Start()
         {
             MiscSettings.fieldOfView = FOVSlider.config.FOV;
         }
 
 
-        public void FixedUpdate()
+        public void Update()
         {
-            if(Player.main.pda.isInUse || Player.main.camRoot.mainCamera.fieldOfView == FOVSlider.config.FOV)
-                return;
-            
-            Player.main.camRoot.SyncFieldOfView();
+            var camRoot = SNCameraRoot.main;
+
+            targetFov = Player.main.pda.isInUse ? 60f : FOVSlider.config.FOV;
+
+            if(!Mathf.Approximately(prevTargetFov, targetFov) || !Mathf.Approximately(camRoot.CurrentFieldOfView, targetFov))
+            {
+                prevTargetFov = targetFov;
+                camRoot.SetFov(Mathf.Lerp(camRoot.CurrentFieldOfView, targetFov, Time.unscaledDeltaTime * 3f));
+            }
         }
     }
 }

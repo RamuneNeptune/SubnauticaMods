@@ -6,9 +6,6 @@ namespace Ramune.NoEpilepsyWarning.Patches
     public static class StartScreenPatch
     { 
         [HarmonyPatch(nameof(StartScreen.TryToShowDisclaimer)), HarmonyPrefix]
-        public static bool TryToShowDisclaimer()
-        {
-            return false;
-        }
+        public static bool TryToShowDisclaimer() => false;
     }
 }
