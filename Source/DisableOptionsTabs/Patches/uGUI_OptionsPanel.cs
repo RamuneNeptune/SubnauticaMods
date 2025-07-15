@@ -5,11 +5,6 @@ namespace Ramune.DisableOptionsTabs.Patches
     [HarmonyPatch(typeof(uGUI_OptionsPanel))]
     public static class uGUI_OptionsPanelPatch
     {
-        /*
-        [HarmonyPatch(nameof(uGUI_OptionsPanel.AddGeneralTab)), HarmonyPrefix]
-        public static bool AddGeneralTab(uGUI_OptionsPanel __instance) => !DisableOptionsTabs.config.DisableGeneral;
-        */
-
         [HarmonyPatch(nameof(uGUI_OptionsPanel.AddGraphicsTab)), HarmonyPrefix]
         public static bool AddGraphicsTab(uGUI_OptionsPanel __instance) => !DisableOptionsTabs.config.DisableGraphics;
 

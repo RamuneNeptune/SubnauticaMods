@@ -7,10 +7,7 @@ namespace Ramune.DisableOptionsTabs
     {
         [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerCfg = false;
-        /*
-        [Toggle(" • Disable <b>General</b>", Tooltip = "Re-open options menu to apply")]
-        public bool DisableGeneral = false;
-        */
+
         [Toggle(" • Disable <b>Graphics</b>", Tooltip = "Re-open options menu to apply")]
         public bool DisableGraphics = false;
 
