@@ -12,6 +12,8 @@ namespace Ramune.EnableAchievements.Patches
 
             Logfile.Info($"Unlocked achievement ID: {id}");
 
+            Screen.Info($"Unlocked achievement ID: {id}");
+
             return false;
         }
     }

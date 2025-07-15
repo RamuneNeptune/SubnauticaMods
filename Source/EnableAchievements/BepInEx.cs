@@ -13,7 +13,7 @@ namespace Ramune.EnableAchievements
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.EnableAchievements";
         public const string Name = "EnableAchievements";
-        public const string Version = "4.0.0";
+        public const string Version = "4.0.1";
 
         public void Awake()
         {
