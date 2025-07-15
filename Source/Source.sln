@@ -55,6 +55,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildableBrainCoral", "Buil
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beta", "Beta", "{47EE3E11-1987-481E-BEFD-67B813B1F401}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisableOptionsTabs", "DisableOptionsTabs\DisableOptionsTabs.csproj", "{119253B9-2B94-40CE-8F7D-86AE27C713E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisablePauseMenuButtons", "DisablePauseMenuButtons\DisablePauseMenuButtons.csproj", "{B419E668-5E74-40B1-BAEA-F2C3039FCE05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119253B9-2B94-40CE-8F7D-86AE27C713E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119253B9-2B94-40CE-8F7D-86AE27C713E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119253B9-2B94-40CE-8F7D-86AE27C713E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119253B9-2B94-40CE-8F7D-86AE27C713E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B419E668-5E74-40B1-BAEA-F2C3039FCE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B419E668-5E74-40B1-BAEA-F2C3039FCE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B419E668-5E74-40B1-BAEA-F2C3039FCE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B419E668-5E74-40B1-BAEA-F2C3039FCE05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -143,11 +155,14 @@ Global
 		{B5F670CA-078F-4760-B7CA-A0466D3267CC} = {D4E1B515-7902-4136-A706-60F7A5BAC99D}
 		{11DE5FC0-CE56-46BF-9BBA-E26AE9C7AFF3} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{47EE3E11-1987-481E-BEFD-67B813B1F401} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
+		{119253B9-2B94-40CE-8F7D-86AE27C713E7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B419E668-5E74-40B1-BAEA-F2C3039FCE05} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
 	EndGlobalSection
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		RamuneLib\RamuneLib.projitems*{119253b9-2b94-40ce-8f7d-86ae27c713e7}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{11de5fc0-ce56-46bf-9bba-e26ae9c7aff3}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{14e7dad9-c158-406e-b7a9-01cecb537ae6}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{2640f59c-7a06-4f61-af9f-cb6461c33b9a}*SharedItemsImports = 4
@@ -155,6 +170,7 @@ Global
 		RamuneLib\RamuneLib.projitems*{7daa9076-4349-4b94-b61d-83f15ea9c8cb}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{8d299554-df4a-4dc7-8536-6b896b055abd}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{adaabe9b-d3eb-4544-a20f-32bd84cae7ab}*SharedItemsImports = 13
+		RamuneLib\RamuneLib.projitems*{b419e668-5e74-40b1-baea-f2c3039fce05}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{b4e07352-2fe5-47ff-9653-84239ded03e4}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{b5f670ca-078f-4760-b7ca-a0466d3267cc}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{c89db7c5-161a-4096-a0fc-fb28a740ccb1}*SharedItemsImports = 4
