@@ -1,15 +1,15 @@
 ﻿
 
-namespace Ramune.EnableAchievements
+namespace Ramune.FasterScanning
 {
-    [Menu("Enable Achievements")]
+    [Menu("FasterScanning")]
     public class Config : ConfigFile
     {
         [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerCfg = false;
 
-        [Toggle(" • On-screen logging", Tooltip = "Information is sent to your logfile, but enabling this will also briefly show the information on-screen")]
-        public bool OnScreenLogging = false;
+        [Slider("• Scanning speed multiplier", Format = "{0:F1}x", DefaultValue = 1f, Min = 0.1f, Max = 10f, Step = 0.1f)]
+        public float Multiplier = 1f;
 
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;

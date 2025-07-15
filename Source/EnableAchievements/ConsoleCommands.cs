@@ -9,6 +9,8 @@ namespace Ramune.EnableAchievements
         {
             PlatformUtils.main?.services.ResetAchievements();
 
+            Logfile.Info("Reset achievements");
+
             Screen.Info("Reset achievements");
         }
 
@@ -20,13 +22,13 @@ namespace Ramune.EnableAchievements
                 PlatformUtils.main?.services.UnlockAchievement(achievementId);
 
                 Logfile.Info($"Unlocked achievement ID: {id}");
-
+                
                 Screen.Info($"Unlocked achievement ID: {id}");
             }
             else
             {
                 Logfile.Error($"Invalid achievement ID: {id}\nMust be one of the following:\n - {string.Join("\n - ", Enum.GetNames(typeof(GameAchievements.Id)))}");
-
+                
                 Screen.Error($"Invalid achievement ID: {id}\nMust be one of the following:\n - {string.Join("\n - ", Enum.GetNames(typeof(GameAchievements.Id)))}");
             }
         }
