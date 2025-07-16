@@ -75,6 +75,9 @@
     <Reference Include="Sentry, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Sentry.dll</HintPath>
     </Reference>
+    <Reference Include="Sentry-publicized">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\Subnautica_Data\Managed\sentry\Sentry-publicized.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -324,6 +327,7 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Patches\GameAnalytics.cs" />
     <Compile Include="Patches\Sentry.cs" />
     <Compile Include="Patches\Telemetry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
