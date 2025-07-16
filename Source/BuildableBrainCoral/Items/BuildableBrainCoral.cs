@@ -16,6 +16,8 @@ namespace Ramune.BuildableBrainCoral.Items
             {
                 ModifyPrefab = go =>
                 {
+                    go.EnsureComponent<LargeWorldEntity>().cellLevel = LargeWorldEntity.CellLevel.Far;
+
                     var model = go.transform.Find("Coral_reef_purple_brain_coral_01").gameObject;
 
                     model.transform.rotation = Quaternion.Euler(-90, 0, 0);
@@ -23,6 +25,8 @@ namespace Ramune.BuildableBrainCoral.Items
                     Utility.ConstructableFlags constructableFlags = Utility.ConstructableFlags.Outside | Utility.ConstructableFlags.Ground | Utility.ConstructableFlags.Rotatable;
 
                     Utility.PrefabUtils.AddConstructable(go, Prefab.Info.TechType, constructableFlags, model);
+
+                    LargeWorldEntity.Register(go);
                 }
             };
 
