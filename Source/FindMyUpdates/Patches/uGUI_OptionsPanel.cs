@@ -42,7 +42,7 @@ namespace Ramune.FindMyUpdates.Patches
 
             void DoRegistration()
             {
-                var updated = $"<b><color=#ffc834>{modName}:</color></b>\n • You are using the latest version: <color=#ffc834>{currentVersion}</color>";
+                var updated = $"<b><color=#ffc834>{modName}:</color></b>\n • You are using the latest version: <color=#ffc834>{currentVersion}</color>\n • <size=70%>URL: <color=#ffc834>{(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}</size></color>";
                 var outdated = $"<b><color=#ffc834>{modName}:</color></b>\n • An update is available: <color=#ffc834>{latestVersion}</color>! (current: <color=#ffc834>{currentVersion}</color>)\n • <size=70%>URL: <color=#ffc834>{(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}</size></color>";
 
                 UpdatesTabPanel.AddHeading(UpdatesTabIndex, isUpdated ? updated : outdated);
@@ -65,33 +65,29 @@ namespace Ramune.FindMyUpdates.Patches
                             HasWarnedOnce = true;
                         }
                     }
-
-                    UpdatesTabPanel.AddButton(UpdatesTabIndex, "Update", () =>
-                    {
-                        if(!Uri.TryCreate(latestUrl, UriKind.Absolute, out var uri))
-                        {
-                            Screen.Error($"Invalid URL: {(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}");
-                            return;
-                        }
-
-                        if(!hasFirstClick)
-                        {
-                            Screen.Message($"<b>Are you sure you want to open this link?</b>\n<color=#ffc802><size=75%>:: {latestUrl}</size></color>");
-
-                            hasFirstClick = true;
-
-                            return;
-                        }
-
-                        Process.Start(latestUrl);
-
-                        Screen.Message($"<b>Opened URL</b>\n<color=#ffc802><size=75%>:: {latestUrl}</size></color>");
-                    });
                 }
-                else
+
+                UpdatesTabPanel.AddButton(UpdatesTabIndex, isUpdated ? "Up to date" : "Update", () =>
                 {
-                    UpdatesTabPanel.AddButton(UpdatesTabIndex, "Up to date");    
-                }
+                    if(!Uri.TryCreate(latestUrl, UriKind.Absolute, out var uri))
+                    {
+                        Screen.Error($"Invalid URL: {(latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl)}");
+                        return;
+                    }
+
+                    if(!hasFirstClick)
+                    {
+                        Screen.Message($"<b>Are you sure you want to open this link?</b>\n<color=#ffc802><size=75%>:: {latestUrl}</size></color>");
+
+                        hasFirstClick = true;
+
+                        return;
+                    }
+
+                    Process.Start(latestUrl);
+
+                    Screen.Message($"<b>Opened URL</b>\n<color=#ffc802><size=75%>:: {latestUrl}</size></color>");
+                });
 
                 UpdatesTabPanel.AddHeading(UpdatesTabIndex, "<align=center>\n\n<color=#1e86d6>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</color>\n\n\n</align>");
             }
