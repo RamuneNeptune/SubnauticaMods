@@ -5,7 +5,7 @@ namespace Ramune.FasterScanning.Patches
     [HarmonyPatch(typeof(PDAScanner))]
     public static class PDAScannerPatch
     {
-        public static float Multiplier () => FasterScanning.config.Multiplier;
+        public static float Multiplier () => FasterScanning.config.MultiplierChoice == 0 ? FasterScanning.config.Multiplier : FasterScanning.config.MultiplierMega;
 
 
         [HarmonyPatch(nameof(PDAScanner.Scan)), HarmonyTranspiler]
