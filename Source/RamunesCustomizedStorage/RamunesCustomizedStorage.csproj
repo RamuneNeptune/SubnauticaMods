@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D4F8F196-4FEC-4E02-9CCA-65148F4BA7C5}</ProjectGuid>
+    <ProjectGuid>{DC7EF115-F2AF-4351-9FFA-0350844CE503}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ramune.BZEnameledGlass</RootNamespace>
-    <AssemblyName>BZEnameledGlass</AssemblyName>
+    <RootNamespace>Ramune.RamunesCustomizedStorage</RootNamespace>
+    <AssemblyName>RamunesCustomizedStorage</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -324,14 +324,13 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Items\EnameledGlassClone.cs" />
+    <Compile Include="Patches\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
-    <None Include="Recipes\EnameledGlassClone.json" />
     <None Include="Version.json" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
@@ -347,14 +346,14 @@
 
 mkdir "C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)"
 
-copy /Y "$(TargetPath)" %25TargetDirectory%25
+copy /Y "$(TargetPath)" %TargetDirectory%
 
-if exist "$(ProjectDir)Recipes" xcopy /E /I /Y "$(ProjectDir)Recipes" %25TargetDirectory%25\Recipes
+if exist "$(ProjectDir)Recipes" xcopy /E /I /Y "$(ProjectDir)Recipes" %TargetDirectory%\Recipes
 
-if exist "$(ProjectDir)Assets" xcopy /E /I /Y "$(ProjectDir)Assets" %25TargetDirectory%25\Assets
+if exist "$(ProjectDir)Assets" xcopy /E /I /Y "$(ProjectDir)Assets" %TargetDirectory%\Assets
 
-if exist %25TargetDirectory%25\$(TargetName).zip (del %25TargetDirectory%25\$(TargetName).zip)
+if exist %TargetDirectory%\$(TargetName).zip (del %TargetDirectory%\$(TargetName).zip)
 
-"C:\Program Files\7-Zip\7z.exe" a %25TargetDirectory%25\$(TargetName).zip %25TargetDirectory%25</PostBuildEvent>
+"C:\Program Files\7-Zip\7z.exe" a %TargetDirectory%\$(TargetName).zip %TargetDirectory%</PostBuildEvent>
   </PropertyGroup>
 </Project>
