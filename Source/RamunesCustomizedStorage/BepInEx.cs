@@ -19,7 +19,7 @@ namespace Ramune.RamunesCustomizedStorage
         {
             ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/RamunesCustomizedStorage/Version.json");
 
-            if (!config.EnableThisMod)
+            if(!config.EnableThisMod)
             {
                 Logfile.Warning("This mod has been disabled in the config and will not be loaded");
                 return;
