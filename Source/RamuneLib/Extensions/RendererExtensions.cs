@@ -69,7 +69,7 @@ namespace RamuneLib.Extensions
 
             materialIndexes.ForEach(i =>
             {
-                switch (type)
+                switch(type)
                 {
                     case TextureType.Main:
 

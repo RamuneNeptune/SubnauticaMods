@@ -7,7 +7,7 @@ namespace RamuneLib.Utils
         public static class Logfile
         {
             /// <summary>
-            /// Logs a message to the logfile with the severity of 'Error'.
+            /// Logs a message to the logfile with the severity of 'Info'.
             /// </summary>
             /// <param name="message">The message to log.</param>
             /// <example>
@@ -19,7 +19,7 @@ namespace RamuneLib.Utils
 
 
             /// <summary>
-            /// Logs a message to the logfile with the severity of 'Info'.
+            /// Logs a message to the logfile with the severity of 'Error'.
             /// </summary>
             /// <param name="message">The message to log.</param>
             /// <example>
@@ -31,7 +31,7 @@ namespace RamuneLib.Utils
 
 
             /// <summary>
-            /// Logs a message to the logfile with the severity of 'Error'.
+            /// Logs a message to the logfile with the severity of 'Debug'.
             /// </summary>
             /// <param name="message">The message to log.</param>
             /// <example>
