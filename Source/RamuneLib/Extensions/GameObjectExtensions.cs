@@ -142,5 +142,39 @@ namespace RamuneLib.Extensions
 
             return(components = parent.gameObject.GetComponents<T>()).Length > 0;
         }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="gameObject"></param>
+        /// <param name="component"></param>
+        /// <returns></returns>
+        public static bool TryGetComponentEverywhere<T>(this GameObject gameObject, out T component) where T : Component
+        {
+            component = null;
+
+            if(gameObject == null)
+                return false;
+
+            if(gameObject.TryGetComponent(out component))
+            {
+                Logfile.Warning($"[TryGetComponentEverywhere]: Found component '{typeof(T).Name}' in root (TryGetComponent)");
+                return true;
+            }
+            else if(gameObject.TryGetComponentInChildren(out component))
+            {
+                Logfile.Warning($"[TryGetComponentEverywhere]: Found component '{typeof(T).Name}' in children (TryGetComponentInChildren)");
+                return true;
+            }
+            else if(gameObject.TryGetComponentInParent(out component))
+            {
+                Logfile.Warning($"[TryGetComponentEverywhere]: Found component '{typeof(T).Name}' in parent (TryGetComponentInParent)");
+                return true;
+            }
+
+            return false;
+        }
     }
 }

@@ -324,7 +324,9 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Patches\Player.cs" />
+    <Compile Include="Patches\Inventory.cs" />
+    <Compile Include="Patches\ItemsContainer.cs" />
+    <Compile Include="Patches\PDA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
