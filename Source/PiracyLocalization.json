@@ -1,0 +1,4760 @@
+﻿{
+  "None": {
+    "LegitName": "None",
+    "LegitDesc": "None",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Quartz": {
+    "LegitName": "Quartz",
+    "LegitDesc": "SiO⁴. Silica in crystalline form.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ScrapMetal": {
+    "LegitName": "Metal salvage",
+    "LegitDesc": "Composed primarily of titanium.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FiberMesh": {
+    "LegitName": "Fiber mesh",
+    "LegitDesc": "Strong natural fiber. Comfy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LimestoneChunk": {
+    "LegitName": "Limestone chunk",
+    "LegitDesc": "Tooltip_LimestoneChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CalciteOld": {
+    "LegitName": "CalciteOld",
+    "LegitDesc": "Tooltip_CalciteOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DolomiteOld": {
+    "LegitName": "DolomiteOld",
+    "LegitDesc": "Tooltip_DolomiteOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Copper": {
+    "LegitName": "Copper ore",
+    "LegitDesc": "Cu. Essential wiring component.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Lead": {
+    "LegitName": "Lead",
+    "LegitDesc": "Pb. Insulates against radiation.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Salt": {
+    "LegitName": "Salt deposit",
+    "LegitDesc": "NaCl. Culinary and sanitation applications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FlintOld": {
+    "LegitName": "FlintOld",
+    "LegitDesc": "Tooltip_FlintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EmeryOld": {
+    "LegitName": "EmeryOld",
+    "LegitDesc": "Tooltip_EmeryOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MercuryOre": {
+    "LegitName": "Mercury ore",
+    "LegitDesc": "HgS. Cinnabar. Heat in O₂ to acquire refined mercury.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CalciumChunk": {
+    "LegitName": "Calcium outcrop",
+    "LegitDesc": "Tooltip_CalciumChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Placeholder": {
+    "LegitName": "Placeholder",
+    "LegitDesc": "Tooltip_Placeholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Glass": {
+    "LegitName": "Glass",
+    "LegitDesc": "SiO₄. Pure fused quartz glass.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Titanium": {
+    "LegitName": "Titanium",
+    "LegitDesc": "Ti. Basic building material.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Silicone": {
+    "LegitName": "Silicone rubber",
+    "LegitDesc": "Synthetic, silicone-based rubber.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CarbonOld": {
+    "LegitName": "CarbonOld",
+    "LegitDesc": "Tooltip_CarbonOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EthanolOld": {
+    "LegitName": "EthanolOld",
+    "LegitDesc": "Tooltip_EthanolOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EthyleneOld": {
+    "LegitName": "EthyleneOld",
+    "LegitDesc": "Tooltip_EthyleneOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Gold": {
+    "LegitName": "Gold",
+    "LegitDesc": "Au. Valuable conductive properties. Highly valuable social property.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Magnesium": {
+    "LegitName": "Magnesium",
+    "LegitDesc": "Mg. Combustible metal.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Sulphur": {
+    "LegitName": "Crystalline sulfur",
+    "LegitDesc": "S. Oxidant and reducing agent.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HydrogenOld": {
+    "LegitName": "HydrogenOld",
+    "LegitDesc": "Tooltip_HydrogenOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Lodestone": {
+    "LegitName": "Lodestone",
+    "LegitDesc": "Tooltip_Lodestone",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SandLoot": {
+    "LegitName": "Sand",
+    "LegitDesc": "",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bleach": {
+    "LegitName": "Bleach",
+    "LegitDesc": "NaClO. Sodium hypochlorite bleach. Sanitizing applications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Silver": {
+    "LegitName": "Silver ore",
+    "LegitDesc": "Ag. Conductive element, and microbicide.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BatteryAcidOld": {
+    "LegitName": "BatteryAcidOld",
+    "LegitDesc": "Tooltip_BatteryAcidOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TitaniumIngot": {
+    "LegitName": "Titanium ingot",
+    "LegitDesc": "Ti. Condensed titanium bar.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SandstoneChunk": {
+    "LegitName": "Sandstone chunk",
+    "LegitDesc": "Tooltip_SandstoneChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CopperWire": {
+    "LegitName": "Copper wire",
+    "LegitDesc": "Copper atoms fabricated into basic electrical wiring.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WiringKit": {
+    "LegitName": "Wiring kit",
+    "LegitDesc": "Insulated wire. Essential electronic component.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AdvancedWiringKit": {
+    "LegitName": "Advanced wiring kit",
+    "LegitDesc": "CPU used in advanced construction.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrashPowder": {
+    "LegitName": "Cave sulfur",
+    "LegitDesc": "SO₄Tr. Sulfur-based powder which collects within certain cave plants. Combustible underwater.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Diamond": {
+    "LegitName": "Diamond",
+    "LegitDesc": "C. Carbon allotrope with superlative physical properties.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasaltChunk": {
+    "LegitName": "Basalt chunk",
+    "LegitDesc": "Tooltip_BasaltChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShaleChunk": {
+    "LegitName": "Shale chunk",
+    "LegitDesc": "Tooltip_ShaleChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ObsidianChunk": {
+    "LegitName": "Obsidian chunk",
+    "LegitDesc": "Tooltip_ObsidianChunk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Lithium": {
+    "LegitName": "Lithium",
+    "LegitDesc": "Li. Applications in high-strength alloys.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlasteelIngot": {
+    "LegitName": "Plasteel ingot",
+    "LegitDesc": "Ultra-strong synthetic construction material.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EnameledGlass": {
+    "LegitName": "Enameled glass",
+    "LegitDesc": "Glass, hardened using a natural substrate.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerCell": {
+    "LegitName": "Power cell",
+    "LegitDesc": "High-capacity mobile power source.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ComputerChip": {
+    "LegitName": "Computer chip",
+    "LegitDesc": "Multi-purpose CPU.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Fiber": {
+    "LegitName": "Fiber",
+    "LegitDesc": "Tooltip_Fiber",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Enamel": {
+    "LegitName": "Enamel",
+    "LegitDesc": "Tooltip_Enamel",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AcidOld": {
+    "LegitName": "AcidOld",
+    "LegitDesc": "Tooltip_AcidOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VesselOld": {
+    "LegitName": "VesselOld",
+    "LegitDesc": "Tooltip_VesselOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CombustibleOld": {
+    "LegitName": "CombustibleOld",
+    "LegitDesc": "Tooltip_CombustibleOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OpalGem": {
+    "LegitName": "Opal gem",
+    "LegitDesc": "Si. A gem of concentrated silicon.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Uranium": {
+    "LegitName": "Uranium",
+    "LegitDesc": "U. Nuclear fission applications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AluminumOxide": {
+    "LegitName": "Ruby",
+    "LegitDesc": "Al₂O₃. Hard, conductive gemstone composed of aluminum oxide.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HydrochloricAcid": {
+    "LegitName": "Hydrochloric acid",
+    "LegitDesc": "HCl. Powerful acidic compound. Employ due care.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Magnetite": {
+    "LegitName": "Magnetite",
+    "LegitDesc": "Fe₃O₄. Metal oxide with magnetic properties.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AminoAcids": {
+    "LegitName": "Amino acids",
+    "LegitDesc": "Protein and neurotransmitter building block.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Polyaniline": {
+    "LegitName": "Polyaniline",
+    "LegitDesc": "High conductance polymer.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AramidFibers": {
+    "LegitName": "Synthetic fibers",
+    "LegitDesc": "High-strength synthetic fibers.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Graphene": {
+    "LegitName": "Graphene",
+    "LegitDesc": "C. Carbon arranged one atom thick. Stronger than steel.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Aerogel": {
+    "LegitName": "Aerogel",
+    "LegitDesc": "Light, porous, dried gel. High heat insulation.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Nanowires": {
+    "LegitName": "Nanowires",
+    "LegitDesc": "Wires for nanoscale quantum devices.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Benzene": {
+    "LegitName": "Benzene",
+    "LegitDesc": "C₆H₆. Oil and solvent applications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Lubricant": {
+    "LegitName": "Lubricant",
+    "LegitDesc": "Naturally-derived, oil-based lubricant. Industrial applications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "UraniniteCrystal": {
+    "LegitName": "Uraninite crystal",
+    "LegitDesc": "U₃O₈. A highly radioactive material.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReactorRod": {
+    "LegitName": "Reactor rod",
+    "LegitDesc": "Used to power nuclear reactors.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DepletedReactorRod": {
+    "LegitName": "Depleted reactor rod",
+    "LegitDesc": "Nuclear waste.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorIonCrystal": {
+    "LegitName": "Ion cube",
+    "LegitDesc": "High capacity alien energy source.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorIonCrystalMatrix": {
+    "LegitName": "Ion crystal matrix",
+    "LegitDesc": "Ion cube matrix.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Kyanite": {
+    "LegitName": "Kyanite",
+    "LegitDesc": "Al₂SiO₅. Deep blue, heat resistant crystal.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Nickel": {
+    "LegitName": "Nickel ore",
+    "LegitDesc": "Ni. Versatile alloy ingredient required for advanced fabrication.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableSalt": {
+    "LegitName": "Salt deposit",
+    "LegitDesc": "Tooltip_DrillableSalt",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableQuartz": {
+    "LegitName": "Quartz",
+    "LegitDesc": "Tooltip_DrillableQuartz",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableCopper": {
+    "LegitName": "Copper ore",
+    "LegitDesc": "Tooltip_DrillableCopper",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableTitanium": {
+    "LegitName": "Titanium",
+    "LegitDesc": "Tooltip_DrillableTitanium",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableLead": {
+    "LegitName": "Lead",
+    "LegitDesc": "Tooltip_DrillableLead",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableSilver": {
+    "LegitName": "Silver ore",
+    "LegitDesc": "Tooltip_DrillableSilver",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableDiamond": {
+    "LegitName": "Diamond",
+    "LegitDesc": "Tooltip_DrillableDiamond",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableGold": {
+    "LegitName": "Gold",
+    "LegitDesc": "Tooltip_DrillableGold",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableMagnetite": {
+    "LegitName": "Magnetite",
+    "LegitDesc": "Tooltip_DrillableMagnetite",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableLithium": {
+    "LegitName": "Lithium",
+    "LegitDesc": "Tooltip_DrillableLithium",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableMercury": {
+    "LegitName": "Mercury",
+    "LegitDesc": "Tooltip_DrillableMercury",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableUranium": {
+    "LegitName": "Uranium",
+    "LegitDesc": "Tooltip_DrillableUranium",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableAluminiumOxide": {
+    "LegitName": "Ruby",
+    "LegitDesc": "Tooltip_DrillableAluminiumOxide",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableNickel": {
+    "LegitName": "Nickel ore",
+    "LegitDesc": "Tooltip_DrillableNickel",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableSulphur": {
+    "LegitName": "Crystalline sulfur",
+    "LegitDesc": "Tooltip_DrillableSulphur",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DrillableKyanite": {
+    "LegitName": "Kyanite",
+    "LegitDesc": "Tooltip_DrillableKyanite",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DiveSuit": {
+    "LegitName": "Dive suit",
+    "LegitDesc": "Basic dive suit.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShipComputerOld": {
+    "LegitName": "ShipComputerOld",
+    "LegitDesc": "Tooltip_ShipComputerOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Fins": {
+    "LegitName": "Fins",
+    "LegitDesc": "Translate vertical limb movements underwater into forward thrust. Enhance swim speed by approximately 15%.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Tank": {
+    "LegitName": "Standard O₂ Tank",
+    "LegitDesc": "O₂ mix. Compressed, breathable air.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Battery": {
+    "LegitName": "Battery",
+    "LegitDesc": "Mobile power source.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Knife": {
+    "LegitName": "Survival knife",
+    "LegitDesc": "Standard survival tool. Multi-functional.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Drill": {
+    "LegitName": "Drill",
+    "LegitDesc": "Tooltip_Drill",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Flashlight": {
+    "LegitName": "Flashlight",
+    "LegitDesc": "Battery-powered, all-environment light source.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Beacon": {
+    "LegitName": "Beacon",
+    "LegitDesc": "Navigation aid. Maintains and broadcasts its position. Configurable name.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Builder": {
+    "LegitName": "Habitat builder",
+    "LegitDesc": "Fabricates habitat compartments and appliances from raw materials.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PDA": {
+    "LegitName": "PDA",
+    "LegitDesc": "Tooltip_PDA",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EscapePod": {
+    "LegitName": "Escape pod",
+    "LegitDesc": "Tooltip_EscapePod",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Compass": {
+    "LegitName": "Compass",
+    "LegitDesc": "Displays compass heading on the HUD.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AirBladder": {
+    "LegitName": "Air bladder",
+    "LegitDesc": "Emergency flotation device. Chemical reaction produces lighter-than air gas for fast personal buoyancy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Terraformer": {
+    "LegitName": "Terraformer",
+    "LegitDesc": "RIP terraformer.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Pipe": {
+    "LegitName": "Pipe",
+    "LegitDesc": "A chain of pipes can be used to transport breathable air from a functional pump.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Thermometer": {
+    "LegitName": "Thermometer",
+    "LegitDesc": "HUD temperature sensor.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DiveReel": {
+    "LegitName": "Pathfinder tool",
+    "LegitDesc": "Deploys holographic pathfinder discs. Used to map a way back out of caves or hard to navigate spaces. Max 20 discs per path.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Rebreather": {
+    "LegitName": "Rebreather",
+    "LegitDesc": "Conserves oxygen when diving deeper. Absorbs and recycles CO₂ into breathable air.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationSuit": {
+    "LegitName": "Radiation suit",
+    "LegitDesc": "Lead-lined suit providing insulation from radiation.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationHelmet": {
+    "LegitName": "Radiation helmet",
+    "LegitDesc": "Lead-lined radiation helmet.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationGloves": {
+    "LegitName": "Radiation gloves",
+    "LegitDesc": "Lead-based radiation protection.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforcedDiveSuit": {
+    "LegitName": "Reinforced dive suit",
+    "LegitDesc": "Heavy synthetic fiber dive suit, providing physical protection and enhanced survival in extreme temperatures.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Scanner": {
+    "LegitName": "Scanner",
+    "LegitDesc": "Spectroscope scanner used to acquire technology blueprints and data on living organisms.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FireExtinguisher": {
+    "LegitName": "Fire extinguisher",
+    "LegitDesc": "Extinguishes fires.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MapRoomHUDChip": {
+    "LegitName": "Scanner room HUD chip",
+    "LegitDesc": "Streams data from scanner rooms to the HUD",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PipeSurfaceFloater": {
+    "LegitName": "Floating air pump",
+    "LegitDesc": "Floating device that pumps air into pipes. Acts as starting point for a pipe chain.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsDecoy": {
+    "LegitName": "Creature decoy",
+    "LegitDesc": "Attracts creatures to its location. Can be deployed by hand or by submarine. Cannot be reclaimed once deployed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DoubleTank": {
+    "LegitName": "High Capacity O₂ Tank",
+    "LegitDesc": "O₂ mix. Highly-compressed breathable air.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforcedGloves": {
+    "LegitName": "Reinforced gloves",
+    "LegitDesc": "Heavy synthetic fiber gloves providing physical protection and enhanced survival in extreme temperatures.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Welder": {
+    "LegitName": "Repair tool",
+    "LegitDesc": "Multi-purpose repair tool, functional in all environments.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Seaglide": {
+    "LegitName": "Seaglide",
+    "LegitDesc": "Converts torque into thrust underwater via propeller.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Constructor": {
+    "LegitName": "Mobile vehicle bay",
+    "LegitDesc": "Fabricates vehicles from raw materials.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Transfuser": {
+    "LegitName": "Transfuser",
+    "LegitDesc": "Congrats translators, we made a game!",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Flare": {
+    "LegitName": "Flare",
+    "LegitDesc": "Disposable light source, useful for distracting certain predators.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StasisRifle": {
+    "LegitName": "Stasis rifle",
+    "LegitDesc": "Freezes physical objects in place.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BuildBot": {
+    "LegitName": "Builder drone",
+    "LegitDesc": "Tooltip_BuildBot",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PropulsionCannon": {
+    "LegitName": "Propulsion cannon",
+    "LegitDesc": "Warps gravity to pull and push objects.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Gravsphere": {
+    "LegitName": "Grav trap",
+    "LegitDesc": "Uses artificial gravity to attract light objects and small creatures.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallStorage": {
+    "LegitName": "Waterproof Locker",
+    "LegitDesc": "Small storage solution that maintains position in the water.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StasisSphere": {
+    "LegitName": "Stasis sphere",
+    "LegitDesc": "Tooltip_StasisSphere",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LaserCutter": {
+    "LegitName": "Laser cutter",
+    "LegitDesc": "Cutting device suitable for penetrating standard titanium doors.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LEDLight": {
+    "LegitName": "Light stick",
+    "LegitDesc": "Deployable lighting.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DiamondBlade": {
+    "LegitName": "Hardened blade",
+    "LegitDesc": "Diamond-hardened blade delivers higher damage.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HeatBlade": {
+    "LegitName": "Thermoblade",
+    "LegitDesc": "Cooks and sterilizes small organisms for immediate consumption.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LithiumIonBattery": {
+    "LegitName": "Lithium ion battery",
+    "LegitDesc": "High capacity battery.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlasteelTank": {
+    "LegitName": "Lightweight High Capacity Tank",
+    "LegitDesc": "Lighter build allows for enhanced manoeuvrability.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HighCapacityTank": {
+    "LegitName": "Ultra High Capacity Tank",
+    "LegitDesc": "Additional air capacity.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "UltraGlideFins": {
+    "LegitName": "Ultra glide fins",
+    "LegitDesc": "Streamline construction enhances swim speed considerably by comparison to regular fins.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SwimChargeFins": {
+    "LegitName": "Swim charge fins",
+    "LegitDesc": "Wirelessly charges your held tool while you swim.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RepulsionCannon": {
+    "LegitName": "Repulsion cannon",
+    "LegitDesc": "Applies percussive force to entities in range.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WaterFiltrationSuit": {
+    "LegitName": "Water filtration suit",
+    "LegitDesc": "Reclaims moisture from the body and provides clean, drinkable water.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerGlide": {
+    "LegitName": "Powerglide",
+    "LegitDesc": "RMB activate power surge.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CompostCreepvine": {
+    "LegitName": "Compost creepvine",
+    "LegitDesc": "Tooltip_CompostCreepvine",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ProcessUranium": {
+    "LegitName": "Process uranium",
+    "LegitDesc": "Tooltip_ProcessUranium",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorIonEnergyBlueprint": {
+    "LegitName": "PrecursorIonEnergyBlueprint",
+    "LegitDesc": "Tooltip_PrecursorIonEnergyBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FabricatorBlueprintOld": {
+    "LegitName": "FabricatorBlueprintOld",
+    "LegitDesc": "Tooltip_FabricatorBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ConstructorBlueprint": {
+    "LegitName": "Mobile vehicle bay blueprint",
+    "LegitDesc": "Plans for building a mobile vehicle bay.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsBlueprint": {
+    "LegitName": "Cyclops blueprint",
+    "LegitDesc": "Plans for building a cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FragmentAnalyzerBlueprintOld": {
+    "LegitName": "FragmentAnalyzerBlueprintOld",
+    "LegitDesc": "Tooltip_FragmentAnalyzerBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LockerBlueprint": {
+    "LegitName": "LockerBlueprint",
+    "LegitDesc": "Tooltip_LockerBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpecialHullPlateBlueprintOld": {
+    "LegitName": "SpecialHullPlateBlueprintOld",
+    "LegitDesc": "Tooltip_SpecialHullPlateBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BikemanHullPlateBlueprintOld": {
+    "LegitName": "BikemanHullPlateBlueprintOld",
+    "LegitDesc": "Tooltip_BikemanHullPlateBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EatMyDictionHullPlateBlueprintOld": {
+    "LegitName": "EatMyDictionHullPlateBlueprintOld",
+    "LegitDesc": "Tooltip_EatMyDictionHullPlateBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DevTestItemBlueprintOld": {
+    "LegitName": "DevTestItemBlueprintOld",
+    "LegitDesc": "Tooltip_DevTestItemBlueprintOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothBlueprint": {
+    "LegitName": "Seamoth blueprint",
+    "LegitDesc": "Plans for building a seamoth.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StasisRifleBlueprint": {
+    "LegitName": "Stasis rifle blueprint",
+    "LegitDesc": "Plans for building a stasis rifle.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitBlueprint": {
+    "LegitName": "Prawn suit blueprint",
+    "LegitDesc": "Plans for building an prawn suit.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TransfuserBlueprint": {
+    "LegitName": "Transfuser blueprint",
+    "LegitDesc": "Plans for building a transfuser.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TerraformerBlueprint": {
+    "LegitName": "Terraformer blueprint",
+    "LegitDesc": "Plans for building a terraformer.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforceHullBlueprint": {
+    "LegitName": "Cyclops Pressure Compensator blueprint",
+    "LegitDesc": "Plans for building a reinforced hull.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WorkbenchBlueprint": {
+    "LegitName": "Modification station blueprint",
+    "LegitDesc": "Plans for building a modification station.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PropulsionCannonBlueprint": {
+    "LegitName": "Propulsion cannon blueprint",
+    "LegitDesc": "Plans for building a propulsion cannon.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpecimenAnalyzerBlueprint": {
+    "LegitName": "Specimen analyzer blueprint",
+    "LegitDesc": "Plans for building a specimen analyzer.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BioreactorBlueprint": {
+    "LegitName": "Bioreactor blueprint",
+    "LegitDesc": "Plans for building a bioreactor.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ThermalPlantBlueprint": {
+    "LegitName": "Thermal plant blueprint",
+    "LegitDesc": "Plans for building a thermal plant.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "NuclearReactorBlueprint": {
+    "LegitName": "Nuclear reactor blueprint",
+    "LegitDesc": "Plans for building a nuclear reactor.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MoonpoolBlueprint": {
+    "LegitName": "Moonpool blueprint",
+    "LegitDesc": "Plans for building a moonpool.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FiltrationMachineBlueprint": {
+    "LegitName": "Filtration machine blueprint",
+    "LegitDesc": "Tooltip_FiltrationMachineBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TechlightBlueprint": {
+    "LegitName": "Floodlight blueprint",
+    "LegitDesc": "Plans for building a floodlight.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LEDLightBlueprint": {
+    "LegitName": "Light stick blueprint",
+    "LegitDesc": "Plans for building a light stick.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsHullBlueprint": {
+    "LegitName": "Cyclops Hull Blueprint",
+    "LegitDesc": "Plans for building a cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsBridgeBlueprint": {
+    "LegitName": "Cyclops Bridge Blueprint",
+    "LegitDesc": "Plans for building a cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsEngineBlueprint": {
+    "LegitName": "Cyclops Engine Blueprint",
+    "LegitDesc": "Plans for building a cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsDockingBayBlueprint": {
+    "LegitName": "Cyclops Docking Bay Blueprint",
+    "LegitDesc": "Plans for building a cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpotlightBlueprint": {
+    "LegitName": "SpotlightBlueprint",
+    "LegitDesc": "Tooltip_SpotlightBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadioBlueprint": {
+    "LegitName": "RadioBlueprint",
+    "LegitDesc": "Tooltip_RadioBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipCargoCrateBlueprint": {
+    "LegitName": "StarshipCargoCrateBlueprint",
+    "LegitDesc": "Tooltip_StarshipCargoCrateBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipCircuitBoxBlueprint": {
+    "LegitName": "StarshipCircuitBoxBlueprint",
+    "LegitDesc": "Tooltip_StarshipCircuitBoxBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipDeskBlueprint": {
+    "LegitName": "StarshipDeskBlueprint",
+    "LegitDesc": "Tooltip_StarshipDeskBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipChairBlueprint": {
+    "LegitName": "StarshipChairBlueprint",
+    "LegitDesc": "Tooltip_StarshipChairBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipMonitorBlueprint": {
+    "LegitName": "StarshipMonitorBlueprint",
+    "LegitDesc": "Tooltip_StarshipMonitorBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SolarPanelBlueprint": {
+    "LegitName": "SolarPanelBlueprint",
+    "LegitDesc": "Tooltip_SolarPanelBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerTransmitterBlueprint": {
+    "LegitName": "PowerTransmitterBlueprint",
+    "LegitDesc": "Tooltip_PowerTransmitterBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseUpgradeConsoleBlueprint": {
+    "LegitName": "BaseUpgradeConsoleBlueprint",
+    "LegitDesc": "Tooltip_BaseUpgradeConsoleBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseObservatoryBlueprint": {
+    "LegitName": "BaseObservatoryBlueprint",
+    "LegitDesc": "Tooltip_BaseObservatoryBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWaterParkBlueprint": {
+    "LegitName": "BaseWaterParkBlueprint",
+    "LegitDesc": "Tooltip_BaseWaterParkBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PictureFrameBlueprint": {
+    "LegitName": "PictureFrameBlueprint",
+    "LegitDesc": "Tooltip_PictureFrameBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseRoomBlueprint": {
+    "LegitName": "Multipurpose room blueprint",
+    "LegitDesc": "Tooltip_BaseRoomBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseBulkheadBlueprint": {
+    "LegitName": "Bulkhead blueprint",
+    "LegitDesc": "Tooltip_BaseBulkheadBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaglideBlueprint": {
+    "LegitName": "SeaglideBlueprint",
+    "LegitDesc": "Tooltip_SeaglideBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BatteryChargerBlueprint": {
+    "LegitName": "BatteryChargerBlueprint",
+    "LegitDesc": "Tooltip_BatteryChargerBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerCellChargerBlueprint": {
+    "LegitName": "PowerCellChargerBlueprint",
+    "LegitDesc": "Tooltip_PowerCellChargerBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FarmingTrayBlueprint": {
+    "LegitName": "FarmingTrayBlueprint",
+    "LegitDesc": "Tooltip_FarmingTrayBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SignBlueprint": {
+    "LegitName": "SignBlueprint",
+    "LegitDesc": "Tooltip_SignBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BenchBlueprint": {
+    "LegitName": "BenchBlueprint",
+    "LegitDesc": "Tooltip_BenchBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPotBlueprint": {
+    "LegitName": "PlanterPotBlueprint",
+    "LegitDesc": "Tooltip_PlanterPotBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterBoxBlueprint": {
+    "LegitName": "PlanterBoxBlueprint",
+    "LegitDesc": "Tooltip_PlanterBoxBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterShelfBlueprint": {
+    "LegitName": "PlanterShelfBlueprint",
+    "LegitDesc": "Tooltip_PlanterShelfBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AquariumBlueprint": {
+    "LegitName": "AquariumBlueprint",
+    "LegitDesc": "Tooltip_AquariumBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforcedDiveSuitBlueprint": {
+    "LegitName": "ReinforcedDiveSuitBlueprint",
+    "LegitDesc": "Tooltip_ReinforcedDiveSuitBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationSuitBlueprint": {
+    "LegitName": "RadiationSuitBlueprint",
+    "LegitDesc": "Tooltip_RadiationSuitBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WaterFiltrationSuitBlueprint": {
+    "LegitName": "Water Filtration suit Blueprint",
+    "LegitDesc": "Tooltip_WaterFiltrationSuitBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ScannerRoomBlueprint": {
+    "LegitName": "ScannerRoomBlueprint",
+    "LegitDesc": "Tooltip_ScannerRoomBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasePlanterBlueprint": {
+    "LegitName": "BasePlanterBlueprint",
+    "LegitDesc": "Tooltip_BasePlanterBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPot2Blueprint": {
+    "LegitName": "PlanterPot2Blueprint",
+    "LegitDesc": "Tooltip_PlanterPot2Blueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPot3Blueprint": {
+    "LegitName": "PlanterPot3Blueprint",
+    "LegitDesc": "Tooltip_PlanterPot3Blueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MedicalCabinetBlueprint": {
+    "LegitName": "MedicalCabinetBlueprint",
+    "LegitDesc": "Tooltip_MedicalCabinetBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseMapRoomBlueprint": {
+    "LegitName": "BaseMapRoomBlueprint",
+    "LegitDesc": "Tooltip_BaseMapRoomBlueprint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothFragment": {
+    "LegitName": "Seamoth fragment",
+    "LegitDesc": "A fragment of seamoth technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StasisRifleFragment": {
+    "LegitName": "Stasis rifle fragment",
+    "LegitDesc": "A fragment of stasis rifle technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitFragment": {
+    "LegitName": "Prawn suit fragment",
+    "LegitDesc": "A fragment of Prawn suit technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TransfuserFragment": {
+    "LegitName": "Transfuser fragment",
+    "LegitDesc": "A fragment of transfuser technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TerraformerFragment": {
+    "LegitName": "Terraformer fragment",
+    "LegitDesc": "A fragment of terraformer technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforceHullFragment": {
+    "LegitName": "Cyclops depth module fragment",
+    "LegitDesc": "A fragment of the Aurora's reinforced hull.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WorkbenchFragment": {
+    "LegitName": "Modification station fragment",
+    "LegitDesc": "A damaged section of one of the Aurora's equipment modification stations.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PropulsionCannonFragment": {
+    "LegitName": "Propulsion cannon fragment",
+    "LegitDesc": "A fragment of propulsion cannon technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BioreactorFragment": {
+    "LegitName": "Bioreactor fragment",
+    "LegitDesc": "A fragment of bioreactor technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ThermalPlantFragment": {
+    "LegitName": "Thermal Plant fragment",
+    "LegitDesc": "A fragment of thermal plant technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "NuclearReactorFragment": {
+    "LegitName": "Nuclear reactor fragment",
+    "LegitDesc": "A fragment of nuclear reactor technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MoonpoolFragment": {
+    "LegitName": "Moonpool fragment",
+    "LegitDesc": "A fragment of moonpool technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseFiltrationMachineFragment": {
+    "LegitName": "Filtration machine fragment",
+    "LegitDesc": "Tooltip_BaseFiltrationMachineFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsHullFragment": {
+    "LegitName": "Cyclops hull fragment",
+    "LegitDesc": "Tooltip_CyclopsHullFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsBridgeFragment": {
+    "LegitName": "Cyclops bridge fragment",
+    "LegitDesc": "Tooltip_CyclopsBridgeFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsEngineFragment": {
+    "LegitName": "Cyclops engine fragment",
+    "LegitDesc": "Tooltip_CyclopsEngineFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsDockingBayFragment": {
+    "LegitName": "Cyclops docking bay fragment",
+    "LegitDesc": "Tooltip_CyclopsDockingBayFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaglideFragment": {
+    "LegitName": "Seaglide fragment",
+    "LegitDesc": "Tooltip_SeaglideFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ConstructorFragment": {
+    "LegitName": "Mobile Vehicle Bay fragment",
+    "LegitDesc": "Tooltip_ConstructorFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SolarPanelFragment": {
+    "LegitName": "Solar panel fragment",
+    "LegitDesc": "Tooltip_SolarPanelFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerTransmitterFragment": {
+    "LegitName": "Power transmitter fragment",
+    "LegitDesc": "Tooltip_PowerTransmitterFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseUpgradeConsoleFragment": {
+    "LegitName": "Vehicle upgrade console fragment",
+    "LegitDesc": "Tooltip_BaseUpgradeConsoleFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseObservatoryFragment": {
+    "LegitName": "Observatory fragment",
+    "LegitDesc": "Tooltip_BaseObservatoryFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWaterParkFragment": {
+    "LegitName": "Alien containment fragment",
+    "LegitDesc": "Tooltip_BaseWaterParkFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadioFragment": {
+    "LegitName": "Radio fragment",
+    "LegitDesc": "Tooltip_RadioFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseRoomFragment": {
+    "LegitName": "Multipurpose room fragment",
+    "LegitDesc": "Tooltip_BaseRoomFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseBulkheadFragment": {
+    "LegitName": "Bulkhead fragment",
+    "LegitDesc": "Tooltip_BaseBulkheadFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BatteryChargerFragment": {
+    "LegitName": "Battery charger fragment",
+    "LegitDesc": "A fragment of battery charger technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerCellChargerFragment": {
+    "LegitName": "Power cell charger fragment",
+    "LegitDesc": "A fragment of power cell charger technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ScannerRoomFragment": {
+    "LegitName": "ScannerRoomFragment",
+    "LegitDesc": "Tooltip_ScannerRoomFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpecimenAnalyzerFragment": {
+    "LegitName": "Specimen analyzer fragment",
+    "LegitDesc": "Tooltip_SpecimenAnalyzerFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FarmingTrayFragment": {
+    "LegitName": "Plant bed fragment",
+    "LegitDesc": "Tooltip_FarmingTrayFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SignFragment": {
+    "LegitName": "Sign fragment",
+    "LegitDesc": "Tooltip_SignFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PictureFrameFragment": {
+    "LegitName": "Picture frame fragment",
+    "LegitDesc": "Tooltip_PictureFrameFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BenchFragment": {
+    "LegitName": "Bench fragment",
+    "LegitDesc": "Tooltip_BenchFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPotFragment": {
+    "LegitName": "Plant pot fragment",
+    "LegitDesc": "Tooltip_PlanterPotFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterBoxFragment": {
+    "LegitName": "Indoor growbed fragment",
+    "LegitDesc": "Tooltip_PlanterBoxFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterShelfFragment": {
+    "LegitName": "Wall mounted plant pot fragment",
+    "LegitDesc": "Tooltip_PlanterShelfFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AquariumFragment": {
+    "LegitName": "Aquarium fragment",
+    "LegitDesc": "Tooltip_AquariumFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReinforcedDiveSuitFragment": {
+    "LegitName": "Reinforced dive suit fragment",
+    "LegitDesc": "Tooltip_ReinforcedDiveSuitFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationSuitFragment": {
+    "LegitName": "Radiation suit fragment",
+    "LegitDesc": "Tooltip_RadiationSuitFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WaterFiltrationSuitFragment": {
+    "LegitName": "WaterFiltrationSuitFragment",
+    "LegitDesc": "Tooltip_WaterFiltrationSuitFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BuilderFragment": {
+    "LegitName": "Builder fragment",
+    "LegitDesc": "Tooltip_BuilderFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LEDLightFragment": {
+    "LegitName": "Light stick fragment",
+    "LegitDesc": "Tooltip_LEDLightFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TechlightFragment": {
+    "LegitName": "Floodlight fragment",
+    "LegitDesc": "Tooltip_TechlightFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpotlightFragment": {
+    "LegitName": "SpotlightFragment",
+    "LegitDesc": "Tooltip_SpotlightFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseMapRoomFragment": {
+    "LegitName": "Scanner room fragment",
+    "LegitDesc": "Tooltip_BaseMapRoomFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseBioReactorFragment": {
+    "LegitName": "Bioreactor fragment",
+    "LegitDesc": "A fragment of bioreactor technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseNuclearReactorFragment": {
+    "LegitName": "Nuclear reactor fragment",
+    "LegitDesc": "A fragment of nuclear reactor technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LaserCutterFragment": {
+    "LegitName": "Laser cutter fragment",
+    "LegitDesc": "Tooltip_LaserCutterFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BeaconFragment": {
+    "LegitName": "Beacon fragment",
+    "LegitDesc": "Tooltip_BeaconFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GravSphereFragment": {
+    "LegitName": "Grav trap fragment",
+    "LegitDesc": "Tooltip_GravSphereFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseLargeRoomFragment": {
+    "LegitName": "Large room fragment",
+    "LegitDesc": "Tooltip_BaseLargeRoomFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseLargeGlassDomeFragment": {
+    "LegitName": "Large Room Glass Dome Fragment",
+    "LegitDesc": "Tooltip_BaseLargeGlassDomeFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseGlassDomeFragment": {
+    "LegitName": "BaseGlassDomeFragment",
+    "LegitDesc": "Tooltip_BaseGlassDomeFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SafeShallowsEgg": {
+    "LegitName": "Safe Shallows egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "KelpForestEgg": {
+    "LegitName": "Kelp Forest egg",
+    "LegitDesc": "Unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GrassyPlateausEgg": {
+    "LegitName": "Grassy Plateaus egg",
+    "LegitDesc": "Unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GrandReefsEgg": {
+    "LegitName": "Grand Reefs egg",
+    "LegitDesc": "Unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MushroomForestEgg": {
+    "LegitName": "Mushroom Forest egg",
+    "LegitDesc": "A mysterious egg",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "KooshZoneEgg": {
+    "LegitName": "Bulb Zone egg",
+    "LegitDesc": "Unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TwistyBridgesEgg": {
+    "LegitName": "Twisty Bridges egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaZoneEgg": {
+    "LegitName": "Lava Zone egg",
+    "LegitDesc": "Unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StalkerEgg": {
+    "LegitName": "Stalker egg",
+    "LegitDesc": "Stalkers hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackEgg": {
+    "LegitName": "Reefback egg",
+    "LegitDesc": "Incredibly, Reefbacks hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpadefishEgg": {
+    "LegitName": "Spadefish egg",
+    "LegitDesc": "Spadefish hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RabbitrayEgg": {
+    "LegitName": "Rabbit ray egg",
+    "LegitDesc": "Rabbit Rays hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MesmerEgg": {
+    "LegitName": "Mesmer egg",
+    "LegitDesc": "Mesmers hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JumperEgg": {
+    "LegitName": "Shuttlebug egg",
+    "LegitDesc": "Shuttlebugs hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SandsharkEgg": {
+    "LegitName": "Sand shark egg",
+    "LegitDesc": "Sand sharks hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JellyrayEgg": {
+    "LegitName": "Jellyray egg",
+    "LegitDesc": "Jellyrays hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BonesharkEgg": {
+    "LegitName": "Boneshark egg",
+    "LegitDesc": "Bonesharks hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrabsnakeEgg": {
+    "LegitName": "Crabsnake egg",
+    "LegitDesc": "Crabsnakes hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShockerEgg": {
+    "LegitName": "Ampeel egg",
+    "LegitDesc": "Ampeels hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GasopodEgg": {
+    "LegitName": "Gasopod egg",
+    "LegitDesc": "Gasopods hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RabbitrayEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JellyrayEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StalkerEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JumperEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BonesharkEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GasopodEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MesmerEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SandsharkEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShockerEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GenericEgg": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "Tooltip_GenericEgg",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrashEgg": {
+    "LegitName": "Crashfish egg",
+    "LegitDesc": "Crashfish hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrashEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrabsquidEgg": {
+    "LegitName": "Crabsquid egg",
+    "LegitDesc": "Crabsquid hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrabsquidEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CutefishEgg": {
+    "LegitName": "Cuddlefish egg",
+    "LegitDesc": "Cuddlefish hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CutefishEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaLizardEgg": {
+    "LegitName": "Lava Lizard egg",
+    "LegitDesc": "Lava Lizards hatch from these.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaLizardEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrabsnakeEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpadefishEggUndiscovered": {
+    "LegitName": "Creature egg",
+    "LegitDesc": "An unidentified egg.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackShell": {
+    "LegitName": "Cartilaginous Shell",
+    "LegitDesc": "CORRUPTED",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackTissue": {
+    "LegitName": "Cartilaginous Tissue",
+    "LegitDesc": "CORRUPTED",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackAdvancedStructure": {
+    "LegitName": "Chelonian Structure",
+    "LegitDesc": "CORRUPTED",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackDNA": {
+    "LegitName": "Reefback DNA sample",
+    "LegitDesc": "Reefback DNA",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Workbench": {
+    "LegitName": "Modification station",
+    "LegitDesc": "Advanced fabricator for modification of survival equipment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HullReinforcementModule": {
+    "LegitName": "Cyclops pressure compensator",
+    "LegitDesc": "Increases safe diving depth by providing dedicated computational power for the ship's hull stabilizers.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Fabricator": {
+    "LegitName": "Fabricator",
+    "LegitDesc": "Basic survival fabricator. Atomically rearranges raw resources into useful objects.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Aquarium": {
+    "LegitName": "Aquarium",
+    "LegitDesc": "Self-sustaining aquatic habitat.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Locker": {
+    "LegitName": "Locker",
+    "LegitDesc": "Large, freestanding storage.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Spotlight": {
+    "LegitName": "Spotlight",
+    "LegitDesc": "Fixed-position lighting solution.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DiveHatch": {
+    "LegitName": "Dive hatch",
+    "LegitDesc": "Tooltip_DiveHatch",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CurrentGenerator": {
+    "LegitName": "Current generator",
+    "LegitDesc": "Uses artificial gravity to generate convection current.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FragmentAnalyzer": {
+    "LegitName": "Fragment Analyzer",
+    "LegitDesc": "Analyze fragments to make blueprints",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpecialHullPlate": {
+    "LegitName": "Hull plate",
+    "LegitDesc": "Limited edition numbered hull plate (thank you!)",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BikemanHullPlate": {
+    "LegitName": "Bikeman Hull Plate",
+    "LegitDesc": "https://www.youtube.com/BikestMan",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EatMyDictionHullPlate": {
+    "LegitName": "Eat My Diction Hull Plate",
+    "LegitDesc": "https://www.youtube.com/EatMyDiction1",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DevTestItem": {
+    "LegitName": "Dev test item",
+    "LegitDesc": "GNU Terry Pratchett",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpecimenAnalyzer": {
+    "LegitName": "Specimen Analyzer",
+    "LegitDesc": "Studies Specimens to make blueprints",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HullReinforcementModule2": {
+    "LegitName": "Base Cyclops Reinforcement Module",
+    "LegitDesc": "CORRUPTED",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HullReinforcementModule3": {
+    "LegitName": "Chelonian Hull reinforcement module",
+    "LegitDesc": "CORRUPTED",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerUpgradeModule": {
+    "LegitName": "Cyclops engine efficiency module",
+    "LegitDesc": "Recycles heat by-product to increase engine efficiency.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SolarPanel": {
+    "LegitName": "Solar panel",
+    "LegitDesc": "Powers habitat oxygen generation and other habitat modules. Converts available sunlight into low power electrical energy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Sign": {
+    "LegitName": "Sign",
+    "LegitDesc": "Sign post with configurable text.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerTransmitter": {
+    "LegitName": "Power transmitter",
+    "LegitDesc": "Extends the range of a power source.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Accumulator": {
+    "LegitName": "Accumulator",
+    "LegitDesc": "Stores power.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bioreactor": {
+    "LegitName": "Deprecated",
+    "LegitDesc": "Composts organic matter into electrical energy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ThermalPlant": {
+    "LegitName": "Thermal plant",
+    "LegitDesc": "Converts heat to energy at medium efficiency.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "NuclearReactor": {
+    "LegitName": "Deprecated",
+    "LegitDesc": "Processes nuclear reactor rods for huge power supply.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallLocker": {
+    "LegitName": "Wall locker",
+    "LegitDesc": "Small, wall-mounted storage solution.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bench": {
+    "LegitName": "Bench",
+    "LegitDesc": "Simple metal relaxation appliance. Conserves energy when resting.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PictureFrame": {
+    "LegitName": "Picture Frame",
+    "LegitDesc": "Wall-mounted frame, upload desired image from compatible PDA photo galleries.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPot": {
+    "LegitName": "Basic plant pot",
+    "LegitDesc": "Titanium pot containing synthetic soil.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterBox": {
+    "LegitName": "Indoor growbed",
+    "LegitDesc": "Artificial plant bed, suitable for interior use only.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterShelf": {
+    "LegitName": "Plant shelf",
+    "LegitDesc": "Wall-mounted plant pot.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FarmingTray": {
+    "LegitName": "Exterior growbed",
+    "LegitDesc": "Artificial plant bed, suitable for use on land or underwater.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FiltrationMachine": {
+    "LegitName": "Water filtration machine",
+    "LegitDesc": "Water filtration machine.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Techlight": {
+    "LegitName": "Floodlight",
+    "LegitDesc": "Industrial lighting designed for all environments.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Radio": {
+    "LegitName": "Radio",
+    "LegitDesc": "Receive short-range communications.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPot2": {
+    "LegitName": "Composite plant pot",
+    "LegitDesc": "Designer pot containing synthetic soil.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlanterPot3": {
+    "LegitName": "Chic plant pot",
+    "LegitDesc": "Upmarket pot containing synthetic soil.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MedicalCabinet": {
+    "LegitName": "Medical Kit Fabricator",
+    "LegitDesc": "Fabricates a medical kit every 30 minutes.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsHullModule1": {
+    "LegitName": "Cyclops depth module MK1",
+    "LegitDesc": "Increases safe diving depth. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsHullModule2": {
+    "LegitName": "Cyclops depth module MK2",
+    "LegitDesc": "Increases safe diving depth considerably. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SingleWallShelf": {
+    "LegitName": "Single wall shelf",
+    "LegitDesc": "Single wall shelf.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WallShelves": {
+    "LegitName": "Wall shelves",
+    "LegitDesc": "Wall shelves.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bed1": {
+    "LegitName": "Basic Double bed",
+    "LegitDesc": "A double bed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bed2": {
+    "LegitName": "Quilted double bed",
+    "LegitDesc": "A double bed with a beautiful gray linen spread.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "NarrowBed": {
+    "LegitName": "Single bed",
+    "LegitDesc": "A single bed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BatteryCharger": {
+    "LegitName": "Battery charger",
+    "LegitDesc": "Can charge multiple batteries simultaneously.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerCellCharger": {
+    "LegitName": "Power cell charger",
+    "LegitDesc": "Can charge multiple power cells simultaneously.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Incubator": {
+    "LegitName": "Incubator",
+    "LegitDesc": "Incubation machine.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HatchingEnzymes": {
+    "LegitName": "Hatching enzymes",
+    "LegitDesc": "An organic substance derived from plants found in the emperor's natural breeding grounds. Designed to trigger a hatching response.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EnyzmeCloud": {
+    "LegitName": "Enyzme cloud",
+    "LegitDesc": "Tooltip_EnyzmeCloud",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EnzymeCureBall": {
+    "LegitName": "Concentrated Enzyme 42",
+    "LegitDesc": "A concentrated mass of Enzyme 42.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Centrifuge": {
+    "LegitName": "Centrifuge",
+    "LegitDesc": "Centrifuge.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsShieldModule": {
+    "LegitName": "Cyclops shield generator",
+    "LegitDesc": "Creates a temporary barrier around the sub, rendering it invulnerable for a brief time.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsSonarModule": {
+    "LegitName": "Cyclops sonar upgrade",
+    "LegitDesc": "Scans the terrain outside the cyclops and displays it on a 3D map in the cockpit.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsSeamothRepairModule": {
+    "LegitName": "Cyclops docking bay repair module",
+    "LegitDesc": "Repairs vehicles docked with the cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsDecoyModule": {
+    "LegitName": "Cyclops Decoy Tube Upgrade",
+    "LegitDesc": "Increases the capacity of the cyclops' decoy loading tube.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsFireSuppressionModule": {
+    "LegitName": "Cyclops fire suppression system",
+    "LegitDesc": "Installs a fire suppression system on the Cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsFabricator": {
+    "LegitName": "Fabricator",
+    "LegitDesc": "Tooltip_CyclopsFabricator",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsThermalReactorModule": {
+    "LegitName": "Cyclops thermal reactor module",
+    "LegitDesc": "Converts environmental heat energy into electrical power for use by the cyclops.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CyclopsHullModule3": {
+    "LegitName": "Cyclops depth module MK3",
+    "LegitDesc": "Increases diving depth to maximum. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipCargoCrate": {
+    "LegitName": "Cargo crate",
+    "LegitDesc": "A cargo crate salvaged from the Aurora.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipCircuitBox": {
+    "LegitName": "Circuit box",
+    "LegitDesc": "Complex wiring box.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipDesk": {
+    "LegitName": "Desk",
+    "LegitDesc": "Common starship work desk.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipChair": {
+    "LegitName": "Swivel chair",
+    "LegitDesc": "Turns 360 degrees.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipMonitor": {
+    "LegitName": "Monitor",
+    "LegitDesc": "ERROR",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipChair2": {
+    "LegitName": "Office chair",
+    "LegitDesc": "Relaxing and confidence building.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipChair3": {
+    "LegitName": "Command chair",
+    "LegitDesc": "Commandeering.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LuggageBag": {
+    "LegitName": "Carry-all",
+    "LegitDesc": "Common bag for transporting personal items.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ArcadeGorgetoy": {
+    "LegitName": "Arcade gorge toy",
+    "LegitDesc": "Comforting.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabEquipment1": {
+    "LegitName": "Microscope (non-functional)",
+    "LegitDesc": "Non-functional laboratory equipment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabEquipment2": {
+    "LegitName": "Fluid analyzer (non-functional)",
+    "LegitDesc": "Non-functional laboratory equipment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabEquipment3": {
+    "LegitName": "Sample analyzer (non-functional)",
+    "LegitDesc": "Non-functional laboratory equipment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CoffeeVendingMachine": {
+    "LegitName": "Coffee vending machine",
+    "LegitDesc": "Synthesizes hydrating, caffeine-free coffee.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BarTable": {
+    "LegitName": "Bar table",
+    "LegitDesc": "Round glass table.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Cap1": {
+    "LegitName": "Gray cap",
+    "LegitDesc": "Gray cap. Incompatible with protective environment suits.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Cap2": {
+    "LegitName": "Blue cap",
+    "LegitDesc": "Blue cap. Incompatible with protective environment suits.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabContainer": {
+    "LegitName": "Large sample flask",
+    "LegitDesc": "Useless glass container.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabContainer2": {
+    "LegitName": "Small sample flask",
+    "LegitDesc": "A variation on a useless glass container.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabContainer3": {
+    "LegitName": "Cylindrical sample flask",
+    "LegitDesc": "A particularly useless glass container.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Trashcans": {
+    "LegitName": "Trash can",
+    "LegitDesc": "Permanently deconstruct unwanted items and safely release their constituent atoms into the atmosphere.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabTrashcan": {
+    "LegitName": "Nuclear waste disposal",
+    "LegitDesc": "Used to dispose of nuclear waste.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VendingMachine": {
+    "LegitName": "Vending machine",
+    "LegitDesc": "Vending machine.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LabCounter": {
+    "LegitName": "Counter",
+    "LegitDesc": "Counter.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StarshipSouvenir": {
+    "LegitName": "Aurora miniature",
+    "LegitDesc": "A miniature of the Aurora.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PosterAurora": {
+    "LegitName": "Aurora poster",
+    "LegitDesc": "Aurora Poster.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PosterExoSuit1": {
+    "LegitName": "Prawn suit poster - Land",
+    "LegitDesc": "Prawn suit poster - Land.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PosterExoSuit2": {
+    "LegitName": "Prawn suit poster - Sea",
+    "LegitDesc": "Prawn suit poster - Sea.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PosterKitty": {
+    "LegitName": "Keep calm poster",
+    "LegitDesc": "Keep calm poster.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ToyCar": {
+    "LegitName": "Toy car",
+    "LegitDesc": "An unusual survival tool.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Seamoth": {
+    "LegitName": "Seamoth",
+    "LegitDesc": "One-person sea-and-space vehicle.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Exosuit": {
+    "LegitName": "Prawn suit",
+    "LegitDesc": "Epic mech suit designed for navigating challenging environments on foot.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrashedShip": {
+    "LegitName": "Aurora",
+    "LegitDesc": "Tooltip_CrashedShip",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Cyclops": {
+    "LegitName": "Cyclops",
+    "LegitDesc": "Vast industrial-use submarine.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Audiolog": {
+    "LegitName": "Audiolog",
+    "LegitDesc": "Tooltip_Audiolog",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Signal": {
+    "LegitName": "Signal",
+    "LegitDesc": "Co-ordinates.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothReinforcementModule": {
+    "LegitName": "Seamoth depth module",
+    "LegitDesc": "Hardens the Seamoth chassis under extreme pressures.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehiclePowerUpgradeModule": {
+    "LegitName": "Engine efficiency module",
+    "LegitDesc": "Recycles heat by-product to minimize power inefficiencies. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothSolarCharge": {
+    "LegitName": "Seamoth solar charger",
+    "LegitDesc": "Recharges the Seamoth's power cell while in sunlight.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehicleStorageModule": {
+    "LegitName": "Storage module",
+    "LegitDesc": "A small storage locker. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothElectricalDefense": {
+    "LegitName": "Seamoth perimeter defense system",
+    "LegitDesc": "Generates a localized electric field designed to ward off aggressive fauna.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehicleArmorPlating": {
+    "LegitName": "Hull reinforcement",
+    "LegitDesc": "Preemptively hardens the chassis before collision, eliminating damage under normal conditions. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LootSensorMetal": {
+    "LegitName": "Metal sensor",
+    "LegitDesc": "Detects and displays local metal signatures. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LootSensorLithium": {
+    "LegitName": "Lithium sensor",
+    "LegitDesc": "Detects and displays local lithium signatures. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LootSensorFragment": {
+    "LegitName": "Fragment sensor",
+    "LegitDesc": "Detects and displays local fragment signatures. Seamoth/Prawn compatible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothTorpedoModule": {
+    "LegitName": "Seamoth torpedo system",
+    "LegitDesc": "A standard payload delivery system adapted to fire torpedoes.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeamothSonarModule": {
+    "LegitName": "Seamoth sonar",
+    "LegitDesc": "A dedicated system for detecting and displaying topographical data on the HUD.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WhirlpoolTorpedo": {
+    "LegitName": "Vortex torpedo",
+    "LegitDesc": "Generates a localized gravity distortion. Load this to a vehicle torpedo bay.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehicleHullModule1": {
+    "LegitName": "Seamoth depth module MK1",
+    "LegitDesc": "Enhances safe diving depth. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehicleHullModule2": {
+    "LegitName": "Seamoth depth module MK2",
+    "LegitDesc": "Enhances safe diving depth considerably. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "VehicleHullModule3": {
+    "LegitName": "Seamoth depth module MK3",
+    "LegitDesc": "Enhances diving depth to maximum. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitJetUpgradeModule": {
+    "LegitName": "Prawn suit jump jet upgrade",
+    "LegitDesc": "Powerful rear-mounted jets propel the prawn suit into the air.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitDrillArmModule": {
+    "LegitName": "Prawn suit drill arm",
+    "LegitDesc": "Enables the mining of large resource deposits.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitThermalReactorModule": {
+    "LegitName": "Prawn suit thermal reactor",
+    "LegitDesc": "Recharges power cells in hot areas. Doesn't stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitClawArmModule": {
+    "LegitName": "Prawn suit claw arm",
+    "LegitDesc": "Your arms, enhanced!",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GasTorpedo": {
+    "LegitName": "Gas torpedo",
+    "LegitDesc": "Releases a cloud of toxic gas. Load this to a vehicle torpedo bay.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitPropulsionArmModule": {
+    "LegitName": "Prawn suit propulsion cannon",
+    "LegitDesc": "Industrial-strength propulsion cannon designed to fit the Alterra prawn suit",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitGrapplingArmModule": {
+    "LegitName": "Prawn suit grappling arm",
+    "LegitDesc": "Fires a grappling hook for enhanced environment traversal.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitTorpedoArmModule": {
+    "LegitName": "Prawn suit torpedo arm",
+    "LegitDesc": "A standard payload delivery system adapted to fire torpedoes.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitDrillArmFragment": {
+    "LegitName": "Prawn suit drill arm fragment",
+    "LegitDesc": "A fragment of prawn suit drill arm technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitPropulsionArmFragment": {
+    "LegitName": "Prawn suit propulsion arm fragment",
+    "LegitDesc": "A fragment of prawn suit propulsion arm technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitGrapplingArmFragment": {
+    "LegitName": "Prawn suit grappling arm fragment",
+    "LegitDesc": "A fragment of prawn suit grappling arm technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitTorpedoArmFragment": {
+    "LegitName": "Prawn suit torpedo arm fragment",
+    "LegitDesc": "A fragment of prawn suit torpedo arm technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExosuitClawArmFragment": {
+    "LegitName": "Prawn suit fragment",
+    "LegitDesc": "Tooltip_ExosuitClawArmFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExoHullModule1": {
+    "LegitName": "Prawn suit depth module MK1",
+    "LegitDesc": "Enhances safe diving depth. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ExoHullModule2": {
+    "LegitName": "Prawn suit depth module MK2",
+    "LegitDesc": "Enhances diving depth to maximum. Does not stack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MapRoomUpgradeScanRange": {
+    "LegitName": "Scanner room range upgrade",
+    "LegitDesc": "Enhances scanner room range.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MapRoomUpgradeScanSpeed": {
+    "LegitName": "Scanner room speed upgrade",
+    "LegitDesc": "Enhances speed of scanner room functionality.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Creepvine": {
+    "LegitName": "Creepvine",
+    "LegitDesc": "Local flora found growing in shallow, sandy areas.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HoleFish": {
+    "LegitName": "Holefish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Jumper": {
+    "LegitName": "Shuttlebug",
+    "LegitDesc": "Common scavenger, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CreepvineSeedCluster": {
+    "LegitName": "Creepvine seed cluster",
+    "LegitDesc": "Indigenous seeds with high silicone and oil content.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Peeper": {
+    "LegitName": "Peeper",
+    "LegitDesc": "Edible prey fish, high calorie count.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Oculus": {
+    "LegitName": "Oculus",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RabbitRay": {
+    "LegitName": "Rabbit ray",
+    "LegitDesc": "Ray found in shallow waters, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GarryFish": {
+    "LegitName": "Garryfish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Slime": {
+    "LegitName": "Slime",
+    "LegitDesc": "Tooltip_Slime",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Crash": {
+    "LegitName": "Crashfish",
+    "LegitDesc": "Explosive prey fish, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Boomerang": {
+    "LegitName": "Boomerang",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaLarva": {
+    "LegitName": "Lava larva",
+    "LegitDesc": "Attracted to electrical energy sources. Eats electrical energy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Stalker": {
+    "LegitName": "Stalker",
+    "LegitDesc": "Common shark-like predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Eyeye": {
+    "LegitName": "Eyeye",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bloom": {
+    "LegitName": "Bloom",
+    "LegitDesc": "Tooltip_Bloom",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bladderfish": {
+    "LegitName": "Bladderfish",
+    "LegitDesc": "Unique outer membrane has potential as a natural water filter.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Hoverfish": {
+    "LegitName": "Hoverfish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Jellyray": {
+    "LegitName": "Jellyray",
+    "LegitDesc": "Docile, deep-sea ray, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Reefback": {
+    "LegitName": "Reefback",
+    "LegitDesc": "Large herbivorous lifeform, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Reginald": {
+    "LegitName": "Reginald",
+    "LegitDesc": "Edible prey fish, high calorie count.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Spadefish": {
+    "LegitName": "Spadefish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Grabcrab": {
+    "LegitName": "Grabcrab",
+    "LegitDesc": "Tooltip_Grabcrab",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Floater": {
+    "LegitName": "Floater",
+    "LegitDesc": "Composed of multiple organisms in symbiosis. Lifecycle unknown.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Gasopod": {
+    "LegitName": "Gasopod",
+    "LegitDesc": "Gaseous herbivore, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Sandshark": {
+    "LegitName": "Sand shark",
+    "LegitDesc": "Stealthy predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Player": {
+    "LegitName": "Player",
+    "LegitDesc": "Tooltip_Player",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Bleeder": {
+    "LegitName": "Bleeder",
+    "LegitDesc": "Tooltip_Bleeder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Rockgrub": {
+    "LegitName": "Rockgrub",
+    "LegitDesc": "Tooltip_Rockgrub",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrashHome": {
+    "LegitName": "Sulfur plant",
+    "LegitDesc": "Tooltip_CrashHome",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CreepvinePiece": {
+    "LegitName": "Creepvine sample",
+    "LegitDesc": "Silicone-based plant material.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GasPod": {
+    "LegitName": "Gas pod",
+    "LegitDesc": "An acidic compound produced by the gasopod. May be re-purposed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Hoopfish": {
+    "LegitName": "Hoopfish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HoopfishSchool": {
+    "LegitName": "Hoopfish school",
+    "LegitDesc": "Tooltip_HoopfishSchool",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RockPuncher": {
+    "LegitName": "Rock puncher",
+    "LegitDesc": "Tooltip_RockPuncher",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BoneShark": {
+    "LegitName": "Boneshark",
+    "LegitDesc": "Armored shark-like predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Mesmer": {
+    "LegitName": "Mesmer",
+    "LegitDesc": "Small, mesmerizing predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaTreader": {
+    "LegitName": "Sea treader",
+    "LegitDesc": "Tooltip_SeaTreader",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaEmperor": {
+    "LegitName": "Sea emperor leviathan",
+    "LegitDesc": "Tooltip_SeaEmperor",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Cutefish": {
+    "LegitName": "Cuddlefish",
+    "LegitDesc": "A curious species, hatched from an egg in alien containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Crabsnake": {
+    "LegitName": "Crabsnake",
+    "LegitDesc": "Aggressive eel-like organism , raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReaperLeviathan": {
+    "LegitName": "Reaper leviathan",
+    "LegitDesc": "Tooltip_ReaperLeviathan",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CaveCrawler": {
+    "LegitName": "Cave crawler",
+    "LegitDesc": "Tooltip_CaveCrawler",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Skyray": {
+    "LegitName": "Skyray",
+    "LegitDesc": "Tooltip_Skyray",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Biter": {
+    "LegitName": "Biter",
+    "LegitDesc": "Tooltip_Biter",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SkyrayNonRoosting": {
+    "LegitName": "Skyray",
+    "LegitDesc": "Tooltip_SkyrayNonRoosting",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Shocker": {
+    "LegitName": "Ampeel",
+    "LegitDesc": "Electrified predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Spinefish": {
+    "LegitName": "Spinefish",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Shuttlebug": {
+    "LegitName": "Blood crawler",
+    "LegitDesc": "Tooltip_Shuttlebug",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Blighter": {
+    "LegitName": "Blighter",
+    "LegitDesc": "Tooltip_Blighter",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Warper": {
+    "LegitName": "Warper",
+    "LegitDesc": "Tooltip_Warper",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CrabSquid": {
+    "LegitName": "Crabsquid",
+    "LegitDesc": "Complex deep-sea predator, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaLizard": {
+    "LegitName": "Lava lizard",
+    "LegitDesc": "Predator adapted to volcanic environments, raised in containment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpineEel": {
+    "LegitName": "River prowler",
+    "LegitDesc": "Tooltip_SpineEel",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaDragon": {
+    "LegitName": "Sea dragon leviathan",
+    "LegitDesc": "Vast leviathan with aggressive tendencies.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaBoomerang": {
+    "LegitName": "Magmarang",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LavaEyeye": {
+    "LegitName": "Red eyeye",
+    "LegitDesc": "Small, edible prey fish.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaEmperorBaby": {
+    "LegitName": "Sea emperor juvenile",
+    "LegitDesc": "Tooltip_SeaEmperorBaby",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WarperSpawner": {
+    "LegitName": "Warper",
+    "LegitDesc": "Tooltip_WarperSpawner",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GhostRayBlue": {
+    "LegitName": "Ghostray",
+    "LegitDesc": "Tooltip_GhostRayBlue",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GhostRayRed": {
+    "LegitName": "Crimson ray",
+    "LegitDesc": "Tooltip_GhostRayRed",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReefbackBaby": {
+    "LegitName": "Reefback baby",
+    "LegitDesc": "Tooltip_ReefbackBaby",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorDroid": {
+    "LegitName": "Alien robot",
+    "LegitDesc": "Tooltip_PrecursorDroid",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GhostLeviathan": {
+    "LegitName": "Ghost Leviathan",
+    "LegitDesc": "Tooltip_GhostLeviathan",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaEmperorLeviathan": {
+    "LegitName": "Sea emperor leviathan",
+    "LegitDesc": "Tooltip_SeaEmperorLeviathan",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaEmperorJuvenile": {
+    "LegitName": "Juvenile sea emperor",
+    "LegitDesc": "Tooltip_SeaEmperorJuvenile",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GhostLeviathanJuvenile": {
+    "LegitName": "Ghost leviathan juvenile",
+    "LegitDesc": "Tooltip_GhostLeviathanJuvenile",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HoleFishAnalysis": {
+    "LegitName": "HoleFishAnalysis",
+    "LegitDesc": "Tooltip_HoleFishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PeeperAnalysis": {
+    "LegitName": "PeeperAnalysis",
+    "LegitDesc": "Tooltip_PeeperAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BladderfishAnalysis": {
+    "LegitName": "BladderfishAnalysis",
+    "LegitDesc": "Tooltip_BladderfishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GarryFishAnalysis": {
+    "LegitName": "GarryFishAnalysis",
+    "LegitDesc": "Tooltip_GarryFishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HoverfishAnalysis": {
+    "LegitName": "HoverfishAnalysis",
+    "LegitDesc": "Tooltip_HoverfishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReginaldAnalysis": {
+    "LegitName": "ReginaldAnalysis",
+    "LegitDesc": "Tooltip_ReginaldAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpadefishAnalysis": {
+    "LegitName": "SpadefishAnalysis",
+    "LegitDesc": "Tooltip_SpadefishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BoomerangAnalysis": {
+    "LegitName": "BoomerangAnalysis",
+    "LegitDesc": "Tooltip_BoomerangAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EyeyeAnalysis": {
+    "LegitName": "EyeyeAnalysis",
+    "LegitDesc": "Tooltip_EyeyeAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OculusAnalysis": {
+    "LegitName": "OculusAnalysis",
+    "LegitDesc": "Tooltip_OculusAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HoopfishAnalysis": {
+    "LegitName": "HoopfishAnalysis",
+    "LegitDesc": "Tooltip_HoopfishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AnalysisTreeOld": {
+    "LegitName": "AnalysisTreeOld",
+    "LegitDesc": "Tooltip_AnalysisTreeOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpinefishAnalysis": {
+    "LegitName": "SpinefishAnalysis",
+    "LegitDesc": "Tooltip_SpinefishAnalysis",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PlantPlaceholder": {
+    "LegitName": "PlantPlaceholder",
+    "LegitDesc": "Tooltip_PlantPlaceholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BallClusters": {
+    "LegitName": "Treespawn",
+    "LegitDesc": "Tooltip_BallClusters",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BarnacleSuckers": {
+    "LegitName": "Tree leech",
+    "LegitDesc": "Tooltip_BarnacleSuckers",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueBarnacle": {
+    "LegitName": "Blue barnacle",
+    "LegitDesc": "Tooltip_BlueBarnacle",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueBarnacleCluster": {
+    "LegitName": "Blue barnacle cluster",
+    "LegitDesc": "Tooltip_BlueBarnacleCluster",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueCoralTubes": {
+    "LegitName": "Jordi's Tung",
+    "LegitDesc": "Tooltip_BlueCoralTubes",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedGrass": {
+    "LegitName": "Red grass",
+    "LegitDesc": "Tooltip_RedGrass",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GreenGrass": {
+    "LegitName": "Green grass",
+    "LegitDesc": "Tooltip_GreenGrass",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Mohawk": {
+    "LegitName": "Mohawk",
+    "LegitDesc": "Tooltip_Mohawk",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GreenReeds": {
+    "LegitName": "Spotted reeds",
+    "LegitDesc": "Tooltip_GreenReeds",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JellyPlant": {
+    "LegitName": "Gel sack",
+    "LegitDesc": "Gel sack.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueJeweledDisk": {
+    "LegitName": "Blue table coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GreenJeweledDisk": {
+    "LegitName": "Green table coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleJeweledDisk": {
+    "LegitName": "Purple table coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedJeweledDisk": {
+    "LegitName": "Red table coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallKoosh": {
+    "LegitName": "Pygmy bulb bush",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MediumKoosh": {
+    "LegitName": "Common bulb bush",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LargeKoosh": {
+    "LegitName": "Large bulb bush",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HugeKoosh": {
+    "LegitName": "Giant bulb bush",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MembrainTree": {
+    "LegitName": "Membrain tree",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleFan": {
+    "LegitName": "Veined nettle",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AcidMushroom": {
+    "LegitName": "Acid mushroom",
+    "LegitDesc": "Purple fungus. Acidic flesh.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleTentacle": {
+    "LegitName": "Writhing Weed",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedSeaweed": {
+    "LegitName": "Blood weed",
+    "LegitDesc": "Tooltip_RedSeaweed",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CoralOldPlaceholder": {
+    "LegitName": "CoralOldPlaceholder",
+    "LegitDesc": "Tooltip_CoralOldPlaceholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CoralShellPlate": {
+    "LegitName": "Coral shell plate",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallFan": {
+    "LegitName": "Pygmy fan",
+    "LegitDesc": "Pygmy fan.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallFanCluster": {
+    "LegitName": "Pygmy fan cluster",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BigCoralTubes": {
+    "LegitName": "Giant coral tubes",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TreeMushroom": {
+    "LegitName": "Tree mushroom",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueCluster": {
+    "LegitName": "Grue cluster",
+    "LegitDesc": "Tooltip_BlueCluster",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BrownTubes": {
+    "LegitName": "Earthen coral tubes",
+    "LegitDesc": "Tooltip_BrownTubes",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BloodGrass": {
+    "LegitName": "Blood grass",
+    "LegitDesc": "Tooltip_BloodGrass",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HeatArea": {
+    "LegitName": "Heat Area",
+    "LegitDesc": "Tooltip_HeatArea",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BloodOil": {
+    "LegitName": "Blood oil",
+    "LegitDesc": "Red, oil-filled pustule. Contains bloodvine seeds. May be processed into benzene.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WhiteMushroom": {
+    "LegitName": "Deep shroom",
+    "LegitDesc": "Highly acidic flesh.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BloodRoot": {
+    "LegitName": "Blood root",
+    "LegitDesc": "Root system commonly found in the blood kelp biome.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BloodVine": {
+    "LegitName": "Blood vine",
+    "LegitDesc": "Pale white kelp commonly found in the blood kelp biome.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PinkFlower": {
+    "LegitName": "Voxel shrub",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PinkMushroom": {
+    "LegitName": "Pink cap",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleRattle": {
+    "LegitName": "Speckled rattler",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BulboTree": {
+    "LegitName": "Bulbo tree",
+    "LegitDesc": "Alien flora sample - edible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleVasePlant": {
+    "LegitName": "Ming plant",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OrangeMushroom": {
+    "LegitName": "Jaffa cup",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FernPalm": {
+    "LegitName": "Fern palm",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HangingFruitTree": {
+    "LegitName": "Lantern tree",
+    "LegitDesc": "A fruit-growing tree.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleVegetablePlant": {
+    "LegitName": "Chinese potato plant",
+    "LegitDesc": "A hardy vegetable commonly grown in Federation space.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MelonPlant": {
+    "LegitName": "Marblemelon plant",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BluePalm": {
+    "LegitName": "Blue palm",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GabeSFeather": {
+    "LegitName": "Gabe's feather",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaCrown": {
+    "LegitName": "Sea crown",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OrangePetalsPlant": {
+    "LegitName": "Grub basket",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EyesPlant": {
+    "LegitName": "Eye stalk",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedGreenTentacle": {
+    "LegitName": "Ghost weed",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleStalk": {
+    "LegitName": "Violet beau",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedBasketPlant": {
+    "LegitName": "Rouge cradle",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedBush": {
+    "LegitName": "Redwort",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedConePlant": {
+    "LegitName": "Regress shell",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShellGrass": {
+    "LegitName": "Spiked horn grass",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpottedLeavesPlant": {
+    "LegitName": "Spotted dockleaf",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedRollPlant": {
+    "LegitName": "Furled papyrus",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleBranches": {
+    "LegitName": "Cave bush",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SnakeMushroom": {
+    "LegitName": "Jellyshroom",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaTreaderPoop": {
+    "LegitName": "Alien feces",
+    "LegitDesc": "Nutrient-rich manure, suitable for bio-energy production.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GenericJeweledDisk": {
+    "LegitName": "Table coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FloatingStone": {
+    "LegitName": "Anchor Pod",
+    "LegitDesc": "Tooltip_FloatingStone",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueAmoeba": {
+    "LegitName": "Amoeboid",
+    "LegitDesc": "Tooltip_BlueAmoeba",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedTipRockThings": {
+    "LegitName": "Pyrocoral",
+    "LegitDesc": "Tooltip_RedTipRockThings",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueTipLostRiverPlant": {
+    "LegitName": "Crab claw kelp",
+    "LegitDesc": "Tooltip_BlueTipLostRiverPlant",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BlueLostRiverLilly": {
+    "LegitName": "Brine lily",
+    "LegitDesc": "Tooltip_BlueLostRiverLilly",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LargeFloater": {
+    "LegitName": "Ancient floater",
+    "LegitDesc": "Tooltip_LargeFloater",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PiecePlaceholder": {
+    "LegitName": "PiecePlaceholder",
+    "LegitDesc": "Tooltip_PiecePlaceholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JeweledDiskPiece": {
+    "LegitName": "Table coral sample",
+    "LegitDesc": "Contains trace precious metals used in computer fabrication.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CoralChunk": {
+    "LegitName": "Coral tube sample",
+    "LegitDesc": "Sample containing CaCO₃. Calcium carbonate is a base ingredient for bleach.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "KooshChunk": {
+    "LegitName": "Bulb bush sample",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "StalkerTooth": {
+    "LegitName": "Stalker tooth",
+    "LegitDesc": "A sharp, hardened calcium formation, shed by one of the indigenous creatures.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TreeMushroomPiece": {
+    "LegitName": "Fungal sample",
+    "LegitDesc": "Indigenous flora. Contains fungal enzymes.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BulboTreePiece": {
+    "LegitName": "Bulbo tree sample",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OrangeMushroomSpore": {
+    "LegitName": "Jaffa cup spore",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleVasePlantSeed": {
+    "LegitName": "Ming plant seed",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "AcidMushroomSpore": {
+    "LegitName": "Acid mushroom spore",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WhiteMushroomSpore": {
+    "LegitName": "Deep shroom spore",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PinkMushroomSpore": {
+    "LegitName": "Pink cap spore",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleRattleSpore": {
+    "LegitName": "Speckled rattler spore",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HangingFruit": {
+    "LegitName": "Lantern fruit",
+    "LegitDesc": "Lantern fruit - edible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleVegetable": {
+    "LegitName": "Chinese potato",
+    "LegitDesc": "A hardy vegetable common in federation space.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallMelon": {
+    "LegitName": "Small marblemelon",
+    "LegitDesc": "A small alien fruit - edible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Melon": {
+    "LegitName": "Marblemelon",
+    "LegitDesc": "An alien fruit - edible.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MelonSeed": {
+    "LegitName": "Marblemelon seed",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleBrainCoralPiece": {
+    "LegitName": "Brain coral sample",
+    "LegitDesc": "Brain coral sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpikePlantSeed": {
+    "LegitName": "Tiger plant seed",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BluePalmSeed": {
+    "LegitName": "Blue palm seed",
+    "LegitDesc": "A mature flora specimen will grow, if planted in the right conditions.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleFanSeed": {
+    "LegitName": "Veined nettle seed",
+    "LegitDesc": "Veined nettle seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SmallFanSeed": {
+    "LegitName": "Pygmy fan seed",
+    "LegitDesc": "Pygmy fan seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleTentacleSeed": {
+    "LegitName": "Writhing Weed seed",
+    "LegitDesc": "Writhing weed seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JellyPlantSeed": {
+    "LegitName": "Gel sack spores",
+    "LegitDesc": "Gel sack spores.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GabeSFeatherSeed": {
+    "LegitName": "Gabe's feather seed",
+    "LegitDesc": "Gabe's feather seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaCrownSeed": {
+    "LegitName": "Sea crown seed",
+    "LegitDesc": "Sea crown seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MembrainTreeSeed": {
+    "LegitName": "Membrain tree seed",
+    "LegitDesc": "Membrain tree seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PinkFlowerSeed": {
+    "LegitName": "Voxel shrub seed",
+    "LegitDesc": "Voxel shrub seed",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FernPalmSeed": {
+    "LegitName": "Fern palm seed",
+    "LegitDesc": "Fern palm seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OrangePetalsPlantSeed": {
+    "LegitName": "Grub basket seed",
+    "LegitDesc": "Grub basket seed",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EyesPlantSeed": {
+    "LegitName": "Eye stalk seed",
+    "LegitDesc": "Eye stalk seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedGreenTentacleSeed": {
+    "LegitName": "Ghost weed seed",
+    "LegitDesc": "Ghost weed seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleStalkSeed": {
+    "LegitName": "Violet beau seed",
+    "LegitDesc": "Violet beau seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedBasketPlantSeed": {
+    "LegitName": "Rouge cradle seed",
+    "LegitDesc": "Rouge cradle seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedBushSeed": {
+    "LegitName": "Redwort seed",
+    "LegitDesc": "Redwort seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedConePlantSeed": {
+    "LegitName": "Regress shell seed",
+    "LegitDesc": "Red cone plant seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ShellGrassSeed": {
+    "LegitName": "Spiked horn grass seed",
+    "LegitDesc": "Spiked horn grass seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpottedLeavesPlantSeed": {
+    "LegitName": "Spotted dockleaf seed",
+    "LegitDesc": "Spotted dockleaf seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RedRollPlantSeed": {
+    "LegitName": "Furled papyrus seed",
+    "LegitDesc": "Furled papyrus seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleBranchesSeed": {
+    "LegitName": "Cave bush seed",
+    "LegitDesc": "Cave bush seed.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SnakeMushroomSpore": {
+    "LegitName": "Jellyshroom spore",
+    "LegitDesc": "Jellyshroom spore.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EnvironmentPlaceholder": {
+    "LegitName": "EnvironmentPlaceholder",
+    "LegitDesc": "Tooltip_EnvironmentPlaceholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Boulder": {
+    "LegitName": "Boulder",
+    "LegitDesc": "Tooltip_Boulder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PurpleBrainCoral": {
+    "LegitName": "Brain coral",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HangingStinger": {
+    "LegitName": "Drooping Stinger",
+    "LegitDesc": "Tooltip_HangingStinger",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SpikePlant": {
+    "LegitName": "Tiger plant",
+    "LegitDesc": "Alien flora sample.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BrainCoral": {
+    "LegitName": "Brain coral",
+    "LegitDesc": "Tooltip_BrainCoral",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CoveTree": {
+    "LegitName": "Giant cove tree",
+    "LegitDesc": "Tooltip_CoveTree",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MonsterSkeleton": {
+    "LegitName": "Monster skeleton",
+    "LegitDesc": "Tooltip_MonsterSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SeaDragonSkeleton": {
+    "LegitName": "Sea dragon skeleton",
+    "LegitDesc": "Tooltip_SeaDragonSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ReaperSkeleton": {
+    "LegitName": "Leviathan Skeletal Remains",
+    "LegitDesc": "Tooltip_ReaperSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CaveSkeleton": {
+    "LegitName": "Ancient Skeleton",
+    "LegitDesc": "Tooltip_CaveSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "HugeSkeleton": {
+    "LegitName": "Skeletal Remains",
+    "LegitDesc": "Tooltip_HugeSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_Red": {
+    "LegitName": "Red tablet",
+    "LegitDesc": "Ancient alien tablet. Glows Red.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_Blue": {
+    "LegitName": "Blue tablet",
+    "LegitDesc": "Ancient alien tablet with a blue symbol.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_Orange": {
+    "LegitName": "Orange tablet",
+    "LegitDesc": "Ancient alien tablet with an orange symbol.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_White": {
+    "LegitName": "White tablet",
+    "LegitDesc": "Ancient alien tablet. Glows White.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_Purple": {
+    "LegitName": "Purple tablet",
+    "LegitDesc": "Ancient alien tablet with a purple symbol.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKey_PurpleFragment": {
+    "LegitName": "Purple tablet fragment",
+    "LegitDesc": "Tooltip_PrecursorKey_PurpleFragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorKeyTerminal": {
+    "LegitName": "Forcefield Control",
+    "LegitDesc": "Tooltip_PrecursorKeyTerminal",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorTeleporter": {
+    "LegitName": "Alien Arch",
+    "LegitDesc": "Tooltip_PrecursorTeleporter",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorEnergyCore": {
+    "LegitName": "Energy Core",
+    "LegitDesc": "Tooltip_PrecursorEnergyCore",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorIonPowerCell": {
+    "LegitName": "Ion power cell",
+    "LegitDesc": "Power cell infused with alien ion technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorIonBattery": {
+    "LegitName": "Ion battery",
+    "LegitDesc": "Battery infused with alien ion technology.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorThermalPlant": {
+    "LegitName": "Alien Thermal Plant",
+    "LegitDesc": "Tooltip_PrecursorThermalPlant",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorWarper": {
+    "LegitName": "Warper",
+    "LegitDesc": "Tooltip_PrecursorWarper",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorFishSkeleton": {
+    "LegitName": "Skeletal Remains",
+    "LegitDesc": "Tooltip_PrecursorFishSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorScanner": {
+    "LegitName": "Alien Sensor",
+    "LegitDesc": "Tooltip_PrecursorScanner",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLabCacheContainer1": {
+    "LegitName": "Alien Bone Specimen Case",
+    "LegitDesc": "Tooltip_PrecursorLabCacheContainer1",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLabCacheContainer2": {
+    "LegitName": "Alien Flora Specimen Case",
+    "LegitDesc": "Tooltip_PrecursorLabCacheContainer2",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLabTable": {
+    "LegitName": "Alien Research Equipment",
+    "LegitDesc": "Tooltip_PrecursorLabTable",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorSeaDragonSkeleton": {
+    "LegitName": "Leviathan Skeletal Remains",
+    "LegitDesc": "Tooltip_PrecursorSeaDragonSkeleton",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorSensor": {
+    "LegitName": "Alien Sensor",
+    "LegitDesc": "Tooltip_PrecursorSensor",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact1": {
+    "LegitName": "Unusual Box",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact1",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact2": {
+    "LegitName": "Circular Object",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact2",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact3": {
+    "LegitName": "Rudimentary Tablet",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact3",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact4": {
+    "LegitName": "Crescent Artifact",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact4",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact5": {
+    "LegitName": "Strange Carving",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact5",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact6": {
+    "LegitName": "Alien Device",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact6",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact7": {
+    "LegitName": "Alien Rifle",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact7",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact8": {
+    "LegitName": "Ancient Blade",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact8",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact9": {
+    "LegitName": "Display Case",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact9",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact10": {
+    "LegitName": "Alien Statue",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact10",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact11": {
+    "LegitName": "Alien Technology",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact11",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact12": {
+    "LegitName": "Alien Object",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact12",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPipeRoomIncomingPipe": {
+    "LegitName": "Inflow Pipe",
+    "LegitDesc": "Tooltip_PrecursorPipeRoomIncomingPipe",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPipeRoomOutgoingPipe": {
+    "LegitName": "Outflow Pipe",
+    "LegitDesc": "Tooltip_PrecursorPipeRoomOutgoingPipe",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonLabEmperorFetus": {
+    "LegitName": "Preserved Fetus",
+    "LegitDesc": "Tooltip_PrecursorPrisonLabEmperorFetus",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonLabEmperorEgg": {
+    "LegitName": "Preserved Egg Casing",
+    "LegitDesc": "Tooltip_PrecursorPrisonLabEmperorEgg",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonAquariumPipe": {
+    "LegitName": "Aquarium Pipe Access Point",
+    "LegitDesc": "Tooltip_PrecursorPrisonAquariumPipe",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonAquariumFinalTeleporter": {
+    "LegitName": "Aquarium Arch",
+    "LegitDesc": "Tooltip_PrecursorPrisonAquariumFinalTeleporter",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonAquariumIncubatorEggs": {
+    "LegitName": "Sea Emperor Eggs",
+    "LegitDesc": "Tooltip_PrecursorPrisonAquariumIncubatorEggs",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonAquariumIncubator": {
+    "LegitName": "Incubator",
+    "LegitDesc": "Tooltip_PrecursorPrisonAquariumIncubator",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorSurfacePipe": {
+    "LegitName": "Alien Vent",
+    "LegitDesc": "Tooltip_PrecursorSurfacePipe",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonArtifact13": {
+    "LegitName": "Empty Case",
+    "LegitDesc": "Tooltip_PrecursorPrisonArtifact13",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonIonGenerator": {
+    "LegitName": "Ion Cube Fabricator",
+    "LegitDesc": "Tooltip_PrecursorPrisonIonGenerator",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorPrisonOutposts": {
+    "LegitName": "Alien Structure",
+    "LegitDesc": "Tooltip_PrecursorPrisonOutposts",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "ObservatoryOld": {
+    "LegitName": "ObservatoryOld",
+    "LegitDesc": "Tooltip_ObservatoryOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverBrokenAnchor": {
+    "LegitName": "Damaged Cable",
+    "LegitDesc": "Tooltip_PrecursorLostRiverBrokenAnchor",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverLabRays": {
+    "LegitName": "Ray Specimens",
+    "LegitDesc": "Tooltip_PrecursorLostRiverLabRays",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverLabBones": {
+    "LegitName": "Rib Cage",
+    "LegitDesc": "Tooltip_PrecursorLostRiverLabBones",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverLabEgg": {
+    "LegitName": "Egg",
+    "LegitDesc": "Tooltip_PrecursorLostRiverLabEgg",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverProductionLine": {
+    "LegitName": "Conveyor system",
+    "LegitDesc": "Tooltip_PrecursorLostRiverProductionLine",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PrecursorLostRiverWarperParts": {
+    "LegitName": "Biological matter",
+    "LegitDesc": "Tooltip_PrecursorLostRiverWarperParts",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FilteredWater": {
+    "LegitName": "Filtered water",
+    "LegitDesc": "H₂O. 6oz. Filtered using an all-organic membrane. Non-vegetarian.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DisinfectedWater": {
+    "LegitName": "Disinfected water",
+    "LegitDesc": "H₂O. 12oz. Microorganism-free.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedPeeper": {
+    "LegitName": "Cooked peeper",
+    "LegitDesc": "Protein-rich eyeballs. Highly nutritious.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedHoleFish": {
+    "LegitName": "Cooked holefish",
+    "LegitDesc": "Gelatinous flesh.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedGarryFish": {
+    "LegitName": "Cooked garryfish",
+    "LegitDesc": "Floral flavor, but very little of it.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedReginald": {
+    "LegitName": "Cooked reginald",
+    "LegitDesc": "Pungent and smoky. Extremely filling.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedBladderfish": {
+    "LegitName": "Cooked bladderfish",
+    "LegitDesc": "Spongy. Gristly. Low calorie count. Thankfully odorless.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedHoverfish": {
+    "LegitName": "Cooked hoverfish",
+    "LegitDesc": "Firm, low-fat reptilian flesh.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedSpadefish": {
+    "LegitName": "Cooked spadefish",
+    "LegitDesc": "Decent size but salty.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedBoomerang": {
+    "LegitName": "Cooked boomerang",
+    "LegitDesc": "Good eating around the fins.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedEyeye": {
+    "LegitName": "Cooked eyeye",
+    "LegitDesc": "High in fluids. Low calorie count. Hard to keep down.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedOculus": {
+    "LegitName": "Cooked oculus",
+    "LegitDesc": "Dark, dense meat. A good meal.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedHoopfish": {
+    "LegitName": "Cooked hoopfish",
+    "LegitDesc": "Never eat the antennae.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "NutrientBlock": {
+    "LegitName": "Nutrient block",
+    "LegitDesc": "Dense, processed food recovered from the Aurora.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "FirstAidKit": {
+    "LegitName": "First aid kit",
+    "LegitDesc": "Treated bandages. Apply to staunch blood-flow and sanitize wounds.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "WaterFiltrationSuitWater": {
+    "LegitName": "Reclaimed water",
+    "LegitDesc": "H₂O. Purified, reclaimed body water.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BigFilteredWater": {
+    "LegitName": "Large filtered water",
+    "LegitDesc": "H₂O. 15oz. Pure.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedSpinefish": {
+    "LegitName": "Cooked spinefish",
+    "LegitDesc": "Never eat the antennae.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedLavaEyeye": {
+    "LegitName": "Cooked Red eyeye",
+    "LegitDesc": "Extremely spicy. High in fluids.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CookedLavaBoomerang": {
+    "LegitName": "Cooked magmarang",
+    "LegitDesc": "Rather picante.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Snack1": {
+    "LegitName": "Mix chips",
+    "LegitDesc": "Chips of assorted flavors, reclaimed from manufacture errors.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Snack2": {
+    "LegitName": "Rice snack",
+    "LegitDesc": "Generic, tasty rice snack; add sugar, salt or spices for sweet and savory flavors.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Snack3": {
+    "LegitName": "Potato mix",
+    "LegitDesc": "Potato-derived snack food.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Coffee": {
+    "LegitName": "Coffee americano",
+    "LegitDesc": "Real Italian espresso, diluted with tasteless American water.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredPeeper": {
+    "LegitName": "Cured peeper",
+    "LegitDesc": "Preserved in salt. A healthy and nutritious meal. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredHoleFish": {
+    "LegitName": "Cured holefish",
+    "LegitDesc": "Salting has given the flesh a mousse-like consistency. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredGarryFish": {
+    "LegitName": "Cured garryfish",
+    "LegitDesc": "The only flavor is salt. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredReginald": {
+    "LegitName": "Cured reginald",
+    "LegitDesc": "Over salty, but very filling. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredBladderfish": {
+    "LegitName": "Cured bladderfish",
+    "LegitDesc": "Reminiscent of jerky. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredHoverfish": {
+    "LegitName": "Cured hoverfish",
+    "LegitDesc": "The crispy, salty legs are the highlight. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredSpadefish": {
+    "LegitName": "Cured spadefish",
+    "LegitDesc": "Your daily dose of salt in a single portion. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredBoomerang": {
+    "LegitName": "Cured boomerang",
+    "LegitDesc": "Tough but flavorsome. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredEyeye": {
+    "LegitName": "Cured eyeye",
+    "LegitDesc": "Shriveled, and unpleasant. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredOculus": {
+    "LegitName": "Cured oculus",
+    "LegitDesc": "Meaty and still strong in flavor. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredHoopfish": {
+    "LegitName": "Cured hoopfish",
+    "LegitDesc": "This fish actually tastes like fish. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredSpinefish": {
+    "LegitName": "Cured spinefish",
+    "LegitDesc": "Entirely bland. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredLavaEyeye": {
+    "LegitName": "Cured red eyeye",
+    "LegitDesc": "Shriveled and unpleasant. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CuredLavaBoomerang": {
+    "LegitName": "Cured magmarang",
+    "LegitDesc": "Tough and spicy. Dehydrating, but keeps well.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MembraneOld": {
+    "LegitName": "MembraneOld",
+    "LegitDesc": "Tooltip_MembraneOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Unobtanium": {
+    "LegitName": "Unobtanium",
+    "LegitDesc": "Tooltip_Unobtanium",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseRoom": {
+    "LegitName": "Multipurpose room",
+    "LegitDesc": "A basic room in which to install a range of different components.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseHatch": {
+    "LegitName": "Hatch",
+    "LegitDesc": "Provides an access point to the habitat.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWall": {
+    "LegitName": "Wall",
+    "LegitDesc": "Divides a room.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseDoor": {
+    "LegitName": "Door",
+    "LegitDesc": "Provides structural support and prevents flooding.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseLadder": {
+    "LegitName": "Ladder",
+    "LegitDesc": "Connects two floors.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWindow": {
+    "LegitName": "Window",
+    "LegitDesc": "A port hole for your habitat, installed on an existing wall.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "PowerGeneratorOld": {
+    "LegitName": "PowerGeneratorOld",
+    "LegitDesc": "Tooltip_PowerGeneratorOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "UnusedOld": {
+    "LegitName": "UnusedOld",
+    "LegitDesc": "Tooltip_UnusedOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridor": {
+    "LegitName": "Basic compartment",
+    "LegitDesc": "Basic tubular compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseFoundation": {
+    "LegitName": "Foundation",
+    "LegitDesc": "Reinforced habitat foundation.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorI": {
+    "LegitName": "I compartment",
+    "LegitDesc": "Basic tubular compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorL": {
+    "LegitName": "L compartment",
+    "LegitDesc": "L-shaped compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorT": {
+    "LegitName": "T compartment",
+    "LegitDesc": "T-shaped compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorX": {
+    "LegitName": "X compartment",
+    "LegitDesc": "X-shaped compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseReinforcement": {
+    "LegitName": "Reinforcement",
+    "LegitDesc": "Increases hull integrity.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseBulkhead": {
+    "LegitName": "Bulkhead",
+    "LegitDesc": "Provides structural support and prevents flooding.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorGlassI": {
+    "LegitName": "I Glass compartment",
+    "LegitDesc": "Basic glass-walled compartment. Low structural integrity.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorGlassL": {
+    "LegitName": "L Glass compartment",
+    "LegitDesc": "L-shaped glass compartment. Low structural integrity.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseObservatory": {
+    "LegitName": "Observatory",
+    "LegitDesc": "Compartment with 360 degree views and very low structural integrity.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseConnector": {
+    "LegitName": "Vertical connector",
+    "LegitDesc": "Vertical base connector.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseMoonpool": {
+    "LegitName": "Moonpool",
+    "LegitDesc": "Vehicle docking bay with high energy and structural requirements.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseCorridorGlass": {
+    "LegitName": "Glass compartment",
+    "LegitDesc": "Glass compartment.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseUpgradeConsole": {
+    "LegitName": "Vehicle upgrade console",
+    "LegitDesc": "Build in the moonpool to upgrade docked vehicles.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasePlanter": {
+    "LegitName": "Wall planter",
+    "LegitDesc": "Wall-mounted foliage. Purely decorational.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseFiltrationMachine": {
+    "LegitName": "Water filtration machine",
+    "LegitDesc": "Turns seawater into water and salt.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWaterPark": {
+    "LegitName": "Alien containment",
+    "LegitDesc": "Provides optimal conditions for flora and fauna. Add a hatch to enter.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseMapRoom": {
+    "LegitName": "Scanner room",
+    "LegitDesc": "Locates resources and wrecks within range.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MapRoomCamera": {
+    "LegitName": "Camera drone",
+    "LegitDesc": "A controllable camera.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseBioReactor": {
+    "LegitName": "Bioreactor",
+    "LegitDesc": "Composts organic matter into electrical energy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseNuclearReactor": {
+    "LegitName": "Nuclear reactor",
+    "LegitDesc": "Uses nuclear rods to generate energy.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasePipeConnector": {
+    "LegitName": "Base-attached air pump",
+    "LegitDesc": "Pumps oxygen from a powered habitat to an attached pipe network.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseRechargePlatform": {
+    "LegitName": "BaseRechargePlatform",
+    "LegitDesc": "Tooltip_BaseRechargePlatform",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseControlRoom": {
+    "LegitName": "BaseControlRoom",
+    "LegitDesc": "Tooltip_BaseControlRoom",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseWallFoundation": {
+    "LegitName": "BaseWallFoundation",
+    "LegitDesc": "Tooltip_BaseWallFoundation",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseLargeRoom": {
+    "LegitName": "Large room",
+    "LegitDesc": "A large room.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OldBasePartitionI": {
+    "LegitName": "OldBasePartitionI",
+    "LegitDesc": "Tooltip_OldBasePartitionI",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OldBasePartitionL": {
+    "LegitName": "OldBasePartitionL",
+    "LegitDesc": "Tooltip_OldBasePartitionL",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OldBasePartitionT": {
+    "LegitName": "OldBasePartitionT",
+    "LegitDesc": "Tooltip_OldBasePartitionT",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "OldBasePartitionX": {
+    "LegitName": "OldBasePartitionX",
+    "LegitDesc": "Tooltip_OldBasePartitionX",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasePartitionDoor": {
+    "LegitName": "Large room partition door",
+    "LegitDesc": "A room partition door.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseGlassDome": {
+    "LegitName": "Multipurpose room glass dome",
+    "LegitDesc": "A glass dome.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BasePartition": {
+    "LegitName": "Large room partition",
+    "LegitDesc": "A room partition.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "BaseLargeGlassDome": {
+    "LegitName": "Large room glass dome",
+    "LegitDesc": "A large glass dome.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RocketBase": {
+    "LegitName": "Neptune Launch Platform",
+    "LegitDesc": "Provides a stable surface from which to launch the Neptune.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RocketBaseLadder": {
+    "LegitName": "Neptune Gantry",
+    "LegitDesc": "Supports the rocket during construction.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RocketStage1": {
+    "LegitName": "Neptune Boosters",
+    "LegitDesc": "Experimental boosters.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RocketStage2": {
+    "LegitName": "Neptune Fuel Reserve",
+    "LegitDesc": "Primary fuel tanks.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RocketStage3": {
+    "LegitName": "Neptune Cockpit",
+    "LegitDesc": "A hermetically sealed environment with life support and launch controls.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "TimeCapsule": {
+    "LegitName": "Time capsule",
+    "LegitDesc": "Tooltip_TimeCapsule",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "DioramaHullPlate": {
+    "LegitName": "Diorama Hull Plate",
+    "LegitDesc": "A special Hull Plate to commemorate a unique diorama.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MarkiplierHullPlate": {
+    "LegitName": "Markiplier Hull Plate",
+    "LegitDesc": "I'm not scared. Not even a little bit.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "MuyskermHullPlate": {
+    "LegitName": "Muyskerm Hull Plate",
+    "LegitDesc": "Reconsider your YouTube subscription standards.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "LordMinionHullPlate": {
+    "LegitName": "LordMinion Hull Plate",
+    "LegitDesc": "The most handsome Subnautica Hull Plate of all time.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JackSepticEyeHullPlate": {
+    "LegitName": "JackSepticEye Hull Plate",
+    "LegitDesc": "Jack creates clean, swearing-free videos appropriate for viewing by all ages.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Poster": {
+    "LegitName": "Natural Selection 2 poster",
+    "LegitDesc": "Natural Selection 2 Poster.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "IGPHullPlate": {
+    "LegitName": "Indie Game Promoter Hull Plate",
+    "LegitDesc": "IGP helps promote indie games big and small! https://www.youtube.com/theindiegamepromoter",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "GilathissHullPlate": {
+    "LegitName": "Gilathiss Hull Plate",
+    "LegitDesc": "Gilathiss is a Polish youtuber with the longest running Subnautica series! https://www.youtube.com/GilathissNew",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Marki1": {
+    "LegitName": "An unusual doll",
+    "LegitDesc": "An unusual doll.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Marki2": {
+    "LegitName": "An unusual doll",
+    "LegitDesc": "An unusual doll.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "JackSepticEye": {
+    "LegitName": "Jack's Septic Tank",
+    "LegitDesc": "An unusual item.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "EatMyDiction": {
+    "LegitName": "Marla",
+    "LegitDesc": "Eat My Diction's cat.",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "RadiationLeakPoint": {
+    "LegitName": "Breach",
+    "LegitDesc": "Tooltip_RadiationLeakPoint",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "SomethingPlaceholder": {
+    "LegitName": "SomethingPlaceholder",
+    "LegitDesc": "Tooltip_SomethingPlaceholder",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Fragment": {
+    "LegitName": "Fragment",
+    "LegitDesc": "Tooltip_Fragment",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Wreck": {
+    "LegitName": "Wreck",
+    "LegitDesc": "Tooltip_Wreck",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "CountOld": {
+    "LegitName": "CountOld",
+    "LegitDesc": "Tooltip_CountOld",
+    "PirateName": "",
+    "PirateDesc": ""
+  },
+  "Databox": {
+    "LegitName": "Databox",
+    "LegitDesc": "Open Databox",
+    "PirateName": "",
+    "PirateDesc": ""
+  }
+}

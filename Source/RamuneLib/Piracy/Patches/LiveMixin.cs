@@ -12,6 +12,8 @@ namespace RamuneLib.Piracy.Patches
             }
 
             Player.main.transform.localScale *= 0.99f;
+
+            Subtitle("pirate_shrink", "I feel.. smaller?", duration:3);
         }
     }
 }

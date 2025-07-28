@@ -4,11 +4,51 @@ namespace RamuneLib.Piracy.Patches
 {
     public static class PlayerPatch
     {
-        public static void Awake(Player __instance)
+        public static void Awake()
         {
-            DayNightCycle.main._dayNightSpeed *= 0.75f;
-
             CoroutineHost.StartCoroutine(DisplayMessage());
+        }
+
+
+        public static void Update()
+        {
+            // nighty night
+
+            DayNightCycle.main._dayNightSpeed = 0f;
+
+            DayNightCycle.main.skipTimeMode = false;
+
+            DayNightCycle.main.timePassedAsDouble = 1200;
+
+            DayNightCycle.main.UpdateAtmosphere();
+
+
+            // bloom
+
+            UwePostProcessingManager.currentProfile.bloom.enabled = true;
+
+            var bloom = UwePostProcessingManager.currentProfile.bloom.settings;
+
+            bloom.lensDirt.intensity = 11f;
+
+            bloom.bloom.intensity = 9f;
+
+            UwePostProcessingManager.currentProfile.bloom.settings = bloom;
+
+
+            // motion blur
+
+            UwePostProcessingManager.currentProfile.motionBlur.enabled = true;
+
+            var motionBlur = UwePostProcessingManager.currentProfile.motionBlur.settings;
+
+            motionBlur.shutterAngle = 360f;
+
+            motionBlur.sampleCount = 32;
+
+            motionBlur.frameBlending = 1f;
+
+            UwePostProcessingManager.currentProfile.motionBlur.settings = motionBlur;
         }
 
 

@@ -235,72 +235,35 @@ namespace RamuneLib.Piracy
             Logfile.Warning("Ahoy matey! Piracy was detected");
 
 
-            ///Day night speed is 25% slower.
-            ///Constantly displays a list of messages on-screen dedicated to pirates from community members.
+            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Update), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Update)), HarmonyPatchType.Postfix);
+
+
             PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Awake), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Awake)), HarmonyPatchType.Postfix);
 
 
-            ///Player becomes 1% smaller every time damage is taken.
             PatchingUtils.ApplyPatch(typeof(LiveMixin), nameof(LiveMixin.TakeDamage), new(typeof(Patches.LiveMixinPatch), nameof(Patches.LiveMixinPatch.TakeDamage)), HarmonyPatchType.Postfix);
 
 
-            ///Outcrops occasionally spawn a crashfish when broken.
             PatchingUtils.ApplyPatch(typeof(BreakableResource), nameof(BreakableResource.BreakIntoResources), new(typeof(Patches.BreakableResourcePatch), nameof(Patches.BreakableResourcePatch.BreakIntoResources)), HarmonyPatchType.Prefix);
 
 
-            ///Chargers recharge items 50% slower.
             PatchingUtils.ApplyPatch(typeof(Charger), nameof(Charger.Initialize), new(typeof(Patches.ChargerPatch), nameof(Patches.ChargerPatch.Initialize)), HarmonyPatchType.Postfix);
 
 
-            ///Seaglide acceleration is increased by 0.5% everytime it is equipped.
             PatchingUtils.ApplyPatch(typeof(Seaglide), nameof(Seaglide.OnDraw), new(typeof(Patches.SeaglidePatch), nameof(Patches.SeaglidePatch.OnDraw)), HarmonyPatchType.Postfix);
 
 
-            ///Crashfish have a 30% chance to explode into another Crashfish.
             PatchingUtils.ApplyPatch(typeof(Crash), nameof(Crash.Detonate), new(typeof(Patches.CrashPatch), nameof(Patches.CrashPatch.Detonate)), HarmonyPatchType.Postfix);
 
 
-            ///Coffee.. does things to the player.
             PatchingUtils.ApplyPatch(typeof(Survival), nameof(Survival.Eat), new(typeof(Patches.SurvivalPatch), nameof(Patches.SurvivalPatch.Eat)), HarmonyPatchType.Postfix);
-        }
-
-
-        /// <summary>
-        /// Recolors every material on the <paramref name="prefab"/> to <paramref name="color"/>.
-        /// </summary>
-        /// <param name="prefab"></param>
-        /// <param name="color"></param>
-        private static void Recolor(GameObject prefab, Color color)
-        {
-            if(prefab == null)
-                return;
-
-            if(!prefab.TryGetComponents<Renderer>(out var renderers))
-                return;
-
-            renderers.ForEach(r => r.materials.ForEach(m => m.color = color));
-        }
-
-
-        /// <summary>
-        /// Sets the <paramref name="prefab"/>'s local scale to <paramref name="scale"/>.
-        /// </summary>
-        /// <param name="prefab"></param>
-        /// <param name="scale"></param>
-        private static void Resize(GameObject prefab, float scale)
-        {
-            if(prefab == null)
-                return;
-
-            prefab.transform.localScale = new Vector3(scale, scale, scale);
         }
 
 
         /// <summary>
         /// Instantiates a Crashfish at the desired <paramref name="spawnPosition"/>.
         /// </summary>
-        /// <param name="position"></param>
-        /// <param name="scale"></param>
+        /// <param name="spawnPosition"></param>
         /// <returns></returns>
         public static IEnumerator SpawnCrashfish(Vector3 spawnPosition)
         {

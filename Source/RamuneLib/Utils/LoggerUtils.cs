@@ -161,7 +161,7 @@ namespace RamuneLib.Utils
             LanguageHandler.SetLanguageLine(id, $"{message} <delay={delay}>");
             Language.main.Exists()?.ParseMetaData();
 
-            StringBuilder builder = new StringBuilder().Append(id);
+            StringBuilder builder = new StringBuilder().Append(message);
             Subtitles.AddRawLong(1, builder, 0f, duration);
         }
 
