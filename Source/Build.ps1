@@ -1,4 +1,4 @@
-param(
+﻿param(
     [ValidateScript({ Test-Path $_ -PathType Leaf })]
     [string]$SourceFile,
 	
@@ -25,5 +25,5 @@ $jsonString = $jsonString -replace ' {4}', '  '
 Set-Content -Path $JsonFile -Value $jsonString -NoNewline
 
 Write-Output ""
-Write-Output "Updated '$JsonFile' version to '$version'"
+Write-Output "⚙️ Updated '$JsonFile' version to '$version'"
 Write-Output ""
