@@ -19,6 +19,9 @@
 		  "C:\Program Files\7-Zip\7z.exe" a %25TargetDirectory%25\$(TargetName).zip %25TargetDirectory%25
 
 		  powershell -NoProfile -ExecutionPolicy Bypass -File "$(SolutionDir)Build.ps1" -SourceFile "$(ProjectDir)BepInEx.cs" -JsonFile "$(ProjectDir)Version.json"
+
+		  echo ✅ Built using 'Directory.Build.targets'
+		  echo.
 	  </PostBuildEvent>
     </PropertyGroup>
   </Target>
