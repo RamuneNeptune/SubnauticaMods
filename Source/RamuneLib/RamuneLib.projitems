@@ -12,6 +12,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Core\Initializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\References.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\Variables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)extensions\CodeMatcherExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\CustomPrefabExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\GameObjectExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)extensions\ListExtensions.cs" />
