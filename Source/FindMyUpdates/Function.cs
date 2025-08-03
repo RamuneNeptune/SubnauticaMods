@@ -53,26 +53,26 @@ namespace Ramune.FindMyUpdates
         public static Dictionary<Error, string> ErrorDB = new()
         {
             // ModMessage args issues
-            { Error.ArgsNotString, "Received a mod message with invalid args: Must be a string!" },
-            { Error.ArgsEmptyString, "Received a mod message with invalid args: Must not be empty!" },
+            { Error.ArgsNotString, "fmu.logfile.errordb.ArgsNotString".LangKey() },
+            { Error.ArgsEmptyString, "fmu.logfile.errordb.ArgsEmptyString".LangKey() },
 
             // URL issues
-            { Error.InvalidUrl, "Received a mod message with invalid URL: Failed to parse as URL! ({0})" },
-            { Error.InvalidUrlScheme, "Received a mod message with invalid URL: Must be HTTP or HTTPS! ({0})" },
-            { Error.InvalidUrlExtension, "Received a mod message with invalid URL: Must lead directly to a JSON file! ({0})" },
+            { Error.InvalidUrl, "fmu.logfile.errordb.InvalidUrl".LangKey() },
+            { Error.InvalidUrlScheme, "fmu.logfile.errordb.InvalidUrlScheme".LangKey() },
+            { Error.InvalidUrlExtension, "fmu.logfile.errordb.InvalidUrlExtension".LangKey() },
 
             // Web request issues
-            { Error.NotFound404, "Received a mod message with invalid URL: 404 not found! ({0})" },
-            { Error.NetworkOrHttpError, "Received a mod message with valid URL, but web request failed: Netowrk/HTTP error! ({0})" },
-            { Error.NullDownloadedText, "Received a mod message with valid URL, but web request failed: Returned null text from URL! ({0})" },
+            { Error.NotFound404, "fmu.logfile.errordb.NotFound404".LangKey() },
+            { Error.NetworkOrHttpError, "fmu.logfile.errordb.NetworkOrHttpError".LangKey() },
+            { Error.NullDownloadedText, "fmu.logfile.errordb.NullDownloadedText".LangKey() },
 
             // JSON deserialization issues
-            { Error.JsonDeserializationFailed, "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})" },
-            { Error.JsonNullAfterDeserialization, "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})" },
+            { Error.JsonDeserializationFailed, "fmu.logfile.errordb.JsonDeserializationFailed".LangKey() },
+            { Error.JsonNullAfterDeserialization, "fmu.logfile.errordb.JsonNullAfterDeserialization".LangKey() },
 
             // Mod info issues
-            { Error.InvalidVersionFormat, "Received a mod message with valid URL, but invalid JSON data: Could not parse 'LatestVersion' as a 'System.Version'! ({0})" },
-            { Error.CurrentVersionNotFound, "Received a mod message with valid URL, but invalid JSON data: Could not find a mod named '{0}' that is currently loaded! ({1})" },
+            { Error.InvalidVersionFormat, "fmu.logfile.errordb.InvalidVersionFormat".LangKey() },
+            { Error.CurrentVersionNotFound, "fmu.logfile.errordb.CurrentVersionNotFound".LangKey() },
         };
 
 
@@ -177,17 +177,17 @@ namespace Ramune.FindMyUpdates
             switch(comparison)
             {
                 case 0:
-                    Logfile.Info($"{_name} is up-to date. You are using {currentVersion} and the latest available version is {_latestVersion}");
+                    Logfile.Info(string.Format("fmu.logfile.updated".LangKey(), _name, currentVersion, _latestVersion));
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, true);
                     break;
 
                 case > 0:
-                    Logfile.Info($"{_name} is more than up-to date. You are using {currentVersion} and the latest available version is {_latestVersion}");
+                    Logfile.Info(string.Format("fmu.logfile.overdated".LangKey(), _name, currentVersion, _latestVersion));
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, true);
                     break;
 
                 case < 0:
-                    Logfile.Warning($"{_name} is outdated. You are using {currentVersion} and the latest available version is {_latestVersion}");
+                    Logfile.Warning(string.Format("fmu.logfile.outdated".LangKey(), _name, currentVersion, _latestVersion));
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, false);
                     break;
             }

@@ -331,6 +331,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Localization\English.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>

@@ -18,9 +18,7 @@ namespace Ramune.FindMyUpdates.Patches
             uGUI_OptionsPanelPatch.latestButton = buttonComponent;
 
             if(callback != null && buttonComponent != null)
-            {
                 buttonComponent.onClick.AddListener(callback);
-            }
 
             return false;
         }
@@ -37,16 +35,11 @@ namespace Ramune.FindMyUpdates.Patches
 
             Color color = Color.white;
 
-            switch(label)
-            {
-                case "Up to date":
-                    color = new Color(0.6f, 0.6f, 0.6f);
-                    break;
+            if(label == "fmu.ui.button.updated".LangKey())
+                color = new Color(0.6f, 0.6f, 0.6f);
 
-                case "Update":
-                    color = new Color(0.1176f, 0.8431f, 0.3764f);
-                    break;
-            }
+            else if(label == "fmu.ui.button.outdated".LangKey())
+                color = new Color(0.1176f, 0.8431f, 0.3764f);
 
             uGUI_OptionsPanelPatch.latestButton.image.color = color;
             uGUI_OptionsPanelPatch.latestButton.gameObject.GetComponent<RectTransform>().sizeDelta = new(-200f, 60f);

@@ -13,7 +13,7 @@ namespace Ramune.FindMyUpdates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FindMyUpdates";
         public const string Name = "FindMyUpdates";
-        public const string Version = "1.0.2";
+        public const string Version = "1.0.3";
 
         public void Awake()
         {
@@ -26,6 +26,8 @@ namespace Ramune.FindMyUpdates
             }
 
             Initializer.Initialize(harmony, Logger, Name, Version);
+
+            LanguageHandler.RegisterLocalizationFolder();
 
             CoroutineHost.StartCoroutine(WaitToCheckUpdates());
         }
