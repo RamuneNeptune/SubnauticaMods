@@ -37,7 +37,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
 
             if(storageType == StorageType.Unknown)
             {
-                Logfile.Debug($"Could not identify correct StorageType to use for GameObject: {__instance.tr?.name} (ItemsContainer._label: {__instance._label})");
+                Logfile.Debug($"Could not identify correct StorageType to use for GameObject:\n > transform.name: {__instance.tr?.name}\n > ItemsContainer._label: {__instance._label}");
 
                 return;
             }
@@ -70,9 +70,6 @@ namespace Ramune.RamunesCustomizedStorage.Patches
             if(gameObject.TryGetComponentInParent<Exosuit>(out _))
                 return StorageType.Exosuit;
 
-            if(gameObject.transform.root.gameObject.TryGetComponent<SubRoot>(out _))
-                return StorageType.CyclopsLocker;
-
             if(gameObject.TryGetComponentInParent<StorageContainer>(out var storageContainer))
             {
                 var name = storageContainer.gameObject.name.ToLower();
@@ -102,14 +99,15 @@ namespace Ramune.RamunesCustomizedStorage.Patches
             if(gameObject.TryGetComponentInParent<Trashcan>(out var trashcan))
                 return trashcan.biohazard ? StorageType.NuclearWaste : StorageType.TrashCan;
 
+            if(gameObject.transform.parent.gameObject.TryGetComponentInParent<SubRoot>(out _))
+                return StorageType.CyclopsLocker;
+
             return StorageType.Unknown;
         }
 
 
         public static bool TryGetStorageTypeForContainerFromCache(ItemsContainer container, out StorageType storageType)
         {
-            //ItemsContainerCache.Values.ForEach(list => list.RemoveAll(item => item == null));
-
             foreach(var kvp in ItemsContainerCache)
             {
                 var list = kvp.Value;

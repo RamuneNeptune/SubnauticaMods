@@ -26,7 +26,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
 
             if(!ItemsContainerPatches.TryGetStorageTypeForContainerFromCache(itemsContainer, out var storageType))
             {
-                //Logfile.Warning($"Could not identify correct StorageType to use for GameObject: {itemsContainer.tr?.name} (ItemsContainer._label: {itemsContainer._label})");
+                //Logfile.Warning($"Could not identify StorageType for: \"{itemsContainer.tr?.name}\" (\"{itemsContainer._label}\")");
                 return;
             }
 
