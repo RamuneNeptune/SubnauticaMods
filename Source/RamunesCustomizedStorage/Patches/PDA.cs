@@ -3,7 +3,7 @@
 namespace Ramune.RamunesCustomizedStorage.Patches
 {
     [HarmonyPatch(typeof(PDA))]
-    public static class PDAPatches
+    public static class PDAPatch
     {
         public static Dictionary<TechType, int> BagTechTypes = IBagTechTypes();
 
