@@ -13,7 +13,7 @@ namespace Ramune.FindMyUpdates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FindMyUpdates";
         public const string Name = "FindMyUpdates";
-        public const string Version = "1.0.4";
+        public const string Version = "1.0.5";
 
         public void Awake()
         {
