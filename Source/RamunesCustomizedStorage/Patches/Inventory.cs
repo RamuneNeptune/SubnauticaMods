@@ -3,7 +3,7 @@
 namespace Ramune.RamunesCustomizedStorage.Patches
 {
     [HarmonyPatch(typeof(Inventory))]
-    public static class InventoryPatches
+    public static class InventoryPatch
     {
         [HarmonyPatch(nameof(Inventory.SetUsedStorage)), HarmonyPrefix]
         public static void SetUsedStorage(IItemsContainer container)
@@ -24,7 +24,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
                 return;
             }
 
-            if(!ItemsContainerPatches.TryGetStorageTypeForContainerFromCache(itemsContainer, out var storageType))
+            if(!ItemsContainerPatch.TryGetStorageTypeForContainerFromCache(itemsContainer, out var storageType))
             {
                 //Logfile.Warning($"Could not identify StorageType for: \"{itemsContainer.tr?.name}\" (\"{itemsContainer._label}\")");
                 return;
@@ -32,7 +32,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
 
             switch(storageType)
             {
-                case ItemsContainerPatches.StorageType.Seamoth:
+                case ItemsContainerPatch.StorageType.Seamoth:
                     if(!itemsContainer.tr.root.gameObject.TryGetComponentInChildren<SeaMoth>(out var seamoth))
                         return;
 
@@ -40,7 +40,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
                     //Screen.Info("Resized Seamoth storage to: " + config.width_seamoth + "x" + (seamothModuleCount > 0 ? config.height_seamoth + config.height_seamothModule * seamothModuleCount : config.height_seamoth));
                     break;
 
-                case ItemsContainerPatches.StorageType.Exosuit:
+                case ItemsContainerPatch.StorageType.Exosuit:
                     if(!itemsContainer.tr.gameObject.TryGetComponentInParent<Exosuit>(out var exosuit))
                         return;
                     int exosuitModuleCount = exosuit.modules.GetCount(TechType.VehicleStorageModule);
@@ -48,42 +48,42 @@ namespace Ramune.RamunesCustomizedStorage.Patches
                     //Screen.Info("Resized Prawn Suit storage to: " + config.width_prawnSuit + "x" + (exosuitModuleCount > 0 ? config.height_prawnSuit + config.height_prawnSuitModule * exosuitModuleCount : config.height_prawnSuit));
                     break;
 
-                case ItemsContainerPatches.StorageType.CyclopsLocker:
+                case ItemsContainerPatch.StorageType.CyclopsLocker:
                     itemsContainer.Resize(config.width_locker, config.height_locker);
                     //Screen.Info("Resized Cyclops Locker storage to: " + config.width_locker + "x" + config.height_locker);
                     break;
 
-                case ItemsContainerPatches.StorageType.WallLocker:
+                case ItemsContainerPatch.StorageType.WallLocker:
                     itemsContainer.Resize(config.width_wallLocker, config.height_wallLocker);
                     //Screen.Info("Resized Wall Locker storage to: " + config.width_wallLocker + "x" + config.height_wallLocker);
                     break;
 
-                case ItemsContainerPatches.StorageType.StandingLocker:
+                case ItemsContainerPatch.StorageType.StandingLocker:
                     itemsContainer.Resize(config.width_locker, config.height_locker);
                     //Screen.Info("Resized Standing Locker storage to: " + config.width_locker + "x" + config.height_locker);
                     break;
 
-                case ItemsContainerPatches.StorageType.LifepodLocker:
+                case ItemsContainerPatch.StorageType.LifepodLocker:
                     itemsContainer.Resize(config.width_lifepod, config.height_lifepod);
                     //Screen.Info("Resized Lifepod Locker storage to: " + config.width_lifepod + "x" + config.height_lifepod);
                     break;
 
-                case ItemsContainerPatches.StorageType.WaterproofLocker:
+                case ItemsContainerPatch.StorageType.WaterproofLocker:
                     itemsContainer.Resize(config.width_waterproofLocker, config.height_waterproofLocker);
                     //Screen.Info("Resized Waterproof Locker storage to: " + config.width_waterproofLocker + "x" + config.height_waterproofLocker);
                     break;
 
-                case ItemsContainerPatches.StorageType.CarryAll:
+                case ItemsContainerPatch.StorageType.CarryAll:
                     itemsContainer.Resize(config.width_carryAll, config.height_carryAll);
                     //Screen.Info("Resized Carry All storage to: " + config.width_carryAll + "x" + config.height_carryAll);
                     break;
 
-                case ItemsContainerPatches.StorageType.BioReactor:
+                case ItemsContainerPatch.StorageType.BioReactor:
                     itemsContainer.Resize(config.width_bioReactor, config.height_bioReactor);
                     //Screen.Info("Resized Bio Reactor storage to: " + config.width_bioReactor + "x" + config.height_bioReactor);
                     break;
 
-                case ItemsContainerPatches.StorageType.WaterFiltration:
+                case ItemsContainerPatch.StorageType.WaterFiltration:
                     if(!itemsContainer.tr.gameObject.TryGetComponentInParent<FiltrationMachine>(out var filtration))
                         return;
                     filtration.maxSalt = config.salt_filtration;
@@ -92,12 +92,12 @@ namespace Ramune.RamunesCustomizedStorage.Patches
                     //Screen.Info("Resized Water Filtration storage to: " + config.width_filtration + "x" + config.height_filtration);
                     break;
 
-                case ItemsContainerPatches.StorageType.NuclearWaste:
+                case ItemsContainerPatch.StorageType.NuclearWaste:
                     itemsContainer.Resize(config.width_nuclear, config.height_nuclear);
                     //Screen.Info("Resized Nuclear Waste storage to: " + config.width_locker + "x" + config.height_locker);
                     break;
 
-                case ItemsContainerPatches.StorageType.TrashCan:
+                case ItemsContainerPatch.StorageType.TrashCan:
                     itemsContainer.Resize(config.width_trashcan, config.height_trashcan);
                     //Screen.Info("Resized Trash Can storage to: " + config.width_locker + "x" + config.height_locker);
                     break;

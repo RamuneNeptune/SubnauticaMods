@@ -3,7 +3,7 @@
 namespace Ramune.RamunesCustomizedStorage.Patches
 {
     [HarmonyPatch(typeof(ItemsContainer))]
-    public static class ItemsContainerPatches
+    public static class ItemsContainerPatch
     {
         public static readonly Dictionary<StorageType, List<ItemsContainer>> ItemsContainerCache = new();
 
@@ -14,7 +14,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
             Inventory,
             Seamoth,
             Exosuit,
-            CyclopsLocker, // doesnt
+            CyclopsLocker,
             WallLocker,
             StandingLocker,
             LifepodLocker,
