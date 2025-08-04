@@ -13,7 +13,7 @@ namespace Ramune.RamunesCustomizedStorage
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.RamunesCustomizedStorage";
         public const string Name = "RamunesCustomizedStorage";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public void Awake()
         {
@@ -26,6 +26,19 @@ namespace Ramune.RamunesCustomizedStorage
             }
 
             Initializer.Initialize(harmony, Logger, Name, Version);
+
+            CoroutineHost.StartCoroutine(CompatibilityPatchCheck());
+        }
+
+        public static bool ShouldPatchCompatibility = false;
+
+        public static IEnumerator CompatibilityPatchCheck()
+        {
+            yield return PatchingUtils.WaitForChainloader();
+
+            ShouldPatchCompatibility = Chainloader.PluginInfos.ContainsKey("sn.bagequipment.mod");
+
+            Logfile.Info("Patching compatibility for sn.baqequipment.mod");
         }
     }
 }

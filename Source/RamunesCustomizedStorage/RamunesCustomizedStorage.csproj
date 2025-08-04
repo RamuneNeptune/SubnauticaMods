@@ -327,6 +327,7 @@
     <Compile Include="Patches\Inventory.cs" />
     <Compile Include="Patches\ItemsContainer.cs" />
     <Compile Include="Patches\PDA.cs" />
+    <Compile Include="Patches\uGUI_Equipment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
