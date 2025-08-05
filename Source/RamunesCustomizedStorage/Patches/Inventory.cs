@@ -43,6 +43,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
                 case ItemsContainerPatch.StorageType.Exosuit:
                     if(!itemsContainer.tr.gameObject.TryGetComponentInParent<Exosuit>(out var exosuit))
                         return;
+
                     int exosuitModuleCount = exosuit.modules.GetCount(TechType.VehicleStorageModule);
                     itemsContainer.Resize(config.width_prawnSuit, exosuitModuleCount > 0 ? config.height_prawnSuit + config.height_prawnSuitModule * exosuitModuleCount : config.height_prawnSuit);
                     //Screen.Info("Resized Prawn Suit storage to: " + config.width_prawnSuit + "x" + (exosuitModuleCount > 0 ? config.height_prawnSuit + config.height_prawnSuitModule * exosuitModuleCount : config.height_prawnSuit));
