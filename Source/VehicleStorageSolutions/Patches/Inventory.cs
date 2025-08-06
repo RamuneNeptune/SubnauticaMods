@@ -8,8 +8,7 @@ namespace Ramune.VehicleStorageSolutions.Patches
         [HarmonyPatch(nameof(Inventory.SetUsedStorage)), HarmonyPrefix, HarmonyPriority(Priority.Last)]
         public static void SetUsedStorage(IItemsContainer container)
         {
-            Logfile.Warning("Second");
-            if (container == null)
+            if(container == null)
                 return;
 
             if(container is not ItemsContainer itemsContainer)
