@@ -1,0 +1,22 @@
+
+<< You can decorate this file however you want, just don't change the format of the actual config lines >>
+
+SeamothMk6HeightToAdd=5
+ExosuitMk6HeightToAdd=6
+
+SeamothMk7HeightToAdd=6
+ExosuitMk7HeightToAdd=7
+
+SeamothMk8HeightToAdd=7
+ExosuitMk8HeightToAdd=8
+
+SeamothMk9HeightToAdd=8
+ExosuitMk9HeightToAdd=9
+
+SeamothMk10HeightToAdd=9
+ExosuitMk10HeightToAdd=10
+
+SeamothMk11HeightToAdd=10
+ExosuitMk11HeightToAdd=11
+
+<< Want to support more modules? Copy paste the text above and change the "Mk8" to "Mk9", and the "=7" to "=8", etc. >>

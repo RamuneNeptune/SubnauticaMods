@@ -1,0 +1,41 @@
+{
+  "vss.storage.2.id": "VSSStorageModuleMk2",
+  "vss.storage.2.name": "Storage Module Mk2",
+  "vss.storage.2.desc": "An improved storage locker.\n\nSEAMOTH: +1\nPRAWN SUIT: +2",
+
+  "vss.storage.3.id": "VSSStorageModuleMk3",
+  "vss.storage.3.name": "Storage Module Mk3",
+  "vss.storage.3.desc": "An improved storage locker.\n\nSEAMOTH: +2\nPRAWN SUIT: +3",
+
+  "vss.storage.4.id": "VSSStorageModuleMk4",
+  "vss.storage.4.name": "Storage Module Mk4",
+  "vss.storage.4.desc": "An improved storage locker.\n\nSEAMOTH: +3\nPRAWN SUIT: +4",
+
+  "vss.storage.5.id": "VSSStorageModuleMk5",
+  "vss.storage.5.name": "Storage Module Mk5",
+  "vss.storage.5.desc": "An improved storage locker.\n\nSEAMOTH: +4\nPRAWN SUIT: +5",
+
+  "vss.storage.6.id": "VSSStorageModuleMk6",
+  "vss.storage.6.name": "Storage Module Mk6",
+  "vss.storage.6.desc": "An improved storage locker.\n\nSEAMOTH: +5\nPRAWN SUIT: +6",
+
+  "vss.storage.7.id": "VSSStorageModuleMk7",
+  "vss.storage.7.name": "Storage Module Mk7",
+  "vss.storage.7.desc": "An improved storage locker.\n\nSEAMOTH: +6\nPRAWN SUIT: +7",
+
+  "vss.storage.8.id": "VSSStorageModuleMk8",
+  "vss.storage.8.name": "Storage Module Mk8",
+  "vss.storage.8.desc": "An improved storage locker.\n\nSEAMOTH: +7\nPRAWN SUIT: +8",
+
+  "vss.storage.9.id": "VSSStorageModuleMk9",
+  "vss.storage.9.name": "Storage Module Mk9",
+  "vss.storage.9.desc": "An improved storage locker.\n\nSEAMOTH: +8\nPRAWN SUIT: +9",
+
+  "vss.storage.10.id": "VSSStorageModuleMk10",
+  "vss.storage.10.name": "Storage Module Mk10",
+  "vss.storage.10.desc": "An improved storage locker.\n\nSEAMOTH: +9\nPRAWN SUIT: +10",
+
+  "vss.storage.11.id": "VSSStorageModuleMk11",
+  "vss.storage.11.name": "Storage Module Mk11",
+  "vss.storage.11.desc": "An improved storage locker.\n\nSEAMOTH: +10\nPRAWN SUIT: +11"
+}
