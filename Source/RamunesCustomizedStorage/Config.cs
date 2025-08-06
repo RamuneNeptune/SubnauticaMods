@@ -74,10 +74,10 @@ namespace Ramune.RamunesCustomizedStorage
         [Toggle("<color=#ffc600>Seamoth storage size:</color> <alpha=#00>----------------------------------------------------------------------------</alpha>", Order = 17)]
         public bool divider_seamoth;
 
-        [Slider(" • Seamoth storage width per module (x)", Format = "{0:F1}", DefaultValue = 4f, Min = widthMinValue, Max = widthMaxValue, Step = step, Tooltip = tooltip + "4", Order = 18)]
+        [Slider(" • Seamoth storage width (x)", Format = "{0:F1}", DefaultValue = 4f, Min = widthMinValue, Max = widthMaxValue, Step = step, Tooltip = tooltip + "4", Order = 18)]
         public int width_seamoth = 4;
 
-        [Slider(" • Seamoth storage height per module (y)", Format = "{0:F1}", DefaultValue = 4f, Min = heightMinValue, Max = heightMaxValue, Step = step, Tooltip = tooltip + "4", Order = 19)]
+        [Slider(" • Seamoth storage height (y)", Format = "{0:F1}", DefaultValue = 4f, Min = heightMinValue, Max = heightMaxValue, Step = step, Tooltip = tooltip + "4", Order = 19)]
         public int height_seamoth = 4;
 
 

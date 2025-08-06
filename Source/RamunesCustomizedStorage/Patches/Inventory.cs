@@ -5,7 +5,7 @@ namespace Ramune.RamunesCustomizedStorage.Patches
     [HarmonyPatch(typeof(Inventory))]
     public static class InventoryPatch
     {
-        [HarmonyPatch(nameof(Inventory.SetUsedStorage)), HarmonyPrefix]
+        [HarmonyPatch(nameof(Inventory.SetUsedStorage)), HarmonyPrefix, HarmonyPriority(1)]
         public static void SetUsedStorage(IItemsContainer container)
         {
             //Screen.Debug((container?.GetType().Name ?? "null") + $" (label: {container.label})");
