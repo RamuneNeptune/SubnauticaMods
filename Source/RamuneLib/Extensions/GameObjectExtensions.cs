@@ -173,8 +173,11 @@ namespace RamuneLib.Extensions
                 Logfile.Warning($"[TryGetComponentEverywhere]: Found component '{typeof(T).Name}' in parent (TryGetComponentInParent)");
                 return true;
             }
-
-            return false;
+            else
+            {
+                Logfile.Warning($"[TryGetComponentEverywhere]: Failed to find component '{typeof(T).Name}'");
+                return false;
+            }
         }
     }
 }

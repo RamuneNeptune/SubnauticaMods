@@ -93,6 +93,26 @@ namespace RamuneLib.Extensions
             return customPrefab;
         }
 
+
+        public static CustomPrefab WithEquipmentAndQuickSlotType(this CustomPrefab customPrefab, EquipmentType equipmentType, QuickSlotType quickSlotType)
+        {
+            customPrefab.SetEquipment(equipmentType).WithQuickSlotType(quickSlotType);
+            return customPrefab;
+        }
+
+        // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+        // Setting prefab EquipmentType -----------------------------------------------------------------------------------------------------------------------------------
+
+        public static CustomPrefab WithVehicleUpgradeModule(this CustomPrefab customPrefab, EquipmentType equipmentType, QuickSlotType quickSlotType, out UpgradeModuleGadget upgradeModuleGadget)
+        {
+            upgradeModuleGadget = customPrefab.SetVehicleUpgradeModule(equipmentType, quickSlotType);
+            return customPrefab;
+        }
+
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
