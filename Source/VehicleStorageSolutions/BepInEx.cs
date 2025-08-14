@@ -17,15 +17,9 @@ namespace Ramune.VehicleStorageSolutions
 
         public void Awake()
         {
-            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/VehicleStorageSolutions/Version.json");
-
-            if(!config.EnableThisMod)
-            {
-                Logfile.Warning("This mod has been disabled in the config and will not be loaded");
+            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/VehicleStorageSolutions/Version.json"))
                 return;
-            }
 
-            Initializer.Initialize(harmony, Logger, Name, Version);
             LanguageHandler.RegisterLocalizationFolder();
 
             for(int ii = 2; ii < config.storageModulesToGenerate + 2; ii++)
