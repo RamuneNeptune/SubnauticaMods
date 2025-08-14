@@ -1,0 +1,17 @@
+{
+  "craftAmount": 1,
+  "Ingredients": [
+    {
+      "techType": "Titanium",
+      "amount": 2
+    },
+    {
+      "techType": "Quartz",
+      "amount": 2
+    },
+    {
+      "techType": "JeweledDiskPiece",
+      "amount": 1
+    }
+  ]
+}
