@@ -1,8 +1,8 @@
 {
   "fmu.ui.tabname": "Updates",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Find My Updates</b></color></size>\nAny mods that support version checking will be listed here\n\n</align>",
-  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • You are using the latest version: <color=#ffc834>{1}</color>\n • <size=70%>URL: <color=#ffc834>{2}</size></color>",
-  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • An update is available: <color=#ffc834>{1}</color>! (current: <color=#ffc834>{2}</color>)\n • <size=70%>URL: <color=#ffc834>{3}</size></color>",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Find My Updates</b></color></size>\n<color=white>Any mods that support version checking will be listed here</color>\n\n</align>",
+  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>You are using the latest version:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
+  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>An update is available:</color> <color=#ffc834>{1}</color><color=white>! (current:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Up to date",
   "fmu.ui.button.outdated": "Update",
 

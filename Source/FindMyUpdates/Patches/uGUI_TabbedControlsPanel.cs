@@ -11,14 +11,16 @@ namespace Ramune.FindMyUpdates.Patches
             if(tabIndex != uGUI_OptionsPanelPatch.UpdatesTabIndex)
                 return true;
 
-            var buttonGo = __instance.AddItem(tabIndex, __instance.buttonPrefab, label);
+            var buttonGo = __instance.controls.AddButton(__instance.GetParent(tabIndex), label, callback);
 
             var buttonComponent = buttonGo.GetComponentInChildren<Button>();
 
             uGUI_OptionsPanelPatch.latestButton = buttonComponent;
 
+            /*
             if(callback != null && buttonComponent != null)
                 buttonComponent.onClick.AddListener(callback);
+            */
 
             return false;
         }

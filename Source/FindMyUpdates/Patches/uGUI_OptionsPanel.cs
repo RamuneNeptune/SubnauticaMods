@@ -76,8 +76,8 @@ namespace Ramune.FindMyUpdates.Patches
                         Screen.Error(string.Format("fmu.warning.invalidurl".LangKey(), latestUrl.IsNullOrWhiteSpace() ? "N/A" : latestUrl));
                         return;
                     }
-
-                    if(!hasFirstClick)
+                    
+                    if(!hasFirstClick && FindMyUpdates.config.WarnOnButtonClicks)
                     {
                         Screen.Message(string.Format("fmu.warning.urlcheck".LangKey(), latestUrl));
 
@@ -85,10 +85,11 @@ namespace Ramune.FindMyUpdates.Patches
 
                         return;
                     }
-
+                    
                     Process.Start(latestUrl);
 
-                    Screen.Message(string.Format("fmu.warning.urlopened".LangKey(), latestUrl));
+                    if(FindMyUpdates.config.LogURLsToScreen)
+                        Screen.Message(string.Format("fmu.warning.urlopened".LangKey(), latestUrl));
                 });
 
                 UpdatesTabPanel.AddHeading(UpdatesTabIndex, "<align=center>\n\n<color=#1e86d6>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</color>\n\n\n</align>");

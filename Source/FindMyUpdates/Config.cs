@@ -14,6 +14,12 @@ namespace Ramune.FindMyUpdates
         [Toggle(" • On-screen warnings every time?", Tooltip = "Determines whether on-screen warnings should show every time you open the Options menu or only once")]
         public bool OnScreenWarningEveryTime = true;
 
+        [Toggle(" • Warn before opening URLs", Tooltip = "Determines whether buttons like \"Update\" and \"Up-to date\" open URLs immediately, or require an additional confirmational click")]
+        public bool WarnOnButtonClicks = true;
+
+        [Toggle(" • Log clicked URLs on screen", Tooltip = "Displays the opened URL on-screen when you click buttons like \"Update\" and \"Up-to date\"")]
+        public bool LogURLsToScreen = true;
+
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;
 

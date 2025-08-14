@@ -1,8 +1,8 @@
 ﻿{
   "fmu.ui.tabname": "Обновления",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Найди мои обновления</b></color></size>\nЗдесь будут отображаться моды, поддерживающие проверку версий\n\n</align>",
-  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • У вас установлена последняя версия: <color=#ffc834>{1}</color>\n • <size=70%>URL: <color=#ffc834>{2}</size></color>",
-  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • Доступно обновление: <color=#ffc834>{1}</color>! (текущая: <color=#ffc834>{2}</color>)\n • <size=70%>URL: <color=#ffc834>{3}</size></color>",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Найди мои обновления</b></color></size>\n<color=white>Здесь будут отображаться моды, поддерживающие проверку версий</color>\n\n</align>",
+  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>У вас установлена последняя версия:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
+  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Доступно обновление:</color> <color=#ffc834>{1}</color><color=white>! (текущая:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Актуально",
   "fmu.ui.button.outdated": "Обновить",
 
