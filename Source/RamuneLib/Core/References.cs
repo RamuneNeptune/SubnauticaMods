@@ -65,6 +65,9 @@ global using MonoMod.Utils;
 global using Newtonsoft.Json;
 global using static CraftData;
 global using Newtonsoft.Json.Linq;
+global using FMODUnity;
+global using FMOD.Studio;
+global using EventInstance = FMOD.Studio.EventInstance;
 
 
 /*      RamuneLib    */
