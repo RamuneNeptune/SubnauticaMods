@@ -3,7 +3,7 @@
 namespace Ramune.DisableOptionsTabs.Patches
 {
     [HarmonyPatch(typeof(uGUI_TabbedControlsPanel))]
-    public static class uGUI_TabbedControlsPanelPatch
+    public static class uGUI_TabbedControlsPanelPatches
     {
         private static readonly Dictionary<uGUI_TabbedControlsPanel, int> eoifjausd = new();
 
@@ -83,11 +83,13 @@ namespace Ramune.DisableOptionsTabs.Patches
                 return false;
             }
 
+            /*
             if(tab.firstSelectable == null || tab.firstSelectable.transform == null)
             {
                 Logfile.Debug($"tab.firstSelectable is null");
                 return false;
             }
+            */
 
             Logfile.Debug($"setting visible tab to: {tabIndex} (count: {__instance.tabs.Count})");
 
@@ -98,12 +100,13 @@ namespace Ramune.DisableOptionsTabs.Patches
         [HarmonyPatch(nameof(uGUI_TabbedControlsPanel.HighlightCurrentTab)), HarmonyPrefix]
         public static bool HighlightCurrentTab(uGUI_OptionsPanel __instance)
         {
+            /*
             uGUI_LegendBar.ClearButtons();
 
             uGUI_LegendBar.ChangeButton(0, uGUI.FormatButton(GameInput.Button.UICancel, false, " / ", true), Language.main.GetFormat("Back"));
 
             uGUI_LegendBar.ChangeButton(1, uGUI.FormatButton(GameInput.Button.UISubmit, false, " / ", true), Language.main.GetFormat("ItemSelectorSelect"));
-
+            */
             __instance.StartCoroutine(Globgo(__instance));
 
             Logfile.Debug($"Globgo coroutine called");

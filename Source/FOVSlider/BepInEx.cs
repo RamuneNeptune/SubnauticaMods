@@ -13,19 +13,12 @@ namespace Ramune.FOVSlider
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FOVSlider";
         public const string Name = "FOVSlider";
-        public const string Version = "1.0.2";
+        public const string Version = "1.0.3";
 
         public void Awake()
         {
-            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/FOVSlider/Version.json");
-
-            if(!config.EnableThisMod)
-            {
-                Logfile.Warning("This mod has been disabled in the config and will not be loaded");
+            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/FOVSlider/Version.json"))
                 return;
-            }
-
-            Initializer.Initialize(harmony, Logger, Name, Version);
         }
     }
 }
