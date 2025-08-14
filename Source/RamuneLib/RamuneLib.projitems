@@ -22,10 +22,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\BreakableResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Charger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Crash.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\patches\Exosuit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\patches\FireExtinguisher.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\LiveMixin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\patches\Poop.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Seaglide.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\patches\StasisSphere.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Survival.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)piracy\patches\Trashcan.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Piracy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ImageUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\JsonUtils.cs" />

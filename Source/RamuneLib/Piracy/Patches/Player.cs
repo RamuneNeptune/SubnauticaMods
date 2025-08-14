@@ -2,11 +2,18 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class PlayerPatch
+    public static class PlayerPatches
     {
         public static void Awake()
         {
             CoroutineHost.StartCoroutine(DisplayMessage());
+        }
+
+
+        public static void OnTakeDamage()
+        {
+            MainCameraControl.main.camShake = 0f;
+            MainCameraControl.main.ShakeCamera(100f, 10f, MainCameraControl.ShakeMode.Sqrt, 1.38f);
         }
 
 

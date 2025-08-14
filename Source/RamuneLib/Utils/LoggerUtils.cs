@@ -64,6 +64,12 @@ namespace RamuneLib.Utils
             /// </code>
             /// </example>
             public static void Fatal(string message) => Variables.logger?.LogFatal(message);
+
+
+            /// <summary>
+            /// Logs a divider to the logfile
+            /// </summary>
+            public static void Divider() => Variables.logger?.LogWarning("----------------------------------------------");
         }
 
 
@@ -77,10 +83,10 @@ namespace RamuneLib.Utils
             /// </summary>
             public static List<string> LogLevel = new()
             {
-                "<b><color=#54c8f2>[Info]</color> </b>",
-                "<b><color=#b30000>[Error]</color> </b>",
-                "<b><color=#b1b1b1>[Debug]</color> </b>",
-                "<b><color=#ffac00>[Warning]</color> </b>",
+                "<b><color=#54c8f2>[Info]</color></b> ",
+                "<b><color=#b30000>[Error]</color></b> ",
+                "<b><color=#b1b1b1>[Debug]</color></b> ",
+                "<b><color=#ffac00>[Warning]</color></b> ",
             };
 
 
@@ -156,9 +162,9 @@ namespace RamuneLib.Utils
         /// LoggerUtils.LogSubtitle("This is an example subtitle message.", duration: 10f, delay: 2f);
         /// </code>
         /// </example>
-        public static void Subtitle(string id, string message, float duration = 5f, float delay = 0f)
+        public static void Subtitle(string langKey, string message, float duration = 5f, float delay = 0f)
         {
-            LanguageHandler.SetLanguageLine(id, $"{message} <delay={delay}>");
+            LanguageHandler.SetLanguageLine(langKey, $"{message} <delay={delay}>");
             Language.main.Exists()?.ParseMetaData();
 
             StringBuilder builder = new StringBuilder().Append(message);

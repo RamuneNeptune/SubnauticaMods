@@ -41,7 +41,7 @@ namespace RamuneLib.Utils
         /// <param name="name"></param>
         /// <param name="sprite"></param>
         /// <returns></returns>
-        public static PingType RegisterPingType(string name, Atlas.Sprite sprite)
+        public static PingType RegisterPingType(string name, Sprite sprite)
         {
             return EnumHandler.AddEntry<PingType>(name)
                 .WithIcon(sprite).Value;

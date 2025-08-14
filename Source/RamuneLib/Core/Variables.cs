@@ -10,24 +10,29 @@ namespace RamuneLib
 
         public static ManualLogSource logger { get; set; }
 
-
         public static class Paths
         {
-            public static string PluginFolder => Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            private static readonly string Location = Assembly.GetExecutingAssembly().Location;
+
+            public static string GameFolder => BepInExPaths.GameRootPath;
+
+            public static string BepInExFolder => BepInExPaths.BepInExRootPath;
+
+            public static string BepInExConfigFolder => BepInExPaths.ConfigPath;
+
+            public static string BepInExPluginFolder => BepInExPaths.PluginPath;
+
+            public static string BepInExPatcherFolder => BepInExPaths.PatcherPluginPath;
+
+            public static string PluginFolder => Path.GetDirectoryName(Location);
 
             public static string AssetsFolder => Path.Combine(PluginFolder, "Assets");
 
             public static string RecipeFolder => Path.Combine(PluginFolder, "Recipes");
 
-            public static string GetFolder(string folderName)
-            {
-                var path = Path.Combine(PluginFolder, folderName);
+            public static string LocalizationFolder => Path.Combine(PluginFolder, "Localization");
 
-                if(Directory.Exists(path))
-                    return path;
-
-                throw new Exception($"Could not find a directory at path: {path}");
-            }
+            public static string ConfigurationFolder => Path.Combine(PluginFolder, "Configuration");
         }
     }
 }

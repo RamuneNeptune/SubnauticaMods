@@ -9,7 +9,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public static string GetJsonRecipe(string filename) => Path.Combine(Variables.Paths.RecipeFolder, filename + ".json");
+        public static string GetJsonRecipe(string filename) => Path.Combine(Paths.RecipeFolder, filename + ".json");
 
 
         /// <summary>
@@ -19,7 +19,7 @@ namespace RamuneLib.Utils
         /// <returns></returns>
         public static RecipeData GetRecipeData(string filename)
         {
-            var path = Path.Combine(Variables.Paths.RecipeFolder, filename + ".json");
+            var path = Path.Combine(Paths.RecipeFolder, filename + ".json");
 
             if(!File.Exists(path))
             {

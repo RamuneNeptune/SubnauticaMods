@@ -139,15 +139,10 @@ namespace RamuneLib.Piracy
             // GameObjects instead of running the checks again
 
             if(GameObject.Find("IsPirated"))
-            {
-                Logfile.Warning("Ahoy matey! Piracy was detected");
                 return true;
-            }
 
             if(GameObject.Find("IsClean"))
-            {
                 return false;
-            }
 
             var directory = Environment.CurrentDirectory;
             var files = Directory.GetFiles(directory);
@@ -235,10 +230,19 @@ namespace RamuneLib.Piracy
             Logfile.Warning("Ahoy matey! Piracy was detected");
 
 
-            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Update), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Update)), HarmonyPatchType.Postfix);
+            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Awake), new(typeof(Patches.PlayerPatches), nameof(Patches.PlayerPatches.Awake)), HarmonyPatchType.Postfix);
 
 
-            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Awake), new(typeof(Patches.PlayerPatch), nameof(Patches.PlayerPatch.Awake)), HarmonyPatchType.Postfix);
+            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Update), new(typeof(Patches.PlayerPatches), nameof(Patches.PlayerPatches.Update)), HarmonyPatchType.Postfix);
+
+
+            PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.OnTakeDamage), new(typeof(Patches.PlayerPatches), nameof(Patches.PlayerPatches.OnTakeDamage)), HarmonyPatchType.Postfix);
+
+
+            PatchingUtils.ApplyPatch(typeof(Exosuit), nameof(Exosuit.ApplyJumpForce), new(typeof(Patches.ExosuitPatch), nameof(Patches.ExosuitPatch.ApplyJumpForce)), HarmonyPatchType.Postfix);
+
+
+            PatchingUtils.ApplyPatch(typeof(FireExtinguisher), nameof(FireExtinguisher.Update), new(typeof(Patches.FireExtinguisherPatch), nameof(Patches.FireExtinguisherPatch.Update)), HarmonyPatchType.Postfix);
 
 
             PatchingUtils.ApplyPatch(typeof(LiveMixin), nameof(LiveMixin.TakeDamage), new(typeof(Patches.LiveMixinPatch), nameof(Patches.LiveMixinPatch.TakeDamage)), HarmonyPatchType.Postfix);
@@ -250,13 +254,25 @@ namespace RamuneLib.Piracy
             PatchingUtils.ApplyPatch(typeof(Charger), nameof(Charger.Initialize), new(typeof(Patches.ChargerPatch), nameof(Patches.ChargerPatch.Initialize)), HarmonyPatchType.Postfix);
 
 
+            PatchingUtils.ApplyPatch(typeof(Poop), nameof(Poop.Perform), new(typeof(Patches.PoopPatch), nameof(Patches.PoopPatch.Perform)), HarmonyPatchType.Postfix);
+
+
             PatchingUtils.ApplyPatch(typeof(Seaglide), nameof(Seaglide.OnDraw), new(typeof(Patches.SeaglidePatch), nameof(Patches.SeaglidePatch.OnDraw)), HarmonyPatchType.Postfix);
 
 
             PatchingUtils.ApplyPatch(typeof(Crash), nameof(Crash.Detonate), new(typeof(Patches.CrashPatch), nameof(Patches.CrashPatch.Detonate)), HarmonyPatchType.Postfix);
 
 
+            PatchingUtils.ApplyPatch(typeof(StasisSphere), nameof(StasisSphere.Shoot), new(typeof(Patches.StasisSpherePatch), nameof(Patches.StasisSpherePatch.Shoot)), HarmonyPatchType.Postfix);
+
+
+            PatchingUtils.ApplyPatch(typeof(StasisSphere), nameof(StasisSphere.UpdateMaterials), new(typeof(Patches.StasisSpherePatch), nameof(Patches.StasisSpherePatch.UpdateMaterials)), HarmonyPatchType.Prefix);
+
+
             PatchingUtils.ApplyPatch(typeof(Survival), nameof(Survival.Eat), new(typeof(Patches.SurvivalPatch), nameof(Patches.SurvivalPatch.Eat)), HarmonyPatchType.Postfix);
+
+
+            PatchingUtils.ApplyPatch(typeof(Trashcan), nameof(Trashcan.Update), new(typeof(Patches.TrashcanPatch), nameof(Patches.TrashcanPatch.Update)), HarmonyPatchType.Prefix);
         }
 
 

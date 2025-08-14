@@ -9,6 +9,14 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="techType"></param>
         /// <returns></returns>
+        public static string ID(this TechType techType, bool lowercase = false) => techType.AsString(lowercase);
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="techType"></param>
+        /// <returns></returns>
         public static string Name(this TechType techType) => Language.main.Get(techType);
 
 
@@ -25,7 +33,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="techType"></param>
         /// <returns></returns>
-        public static Atlas.Sprite Sprite(this TechType techType) => SpriteManager.Get(techType);
+        public static Sprite Sprite(this TechType techType) => SpriteManager.Get(techType);
 
 
         /// <summary>

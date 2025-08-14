@@ -1,5 +1,7 @@
 
 
+using System.Linq;
+
 namespace RamuneLib.Utils
 {
     public static class PrefabUtils
@@ -14,20 +16,6 @@ namespace RamuneLib.Utils
         public static CustomPrefab CreatePrefab(string id, string name, string description, bool defaultSprite = true)
         {
             return new CustomPrefab(id, name, description, defaultSprite ? SpriteManager.Get(TechType.None) : ImageUtils.GetSprite(id + "Sprite"));
-        }
-
-
-        /// <summary>
-        /// Creates a custom prefab with the specified ID, name, description, and <see cref="Atlas.Sprite"/>.
-        /// </summary>
-        /// <param name="id">The unique identifier for the prefab.</param>
-        /// <param name="name">The name of the prefab.</param>
-        /// <param name="description">The description of the prefab.</param>
-        /// <param name="sprite">The <see cref="Atlas.Sprite"/> to associate with the prefab.</param>
-        /// <returns>The created custom prefab.</returns>
-        public static CustomPrefab CreatePrefab(string id, string name, string description, Atlas.Sprite sprite)
-        {
-            return new CustomPrefab(id, name, description, sprite);
         }
 
 
@@ -56,7 +44,7 @@ namespace RamuneLib.Utils
             return new RecipeData()
             {
                 craftAmount = craftAmount,
-                Ingredients = new List<Ingredient>(ingredients)
+                Ingredients = ingredients.ToList()
             };
         }
 
@@ -69,14 +57,11 @@ namespace RamuneLib.Utils
         /// <returns>The created <see cref="RecipeData="/>.</returns>
         public static RecipeData CreateRecipe(int craftAmount, params object[] recipeItems)
         {
-            var ingredients = recipeItems.OfType<Ingredient>().ToArray();
-            var linkedItems = recipeItems.OfType<TechType>().ToArray();
-
             return new RecipeData()
             {
                 craftAmount = craftAmount,
-                Ingredients = new List<Ingredient>(ingredients),
-                LinkedItems = new List<TechType>(linkedItems)
+                Ingredients = recipeItems.OfType<Ingredient>().ToList(),
+                LinkedItems = recipeItems.OfType<TechType>().ToList()
             };
         }
     }

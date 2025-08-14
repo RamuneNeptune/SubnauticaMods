@@ -13,7 +13,7 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
-        private static Dictionary<string, Atlas.Sprite> CachedSprites = new();
+        private static Dictionary<string, Sprite> CachedSprites = new();
 
 
         /// <summary>
@@ -22,7 +22,7 @@ namespace RamuneLib.Utils
         /// <param name="filename"></param>
         /// <param name="extension"></param>
         /// <returns></returns>
-        public static string GetAssetPath(string filename, string extension = ".png") => Path.Combine(Variables.Paths.AssetsFolder, filename + extension);
+        public static string GetAssetPath(string filename, string extension = ".png") => Path.Combine(Paths.AssetsFolder, filename + extension);
 
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename">The filename of the sprite to load.</param>
         /// <returns>The loaded <see cref="Atlas.Sprite"/>.
-        public static Atlas.Sprite GetSprite(string filename, string extension = ".png")
+        public static Sprite GetSprite(string filename, string extension = ".png")
         {
             if(CachedSprites.TryGetValue(filename + extension, out var cachedSprite))
                 return cachedSprite;
@@ -47,27 +47,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="techType">The TechType of the sprite to retrieve.</param>
         /// <returns>The retrieved <see cref="Atlas.Sprite"/>.
-        public static Atlas.Sprite GetSprite(TechType techType) => SpriteManager.Get(techType);
-
-
-        /// <summary>
-        /// Loads and returns a <see cref="Sprite"/> loaded from the Assets folder using the filename provided.
-        /// </summary>
-        /// <param name="filename">The filename of the sprite to load.</param>
-        /// <returns>The loaded <see cref="Sprite"/>.
-        public static Sprite GetUnitySprite(string filename, string extension = ".png") => GetSprite(filename, extension).AsUnitySprite();
-
-
-        /// <summary>
-        /// Returns the passed <see cref="Atlas.Sprite"/> as a <see cref="Sprite"/> 
-        /// </summary>
-        public static Sprite AsUnitySprite(this Atlas.Sprite sprite) => Sprite.Create(sprite.texture, new Rect(0f, 0f, sprite.texture.width, sprite.texture.height), new Vector2(0.5f, 0.5f));
-
-
-        /// <summary>
-        /// Returns the passed <see cref="Sprite"/> as a <see cref="Atlas.Sprite"/> 
-        /// </summary>
-        public static Atlas.Sprite AsSprite(this Sprite sprite) => new(sprite);
+        public static Sprite GetSprite(TechType techType) => SpriteManager.Get(techType);
 
 
         /// <summary>
