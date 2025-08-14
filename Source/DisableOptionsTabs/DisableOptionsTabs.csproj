@@ -37,16 +37,16 @@
       <HintPath>..\packages\HarmonyX.2.7.0\lib\net45\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="BepInEx, Version=5.4.20.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BepInEx.BaseLib.5.4.20\lib\net35\BepInEx.dll</HintPath>
     </Reference>
     <Reference Include="FMODUnity, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\FMODUnity.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\FMODUnity.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
       <HintPath>..\packages\Mono.Cecil.0.11.4\lib\net40\Mono.Cecil.dll</HintPath>
@@ -67,13 +67,13 @@
       <HintPath>..\packages\MonoMod.Utils.21.12.13.1\lib\net452\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="Nautilus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.Nautilus.1.0.0-pre.42\lib\net472\Nautilus.dll</HintPath>
+      <HintPath>..\packages\Subnautica.Nautilus.1.0.0-pre.41\lib\net472\Nautilus.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Sentry, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Sentry.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Sentry.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,55 +84,55 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Unity.Addressables, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Addressables.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil, Version=0.10.0.0, Culture=neutral, PublicKeyToken=fc15b93552389f74, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.Cecil.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.Cecil.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Mdb, Version=0.10.0.0, Culture=neutral, PublicKeyToken=fc15b93552389f74, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.Cecil.Mdb.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.Cecil.Mdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Pdb, Version=0.10.0.0, Culture=neutral, PublicKeyToken=fc15b93552389f74, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.Cecil.Pdb.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.Cecil.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Cecil.Rocks, Version=0.10.0.0, Culture=neutral, PublicKeyToken=fc15b93552389f74, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.Cecil.Rocks.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.Cecil.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Collections.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Formats.Fbx.Runtime.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.InternalAPIEngineBridge.001.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Mathematics.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.MemoryProfiler, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.MemoryProfiler.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.MemoryProfiler.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Recorder.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.ResourceManager.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.ScriptableBuildPipeline.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.TextMeshPro.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\Unity.Timeline.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UnityEngine.Modules.2019.4.36\lib\net45\UnityEngine.dll</HintPath>
@@ -261,7 +261,7 @@
       <HintPath>..\packages\UnityEngine.Modules.2019.4.36\lib\net45\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UnityEngine.Modules.2019.4.36\lib\net45\UnityEngine.UIElementsModule.dll</HintPath>
@@ -318,13 +318,12 @@
       <HintPath>..\packages\UnityEngine.Modules.2019.4.36\lib\net45\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UWE.EditorModifications, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.GameLibs.82304.0.0-r.0\lib\net472\UWE.EditorModifications.dll</HintPath>
+      <HintPath>..\packages\Subnautica.GameLibs.71288.0.0-r.0\lib\net472\UWE.EditorModifications.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Patches\GameInput.cs" />
     <Compile Include="Patches\uGUI_OptionsPanel.cs" />
     <Compile Include="Patches\uGUI_TabbedControlsPanel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

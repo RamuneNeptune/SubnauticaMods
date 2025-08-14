@@ -13,12 +13,19 @@ namespace Ramune.DisableOptionsTabs
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.DisableOptionsTabs";
         public const string Name = "DisableOptionsTabs";
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.0";
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/DisableOptionsTabs/Version.json"))
+            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/DisableOptionsTabs/Version.json");
+
+            if (!config.EnableThisMod)
+            {
+                Logfile.Warning("This mod has been disabled in the config and will not be loaded");
                 return;
+            }
+
+            Initializer.Initialize(harmony, Logger, Name, Version);
         }
     }
 }

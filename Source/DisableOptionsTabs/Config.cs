@@ -11,8 +11,11 @@ namespace Ramune.DisableOptionsTabs
         [Toggle(" • Disable <b>Graphics</b>", Tooltip = "Re-open options menu to apply")]
         public bool DisableGraphics = false;
 
-        [Toggle(" • Disable <b>Input</b>", Tooltip = "Re-open options menu to apply")]
-        public bool DisableInput = false;
+        [Toggle(" • Disable <b>Keyboard</b>", Tooltip = "Re-open options menu to apply")]
+        public bool DisableKeyboard = false;
+
+        [Toggle(" • Disable <b>Controller</b>", Tooltip = "Re-open options menu to apply")]
+        public bool DisableController = false;
         
         [Toggle(" • Disable <b>Accessibility</b>", Tooltip = "Re-open options menu to apply")]
         public bool DisableAccessibility = false;

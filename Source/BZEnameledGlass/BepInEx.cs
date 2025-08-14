@@ -13,12 +13,19 @@ namespace Ramune.BZEnameledGlass
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.BZEnameledGlass";
         public const string Name = "BZEnameledGlass";
-        public const string Version = "4.0.3";
+        public const string Version = "4.0.2";
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/BZEnameledGlass/Version.json"))
+            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/BZEnameledGlass/Version.json");
+
+            if(!config.EnableThisMod)
+            {
+                Logfile.Warning("This mod has been disabled in the config and will not be loaded");
                 return;
+            }
+
+            Initializer.Initialize(harmony, Logger, Name, Version);
 
             Items.EnameledGlassClone.Patch();
         }
