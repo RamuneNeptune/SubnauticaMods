@@ -12,7 +12,7 @@
 		<Exec Command='if exist "$(ProjectDir)Recipes" xcopy /E /I /Y "$(ProjectDir)Recipes" "$(TargetDirectory)\Recipes"' />
 		<Exec Command='if exist "$(ProjectDir)Assets" xcopy /E /I /Y "$(ProjectDir)Assets" "$(TargetDirectory)\Assets"' />
 		<Exec Command='if exist "$(TargetDirectory)\$(TargetName).zip" del "$(TargetDirectory)\$(TargetName).zip"' />
-		<Exec Command='"C:\Program Files\7-Zip\7z.exe" a "$(TargetDirectory)\$(TargetName).zip" "$(TargetDirectory)\*"' />
+		<Exec Command='"C:\Program Files\7-Zip\7z.exe" a "$(TargetDirectory)\$(TargetName).zip" "$(TargetDirectory)"' />
 		<Exec Command='powershell -NoProfile -ExecutionPolicy Bypass -File "$(SolutionDir)Build.ps1" -SourceFile "$(ProjectDir)BepInEx.cs" -JsonFile "$(ProjectDir)Version.json"' />
 
 		<Exec Command='echo ✅ Built using Directory.Build.targets' />
