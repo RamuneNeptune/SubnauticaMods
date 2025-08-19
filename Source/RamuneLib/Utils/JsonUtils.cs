@@ -7,6 +7,12 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
+        public static Dictionary<string, RecipeData> RecipeDataCache = new();
+
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
         public static string GetJsonRecipe(string filename) => Path.Combine(Paths.RecipeFolder, filename + ".json");
@@ -19,6 +25,9 @@ namespace RamuneLib.Utils
         /// <returns></returns>
         public static RecipeData GetRecipeData(string filename)
         {
+            if(RecipeDataCache.TryGetValue(filename, out var cachedRecipeData))
+                return cachedRecipeData;
+            
             var path = Path.Combine(Paths.RecipeFolder, filename + ".json");
 
             if(!File.Exists(path))
@@ -35,6 +44,8 @@ namespace RamuneLib.Utils
                 Logfile.Error($"Invalid RecipeData file at: {path}");
                 return null;
             }
+
+            RecipeDataCache[filename] = recipeData;
 
             return recipeData;
         }
