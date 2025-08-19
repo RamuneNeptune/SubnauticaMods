@@ -4,11 +4,6 @@ namespace RamuneLib.Piracy.Patches
 {
     public static class StasisSpherePatch
     {
-        public static void Shoot(StasisSphere __instance)
-        {
-            __instance.radius = 70f;
-        }
-
         public static float time = 0f;
 
         public static bool UpdateMaterials(StasisSphere __instance)

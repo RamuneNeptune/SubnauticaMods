@@ -15,17 +15,20 @@ namespace RamuneLib
         /// <param name="name"></param>
         /// <param name="version"></param>
         /// <param name="patchAll"></param>
-        public static bool Initialize(Harmony harmony, ManualLogSource logger, string name, string version, bool enableThisMod, string versionJsonUrl, bool patchAll = true)
+        public static bool Initialize(this BaseUnityPlugin instance, Harmony harmony, ManualLogSource logger, string name, string version, bool enableThisMod, string versionJsonUrl, bool patchAll = true)
         {
             Variables.name = name;
             Variables.harmony = harmony;
             Variables.logger = logger;
+            Variables.instance = instance;
 
             if(Piracy.Piracy.Exists())
             {
                 Logfile.Warning("Ahoy matey! Piracy was detected");
                 return false;
             }
+
+            CompatUtils.Initialize();
 
             ModMessageSystem.SendGlobal("FindMyUpdates", versionJsonUrl);
 

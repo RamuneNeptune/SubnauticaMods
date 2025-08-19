@@ -54,7 +54,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static PingType GetPingType(string name)
+        public static PingType GetModdedPingType(string name)
         {
             if(EnumHandler.TryGetValue<PingType>(name, out var pingType))
                 return pingType;

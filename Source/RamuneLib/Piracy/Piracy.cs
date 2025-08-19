@@ -102,12 +102,6 @@ namespace RamuneLib.Piracy
 
 
         /// <summary>
-        /// The filesize used to determine if a user has a modified steam_api64.dll file (does not flag for those VR modified steam_api64.dll files).
-        /// </summary>
-        private static readonly long steamapisize = 300000;
-
-
-        /// <summary>
         /// A list of filenames & folder names which you will find in pirated copies. In the event that a legitimate user has these (they've mixed their pirated copy with their legitimate copy), they can be safely removed to ZERO detriment.
         /// </summary>
         private static readonly List<string> PiracyTargets = new() {
@@ -141,7 +135,7 @@ namespace RamuneLib.Piracy
             if(GameObject.Find("IsPirated"))
                 return true;
 
-            if(GameObject.Find("IsClean"))
+            if(GameObject.Find("IsNotPirated"))
                 return false;
 
             var directory = Environment.CurrentDirectory;
@@ -154,15 +148,6 @@ namespace RamuneLib.Piracy
             {
                 foreach(var steamDllPath in steamDllPaths)
                 {
-                    var length = new FileInfo(steamDllPath);
-
-                    if(length.Length > steamapisize)
-                    {
-                        new GameObject("IsPirated");
-                        DoPiracyPatches();
-                        return true;
-                    }
-
                     using var fileStream = File.OpenRead(steamDllPath);
 
                     using var sha256 = SHA256.Create();
@@ -199,7 +184,7 @@ namespace RamuneLib.Piracy
                 }
             }
 
-            new GameObject("IsClean");
+            new GameObject("IsNotPirated");
             return false;
         }
 
@@ -207,7 +192,7 @@ namespace RamuneLib.Piracy
         /// <summary>
         /// Searches through the game directory & subfolders to find the paths for all "steam_api64.dll" files
         /// </summary>
-        /// <param name="rootFolder"></param>
+        /// <param name="directory"></param>
         /// <returns></returns>
         public static List<string> FindAllSteamDLLs(string directory)
         {
@@ -239,9 +224,6 @@ namespace RamuneLib.Piracy
             PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.OnTakeDamage), new(typeof(Patches.PlayerPatches), nameof(Patches.PlayerPatches.OnTakeDamage)), HarmonyPatchType.Postfix);
 
 
-            PatchingUtils.ApplyPatch(typeof(Exosuit), nameof(Exosuit.ApplyJumpForce), new(typeof(Patches.ExosuitPatch), nameof(Patches.ExosuitPatch.ApplyJumpForce)), HarmonyPatchType.Postfix);
-
-
             PatchingUtils.ApplyPatch(typeof(FireExtinguisher), nameof(FireExtinguisher.Update), new(typeof(Patches.FireExtinguisherPatch), nameof(Patches.FireExtinguisherPatch.Update)), HarmonyPatchType.Postfix);
 
 
@@ -261,9 +243,6 @@ namespace RamuneLib.Piracy
 
 
             PatchingUtils.ApplyPatch(typeof(Crash), nameof(Crash.Detonate), new(typeof(Patches.CrashPatch), nameof(Patches.CrashPatch.Detonate)), HarmonyPatchType.Postfix);
-
-
-            PatchingUtils.ApplyPatch(typeof(StasisSphere), nameof(StasisSphere.Shoot), new(typeof(Patches.StasisSpherePatch), nameof(Patches.StasisSpherePatch.Shoot)), HarmonyPatchType.Postfix);
 
 
             PatchingUtils.ApplyPatch(typeof(StasisSphere), nameof(StasisSphere.UpdateMaterials), new(typeof(Patches.StasisSpherePatch), nameof(Patches.StasisSpherePatch.UpdateMaterials)), HarmonyPatchType.Prefix);

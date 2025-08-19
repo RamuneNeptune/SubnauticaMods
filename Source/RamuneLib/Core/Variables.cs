@@ -10,6 +10,8 @@ namespace RamuneLib
 
         public static ManualLogSource logger { get; set; }
 
+        public static BaseUnityPlugin instance { get; set; }
+
         public static class Paths
         {
             private static readonly string Location = Assembly.GetExecutingAssembly().Location;

@@ -13,6 +13,7 @@ global using UnityEngine.UI;
 global using UnityEngine.Animations;
 global using UnityEngine.Networking;
 global using UnityEngine.AddressableAssets;
+global using UnityEngine.SceneManagement;
 global using UnityEngine.Events;
 global using Unity.Mathematics;
 global using Object = UnityEngine.Object;

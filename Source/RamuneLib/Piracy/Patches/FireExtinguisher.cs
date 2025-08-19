@@ -11,11 +11,11 @@ namespace RamuneLib.Piracy.Patches
 
             if(Player.main.IsUnderwater())
             {
-                Player.main.GetComponent<UnderwaterMotor>().SetVelocity(-MainCamera.camera.transform.forward * 50f);
+                Player.main.GetComponent<UnderwaterMotor>().SetVelocity(-MainCamera.camera.transform.forward * 100f);
             }
             else
             {
-                Player.main.groundMotor?.SetVelocity(-MainCamera.camera.transform.forward * 50f);
+                Player.main.groundMotor?.SetVelocity(-MainCamera.camera.transform.forward * 100f);
             }
         }
     }
