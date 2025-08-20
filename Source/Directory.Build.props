@@ -6,7 +6,11 @@
 	<PropertyGroup>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
-
+	
+	<PropertyGroup>
+		<NuGetAudit>false</NuGetAudit>
+	</PropertyGroup>
+	
 	<ItemGroup>
 		<Reference Include="System"/>
 		<Reference Include="System.Core"/>
