@@ -47,10 +47,27 @@ namespace RamuneLib.Utils
         public static void RegisterOnModLoadedEvent(string pluginGuid, string pluginVersion, Action callback) => (AdvancedModLoadedCallbacks[(pluginGuid, pluginVersion)] = AdvancedModLoadedCallbacks.TryGetValue((pluginGuid, pluginVersion), out var list) ? list : new()).Add(callback);
 
 
-        public static void RegisterOnModLoadedEvents(Dictionary<string, Action> events) => events.ForEach(x => RegisterOnModLoadedEvent(x.Key, x.Value));
+        public static void RegisterOnModLoadedEvents(Dictionary<object, Action> events)
+        {
+            foreach(var kvp in events)
+            {
+                var key = kvp.Key;
 
+                if(key is string keyString)
+                {
+                    RegisterOnModLoadedEvent(keyString, kvp.Value);
+                    continue;
+                }
 
-        public static void RegisterOnModLoadedEvent(Dictionary<(string pluginGuid, string pluginVersion), Action> events) => events.ForEach(x => RegisterOnModLoadedEvent(x.Key.pluginGuid, x.Key.pluginVersion, x.Value));
+                if(key is ValueTuple<string, string> keyTuple)
+                {
+                    RegisterOnModLoadedEvent(keyTuple.Item1, keyTuple.Item2, kvp.Value);
+                    continue;
+                }
+
+                Logfile.Warning($"RegisterOnModLoadedEvents :: Invalid type: {kvp.Key.GetType()}");
+            }
+        }
 
 
         public static bool TryGetPluginInfo(string pluginGuid, out PluginInfo pluginInfo) => CachedPluginInfos.TryGetValue(pluginGuid, out pluginInfo);
