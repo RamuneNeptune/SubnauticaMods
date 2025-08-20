@@ -13,17 +13,18 @@ namespace Ramune.RamunesCustomizedStorage
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.RamunesCustomizedStorage";
         public const string Name = "RamunesCustomizedStorage";
-        public const string Version = "1.0.3";
+        public const string Version = "1.0.4";
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/RamunesCustomizedStorage/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/RamunesCustomizedStorage/Version.json"))
                 return;
-
+            /*
             var inbox = new ModInbox("RamunesCustomizedStorage", true);
 
             ModMessageSystem.RegisterInbox(inbox);
 
+            
             var reader = new BasicModMessageReader("RamunesCustomizedStorage", args =>
             {
                 if(args.Length != 3 || args[0] is not string modName || args[1] is not Vector2 sizeVector || args[2] is not bool shouldRemoveVector)
@@ -54,8 +55,9 @@ namespace Ramune.RamunesCustomizedStorage
                     Logfile.Warning($"Added vector: {Patches.PDAPatch.SizeAdditions[modName].Sum(v => v.y)}");
                 }
             });
-
+            
             inbox.AddMessageReader(reader);
+            */
 
             CoroutineHost.StartCoroutine(CompatibilityPatchCheck());
         }

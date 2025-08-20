@@ -61,6 +61,9 @@ namespace Ramune.RamunesCustomizedStorage.Patches
 
             var label = __instance._label.ToLower();
 
+            if(label.Equals("planterstoragelabel"))
+                return StorageType.Unknown;
+
             if(label.Equals("inventorylabel"))
                 return StorageType.Inventory;
 

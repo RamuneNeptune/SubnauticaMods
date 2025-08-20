@@ -62,10 +62,10 @@ namespace Ramune.RamunesCustomizedStorage
         public bool divider_prawnSuit;
 
         [Slider(" • Prawn Suit storage width (x)", Format = "{0:F1}", DefaultValue = 6f, Min = widthMinValue, Max = widthMaxValue, Step = step, Tooltip = tooltip + "6", Order = 14)]
-        public int width_prawnSuit = 4;
+        public int width_prawnSuit = 6;
 
         [Slider(" • Prawn Suit storage height (y)", Format = "{0:F1}", DefaultValue = 4f, Min = heightMinValue, Max = heightMaxValue, Step = step, Tooltip = tooltip + "4", Order = 15)]
-        public int height_prawnSuit = 6;
+        public int height_prawnSuit = 4;
 
         [Slider(" • Prawn Suit storage height per module", Format = "{0:F1}", DefaultValue = 1f, Min = heightMinValue, Max = heightMaxValue, Step = step, Tooltip = tooltip + "1", Order = 16)]
         public int height_prawnSuitModule = 1;

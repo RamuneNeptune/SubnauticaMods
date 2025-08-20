@@ -33,8 +33,8 @@ namespace Ramune.RamunesCustomizedStorage.Patches
             switch(storageType)
             {
                 case ItemsContainerPatch.StorageType.Seamoth:
-                    if(!itemsContainer.tr.root.gameObject.TryGetComponentInChildren<SeaMoth>(out var seamoth))
-                        return;
+                    //if(!itemsContainer.tr.root.gameObject.TryGetComponentInChildren<SeaMoth>(out var seamoth))
+                        //return;
 
                     itemsContainer.Resize(config.width_seamoth, config.height_seamoth);
                     //Screen.Info("Resized Seamoth storage to: " + config.width_seamoth + "x" + (seamothModuleCount > 0 ? config.height_seamoth + config.height_seamothModule * seamothModuleCount : config.height_seamoth));
