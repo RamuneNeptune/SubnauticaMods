@@ -22,7 +22,7 @@
   "fmu.logfile.errordb.InvalidUrlScheme": "Received a mod message with invalid URL: Must be HTTP or HTTPS! ({0})",
   "fmu.logfile.errordb.InvalidUrlExtension": "Received a mod message with invalid URL: Must lead directly to a JSON file! ({0})",
   "fmu.logfile.errordb.NotFound404": "Received a mod message with invalid URL: 404 not found! ({0})",
-  "fmu.logfile.errordb.NetworkOrHttpError": "Received a mod message with valid URL, but web request failed: Netowrk/HTTP error! ({0})",
+  "fmu.logfile.errordb.NetworkOrHttpError": "Received a mod message with valid URL, but web request failed: Network/HTTP error! ({0})",
   "fmu.logfile.errordb.NullDownloadedText": "Received a mod message with valid URL, but web request failed: Returned null text from URL! ({0})",
   "fmu.logfile.errordb.JsonDeserializationFailed": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",
   "fmu.logfile.errordb.JsonNullAfterDeserialization": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",

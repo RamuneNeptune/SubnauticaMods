@@ -1,0 +1,31 @@
+{
+  "fmu.ui.tabname": "Güncellemeler",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Find My Updates</b></color></size>\n<color=white>Sürüm kontrolünü destekleyen tüm modlar burada listelenecektir</color>\n\n</align>",
+  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>En son sürümü kullanıyorsunuz:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
+  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Bir güncelleme mevcut:</color> <color=#ffc834>{1}</color><color=white>! (geçerli:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
+  "fmu.ui.button.updated": "Güncel",
+  "fmu.ui.button.outdated": "Güncelle",
+
+  "fmu.warning.hint": "Bu mesajları mod yapılandırmasından devre dışı bırakabilirsiniz.",
+  "fmu.warning.outdated": "<color=#ffc834>{0}</color> güncel değil! Sahip olduğunuz sürüm: <color=#ffc834>{1}</color> (en son sürüm: <color=#ffc834>{2}</color>)",
+  "fmu.warning.invalidurl": "Geçersiz URL: {0}",
+  "fmu.warning.urlcheck": "<b>Bu bağlantıyı açmak istediğinizden emin misiniz?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.urlopened": "<b>URL açıldı</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+
+  "fmu.logfile.updated": "{0} güncel. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
+  "fmu.logfile.overdated": "{0} fazlasıyla güncel. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
+  "fmu.logfile.outdated": "{0} güncel değil. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
+
+  "fmu.logfile.errordb.ArgsNotString": "Geçersiz argümanlar içeren bir mod mesajı alındı: Bir dize olmalı!",
+  "fmu.logfile.errordb.ArgsEmptyString": "Geçersiz argümanlar içeren bir mod mesajı alındı: Boş olmamalıdır!",
+  "fmu.logfile.errordb.InvalidUrl": "Geçersiz URL'ye sahip bir mod mesajı alındı: URL olarak ayrıştırılamadı! ({0})",
+  "fmu.logfile.errordb.InvalidUrlScheme": "Geçersiz URL'ye sahip bir mod mesajı alındı: HTTP veya HTTPS olmalı! ({0})",
+  "fmu.logfile.errordb.InvalidUrlExten}sion": "Geçersiz URL'ye sahip bir mod mesajı alındı: Doğrudan bir JSON dosyasına yönlendirmelidir! ({0})",
+  "fmu.logfile.errordb.NotFound404": "Geçersiz URL'ye sahip bir mod mesajı alındı: 404 bulunamadı! ({0})",
+  "fmu.logfile.errordb.NetworkOrHttpError": "Geçerli URL'ye sahip bir mod mesajı alındı, ancak web isteği başarısız oldu: Network/HTTP hatası! ({0})",
+  "fmu.logfile.errordb.NullDownloadedText": "Geçerli URL'ye sahip bir mod mesajı alındı, ancak web isteği başarısız oldu: URL'den boş metin döndürüldü! ({0})",
+  "fmu.logfile.errordb.JsonDeserializationFailed": "Geçerli URL'ye sahip ancak geçersiz JSON içeren bir mod mesajı alındı: JSON'dan bilgi ayrıştırılamadı! ({0})",
+  "fmu.logfile.errordb.JsonNullAfterDeserialization": "Geçerli URL'ye sahip ancak geçersiz JSON içeren bir mod mesajı alındı: JSON'dan bilgi ayrıştırılamadı! ({0})",
+  "fmu.logfile.errordb.InvalidVersionFormat": "Geçerli URL'ye sahip ancak geçersiz JSON verileri içeren bir mod mesajı alındı: 'LatestVersion', 'System.Version' olarak ayrıştırılamadı! ({0})",
+  "fmu.logfile.errordb.CurrentVersionNotFound": "Geçerli URL'ye sahip ancak geçersiz JSON verilerine sahip bir mod mesajı alındı: Şu anda yüklü olan '{0}' adında bir mod bulunamadı! ({1})"
+}

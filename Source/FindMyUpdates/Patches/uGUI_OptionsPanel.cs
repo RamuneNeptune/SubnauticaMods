@@ -15,6 +15,8 @@ namespace Ramune.FindMyUpdates.Patches
 
         public static bool HasWarnedOnce = false;
 
+        public static bool ShouldNotify = false;
+
 
         [HarmonyPatch(nameof(uGUI_OptionsPanel.AddTabs)), HarmonyPostfix]
         public static void AddTabs(uGUI_OptionsPanel __instance)
@@ -32,6 +34,9 @@ namespace Ramune.FindMyUpdates.Patches
 
         public static void RegisterMod(string modName, string latestUrl, Version currentVersion, Version latestVersion, bool isUpdated)
         {
+            if(!ShouldNotify && !isUpdated)
+                ShouldNotify = true;
+
             if(UpdatesTabPanel != null)
             {
                 DoRegistration();

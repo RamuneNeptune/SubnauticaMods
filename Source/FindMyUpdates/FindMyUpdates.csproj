@@ -334,6 +334,8 @@
     <None Include="Localization\English.json" />
     <None Include="Localization\German.json" />
     <None Include="Localization\Russian.json" />
+    <None Include="Localization\Spanish.json" />
+    <None Include="Localization\Turkish.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>

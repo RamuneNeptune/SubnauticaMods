@@ -1,0 +1,31 @@
+{
+  "fmu.ui.tabname": "Actualizaciones",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Buscar Mis Actualizaciones</b></color></size>\n<color=white>Cualquier mod que soporte comprobación de versión será listado aquí</color>\n\n</align>",
+  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Estás usando la última versión:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
+  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Una actualización está disponible:</color> <color=#ffc834>{1}</color><color=white>! (tienes:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
+  "fmu.ui.button.updated": "Actualizado",
+  "fmu.ui.button.outdated": "Actualizar",
+
+  "fmu.warning.hint": "Puedes desactivar estos mensajes en la configuración del mod",
+  "fmu.warning.outdated": "<color=#ffc834>{0}</color> ¡está desactualizado! Tienes: <color=#ffc834>{1}</color> (el más reciente es: <color=#ffc834>{2}</color>)",
+  "fmu.warning.invalidurl": "URL no válida: {0}",
+  "fmu.warning.urlcheck": "<b>¿Estás seguro que deseas abrir este enlace?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.urlopened": "<b>URL abierta</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+
+  "fmu.logfile.updated": "{0} está actualizado. Estás usando {1} y la versión más reciente disponible es {2}",
+  "fmu.logfile.overdated": "{0} está más que actualizado. Estás usando {1} y la versión más reciente disponible es {2}",
+  "fmu.logfile.outdated": "{0} está desactualizado. Estás usando {1} y la versión más reciente disponible es {2}",
+
+  "fmu.logfile.errordb.ArgsNotString": "Received a mod message with invalid args: Must be a string!",
+  "fmu.logfile.errordb.ArgsEmptyString": "Received a mod message with invalid args: Must not be empty!",
+  "fmu.logfile.errordb.InvalidUrl": "Received a mod message with invalid URL: Failed to parse as URL! ({0})",
+  "fmu.logfile.errordb.InvalidUrlScheme": "Received a mod message with invalid URL: Must be HTTP or HTTPS! ({0})",
+  "fmu.logfile.errordb.InvalidUrlExtension": "Received a mod message with invalid URL: Must lead directly to a JSON file! ({0})",
+  "fmu.logfile.errordb.NotFound404": "Received a mod message with invalid URL: 404 not found! ({0})",
+  "fmu.logfile.errordb.NetworkOrHttpError": "Received a mod message with valid URL, but web request failed: Network/HTTP error! ({0})",
+  "fmu.logfile.errordb.NullDownloadedText": "Received a mod message with valid URL, but web request failed: Returned null text from URL! ({0})",
+  "fmu.logfile.errordb.JsonDeserializationFailed": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",
+  "fmu.logfile.errordb.JsonNullAfterDeserialization": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",
+  "fmu.logfile.errordb.InvalidVersionFormat": "Received a mod message with valid URL, but invalid JSON data: Could not parse 'LatestVersion' as a 'System.Version'! ({0})",
+  "fmu.logfile.errordb.CurrentVersionNotFound": "Received a mod message with valid URL, but invalid JSON data: Could not find a mod named '{0}' that is currently loaded! ({1})"
+}
