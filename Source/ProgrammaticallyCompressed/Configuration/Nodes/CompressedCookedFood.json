@@ -1,0 +1,23 @@
+{
+    "CompressedCookedFood": {        
+        "Name": "Compressed cooked food",
+        "Sprite": "Fabricator_CookedFood",
+        "Parent": "Fabricator",
+        "Items": [
+            "CookedHoleFish",
+            "CookedPeeper",
+            "CookedBladderfish",
+            "CookedGarryFish",
+            "CookedHoverfish",
+            "CookedReginald",
+            "CookedSpadefish",
+            "CookedBoomerang",
+            "CookedLavaBoomerang",
+            "CookedEyeye",
+            "CookedLavaEyeye",
+            "CookedOculus",
+            "CookedHoopfish",
+            "CookedSpinefish"
+        ]
+    }
+}

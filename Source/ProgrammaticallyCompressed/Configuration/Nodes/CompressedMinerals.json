@@ -1,0 +1,26 @@
+{
+    "CompressedMinerals": {        
+        "Name": "Compressed minerals",
+        "Sprite": "TechType_Titanium",
+        "Parent": "CompressedRawMaterials",
+        "Items": [
+            "CrashPowder",
+            "Copper",
+            "Sulphur",
+            "Diamond",
+            "Gold",
+            "PrecursorIonCrystal",
+            "Kyanite",
+            "Lead",
+            "Lithium",
+            "Magnetite",
+            "ScrapMetal",
+            "Nickel",
+            "Quartz",
+            "AluminumOxide",
+            "Salt",
+            "Silver",
+            "UraniniteCrystal"
+        ]
+    }
+}

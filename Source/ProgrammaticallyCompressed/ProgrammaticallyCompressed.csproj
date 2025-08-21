@@ -324,11 +324,25 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
+    <None Include="Configuration\BatteryTechTypes.json" />
+    <Compile Include="Patches\CrafterLogic.cs" />
+    <Compile Include="Patches\Inventory.cs" />
     <Compile Include="Patches\uGUI_CraftingMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Configuration\Order.json" />
+    <None Include="Configuration\Nodes\CompressedAdvancedMaterials.json" />
+    <None Include="Configuration\Nodes\CompressedBasicMaterials.json" />
+    <None Include="Configuration\Nodes\CompressedBiological.json" />
+    <None Include="Configuration\Nodes\CompressedCookedFood.json" />
+    <None Include="Configuration\Nodes\CompressedCuredFood.json" />
+    <None Include="Configuration\Nodes\CompressedElectronics.json" />
+    <None Include="Configuration\Nodes\CompressedMinerals.json" />
+    <None Include="Configuration\Nodes\CompressedRawMaterials.json" />
+    <None Include="Configuration\Nodes\CompressedWater.json" />
+    <None Include="Configuration\Nodes\Fabricator.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>

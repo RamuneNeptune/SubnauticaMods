@@ -1,0 +1,8 @@
+{
+    "Fabricator": {        
+        "Name": "Fabricator",
+        "Sprite": "TechType_Fabricator",
+        "Parent": "",
+        "Items": []
+    }
+}

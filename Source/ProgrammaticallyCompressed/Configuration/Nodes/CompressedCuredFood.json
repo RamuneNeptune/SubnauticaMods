@@ -1,0 +1,23 @@
+{
+    "CompressedCuredFood": {        
+        "Name": "Compressed cured food",
+        "Sprite": "Fabricator_CuredFood",
+        "Parent": "Fabricator",
+        "Items": [
+            "CuredHoleFish",
+            "CuredPeeper",
+            "CuredBladderfish",
+            "CuredGarryFish",
+            "CuredHoverfish",
+            "CuredReginald",
+            "CuredSpadefish",
+            "CuredBoomerang",
+            "CuredLavaBoomerang",
+            "CuredEyeye",
+            "CuredLavaEyeye",
+            "CuredOculus",
+            "CuredHoopfish",
+            "CuredSpinefish"
+        ]
+    }
+}

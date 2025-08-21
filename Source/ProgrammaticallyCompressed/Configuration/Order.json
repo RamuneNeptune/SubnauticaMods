@@ -1,0 +1,15 @@
+{
+	"Order": [
+		"Fabricator.json",
+		"CompressedBasicMaterials.json",
+		"CompressedAdvancedMaterials.json",
+		"CompressedElectronics.json",
+		"CompressedWater.json",
+		"CompressedCookedFood.json",
+		"CompressedCuredFood.json",
+
+		"CompressedRawMaterials.json",
+		"CompressedMinerals.json",
+		"CompressedBiological.json"
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "CompressedBiological": {        
+        "Name": "Compressed biological",
+        "Sprite": "TechType_AcidMushroom",
+        "Parent": "CompressedRawMaterials",
+        "Items": [
+            "AcidMushroom",
+            "KooshChunk",
+            "CoralChunk",
+            "CreepvinePiece",
+            "CreepvineSeedCluster",
+            "WhiteMushroom",
+            "EyesPlantSeed",
+            "TreeMushroomPiece",
+            "GasPod",
+            "JellyPlant",
+            "RedGreenTentacleSeed",
+            "SeaCrownSeed",
+            "StalkerTooth",
+            "JeweledDiskPiece"
+        ]
+    }
+}

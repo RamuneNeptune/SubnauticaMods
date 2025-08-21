@@ -3,7 +3,7 @@
 namespace Ramune.ProgrammaticallyCompressed.Patches
 {
     [HarmonyPatch(typeof(uGUI_CraftingMenu))]
-    public static class uGUI_CraftingMenuPatch
+    public static class uGUI_CraftingMenuPatches
     {
         public static CraftTree.Type CurrentCraftTreeType;
 

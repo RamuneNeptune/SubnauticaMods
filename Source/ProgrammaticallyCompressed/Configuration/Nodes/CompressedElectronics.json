@@ -1,0 +1,18 @@
+{
+    "CompressedElectronics": {        
+        "Name": "Compressed electronics",
+        "Sprite": "Fabricator_Electronics",
+        "Parent": "Fabricator",
+        "Items": [
+            "CopperWire",
+            "Battery",
+            "PrecursorIonBattery",
+            "PowerCell",
+            "PrecursorIonPowerCell",
+            "ComputerChip",
+            "WiringKit",
+            "AdvancedWiringKit",
+            "ReactorRod"
+        ]
+    }
+}

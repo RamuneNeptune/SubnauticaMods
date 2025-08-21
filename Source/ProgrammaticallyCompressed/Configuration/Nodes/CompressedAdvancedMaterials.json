@@ -1,0 +1,15 @@
+{
+    "CompressedAdvancedMaterials": {
+        "Name": "Compressed advanced materials",
+        "Sprite": "Fabricator_AdvancedMaterials",
+        "Parent": "Fabricator",
+        "Items": [
+            "HydrochloricAcid",
+            "Benzene",
+            "AramidFibers",
+            "Aerogel",
+            "Polyaniline",
+            "HatchingEnzymes"
+        ]
+    }
+}

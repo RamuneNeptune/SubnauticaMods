@@ -1,0 +1,18 @@
+{
+    "CompressedBasicMaterials": {        
+        "Name": "Compressed basic materials",
+        "Sprite": "Fabricator_BasicMaterials",
+        "Parent": "Fabricator",
+        "Items": [
+            "Titanium",
+            "TitaniumIngot",
+            "FiberMesh",
+            "Silicone",
+            "Glass",
+            "Bleach",
+            "Lubricant",
+            "EnameledGlass",
+            "PlasteelIngot"
+        ]
+    }
+}

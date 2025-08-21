@@ -1,0 +1,11 @@
+{
+    "CompressedWater": {        
+        "Name": "Compressed water",
+        "Sprite": "Fabricator_Water",
+        "Parent": "Fabricator",
+        "Items": [
+            "FilteredWater",
+            "DisinfectedWater"
+        ]
+    }
+}

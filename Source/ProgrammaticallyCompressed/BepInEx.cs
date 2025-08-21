@@ -8,29 +8,26 @@ namespace Ramune.ProgrammaticallyCompressed
     public class ProgrammaticallyCompressed : BaseUnityPlugin
     {
         public static Config config { get; } = OptionsPanelHandler.RegisterModOptions<Config>();
-        public static ProgrammaticallyCompressed Instance;
-        public static ManualLogSource logger => Instance.Logger;
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.ProgrammaticallyCompressed";
         public const string Name = "ProgrammaticallyCompressed";
         public const string Version = "1.0.0";
 
 
-        public Dictionary<(string Name, string Icon, string Path), List<TechType>> Tech = new()
+        public class NodeInfo
         {
-            {
-                ("CompressedMinerals", "", "CompressedRawMaterials"), new() { TechType.CrashPowder, TechType.Copper, TechType.Sulphur, TechType.Diamond, TechType.Gold, TechType.PrecursorIonCrystal, TechType.Kyanite, TechType.Lead, TechType.Lithium, TechType.Magnetite, TechType.ScrapMetal, TechType.Nickel, TechType.Quartz, TechType.AluminumOxide, TechType.Salt, TechType.Silver, /*TechType.Titanium,*/ TechType.UraniniteCrystal }
-            },
-            {
-                ("CompressedBiological", "", "CompressedRawMaterials"), new() { TechType.AcidMushroom, TechType.KooshChunk, TechType.CoralChunk, TechType.CreepvinePiece, TechType.CreepvineSeedCluster, TechType.WhiteMushroom, TechType.EyesPlantSeed, TechType.TreeMushroomPiece, TechType.GasPod, TechType.JellyPlant, TechType.RedGreenTentacleSeed, TechType.SeaCrownSeed, TechType.StalkerTooth, TechType.JeweledDiskPiece }
-            }
-        };
+            public string Name { get; set; }
+            public string Sprite { get; set; }
+            public string Parent { get; set; }
+            public List<string> Items { get; set; }
+        }
 
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/ProgrammaticallyCompressed/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/ProgrammaticallyCompressed/Version.json"))
                 return;
+
 
             var compressionWorkbench = PrefabUtils.CreatePrefab("CompressionWorkbench", "Compression workbench", "Compression workbench.")
                 .WithAutoUnlock()
@@ -38,68 +35,60 @@ namespace Ramune.ProgrammaticallyCompressed
                 .WithPDACategory(TechGroup.InteriorModules, TechCategory.InteriorModule)
                 .WithRecipe(PrefabUtils.CreateRecipe(1, new Ingredient(TechType.PlasteelIngot, 1), new Ingredient(TechType.ComputerChip, 1)));
 
+
             var backgroundType = EnumHandler.AddEntry<BackgroundType>("PCBG")
                 .WithBackground(ImageUtils.GetSprite("BG"));
+
 
             compressionWorkbench.SetGameObject(new FabricatorTemplate(compressionWorkbench.Info, craftTreeType)
             {
                 FabricatorModel = FabricatorTemplate.Model.Workbench
             });
 
-            foreach(var group in groups.Keys)
+
+            var filePathsToRead = Directory.GetFiles(Path.Combine(Paths.ConfigurationFolder, "Nodes"), "*.json")
+                .Where(filePath => !filePath.StartsWith("Order"));
+
+
+            var orderedFilePaths = JsonConvert.DeserializeObject<Dictionary<string, List<string>>>(File.ReadAllText(Path.Combine(Paths.ConfigurationFolder, "Order.json")))["Order"]
+             .Select(name => filePathsToRead.FirstOrDefault(f => Path.GetFileName(f).Equals(name, StringComparison.OrdinalIgnoreCase)))
+             .Where(x => x != null);
+
+
+            var nodes = new Dictionary<string, NodeInfo>();
+
+
+            foreach(var filePath in orderedFilePaths)
             {
-                var groupCategories = groups[group];
-
-                foreach(TechCategory category in groupCategories.Keys)
+                try
                 {
-                    if(category != TechCategory.Electronics && category != TechCategory.Water && category != TechCategory.CookedFood && category != TechCategory.CuredFood && category != TechCategory.BasicMaterials && category != TechCategory.AdvancedMaterials)
-                        continue;
-
-                    var categoryName1 = $"Compressed{category}";
-
-                    fabricator.AddTabNode(categoryName1, $"Compressed {string.Concat(category.ToString().Select((c, i) => i > 0 && char.IsUpper(c) ? " " + c : c.ToString())).ToLower()}", SpriteManager.Get(SpriteManager.Group.Category, "Fabricator_" + category.ToString()));
-
-                    foreach(var techType in groupCategories[category])
-                    {
-                        var compressedPrefab = PrefabUtils.CreatePrefab(techType.ID() + "Compressed", techType.Name() + " (compressed)", techType.Desc(), ImageUtils.GetSprite(techType))
-                            .WithRecipe(PrefabUtils.CreateRecipe(1, new Ingredient(techType, 10)), craftTreeType, categoryName1)
-                            .WithAutoUnlock();
-
-                        compressedPrefab.SetGameObject(new CloneTemplate(compressedPrefab.Info, techType));
-
-                        compressedPrefab.Register();
-
-                        var decompressedPrefab = PrefabUtils.CreatePrefab(techType.ID() + "Decompressed", techType.Name() + " (x10)", techType.Desc(), ImageUtils.GetSprite(techType))
-                            .WithRecipe(PrefabUtils.CreateRecipe(0, new Ingredient(compressedPrefab.Info.TechType, 1), techType, techType, techType, techType, techType, techType, techType, techType, techType, techType))
-                            .WithAutoUnlock();
-
-                        decompressedPrefab.SetGameObject(new CloneTemplate(decompressedPrefab.Info, techType));
-
-                        decompressedPrefab.Register();
-
-                        TechTypeMap.Add(compressedPrefab.Info.TechType, decompressedPrefab.Info.TechType);
-
-                        CraftDataHandler.SetBackgroundType(compressedPrefab.Info.TechType, backgroundType);
-                    }
+                    JsonConvert.DeserializeObject<Dictionary<string, NodeInfo>>(File.ReadAllText(filePath)).ForEach(x => nodes[x.Key] = x.Value);
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to read .json file at: {filePath}\n\n{ex.Message}");
                 }
             }
 
-            fabricator.AddTabNode("CompressedRawMaterials", $"Compressed raw materials", SpriteManager.Get(TechType.None));
 
-            foreach(var entry in Tech)
+            foreach(var node in nodes)
             {
-                var category = entry.Key.Name;
-                var root = entry.Key.Path;
+                (string id, string name, string sprite, string parent, List<string> items) = (node.Key, node.Value.Name, node.Value.Sprite, node.Value.Parent, node.Value.Items);
+                
+                fabricator.AddTabNode(id, name, sprite.IsNullOrWhiteSpace() ? ImageUtils.GetSprite(TechType.None) : sprite.StartsWith("Fabricator_") ? SpriteManager.Get(SpriteManager.Group.Category, sprite, ImageUtils.GetSprite(TechType.None)) : sprite.StartsWith("TechType_") ? ImageUtils.GetSprite((TechType)Enum.Parse(typeof(TechType), sprite.Replace("TechType_", ""))) : ImageUtils.GetSprite(sprite), parentTabId: parent.IsNullOrWhiteSpace() ? null : parent);
 
-                var categoryName1 = $"{category}";
+                var techTypes = items
+                    .Select(techTypeString => Enum.TryParse<TechType>(techTypeString, true, out var techType) ? techType : (TechType?)null)
+                    .Where(techType => techType.HasValue)
+                    .Select(techType => techType.Value);
 
-                fabricator.AddTabNode(categoryName1, $"Compressed {string.Concat(category.ToString().Select((c, i) => i > 0 && char.IsUpper(c) ? " " + c : c.ToString())).ToLower()}", SpriteManager.Get(SpriteManager.Group.Category, "Fabricator_" + category.ToString()), parentTabId:root);
-
-                foreach(var techType in entry.Value)
+                foreach(var techType in techTypes)
                 {
+                    var tabPath = GetTabPath(id, nodes);
+
                     var compressedPrefab = PrefabUtils.CreatePrefab(techType.ID() + "Compressed", techType.Name() + " (compressed)", techType.Desc(), ImageUtils.GetSprite(techType))
-                            .WithRecipe(PrefabUtils.CreateRecipe(1, new Ingredient(techType, 10)), craftTreeType, root, categoryName1)
-                            .WithAutoUnlock();
+                        .WithRecipe(PrefabUtils.CreateRecipe(1, new Ingredient(techType, 10)), craftTreeType, tabPath)
+                        .WithAutoUnlock();
 
                     compressedPrefab.SetGameObject(new CloneTemplate(compressedPrefab.Info, techType));
 
@@ -120,9 +109,12 @@ namespace Ramune.ProgrammaticallyCompressed
             }
 
             compressionWorkbench.Register();
-
+            
             TechTypeMapReversed = TechTypeMap.ToDictionary(kv => kv.Value, kv => kv.Key);
         }
+
+
+        public static string[] GetTabPath(string tabId, Dictionary<string, NodeInfo> nodes) => tabId.IsNullOrWhiteSpace() || !nodes.TryGetValue(tabId, out var node) ? Array.Empty<string>() : GetTabPath(node.Parent, nodes).Append(tabId).ToArray();
 
 
         public static Dictionary<TechType, TechType> TechTypeMap = new();
