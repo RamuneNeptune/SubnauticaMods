@@ -78,7 +78,7 @@ namespace Ramune.ProgrammaticallyCompressed
                 fabricator.AddTabNode(id, name, sprite.IsNullOrWhiteSpace() ? ImageUtils.GetSprite(TechType.None) : sprite.StartsWith("Fabricator_") ? SpriteManager.Get(SpriteManager.Group.Category, sprite, ImageUtils.GetSprite(TechType.None)) : sprite.StartsWith("TechType_") ? ImageUtils.GetSprite((TechType)Enum.Parse(typeof(TechType), sprite.Replace("TechType_", ""))) : ImageUtils.GetSprite(sprite), parentTabId: parent.IsNullOrWhiteSpace() ? null : parent);
 
                 var techTypes = items
-                    .Select(techTypeString => Enum.TryParse<TechType>(techTypeString, true, out var techType) ? techType : (TechType?)null)
+                    .Select(techTypeString => Enum.TryParse<TechType>(techTypeString, true, out var techType) ? techType : EnumHandler.TryGetValue<TechType>(techTypeString, out var moddedTechType) ? moddedTechType : (TechType?)null)
                     .Where(techType => techType.HasValue)
                     .Select(techType => techType.Value);
 
