@@ -17,7 +17,7 @@ namespace Ramune.DecoFabricator
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/DecoFabricator/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/DecoFabricator/Version.json"))
                 return;
 
             var prefab = PrefabUtils.CreatePrefab("DecoFabricator", "Decorations fabricator", "Used to fabricate posters, toys, caps, and more.", ImageUtils.GetSprite(TechType.Fabricator))
@@ -29,7 +29,7 @@ namespace Ramune.DecoFabricator
             var clone = new FabricatorTemplate(prefab.Info, craftTreeType)
             {
                 FabricatorModel = FabricatorTemplate.Model.Fabricator,
-                ColorTint = Color.green
+                ColorTint = Color.green,
             };
 
             prefab.SetGameObject(clone);
