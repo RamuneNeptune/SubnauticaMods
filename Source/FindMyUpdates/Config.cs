@@ -11,8 +11,8 @@ namespace Ramune.FindMyUpdates
         [Toggle(" • Enable main menu notice", Tooltip = "Displays a message on-screen when you reach the main menu if any mods are found to be oudated")]
         public bool MainMenuNotice = true;
 
-        [Slider(" • Main menu notice duration", Format = "{0:F0}s", DefaultValue = 8f, Min = 1f, Max = 30f, Step = 1f, Tooltip = "The duration in seconds to display the outdated mods main menu notice")]
-        public float MainMenuNoticeDuration = 8f;
+        [Slider(" • Main menu notice duration", Format = "{0:F0}s", DefaultValue = 15f, Min = 1f, Max = 60f, Step = 1f, Tooltip = "The duration in seconds to display the outdated mods main menu notice")]
+        public float MainMenuNoticeDuration = 15f;
 
         [Toggle(" • Enable on-screen warnings", Tooltip = "Displays text on-screen when you open the options menu if any mods are found to be oudated")]
         public bool OnScreenWarning = true;
