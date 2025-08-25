@@ -17,7 +17,7 @@ namespace Ramune.FasterGrowing
 
         public void Awake()
         {
-            if(!Initializer.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/FasterGrowing/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/FasterGrowing/Version.json"))
                 return;
         }
     }
