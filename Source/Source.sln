@@ -92,6 +92,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoRadiationBlur", "NoRadiat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlyIonBattery", "EarlyIonBattery\EarlyIonBattery.csproj", "{7D625EED-58A8-4A14-897E-C0854849800A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurableBaseLightingIntensity", "ConfigurableBaseLightingIntensity\ConfigurableBaseLightingIntensity.csproj", "{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -214,6 +216,10 @@ Global
 		{7D625EED-58A8-4A14-897E-C0854849800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D625EED-58A8-4A14-897E-C0854849800A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D625EED-58A8-4A14-897E-C0854849800A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -257,6 +263,7 @@ Global
 		{1ECF493A-B339-4F6D-B706-150DF907C2FE} = {6F06D842-3210-4192-A6EF-671A090F1FA1}
 		{96E46A3D-4FAA-4BB2-9457-F056DF66D1FA} = {1ECF493A-B339-4F6D-B706-150DF907C2FE}
 		{7D625EED-58A8-4A14-897E-C0854849800A} = {1ECF493A-B339-4F6D-B706-150DF907C2FE}
+		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD} = {47EE3E11-1987-481E-BEFD-67B813B1F401}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
