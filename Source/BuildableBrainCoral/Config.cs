@@ -12,6 +12,6 @@ namespace Ramune.BuildableBrainCoral
         public bool EnableThisMod = true;
 
         [Button("Open recipe file")]
-        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Variables.Paths.RecipeFolder, "BuildableBrainCoral.json"));
+        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Paths.RecipeFolder, "BuildableBrainCoral.json"));
     }
 }
