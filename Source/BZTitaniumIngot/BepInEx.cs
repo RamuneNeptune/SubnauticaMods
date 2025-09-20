@@ -13,14 +13,14 @@ namespace Ramune.BZTitaniumIngot
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.BZTitaniumIngot";
         public const string Name = "BZTitaniumIngot";
-        public const string Version = "4.0.1";
+        public const string Version = "4.0.2";
 
         public void Awake()
         {
             if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/BZTitaniumIngot/Version.json"))
                 return;
 
-            CraftDataHandler.SetRecipeData(TechType.TitaniumIngot, PrefabUtils.CreateRecipe(1, new Ingredient(TechType.Titanium, 5)));
+            CraftDataHandler.SetRecipeData(TechType.TitaniumIngot, JsonUtils.GetRecipeData(Path.Combine(Paths.RecipeFolder, "TitaniumIngot")));
         }
     }
 }
