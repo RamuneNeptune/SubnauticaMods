@@ -17,15 +17,8 @@ namespace Ramune.KeepMyDamnSeaglideLightOffWhenSwitchingBattery
 
         public void Awake()
         {
-            ModMessageSystem.SendGlobal("FindMyUpdates", "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/KeepMyDamnSeaglideLightOffWhenSwitchingBattery/Version.json");
-
-            if(!config.EnableThisMod)
-            {
-                Logfile.Warning("This mod has been disabled in the config and will not be loaded");
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/KeepMyDamnSeaglideLightOffWhenSwitchingBattery/Version.json"))
                 return;
-            }
-
-            Initializer.Initialize(harmony, Logger, Name, Version);
         }
     }
 }
