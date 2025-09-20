@@ -23,12 +23,12 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public static RecipeData GetRecipeData(string filename)
+        public static RecipeData GetRecipeData(string filename, bool withJsonExtension = true)
         {
             if(RecipeDataCache.TryGetValue(filename, out var cachedRecipeData))
                 return cachedRecipeData;
             
-            var path = Path.Combine(Paths.RecipeFolder, filename + ".json");
+            var path = Path.Combine(Paths.RecipeFolder, filename + (withJsonExtension ? ".json" : ""));
 
             if(!File.Exists(path))
             {
