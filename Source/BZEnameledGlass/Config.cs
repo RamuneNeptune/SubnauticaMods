@@ -12,6 +12,6 @@ namespace Ramune.BZEnameledGlass
         public bool EnableThisMod = true;
 
         [Button("Open recipe file")]
-        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Variables.Paths.RecipeFolder, "EnameledGlassClone.json"));
+        public void OpenRecipeFile(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Paths.RecipeFolder, "EnameledGlassClone.json"));
     }
 }
