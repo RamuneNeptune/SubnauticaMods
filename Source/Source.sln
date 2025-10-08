@@ -94,6 +94,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlyIonBattery", "EarlyIon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurableBaseLightingIntensity", "ConfigurableBaseLightingIntensity\ConfigurableBaseLightingIntensity.csproj", "{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaglideUpgrades", "SeaglideUpgrades\SeaglideUpgrades.csproj", "{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. DaWrecka", "0. DaWrecka", "{401E4899-5163-4734-952B-0EF34FF78B50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -220,6 +224,10 @@ Global
 		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -264,6 +272,8 @@ Global
 		{96E46A3D-4FAA-4BB2-9457-F056DF66D1FA} = {1ECF493A-B339-4F6D-B706-150DF907C2FE}
 		{7D625EED-58A8-4A14-897E-C0854849800A} = {1ECF493A-B339-4F6D-B706-150DF907C2FE}
 		{B70B4D7B-7C87-4029-84CD-235AE1D9F9AD} = {47EE3E11-1987-481E-BEFD-67B813B1F401}
+		{2B1684CB-C7B5-4393-BCD6-0DEEB7A44A74} = {401E4899-5163-4734-952B-0EF34FF78B50}
+		{401E4899-5163-4734-952B-0EF34FF78B50} = {3B38F874-C8F7-49F3-B115-1FD6D3A257C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
@@ -276,6 +286,7 @@ Global
 		RamuneLib\RamuneLib.projitems*{174f06ff-a0cc-4580-bdd3-142a8e44c403}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{1f728d5e-8d07-48b5-8bf5-24578df58eeb}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{2640f59c-7a06-4f61-af9f-cb6461c33b9a}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{2b1684cb-c7b5-4393-bcd6-0deeb7a44a74}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{44b90ac9-d1dd-466b-8ea2-897c83666ff9}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{5c2b4b5c-e448-45cc-a35c-ad3d320899d1}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{71fd4103-216d-4b0d-9b09-4555773c8313}*SharedItemsImports = 4
