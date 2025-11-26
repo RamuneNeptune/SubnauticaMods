@@ -96,7 +96,9 @@ namespace Ramune.FindMyUpdates
                 yield break;
             }
 
-            if(uri.Scheme != Uri.UriSchemeHttp && uri.Scheme != Uri.UriSchemeHttps)
+            var isFile = uri.Scheme == Uri.UriSchemeFile;
+
+            if(uri.Scheme != Uri.UriSchemeHttp && uri.Scheme != Uri.UriSchemeHttps && !isFile)
             {
                 Logfile.Error(string.Format(ErrorDB[Error.InvalidUrlScheme], url));
                 yield break;
@@ -111,6 +113,19 @@ namespace Ramune.FindMyUpdates
             var request = UnityWebRequest.Get(url);
 
             yield return request.SendWebRequest();
+
+            if(FindMyUpdates.config.LogWebRequests)
+            {
+                Logfile.WithLevel(FindMyUpdates.config.LoggingLevel switch
+                {
+                    0 => LogLevel.Debug,
+                    1 => LogLevel.Info,
+                    2 => LogLevel.Warning,
+                    3 => LogLevel.Error,
+                    4 => LogLevel.Fatal,
+                    _ => LogLevel.Debug
+                }, string.Format("fmu.logfile.sentwebrequest".LangKey(), url));
+            }
 
             if(request.responseCode == 404)
             {
@@ -136,6 +151,12 @@ namespace Ramune.FindMyUpdates
                     Logfile.Error(request.error);
 
                 yield break;
+            }
+
+            if(isFile && File.Exists(url))
+            {
+                File.Delete(url);
+                Logfile.Debug("Deleted temporary file used for Nautilus update check: " + url);
             }
 
             var modData = new ModData();
@@ -177,17 +198,23 @@ namespace Ramune.FindMyUpdates
             switch(comparison)
             {
                 case 0:
-                    Logfile.Info(string.Format("fmu.logfile.updated".LangKey(), _name, currentVersion, _latestVersion));
+                    if(FindMyUpdates.config.LogForUpToDateMods)
+                        Logfile.Info(string.Format("fmu.logfile.updated".LangKey(), _name, currentVersion, _latestVersion));
+
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, true);
                     break;
 
                 case > 0:
-                    Logfile.Info(string.Format("fmu.logfile.overdated".LangKey(), _name, currentVersion, _latestVersion));
+                    if(FindMyUpdates.config.LogForOverdatedMods)
+                        Logfile.Info(string.Format("fmu.logfile.overdated".LangKey(), _name, currentVersion, _latestVersion));
+
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, true);
                     break;
 
                 case < 0:
-                    Logfile.Warning(string.Format("fmu.logfile.outdated".LangKey(), _name, currentVersion, _latestVersion));
+                    if(FindMyUpdates.config.LogForOutdatedMods)
+                        Logfile.Warning(string.Format("fmu.logfile.outdated".LangKey(), _name, currentVersion, _latestVersion));
+
                     Patches.uGUI_OptionsPanelPatch.RegisterMod(_name, _url, currentVersion, _latestVersion, false);
                     break;
             }

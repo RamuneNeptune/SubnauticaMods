@@ -70,6 +70,40 @@ namespace RamuneLib.Utils
             /// Logs a divider to the logfile
             /// </summary>
             public static void Divider() => Variables.logger?.LogWarning("----------------------------------------------");
+
+
+
+            /// <summary>
+            /// Logs a message to the logfile with the specified severity.
+            /// </summary>
+            /// <param name="level"></param>
+            /// <param name="message">The message to log.</param>
+            /// <example>
+            /// <code>
+            /// LoggerUtils.Logfile.FromLevel(LogLevel.Info, "This is an example message to print in the logfile.");
+            /// </code>
+            /// </example>
+            public static void WithLevel(LogLevel level, string message)
+            {
+                switch(level)
+                {
+                    case LogLevel.Info:
+                        Info(message);
+                        break;
+                    case LogLevel.Error:
+                        Error(message);
+                        break;
+                    case LogLevel.Debug:
+                        Debug(message);
+                        break;
+                    case LogLevel.Warning:
+                        Warning(message);
+                        break;
+                    case LogLevel.Fatal:
+                        Fatal(message);
+                        break;
+                }
+            }
         }
 
 

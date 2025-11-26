@@ -1,6 +1,7 @@
 ﻿{
   "fmu.ui.tabname": "Updates",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Finde Meine Updates</b></color></size>\n<color=white>Alle mods, die versionsüberprüfung unterstützen, werden hier aufgelistet</color>\n\n</align>",
+  "fmu.ui.headername": "Finde Meine Updates",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>{0}</b></color></size>\n<color=white>Alle mods, die versionsüberprüfung unterstützen, werden hier aufgelistet</color>\n\n</align>",
   "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Du verwendest die neueste version:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
   "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Ein Update ist verfügbar:</color> <color=#ffc834>{1}</color><color=white>! (aktuell:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Auf dem neuesten Stand",
@@ -11,10 +12,13 @@
   "fmu.warning.invalidurl": "Ungültige URL: {0}",
   "fmu.warning.urlcheck": "<b>Bist du sicher, dass du diesen Link öffnen möchtest?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
   "fmu.warning.urlopened": "<b>URL geöffnet</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.mainmenuoutdated": "Some mods are outdated. Check the {0} tab.",
 
   "fmu.logfile.updated": "{0} ist auf dem neuesten Stand. Du verwendest {1} und die neueste verfügbare version ist {2}",
   "fmu.logfile.overdated": "{0} ist mehr als auf dem neuesten Stand. Du verwendest {1} und die neueste verfügbare version ist {2}",
   "fmu.logfile.outdated": "{0} ist veraltet. Du verwendest {1} und die neueste verfügbare version ist {2}",
+
+  "fmu.logfile.sentwebrequest": "Sent web request to URL: {0}",
 
   "fmu.logfile.errordb.ArgsNotString": "Received a mod message with invalid args: Must be a string!",
   "fmu.logfile.errordb.ArgsEmptyString": "Received a mod message with invalid args: Must not be empty!",

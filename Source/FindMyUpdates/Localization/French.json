@@ -1,0 +1,35 @@
+{
+  "fmu.ui.tabname": "Mises à jour",
+  "fmu.ui.headername": "Trouver Mes Mises à Jour",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>{0}</b></color></size>\n<color=white>Tous les mods supportant la vérification de version seront listés ici</color>\n\n</align>",
+  "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Vous avez la dernière version: </color><color=#ffc834>{1}</color>\n • <size=70%><color=white>URL: </color><color=#ffc834>{2}</color></size>",
+  "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Une mise à jour est disponible: </color> <color=#ffc834>{1}</color><color=white> ! (version actuelle: </color><color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL: </color><color=#ffc834>{3}</color></size>",
+  "fmu.ui.button.updated": "À jour",
+  "fmu.ui.button.outdated": "Mettre à jour",
+
+  "fmu.warning.hint": "Vous pouvez désactiver les messages dans les paramètres du mod",
+  "fmu.warning.outdated": "<color=#ffc834>{0}</color> n’est plus à jour ! Votre version: <color=#ffc834>{1}</color> | Dernière version: <color=#ffc834>{2}</color>)",
+  "fmu.warning.invalidurl": "URL invalide: {0}",
+  "fmu.warning.urlcheck": "<b>Voulez-vous vraiment ouvrir ce lien ?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.urlopened": "<b>Lien ouvert</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.mainmenuoutdated": "Some mods are outdated. Check the {0} tab.",
+
+  "fmu.logfile.updated": "{0} est à jour. Vous avez la version {1}, la dernière disponible est la {2}",
+  "fmu.logfile.overdated": "{0} est en avance. Vous avez la version {1}, la dernière disponible est la {2}",
+  "fmu.logfile.outdated": "{0} n’est plus à jour. Vous avez la version {1}, la dernière disponible est la {2}",
+
+  "fmu.logfile.sentwebrequest": "Requête web envoyée à l'URL: {0}",
+
+  "fmu.logfile.errordb.ArgsNotString": "Received a mod message with invalid args: Must be a string!",
+  "fmu.logfile.errordb.ArgsEmptyString": "Received a mod message with invalid args: Must not be empty!",
+  "fmu.logfile.errordb.InvalidUrl": "Received a mod message with invalid URL: Failed to parse as URL! ({0})",
+  "fmu.logfile.errordb.InvalidUrlScheme": "Received a mod message with invalid URL: Must be HTTP or HTTPS! ({0})",
+  "fmu.logfile.errordb.InvalidUrlExtension": "Received a mod message with invalid URL: Must lead directly to a JSON file! ({0})",
+  "fmu.logfile.errordb.NotFound404": "Received a mod message with invalid URL: 404 not found! ({0})",
+  "fmu.logfile.errordb.NetworkOrHttpError": "Received a mod message with valid URL, but web request failed: Network/HTTP error! ({0})",
+  "fmu.logfile.errordb.NullDownloadedText": "Received a mod message with valid URL, but web request failed: Returned null text from URL! ({0})",
+  "fmu.logfile.errordb.JsonDeserializationFailed": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",
+  "fmu.logfile.errordb.JsonNullAfterDeserialization": "Received a mod message with valid URL, but invalid JSON: Could not parse information from JSON! ({0})",
+  "fmu.logfile.errordb.InvalidVersionFormat": "Received a mod message with valid URL, but invalid JSON data: Could not parse 'LatestVersion' as a 'System.Version'! ({0})",
+  "fmu.logfile.errordb.CurrentVersionNotFound": "Received a mod message with valid URL, but invalid JSON data: Could not find a mod named '{0}' that is currently loaded! ({1})"
+}

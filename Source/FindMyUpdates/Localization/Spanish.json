@@ -1,6 +1,7 @@
 {
   "fmu.ui.tabname": "Actualizaciones",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Buscar Mis Actualizaciones</b></color></size>\n<color=white>Cualquier mod que soporte comprobación de versión será listado aquí</color>\n\n</align>",
+  "fmu.ui.headername": "Buscar Mis Actualizaciones",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>{0}</b></color></size>\n<color=white>Cualquier mod que soporte comprobación de versión será listado aquí</color>\n\n</align>",
   "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Estás usando la última versión:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
   "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Una actualización está disponible:</color> <color=#ffc834>{1}</color><color=white>! (tienes:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Actualizado",
@@ -11,10 +12,13 @@
   "fmu.warning.invalidurl": "URL no válida: {0}",
   "fmu.warning.urlcheck": "<b>¿Estás seguro que deseas abrir este enlace?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
   "fmu.warning.urlopened": "<b>URL abierta</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.mainmenuoutdated": "Some mods are outdated. Check the {0} tab.",
 
   "fmu.logfile.updated": "{0} está actualizado. Estás usando {1} y la versión más reciente disponible es {2}",
   "fmu.logfile.overdated": "{0} está más que actualizado. Estás usando {1} y la versión más reciente disponible es {2}",
   "fmu.logfile.outdated": "{0} está desactualizado. Estás usando {1} y la versión más reciente disponible es {2}",
+
+  "fmu.logfile.sentwebrequest": "Sent web request to URL: {0}",
 
   "fmu.logfile.errordb.ArgsNotString": "Received a mod message with invalid args: Must be a string!",
   "fmu.logfile.errordb.ArgsEmptyString": "Received a mod message with invalid args: Must not be empty!",

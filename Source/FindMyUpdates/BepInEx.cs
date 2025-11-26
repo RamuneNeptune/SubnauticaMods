@@ -11,7 +11,7 @@ namespace Ramune.FindMyUpdates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FindMyUpdates";
         public const string Name = "FindMyUpdates";
-        public const string Version = "1.0.7";
+        public const string Version = "1.1.0";
 
         public void Awake()
         {
@@ -19,7 +19,7 @@ namespace Ramune.FindMyUpdates
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();
-
+            
             SceneUtils.RegisterOnMenuEnvironmentLoaded(() =>
             {
                 if(Patches.uGUI_OptionsPanelPatch.ShouldNotify && config.MainMenuNotice && Hint.main != null)
@@ -29,10 +29,42 @@ namespace Ramune.FindMyUpdates
                     outdatedMessage.oy = 0f;
                     outdatedMessage.anchor = TextAnchor.MiddleLeft;
                     outdatedMessage.SetBackgroundColor(Color.cyan);
-                    outdatedMessage.SetText("Some mods are outdated. Check the updates tab.", TextAnchor.UpperCenter);
+                    outdatedMessage.SetText(string.Format("fmu.warning.mainmenuoutdated".LangKey(), "fmu.ui.tabname".LangKey()), TextAnchor.UpperCenter);
                     outdatedMessage.Show(config.MainMenuNoticeDuration, 0f, 0.25f, 0.25f, null);
                 }
             });
+
+            if(config.CheckNautilus)
+            {
+                using var client = new WebClient();
+
+                client.Headers.Add("User-Agent", $"{Name}/{Version}");
+
+                try
+                {
+                    foreach(var release in JArray.Parse(client.DownloadString("https://api.github.com/repos/SubnauticaModding/Nautilus/releases")))
+                    {
+                        if((bool)release["prerelease"])
+                        {
+                            string temporaryNautilusJsonFile = Path.Combine(Path.GetTempPath(), Path.ChangeExtension(Path.GetRandomFileName(), "json"));
+
+                            File.WriteAllText(temporaryNautilusJsonFile, $@"{{
+                              ""ModName"": ""Nautilus"",
+                              ""LatestVersion"": ""{((string)release["tag_name"]).Replace("-pre", "")}"",
+                              ""LatestURL"": ""https://www.nexusmods.com/subnautica/mods/1262""
+                            }}");
+
+                            ModMessageSystem.SendGlobal("FindMyUpdates", temporaryNautilusJsonFile);
+
+                            break;
+                        }
+                    }
+                }
+                catch(Exception)
+                {
+                    return;
+                }
+            }
 
             StartCoroutine(WaitToCheckUpdates());
         }

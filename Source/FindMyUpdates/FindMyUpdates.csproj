@@ -332,6 +332,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Localization\English.json" />
+    <None Include="Localization\French.json" />
     <None Include="Localization\German.json" />
     <None Include="Localization\Russian.json" />
     <None Include="Localization\Spanish.json" />

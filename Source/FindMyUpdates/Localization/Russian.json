@@ -1,6 +1,7 @@
 ﻿{
   "fmu.ui.tabname": "Обновления",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Найди мои обновления</b></color></size>\n<color=white>Здесь будут отображаться моды, поддерживающие проверку версий</color>\n\n</align>",
+  "fmu.ui.headername": "Найди мои обновления",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>{0}</b></color></size>\n<color=white>Здесь будут отображаться моды, поддерживающие проверку версий</color>\n\n</align>",
   "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>У вас установлена последняя версия:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
   "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Доступно обновление:</color> <color=#ffc834>{1}</color><color=white>! (текущая:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Актуально",
@@ -11,10 +12,13 @@
   "fmu.warning.invalidurl": "Некорректный URL: {0}",
   "fmu.warning.urlcheck": "<b>Вы уверены, что хотите открыть эту ссылку?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
   "fmu.warning.urlopened": "<b>Ссылка открыта</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.mainmenuoutdated": "Some mods are outdated. Check the {0} tab.",
 
   "fmu.logfile.updated": "{0} актуален. У вас версия {1}, последняя доступная версия {2}",
   "fmu.logfile.overdated": "{0} новее последней версии. У вас версия {1}, последняя доступная версия {2}",
   "fmu.logfile.outdated": "{0} устарел. У вас версия {1}, последняя доступная версия {2}",
+
+  "fmu.logfile.sentwebrequest": "Sent web request to URL: {0}",
 
   "fmu.logfile.errordb.ArgsNotString": "Received a mod message with invalid args: Must be a string!",
   "fmu.logfile.errordb.ArgsEmptyString": "Received a mod message with invalid args: Must not be empty!",

@@ -1,6 +1,7 @@
 {
   "fmu.ui.tabname": "Güncellemeler",
-  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>Find My Updates</b></color></size>\n<color=white>Sürüm kontrolünü destekleyen tüm modlar burada listelenecektir</color>\n\n</align>",
+  "fmu.ui.headername": "Güncellemelerimi Bul",
+  "fmu.ui.header": "<align=center>\n<size=115%><color=#ffc834><b>{0}</b></color></size>\n<color=white>Sürüm kontrolünü destekleyen tüm modlar burada listelenecektir</color>\n\n</align>",
   "fmu.ui.mod.updated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>En son sürümü kullanıyorsunuz:</color> <color=#ffc834>{1}</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{2}</color></size>",
   "fmu.ui.mod.outdated": "<b><color=#ffc834>{0}:</color></b>\n • <color=white>Bir güncelleme mevcut:</color> <color=#ffc834>{1}</color><color=white>! (geçerli:</color> <color=#ffc834>{2}</color><color=white>)</color>\n • <size=70%><color=white>URL:</color> <color=#ffc834>{3}</color></size>",
   "fmu.ui.button.updated": "Güncel",
@@ -11,10 +12,13 @@
   "fmu.warning.invalidurl": "Geçersiz URL: {0}",
   "fmu.warning.urlcheck": "<b>Bu bağlantıyı açmak istediğinizden emin misiniz?</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
   "fmu.warning.urlopened": "<b>URL açıldı</b>\n<color=#ffc802><size=75%>:: {0}</size></color>",
+  "fmu.warning.mainmenuoutdated": "Some mods are outdated. Check the {0} tab.",
 
   "fmu.logfile.updated": "{0} güncel. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
   "fmu.logfile.overdated": "{0} fazlasıyla güncel. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
   "fmu.logfile.outdated": "{0} güncel değil. {1} kullanıyorsunuz ve mevcut en son sürüm: {2}",
+
+  "fmu.logfile.sentwebrequest": "Sent web request to URL: {0}",
 
   "fmu.logfile.errordb.ArgsNotString": "Geçersiz argümanlar içeren bir mod mesajı alındı: Bir dize olmalı!",
   "fmu.logfile.errordb.ArgsEmptyString": "Geçersiz argümanlar içeren bir mod mesajı alındı: Boş olmamalıdır!",
