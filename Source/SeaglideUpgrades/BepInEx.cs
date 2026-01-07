@@ -13,7 +13,7 @@ namespace Ramune.SeaglideUpgrades
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.SeaglideUpgrades";
         public const string Name = "SeaglideUpgrades";
-        public const string Version = "1.0.0";
+        public const string Version = "4.0.0";
 
         public void Awake()
         {
