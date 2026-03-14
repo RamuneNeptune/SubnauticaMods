@@ -1,0 +1,17 @@
+{
+    "craftAmount": 1,
+    "Ingredients": [
+      {
+        "techType": "TitaniumIngot",
+        "amount": 1
+      },
+      {
+        "techType": "CopperWire",
+        "amount": 1
+      },
+      {
+        "techType": "AcidMushroom",
+        "amount": 2
+      }
+    ]
+  }

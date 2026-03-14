@@ -19,6 +19,8 @@ namespace Ramune.RamunesWorkbench
         {
             if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/RamunesWorkbench/Version.json"))
                 return;
+
+            Buildables.RamunesWorkbench.Patch();
         }
     }
 }

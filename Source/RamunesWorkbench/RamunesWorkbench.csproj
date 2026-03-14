@@ -326,16 +326,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
+    <Compile Include="Buildables\RamunesWorkbench.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Patches\Player.cs" />
+    <Compile Include="CraftHandler.cs" />
+    <Compile Include="Monos\RamunesWorkbench.cs" />
+    <Compile Include="Patches\KnownTech.cs" />
+    <Compile Include="Patches\uGUI_CraftingMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Configuration\CraftNodes.json" />
+    <None Include="Configuration\TabNodes.json" />
+    <None Include="Recipes\RamunesWorkbench.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Fancy.TabNode.png" />
+    <Content Include="Assets\Fancy.TabNodeHover.png" />
+    <Content Include="Assets\RamunesWorkbench.Illum.png" />
+    <Content Include="Assets\RamunesWorkbench.png" />
+    <Content Include="Assets\RamunesWorkbench.Texture.png" />
+    <Content Include="Assets\TabConsumables.png" />
+    <Content Include="Assets\TabEquipment.png" />
+    <Content Include="Assets\TabModules.png" />
+    <Content Include="Assets\TabPower.png" />
+    <Content Include="Assets\TabTools.png" />
+    <Content Include="Assets\Vanilla.TabNode.png" />
+    <Content Include="Assets\Vanilla.TabNodeHover.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets" Condition="Exists('..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
