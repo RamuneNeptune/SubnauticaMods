@@ -75,9 +75,9 @@ public static class Program
 
     public static async Task StartInstallation()
     {
-        if(!OneClick && MessageBox.Show("The latest version of Tobey's BepInEx Pack for Subnautica and Nautilus will now be downloaded and installed.\n\nClick OK to Continue, or CANCEL to Exit.", "Ready to download", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) != DialogResult.OK)
+        if(!OneClick && MessageBox.Show("The latest version of Tobey's BepInEx Pack for Subnautica, Nautilus, and Find My Updates (FMU) will now be downloaded and installed.\n\nClick OK to Continue, or CANCEL to Exit.", "Ready to download", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) != DialogResult.OK)
         {
-            Log("Installation of Tobey's BepInEx Pack for Subnautica and Nautilus cancelled by user. Exiting installer...", "WARN");
+            Log("Installation of Tobey's BepInEx Pack for Subnautica, Nautilus, and Find My Updates (FMU) cancelled by user. Exiting installer...", "WARN");
             return;
         }
 
@@ -89,6 +89,8 @@ public static class Program
             PageSize = 1, PageCount = 1, StartPage = 1 
         };
 
+        // Nautilus uses pre-releases therefore we must use .GetAll() and not .GetLatest() (as the latter ignores pre-releases)
+        // I used it for BepInEx though just to make them use the same logic
         var bepinexRelease = await githubClient.Repository.Release.GetAll("toebeann", "BepInEx.Subnautica", options);
         var nautilusRelease = await githubClient.Repository.Release.GetAll("SubnauticaModding", "Nautilus", options);
 
@@ -119,10 +121,36 @@ public static class Program
         await DownloadAndExtract(nautilusAsset.BrowserDownloadUrl, nautilusAsset.Name, Path.Combine(SubnauticaPath!, "BepInEx"), "Nautilus");
 
         if(!OneClick)
-            MessageBox.Show($"Nautilus ({nautilusAsset.Name}) has been successfully installed.\n\nClick OK to finish.", "Nautilus installed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Nautilus ({nautilusAsset.Name}) has been successfully installed.\n\nClick OK to proceed with Find My Updates (FMU) installation.", "Nautilus installed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        var fmuRelease = await githubClient.Repository.Release.GetLatest("RamuneNeptune", "FindMyUpdates");
+
+        if(fmuRelease == null)
+        {
+            Log($"Failed to retrieve the latest release of Find My Updates (FMU). Please check your internet connection and try again. Exiting installer...", "ERROR");
+            MessageBox.Show($"Failed to retrieve the latest release of Find My Updates (FMU). Please check your internet connection and try again. Exiting installer...", "Failed to retrieve releases", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+        }
+
+        var fmuAsset = fmuRelease.Assets.FirstOrDefault();
+
+        if(fmuAsset == null)
+        {
+            Log($"Failed to retrieve the latest release of Find My Updates (FMU). Please check your internet connection and try again. Exiting installer...", "ERROR");
+            MessageBox.Show($"Failed to retrieve the latest release of Find My Updates (FMU). Please check your internet connection and try again. Exiting installer...", "Failed to retrieve releases", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+        }
+
+        await DownloadAndExtract(fmuAsset.BrowserDownloadUrl, fmuAsset.Name, Path.Combine(SubnauticaPath!, "BepInEx", "plugins"), "Find My Updates");
+
+        if(!OneClick)
+            MessageBox.Show($"Find My Updates ({fmuAsset.Name}) has been successfully installed.\n\nClick OK to finish.", "Find My Updates installed", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         Log("Installation complete! Exiting installer...");
         MessageBox.Show("Installation complete! You can now install mods for Subnautica.", "Installation complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        // Yucky please rewrite all of it
+        // - Me
     }
 
 
