@@ -124,6 +124,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleBayBeacon", "Vehicle
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alternate Workspace", "Alternate Workspace", "{29BC49B6-6D76-4842-B046-62EFB83BE42F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnauticaModdingSetup", "SubnauticaModdingSetup\SubnauticaModdingSetup.csproj", "{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
