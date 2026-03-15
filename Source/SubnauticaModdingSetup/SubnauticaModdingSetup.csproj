@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Ramune.SubnauticaModdingSetup.Program</StartupObject>
+    <AssemblyName>Ramune.$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>Ramune.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <ApplicationIcon>SMS.ico</ApplicationIcon>
+    <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+    <PublishAot>False</PublishAot>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="SMS.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Octokit" Version="14.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Octokit" />
+    <Using Include="System.Diagnostics" />
+    <Using Include="System.IO.Compression" />
+  </ItemGroup>
+
+</Project>

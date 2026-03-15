@@ -10,8 +10,8 @@
 	<PropertyGroup>
 		<NuGetAudit>false</NuGetAudit>
 	</PropertyGroup>
-	
-	<ItemGroup>
+
+	<ItemGroup Condition="'$(MSBuildProjectName)' != 'SubnauticaModdingSetup'">
 		<Reference Include="System"/>
 		<Reference Include="System.Core"/>
 		<Reference Include="System.Xml.Linq"/>
@@ -22,5 +22,5 @@
 		<Reference Include="System.Xml"/>
 	</ItemGroup>
 
-	<Import Project="RamuneLib\RamuneLib.projitems" Label="Shared" Condition="Exists('RamuneLib\RamuneLib.projitems')" />	
+	<Import Project="RamuneLib\RamuneLib.projitems" Label="Shared" Condition="Exists('RamuneLib\RamuneLib.projitems') And '$(MSBuildProjectName)' != 'SubnauticaModdingSetup'"/>
 </Project>

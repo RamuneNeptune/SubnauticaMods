@@ -124,6 +124,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleBayBeacon", "Vehicle
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alternate Workspace", "Alternate Workspace", "{29BC49B6-6D76-4842-B046-62EFB83BE42F}"
 EndProject
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -310,6 +311,10 @@ Global
 		{58DB2075-C72F-4182-A92D-1BE908FA1DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58DB2075-C72F-4182-A92D-1BE908FA1DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58DB2075-C72F-4182-A92D-1BE908FA1DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -368,6 +373,7 @@ Global
 		{24BF521E-2230-4B68-993A-F501DE7B55AB} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
 		{522DE078-3326-4CE7-8AD4-7A81ECAAB35F} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
 		{58DB2075-C72F-4182-A92D-1BE908FA1DDA} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
+		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF} = {39F8E4B5-942C-4307-94C6-6B5EB9960B74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}

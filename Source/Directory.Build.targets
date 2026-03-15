@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Target Name="PostBuildEvents" AfterTargets="Build">
+	<Target Name="PostBuildEvents" AfterTargets="Build" Condition="'$(MSBuildProjectName)' != 'SubnauticaModdingSetup'">
 		<PropertyGroup>
 			<TargetDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)</TargetDirectory>
 		</PropertyGroup>
