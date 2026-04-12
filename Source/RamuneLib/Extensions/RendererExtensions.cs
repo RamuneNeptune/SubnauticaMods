@@ -56,7 +56,7 @@ namespace RamuneLib.Extensions
 
 
         /// <summary>
-        /// Sets a texture for multiple materials
+        /// Sets a texture for multiple materials.
         /// </summary>
         /// <param name="type">The type of texture to set (Main, Specular, Illum)</param>
         /// <param name="texture">The texture to apply</param>

@@ -126,6 +126,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Alternate Workspace", "Alte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubnauticaModdingSetup", "SubnauticaModdingSetup\SubnauticaModdingSetup.csproj", "{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIDExporter", "GUIDExporter\GUIDExporter.csproj", "{8103E2CB-8279-457C-AAC3-7244D567D300}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -316,6 +318,10 @@ Global
 		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8103E2CB-8279-457C-AAC3-7244D567D300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8103E2CB-8279-457C-AAC3-7244D567D300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8103E2CB-8279-457C-AAC3-7244D567D300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8103E2CB-8279-457C-AAC3-7244D567D300}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -375,6 +381,7 @@ Global
 		{522DE078-3326-4CE7-8AD4-7A81ECAAB35F} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
 		{58DB2075-C72F-4182-A92D-1BE908FA1DDA} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
 		{CFB21CFA-304C-4D7B-B4ED-12DE43A86DAF} = {39F8E4B5-942C-4307-94C6-6B5EB9960B74}
+		{8103E2CB-8279-457C-AAC3-7244D567D300} = {39F8E4B5-942C-4307-94C6-6B5EB9960B74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}
@@ -403,6 +410,7 @@ Global
 		RamuneLib\RamuneLib.projitems*{7d32191a-890f-4125-91f4-0d5a29611092}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{7d625eed-58a8-4a14-897e-c0854849800a}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{7daa9076-4349-4b94-b61d-83f15ea9c8cb}*SharedItemsImports = 4
+		RamuneLib\RamuneLib.projitems*{8103e2cb-8279-457c-aac3-7244d567d300}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{8d299554-df4a-4dc7-8536-6b896b055abd}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{907a2dd6-951c-4877-ab0d-d759cfe1a562}*SharedItemsImports = 4
 		RamuneLib\RamuneLib.projitems*{953ffb93-99a2-4184-866d-7268f625dc4e}*SharedItemsImports = 4
