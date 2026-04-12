@@ -46,7 +46,7 @@ namespace RamuneLib.Extensions
                     break;
 
                 case TextureType.Emissive:
-                    if(applyToEverything) renderer.materials.ForEach(m => m.SetTexture(ShaderPropertyID._Illum, texture));
+                    if(applyToEverything) renderer.materials.ForEach(m => m.SetTexture(ShaderPropertyID._EmissiveTex, texture));
                     else renderer.material.SetTexture(ShaderPropertyID._EmissiveTex, texture);
                     break;
             }

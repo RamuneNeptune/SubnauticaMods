@@ -198,11 +198,10 @@ namespace RamuneLib.Utils
         /// </example>
         public static void Subtitle(string langKey, string message, float duration = 5f, float delay = 0f)
         {
-            LanguageHandler.SetLanguageLine(langKey, $"{message} <delay={delay}>");
-            Language.main.Exists()?.ParseMetaData();
-
-            StringBuilder builder = new StringBuilder().Append(message);
-            Subtitles.AddRawLong(1, builder, 0f, duration);
+            LanguageHandler.SetLanguageLine(langKey, message);
+            string localizedMessage = Language.main?.Get(langKey) ?? message;
+            StringBuilder builder = new(localizedMessage);
+            Subtitles.AddRawLong(1, builder, delay, duration);
         }
 
 
@@ -212,10 +211,10 @@ namespace RamuneLib.Utils
         /// <param name="message"></param>
         /// <param name="duration"></param>
         /// <param name="delay"></param>
-        public static void Subtitle(string message, float duration = 5f)
+        public static void Subtitle(string message, float duration = 5f, float delay = 0f)
         {
-            StringBuilder builder = new StringBuilder().Append(message);
-            Subtitles.AddRawLong(1, builder, 0f, duration);
+            StringBuilder builder = new(message);
+            Subtitles.AddRawLong(1, builder, delay, duration);
         }
     }
 }

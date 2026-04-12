@@ -17,7 +17,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="techType"></param>
         /// <returns></returns>
-        public static string Name(this TechType techType) => Language.main.Get(techType);
+        public static string Name(this TechType techType) => Language.main?.Get(techType) ?? techType.AsString();
 
 
         /// <summary>
@@ -25,7 +25,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="techType"></param>
         /// <returns></returns>
-        public static string Desc(this TechType techType) => Language.main.Get("Tooltip_" + techType);
+        public static string Desc(this TechType techType) => Language.main?.Get("Tooltip_" + techType) ?? "Tooltip_" + techType.AsString();
 
 
         /// <summary>

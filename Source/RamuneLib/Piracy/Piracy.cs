@@ -148,26 +148,33 @@ namespace RamuneLib.Piracy
             {
                 foreach(var steamDllPath in steamDllPaths)
                 {
-                    using var fileStream = File.OpenRead(steamDllPath);
-
-                    using var sha256 = SHA256.Create();
-
-                    var bytes = sha256.ComputeHash(fileStream);
-
-                    if(bytes != null && bytes.Length == 0)
+                    try
                     {
-                        var builder = new StringBuilder();
+                        using var fileStream = File.OpenRead(steamDllPath);
 
-                        bytes.ForEach(x => builder.Append(x.ToString("x2")));
+                        using var sha256 = SHA256.Create();
 
-                        var hash = builder.ToString();
+                        var bytes = sha256.ComputeHash(fileStream);
 
-                        if(!hash.Equals(steamapihash))
+                        if(bytes != null && bytes.Length != 0)
                         {
-                            new GameObject("IsPirated");
-                            DoPiracyPatches();
-                            return true;
+                            var builder = new StringBuilder();
+
+                            bytes.ForEach(x => builder.Append(x.ToString("x2")));
+
+                            var hash = builder.ToString();
+
+                            if(!hash.Equals(steamapihash))
+                            {
+                                new GameObject("IsPirated");
+                                DoPiracyPatches();
+                                return true;
+                            }
                         }
+                    }
+                    catch
+                    {
+                        continue;
                     }
                 }
             }

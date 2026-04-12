@@ -72,7 +72,7 @@ namespace RamuneLib.Utils
             }
             catch(Exception ex)
             {
-                Logfile.Error($"Error applying patch for '{targetType}.{methodName}' as '{patchType}': {ex.Message}");
+                Logfile.Error($"Error applying patch for '{targetType}.{methodName}' as '{patchType}':\n{ex}");
             }
         }
     }

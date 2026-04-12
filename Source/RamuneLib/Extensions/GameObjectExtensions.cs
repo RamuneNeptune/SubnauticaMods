@@ -19,8 +19,8 @@ namespace RamuneLib.Extensions
         /// </summary>
         public static void DestroyChildrenImmediate(this GameObject gameObject)
         {
-            foreach(Transform child in gameObject.transform) 
-                GameObject.DestroyImmediate(child.gameObject);
+            for(int i = gameObject.transform.childCount - 1; i >= 0; i--)
+                GameObject.DestroyImmediate(gameObject.transform.GetChild(i).gameObject);
         }
 
 

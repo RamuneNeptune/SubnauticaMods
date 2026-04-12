@@ -28,8 +28,6 @@ namespace RamuneLib
                 return false;
             }
 
-            CompatUtils.Initialize();
-
             ModMessageSystem.SendGlobal("FindMyUpdates", versionJsonUrl);
 
             if(!enableThisMod)
@@ -37,6 +35,8 @@ namespace RamuneLib
                 Logfile.Warning("This mod has been disabled in the config and will not be loaded");
                 return false;
             }
+
+            CompatUtils.Initialize();
 
             if(patchAll)
             {

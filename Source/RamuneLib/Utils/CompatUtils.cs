@@ -4,6 +4,9 @@ namespace RamuneLib.Utils
 {
     public static class CompatUtils
     {
+        public static bool ChainloaderFinished { get; private set; }
+
+
         public static void Initialize() => Variables.instance.StartCoroutine(WaitForChainloader());
 
 
@@ -18,13 +21,33 @@ namespace RamuneLib.Utils
 
         private static void InvokeCallbacks<TKey>(this Dictionary<TKey, List<Action>> callbacks, Func<TKey, bool> predicate)
         {
-            foreach(var kvp in callbacks)
+            foreach(var kvp in callbacks.ToArray())
             {
-                if(!predicate(kvp.Key))
+                if(kvp.Value == null)
                     continue;
 
-                foreach (var callback in kvp.Value)
-                    callback?.Invoke();
+                try
+                {
+                    if(!predicate(kvp.Key))
+                        continue;
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke CompatUtils predicate for '{kvp.Key}':\n{ex}");
+                    continue;
+                }
+
+                foreach(var callback in kvp.Value.ToArray())
+                {
+                    try
+                    {
+                        callback?.Invoke();
+                    }
+                    catch(Exception ex)
+                    {
+                        Logfile.Error($"Failed to invoke CompatUtils callback for '{kvp.Key}':\n{ex}");
+                    }
+                }
             }
         }
 
@@ -32,6 +55,8 @@ namespace RamuneLib.Utils
         internal static IEnumerator WaitForChainloader()
         {
             yield return PatchingUtils.WaitForChainloader();
+
+            ChainloaderFinished = true;
 
             CachedPluginInfos = Chainloader.PluginInfos;
 
@@ -41,10 +66,50 @@ namespace RamuneLib.Utils
         }
 
 
-        public static void RegisterOnModLoadedEvent(string pluginGuid, Action callback) => (ModLoadedCallbacks[pluginGuid] = ModLoadedCallbacks.TryGetValue(pluginGuid, out var list) ? list : new()).Add(callback);
+        public static void RegisterOnModLoadedEvent(string pluginGuid, Action callback)
+        {
+            if(callback == null)
+                return;
+
+            if(ChainloaderFinished && IsPluginLoaded(pluginGuid))
+            {
+                try
+                {
+                    callback();
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke CompatUtils callback for '{pluginGuid}':\n{ex}");
+                }
+
+                return;
+            }
+
+            (ModLoadedCallbacks[pluginGuid] = ModLoadedCallbacks.TryGetValue(pluginGuid, out var list) ? list : new()).Add(callback);
+        }
 
 
-        public static void RegisterOnModLoadedEvent(string pluginGuid, string pluginVersion, Action callback) => (AdvancedModLoadedCallbacks[(pluginGuid, pluginVersion)] = AdvancedModLoadedCallbacks.TryGetValue((pluginGuid, pluginVersion), out var list) ? list : new()).Add(callback);
+        public static void RegisterOnModLoadedEvent(string pluginGuid, string pluginVersion, Action callback)
+        {
+            if(callback == null)
+                return;
+
+            if(ChainloaderFinished && IsPluginLoaded(pluginGuid, pluginVersion))
+            {
+                try
+                {
+                    callback();
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke CompatUtils callback for '{pluginGuid} {pluginVersion}':\n{ex}");
+                }
+
+                return;
+            }
+
+            (AdvancedModLoadedCallbacks[(pluginGuid, pluginVersion)] = AdvancedModLoadedCallbacks.TryGetValue((pluginGuid, pluginVersion), out var list) ? list : new()).Add(callback);
+        }
 
 
         public static void RegisterOnModLoadedEvents(Dictionary<object, Action> events)
@@ -71,5 +136,11 @@ namespace RamuneLib.Utils
 
 
         public static bool TryGetPluginInfo(string pluginGuid, out PluginInfo pluginInfo) => CachedPluginInfos.TryGetValue(pluginGuid, out pluginInfo);
+
+
+        public static bool IsPluginLoaded(string pluginGuid) => CachedPluginInfos.ContainsKey(pluginGuid);
+
+
+        public static bool IsPluginLoaded(string pluginGuid, string pluginVersion) => TryGetPluginInfo(pluginGuid, out var pluginInfo) && pluginInfo.Metadata.Version.ToString() == pluginVersion;
     }
 }

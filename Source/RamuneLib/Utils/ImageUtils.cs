@@ -7,13 +7,13 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
-        private static Dictionary<string, Texture2D> CachedTextures = new();
+        private static Dictionary<string, Sprite> CachedSprites = new();
 
 
         /// <summary>
         /// 
         /// </summary>
-        private static Dictionary<string, Sprite> CachedSprites = new();
+        private static Dictionary<string, Texture2D> CachedTextures = new();
 
 
         /// <summary>
@@ -36,6 +36,13 @@ namespace RamuneLib.Utils
                 return cachedSprite;
 
             var sprite = Utility.ImageUtils.LoadSpriteFromFile(GetAssetPath(filename, extension));
+
+            if(sprite == null)
+            {
+                Logfile.Error($"Failed to load sprite from path: {GetAssetPath(filename, extension)}");
+                return GetSprite(TechType.None);
+            }
+
             CachedSprites.Add(filename + extension, sprite);
 
             return sprite;
@@ -61,6 +68,13 @@ namespace RamuneLib.Utils
                 return cachedTexture;
 
             var texture = Utility.ImageUtils.LoadTextureFromFile(GetAssetPath(filename, extension));
+
+            if(texture == null)
+            {
+                Logfile.Error($"Failed to load texture from path: {GetAssetPath(filename, extension)}");
+                return null;
+            }
+
             CachedTextures.Add(filename + extension, texture);
 
             return texture;

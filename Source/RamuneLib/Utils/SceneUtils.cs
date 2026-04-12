@@ -27,7 +27,17 @@ namespace RamuneLib.Utils
                 return;
 
             foreach(var callback in callbacks)
-                callback?.Invoke();
+            {
+                try
+                {
+                    callback?.Invoke();
+
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke SceneUtils callback for scene '{scene.name}':\n{ex}");
+                }
+            }
         }
 
 

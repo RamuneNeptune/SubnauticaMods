@@ -294,13 +294,13 @@ namespace RamuneLib.Extensions
         public static string Id(this CustomPrefab customPrefab) => customPrefab.Info.ClassID;
 
 
-        public static string DisplayName(this CustomPrefab customPrefab) => Language.main.Get(customPrefab.Info.TechType);
+        public static string DisplayName(this CustomPrefab customPrefab) => Language.main?.Get(customPrefab.Info.TechType) ?? customPrefab.Info.TechType.AsString();
 
 
-        public static string Description(this CustomPrefab customPrefab) => Language.main.Get("Tooltip_" + customPrefab.Info.TechType);
+        public static string Description(this CustomPrefab customPrefab) => Language.main?.Get("Tooltip_" + customPrefab.Info.TechType) ?? "Tooltip_" + customPrefab.Info.TechType.AsString();
 
 
-        public static Sprite Sprite(this CustomPrefab customPrefab) => SpriteManager.Get(customPrefab.Info.TechType);
+        public static Sprite Sprite(this CustomPrefab customPrefab) => SpriteManager.Get(customPrefab.Info.TechType, SpriteManager.Get(TechType.None));
 
         // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
     }
