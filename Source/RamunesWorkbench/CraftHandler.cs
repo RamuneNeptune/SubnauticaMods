@@ -4,14 +4,11 @@ namespace Ramune.RamunesWorkbench
 {
     public static class CraftHandler
     {
-        public static CraftTree.Type CraftTreeType => Buildables.RamunesWorkbench.craftTreeType;
+        public static bool IsInitialized = false;
 
 
-        public static IEnumerator Initialize()
+        public static void Initialize()
         {
-            while(CraftTreeType is CraftTree.Type.None)
-                yield return null;
-            
             AddTab("Tools", ImageUtils.GetSprite("TabTools"));
             AddTab("Equipment", ImageUtils.GetSprite("TabEquipment"));
             AddTab("Consumables", ImageUtils.GetSprite("TabConsumables"));
@@ -25,6 +22,53 @@ namespace Ramune.RamunesWorkbench
             AddTab("Prawn suit", ImageUtils.GetSprite(TechType.Exosuit), "Modules");
             AddTab("Cyclops", ImageUtils.GetSprite(TechType.Cyclops), "Modules");
 
+            IsInitialized = true;
+        }
+
+
+        public static void AddCraft(string techType)
+        {
+            if(!EnumHandler.TryGetValue(techType, out TechType _techType)) 
+                return;
+
+            CraftTreeHandler.AddCraftingNode(Buildables.RamunesWorkbench.craftTreeType, _techType);
+        }
+
+
+        public static void AddCraft(TechType techType) => CraftTreeHandler.AddCraftingNode(Buildables.RamunesWorkbench.craftTreeType, techType);
+
+
+        public static void AddCraft(string techType, params string[] stepsToTab)
+        {
+            if(!EnumHandler.TryGetValue(techType, out TechType _techType)) 
+                return;
+
+            CraftTreeHandler.AddCraftingNode(Buildables.RamunesWorkbench.craftTreeType, _techType, stepsToTab);
+        }
+
+
+        public static void AddCraft(TechType techType, params string[] stepsToTab) => CraftTreeHandler.AddCraftingNode(Buildables.RamunesWorkbench.craftTreeType, techType, stepsToTab);
+
+
+        public static void AddTab(string name, Sprite sprite) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, name, name, sprite);
+
+
+        public static void AddTab(string name, TechType techType) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, name, name, ImageUtils.GetSprite(techType));
+
+        public static void AddTab(string name, Sprite sprite, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, name, name, sprite, stepsToTab);
+
+
+        public static void AddTab(string name, TechType techType, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, name, name, ImageUtils.GetSprite(techType), stepsToTab);
+
+        public static void AddTab(string id, string name, Sprite sprite, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, id, name, sprite, stepsToTab);
+
+
+        public static void AddTab(string id, string name, TechType techType, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(Buildables.RamunesWorkbench.craftTreeType, id, name, ImageUtils.GetSprite(techType), stepsToTab);
+    }
+}
+
+
+/*
 
             Logfile.Info("<---- RAMUNE'S WORKBENCH PRCOESSING START ---->");
             Logfile.Info("");
@@ -96,48 +140,5 @@ namespace Ramune.RamunesWorkbench
 
             Logfile.Info("");
             Logfile.Info("<---- RAMUNE'S WORKBENCH PRCOESSING END ---->");
-        }
 
-
-        public static IEnumerator WaitForChainloader()
-        {
-            FieldInfo loaded = typeof(BepInEx.Bootstrap.Chainloader).GetField("_loaded", BindingFlags.NonPublic | BindingFlags.Static);
-
-            yield return new WaitUntil(() => (bool)loaded.GetValue(null));
-
-            CoroutineHost.StartCoroutine(Initialize());
-        }
-
-
-        public static bool IsLoaded(string guid)
-        {
-            if(BepInEx.Bootstrap.Chainloader.PluginInfos.TryGetValue("com.ramune." + guid, out _))
-                return true;
-
-            return false;
-        }
-
-
-        public static void AddCraft(string techType)
-        {
-            if(!EnumHandler.TryGetValue(techType, out TechType _techType)) return;
-            CraftTreeHandler.AddCraftingNode(CraftTreeType, _techType);
-        }
-
-
-        public static void AddCraft(string techType, params string[] stepsToTab)
-        {
-            if(!EnumHandler.TryGetValue(techType, out TechType _techType)) return;
-            CraftTreeHandler.AddCraftingNode(CraftTreeType, _techType, stepsToTab);
-        }
-
-
-        public static void AddTab(string name, Sprite sprite) => CraftTreeHandler.AddTabNode(CraftTreeType, name, name, sprite);
-
-
-        public static void AddTab(string name, Sprite sprite, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(CraftTreeType, name, name, sprite, stepsToTab);
-
-
-        public static void AddTab(string id, string name, Sprite sprite, params string[] stepsToTab) => CraftTreeHandler.AddTabNode(CraftTreeType, id, name, sprite, stepsToTab);
-    }
-}
+*/

@@ -24,7 +24,14 @@ namespace Ramune.RamunesWorkbench.Monos
             base.Awake();
 
             if(Ramune.RamunesWorkbench.RamunesWorkbench.config.light)
-                InitLight();
+            {
+                light = gameObject.EnsureComponent<Light>();
+                light.transform.parent = gameObject.transform;
+                light.intensity = 0f;
+                light.range = 1.7f;
+                light.color = initialColor;
+                light.enabled = true;
+            }
 
             fxLaserBeam?.ForEach(lb => 
             lb.GetComponent<MeshRenderer>().material.color = initialColor);
@@ -63,22 +70,13 @@ namespace Ramune.RamunesWorkbench.Monos
         }
 
 
-        public void InitLight()
-        {
-            light = gameObject.EnsureComponent<Light>();
-            light.transform.parent = gameObject.transform;
-            light.intensity = 0f;
-            light.range = 1.7f;
-            light.color = initialColor;
-            light.enabled = true;
-        }
-
-
         public override void OnOpenedChanged(bool opened)
         {
             base.OnOpenedChanged(opened);
 
-            if(animator != null) animator.SetBool(AnimatorHashID.open_workbench, opened);
+            if(animator != null) 
+                animator.SetBool(AnimatorHashID.open_workbench, opened);
+
             FMODUWE.PlayOneShot(opened ? openSound : closeSound, soundOrigin.position, 1f);
 
             if(Ramune.RamunesWorkbench.RamunesWorkbench.config.light is false)

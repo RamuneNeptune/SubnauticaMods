@@ -4,25 +4,28 @@ namespace Ramune.RamunesWorkbench.Buildables
 {
     public static class RamunesWorkbench
     {
-        public static List<(string id, string displayName, object spriteOrTechType, string[] pathToTab)> queuedTabNodes = new();
-        public static List<(TechType itemToCraft, string[] pathToTab)> queuedCraftNodes = new();
-        public static CraftTree.Type craftTreeType;
+        public static FabricatorGadget fabricator;
+
+        public static CraftTree.Type craftTreeType = CraftTree.Type.None;
 
         public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("RamunesWorkbench", "Ramune's workbench", "Used to create items from RamuneNeptune's mods", ImageUtils.GetSprite("RamunesWorkbench"))
-            .WithPDACategoryAfter(TechGroup.InteriorModules, TechCategory.InteriorModule, TechType.Workbench)
-            .WithJsonRecipe("RamunesWorkbench")
-            .WithFabricator(out craftTreeType)
-            .WithAutoUnlock();
+                .WithPDACategoryAfter(TechGroup.InteriorModules, TechCategory.InteriorModule, TechType.Workbench)
+                .WithJsonRecipe("RamunesWorkbench")
+                .WithFabricator(out fabricator)
+                .WithAutoUnlock();
 
 
         public static void Patch()
         {
+            craftTreeType = fabricator.CraftTreeType;
+
             var model = new FabricatorTemplate(Prefab.Info, craftTreeType)
             {
                 FabricatorModel = FabricatorTemplate.Model.Workbench,
                 ModifyPrefab = go =>
                 {
                     var renderer = go.GetComponentInChildren<Renderer>();
+
                     renderer.material.SetTexture(ShaderPropertyID._MainTex, ImageUtils.GetTexture("RamunesWorkbench.Texture"));
                     renderer.material.SetTexture(ShaderPropertyID._SpecTex, ImageUtils.GetTexture("RamunesWorkbench.Texture"));
                     renderer.material.SetTexture(ShaderPropertyID._Illum, ImageUtils.GetTexture("RamunesWorkbench.Illum"));
@@ -30,7 +33,8 @@ namespace Ramune.RamunesWorkbench.Buildables
 
                     var workbench = go.GetComponent<Workbench>();
                     var ramunesWorkbench = go.AddComponent<Monos.RamunesWorkbench>().CopyComponent(workbench);
-                    GameObject.DestroyImmediate(workbench);
+
+                    Object.DestroyImmediate(workbench);
 
                     ramunesWorkbench.renderer = renderer;
                 }
@@ -38,6 +42,8 @@ namespace Ramune.RamunesWorkbench.Buildables
 
             Prefab.SetGameObject(model);
             Prefab.Register();
+
+            CraftHandler.Initialize();
         }
     }
 }

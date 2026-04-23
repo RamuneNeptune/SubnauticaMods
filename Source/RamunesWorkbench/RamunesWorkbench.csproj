@@ -337,8 +337,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="Configuration\CraftNodes.json" />
-    <None Include="Configuration\TabNodes.json" />
     <None Include="Recipes\RamunesWorkbench.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />

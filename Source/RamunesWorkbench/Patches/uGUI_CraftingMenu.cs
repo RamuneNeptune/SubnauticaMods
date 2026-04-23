@@ -6,8 +6,8 @@ namespace Ramune.RamunesWorkbench.Patches
     public static class uGUI_CraftingMenuPatches
     {
         public static CraftTree.Type CurrentCraftTreeType;
-        public static Sprite[] Vanilla = new Sprite[] { ImageUtils.GetSprite("Vanilla.TabNode"), ImageUtils.GetSprite("Vanilla.TabNodeHover") };
-        public static Sprite[] Fancy = new Sprite[] { ImageUtils.GetSprite("Fancy.TabNode"), ImageUtils.GetSprite("Fancy.TabNodeHover") };
+        public static Sprite[] Vanilla = [ImageUtils.GetSprite("Vanilla.TabNode"), ImageUtils.GetSprite("Vanilla.TabNodeHover")];
+        public static Sprite[] Fancy = [ImageUtils.GetSprite("Fancy.TabNode"), ImageUtils.GetSprite("Fancy.TabNodeHover")];
 
 
         public static Sprite GetBackgroundSprite(int index)
