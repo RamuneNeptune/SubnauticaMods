@@ -328,16 +328,31 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Items\SeaglideMK3.cs" />
+    <Compile Include="Items\SeaglideMK2.cs" />
     <Compile Include="Items\SeaglideMK1.cs" />
     <Compile Include="Patches\PlayerTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Recipes\SeaglideMK1.json" />
+    <None Include="Recipes\SeaglideMK2.json" />
+    <None Include="Recipes\SeaglideMK3.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\SeaglideMK1.Sprite.png" />
+    <Content Include="Assets\SeaglideMK1.Texture.png" />
+    <Content Include="Assets\SeaglideMK1.Illum.png" />
+    <Content Include="Assets\SeaglideMK2.Sprite.png" />
+    <Content Include="Assets\SeaglideMK2.Texture.png" />
+    <Content Include="Assets\SeaglideMK2.Illum.png" />
+    <Content Include="Assets\SeaglideMK3.Sprite.png" />
+    <Content Include="Assets\SeaglideMK3.Texture.png" />
+    <Content Include="Assets\SeaglideMK3.Illum.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets" Condition="Exists('..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,0 +1,25 @@
+{
+  "craftAmount": 1,
+  "Ingredients": [
+    {
+      "techType": "SeaglideMK1",
+      "amount": 1
+    },
+    {
+      "techType": "PlasteelIngot",
+      "amount": 1
+    },
+    {
+      "techType": "ComputerChip",
+      "amount": 1
+    },
+    {
+      "techType": "EnameledGlass",
+      "amount": 1
+    },
+    {
+      "techType": "Diamond",
+      "amount": 2
+    }
+  ]
+}

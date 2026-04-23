@@ -1,0 +1,25 @@
+{
+  "craftAmount": 1,
+  "Ingredients": [
+    {
+      "techType": "SeaglideMK2",
+      "amount": 1
+    },
+    {
+      "techType": "PlasteelIngot",
+      "amount": 2
+    },
+    {
+      "techType": "AdvancedWiringKit",
+      "amount": 1
+    },
+    {
+      "techType": "Aerogel",
+      "amount": 2
+    },
+    {
+      "techType": "Diamond",
+      "amount": 2
+    }
+  ]
+}
