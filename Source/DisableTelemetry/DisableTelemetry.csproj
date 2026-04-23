@@ -332,6 +332,7 @@
     <Compile Include="Patches\GameAnalytics.cs" />
     <Compile Include="Patches\Sentry.cs" />
     <Compile Include="Patches\Telemetry.cs" />
+    <Compile Include="Patches\UnityWebRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

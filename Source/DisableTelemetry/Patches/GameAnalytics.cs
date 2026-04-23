@@ -3,9 +3,9 @@
 namespace Ramune.DisableTelemetry.Patches
 {
     [HarmonyPatch(typeof(GameAnalytics))]
-    public static class GameAnalyticsPatches
+    public static class GameAnalyticsPatch
     {
-        [HarmonyPatch(nameof(GameAnalytics.Send), new[] { typeof(GameAnalytics.EventInfo), typeof(bool), typeof(string) }), HarmonyPrefix]
+        [HarmonyPatch(nameof(GameAnalytics.Send), [typeof(GameAnalytics.EventInfo), typeof(bool), typeof(string)]), HarmonyPrefix]
         public static bool Send() => false;
     }
 }

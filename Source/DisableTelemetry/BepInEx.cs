@@ -13,7 +13,7 @@ namespace Ramune.DisableTelemetry
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.DisableTelemetry";
         public const string Name = "DisableTelemetry";
-        public const string Version = "1.0.1";
+        public const string Version = "1.0.2";
 
         public void Awake()
         {
