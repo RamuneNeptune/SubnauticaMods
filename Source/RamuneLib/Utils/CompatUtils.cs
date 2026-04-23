@@ -10,13 +10,13 @@ namespace RamuneLib.Utils
         public static void Initialize() => Variables.instance.StartCoroutine(WaitForChainloader());
 
 
-        public static Dictionary<string, PluginInfo> CachedPluginInfos = new();
+        public static Dictionary<string, PluginInfo> CachedPluginInfos = [];
 
 
-        public static Dictionary<string, List<Action>> ModLoadedCallbacks = new();
+        public static Dictionary<string, List<Action>> ModLoadedCallbacks = [];
 
 
-        public static Dictionary<(string pluginName, string pluginVersion), List<Action>> AdvancedModLoadedCallbacks = new();
+        public static Dictionary<(string pluginName, string pluginVersion), List<Action>> AdvancedModLoadedCallbacks = [];
 
 
         private static void InvokeCallbacks<TKey>(this Dictionary<TKey, List<Action>> callbacks, Func<TKey, bool> predicate)

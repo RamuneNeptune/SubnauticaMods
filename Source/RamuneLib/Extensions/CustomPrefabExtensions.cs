@@ -198,6 +198,14 @@ namespace RamuneLib.Extensions
             return customPrefab;
         }
 
+
+        public static CustomPrefab WithFabricator(this CustomPrefab customPrefab, out FabricatorGadget fabricatorGadget)
+        {
+            fabricatorGadget = customPrefab.CreateFabricator(out _);
+            return customPrefab;
+        }
+
+
         public static CustomPrefab WithFabricator(this CustomPrefab customPrefab, out CraftTree.Type craftTreeType, out FabricatorGadget fabricatorGadget)
         {
             fabricatorGadget = customPrefab.CreateFabricator(out CraftTree.Type _craftTreeType);

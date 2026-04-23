@@ -76,6 +76,7 @@ global using EventInstance = FMOD.Studio.EventInstance;
 /*      RamuneLib    */
 global using RamuneLib;
 global using RamuneLib.Utils;
+global using RamuneLib.Utils.Miscellaneous;
 global using RamuneLib.Extensions;
 global using static RamuneLib.Utils.LoggerUtils;
 global using Logfile = RamuneLib.Utils.LoggerUtils.Logfile;

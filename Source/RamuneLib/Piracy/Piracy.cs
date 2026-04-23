@@ -205,11 +205,11 @@ namespace RamuneLib.Piracy
         {
             try
             {
-                return Directory.Exists(directory) ? Directory.EnumerateFiles(directory, "steam_api64.dll", SearchOption.AllDirectories).ToList() : new List<string>();
+                return Directory.Exists(directory) ? Directory.EnumerateFiles(directory, "steam_api64.dll", SearchOption.AllDirectories).ToList() : [];
             }
             catch
             {
-                return new List<string>();
+                return [];
             }
         }
 

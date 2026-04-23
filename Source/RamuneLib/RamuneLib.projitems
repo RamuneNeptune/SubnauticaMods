@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\RendererExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\TechTypeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Miscellaneous\RamunesWorkbenchUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\BreakableResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Charger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Crash.cs" />
@@ -31,14 +32,17 @@
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Survival.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Trashcan.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Piracy.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)utils\CompatUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\CompatUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ImageUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\JsonUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\LoggerUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PatchingUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PingUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PrefabUtils.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)utils\SceneUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\SceneUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\VehicleUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Utils\Miscellaneous\" />
   </ItemGroup>
 </Project>
