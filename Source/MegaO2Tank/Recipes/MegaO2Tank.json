@@ -1,0 +1,17 @@
+{
+  "craftAmount": 1,
+  "Ingredients": [
+    {
+      "techType": "HighCapacityTank",
+      "amount": 2
+    },
+    {
+      "techType": "PrecursorIonBattery",
+      "amount": 1
+     },
+     {
+      "techType": "AramidFibers",
+      "amount": 2
+      }
+  ]
+}

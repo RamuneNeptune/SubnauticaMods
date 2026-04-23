@@ -3,6 +3,7 @@
 namespace Ramune.MegaO2Tank
 {
     [BepInDependency("com.snmodding.nautilus")]
+    [BepInDependency("com.ramune.RamunesWorkbench")]
     [BepInPlugin(GUID, Name, Version)]
     [BepInProcess("Subnautica.exe")]
     public class MegaO2Tank : BaseUnityPlugin
@@ -19,6 +20,10 @@ namespace Ramune.MegaO2Tank
         {
             if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/MegaO2Tank/Version.json"))
                 return;
+
+            RamunesWorkbenchUtils.AddTabNode("Tanks", SpriteManager.Get(TechType.PlasteelTank), RamunesWorkbenchUtils.Tabs.Equipment);
+
+            Items.MegaO2Tank.Patch();
         }
     }
 }
