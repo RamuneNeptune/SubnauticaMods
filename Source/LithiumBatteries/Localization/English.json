@@ -1,0 +1,9 @@
+{
+    "LithiumBattery_Name" : "Lithium battery",
+    "LithiumBattery_Tooltip" : "Battery enhanced with lithium for additional energy capacity. Inedible.",
+    "LithiumBattery_Capacity" : "CAPACITY: +100% (200)",
+
+    "LithiumPowerCell_Name" : "Lithium power cell",
+    "LithiumPowerCell_Tooltip" : "Power cell enhanced with lithium for additional energy capacity. Inedible.",
+    "LithiumPowerCell_Capacity" : "CAPACITY: +100% (400)"
+}

@@ -1,0 +1,13 @@
+{
+  "craftAmount": 1,
+  "Ingredients": [
+    {
+      "techType": "PrecursorIonBattery",
+      "amount": 1
+    },
+    {
+      "techType": "Kyanicphur",
+      "amount": 1
+     }
+  ]
+}

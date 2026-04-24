@@ -1,0 +1,12 @@
+{
+    "KioniteBattery_Name" : "Kionite battery",
+    "KioniteBattery_Tooltip" : "Battery enhanced with kyanicphur for additional energy capacity. Inedible.",
+    "KioniteBattery_Capacity" : "CAPACITY: +50% (750)",
+
+    "KionitePowerCell_Name" : "Kionite power cell",
+    "KionitePowerCell_Tooltip" : "Power cell enhanced with kyanicphur for additional energy capacity. Inedible.",
+    "KionitePowerCell_Capacity" : "CAPACITY: +50% (1500)",
+
+    "Kyanicphur_Name" : "Kyanicphur",
+    "Kyanicphur_Tooltip" : "AlNiSiO₅S. Alloy of Sulphur, Nickel, Kyanite. Used in advanced modification."
+}

@@ -328,15 +328,26 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Patches\Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Localization\English.json" />
+    <None Include="Recipes\IonBatteryAltRecipe.json" />
+    <None Include="Recipes\IonPowerCellAltRecipe.json" />
+    <None Include="Recipes\LithiumBatteryRecipe.json" />
+    <None Include="Recipes\LithiumPowerCellRecipe.json" />
     <None Include="Version.json" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Battery.png" />
+    <Content Include="Assets\BatteryIllum.png" />
+    <Content Include="Assets\BatteryTexture.png" />
+    <Content Include="Assets\PowerCell.png" />
+    <Content Include="Assets\PowerCellIllum.png" />
+    <Content Include="Assets\PowerCellTexture.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets" Condition="Exists('..\packages\BepInEx.Core.5.4.21\build\BepInEx.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

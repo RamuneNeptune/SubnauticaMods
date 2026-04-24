@@ -1,0 +1,17 @@
+{
+    "craftAmount": 1,
+    "Ingredients": [
+      {
+        "techType": "PowerCell",
+        "amount": 1
+      },
+      {
+        "techType": "Lithium",
+        "amount": 1
+       },
+       {
+        "techType": "Magnetite",
+        "amount": 1
+       }
+    ]
+  }
