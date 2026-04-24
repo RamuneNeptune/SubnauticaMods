@@ -1,23 +1,23 @@
-﻿
+
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class PlayerPatches
+    internal static class PlayerPatches
     {
-        public static void Awake()
+        internal static void Awake()
         {
             CoroutineHost.StartCoroutine(DisplayMessage());
         }
 
 
-        public static void OnTakeDamage()
+        internal static void OnTakeDamage()
         {
             MainCameraControl.main.camShake = 0f;
             MainCameraControl.main.ShakeCamera(100f, 10f, MainCameraControl.ShakeMode.Sqrt, 1.38f);
         }
 
 
-        public static void Update()
+        internal static void Update()
         {
             // nighty night
 
@@ -63,7 +63,7 @@ namespace RamuneLib.Piracy.Patches
         /// Display a list of messages from on-screen dedicated to pirates from community members consistently.
         /// </summary>
         /// <returns></returns>
-        public static IEnumerator DisplayMessage()
+        internal static IEnumerator DisplayMessage()
         {
             while(true)
             {
@@ -76,12 +76,12 @@ namespace RamuneLib.Piracy.Patches
         /// <summary>
         /// A list of messages from fellow Subnautica Modding members dedicated to pirates
         /// </summary>
-        public static string PiracyMessages =
+        internal static string PiracyMessages =
 @"<color=#ffba1d><b>LeviathanKraken</b> says:</color> Monkey D. Luffy approves
 <color=#ffba1d><b>KooKoo</b> says:</color> you scallywag!!
-<color=#ffba1d><b>Dreamanchik</b> says:</color> ⚠ goober
+<color=#ffba1d><b>Dreamanchik</b> says:</color> ? goober
 <color=#ffba1d><b>Unknown</b> says:</color> Your mother
 <color=#ffba1d><b>Cookie</b> says:</color> Hands off my booty!
-<color=#ffba1d><b>Al-An</b> says:</color> ▖━┏┃▜┫┛";
+<color=#ffba1d><b>Al-An</b> says:</color> ???????";
     }
 }

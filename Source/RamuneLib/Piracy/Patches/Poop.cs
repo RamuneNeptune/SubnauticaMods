@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class PoopPatch
+    internal static class PoopPatch
     {
-        public static void Perform(Poop __instance, Creature creature, float time, float deltaTime)
+        internal static void Perform(Poop __instance, Creature creature, float time, float deltaTime)
         {
             if(!(time >= __instance.recourceSpawnTime))
                 return;

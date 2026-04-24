@@ -2,21 +2,21 @@
 
 namespace RamuneLib.Utils
 {
-    public static class CompatUtils
+    internal static class CompatUtils
     {
-        public static bool ChainloaderFinished { get; private set; }
+        internal static bool ChainloaderFinished { get; private set; }
 
 
-        public static void Initialize() => Variables.instance.StartCoroutine(WaitForChainloader());
+        internal static void Initialize() => Variables.instance.StartCoroutine(WaitForChainloader());
 
 
-        public static Dictionary<string, PluginInfo> CachedPluginInfos = [];
+        internal static Dictionary<string, PluginInfo> CachedPluginInfos = [];
 
 
-        public static Dictionary<string, List<Action>> ModLoadedCallbacks = [];
+        internal static Dictionary<string, List<Action>> ModLoadedCallbacks = [];
 
 
-        public static Dictionary<(string pluginName, string pluginVersion), List<Action>> AdvancedModLoadedCallbacks = [];
+        internal static Dictionary<(string pluginName, string pluginVersion), List<Action>> AdvancedModLoadedCallbacks = [];
 
 
         private static void InvokeCallbacks<TKey>(this Dictionary<TKey, List<Action>> callbacks, Func<TKey, bool> predicate)
@@ -66,7 +66,7 @@ namespace RamuneLib.Utils
         }
 
 
-        public static void RegisterOnModLoadedEvent(string pluginGuid, Action callback)
+        internal static void RegisterOnModLoadedEvent(string pluginGuid, Action callback)
         {
             if(callback == null)
                 return;
@@ -89,7 +89,7 @@ namespace RamuneLib.Utils
         }
 
 
-        public static void RegisterOnModLoadedEvent(string pluginGuid, string pluginVersion, Action callback)
+        internal static void RegisterOnModLoadedEvent(string pluginGuid, string pluginVersion, Action callback)
         {
             if(callback == null)
                 return;
@@ -112,7 +112,7 @@ namespace RamuneLib.Utils
         }
 
 
-        public static void RegisterOnModLoadedEvents(Dictionary<object, Action> events)
+        internal static void RegisterOnModLoadedEvents(Dictionary<object, Action> events)
         {
             foreach(var kvp in events)
             {
@@ -135,12 +135,12 @@ namespace RamuneLib.Utils
         }
 
 
-        public static bool TryGetPluginInfo(string pluginGuid, out PluginInfo pluginInfo) => CachedPluginInfos.TryGetValue(pluginGuid, out pluginInfo);
+        internal static bool TryGetPluginInfo(string pluginGuid, out PluginInfo pluginInfo) => CachedPluginInfos.TryGetValue(pluginGuid, out pluginInfo);
 
 
-        public static bool IsPluginLoaded(string pluginGuid) => CachedPluginInfos.ContainsKey(pluginGuid);
+        internal static bool IsPluginLoaded(string pluginGuid) => CachedPluginInfos.ContainsKey(pluginGuid);
 
 
-        public static bool IsPluginLoaded(string pluginGuid, string pluginVersion) => TryGetPluginInfo(pluginGuid, out var pluginInfo) && pluginInfo.Metadata.Version.ToString() == pluginVersion;
+        internal static bool IsPluginLoaded(string pluginGuid, string pluginVersion) => TryGetPluginInfo(pluginGuid, out var pluginInfo) && pluginInfo.Metadata.Version.ToString() == pluginVersion;
     }
 }

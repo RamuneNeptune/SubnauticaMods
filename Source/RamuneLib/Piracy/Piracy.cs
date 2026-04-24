@@ -5,9 +5,9 @@ namespace RamuneLib.Piracy
     /// <summary>
     /// Where the magic happens.
     /// </summary>
-    public static class Piracy
+    internal static class Piracy
     {
-        public static string HelloThereDecompiler = @"
+        internal static string HelloThereDecompiler = @"
                          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⠿⠟⠛⠻⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣆⣀⣀⠀⣿⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -125,7 +125,7 @@ namespace RamuneLib.Piracy
         /// Checks if this is a pirated copy of Subnautica
         /// </summary>
         /// <returns><code>true</code> If this is a pirated copy of Subnautica. <code>false</code> If this appears to be a legitimate copy of Subnautica.</returns>
-        public static bool Exists()
+        internal static bool Exists()
         {
             // If a user has multiple of my mods installed, the first mod to load
             // will create a GameObject to indicate the result of its piracy check,
@@ -201,7 +201,7 @@ namespace RamuneLib.Piracy
         /// </summary>
         /// <param name="directory"></param>
         /// <returns></returns>
-        public static List<string> FindAllSteamDLLs(string directory)
+        internal static List<string> FindAllSteamDLLs(string directory)
         {
             try
             {
@@ -267,7 +267,7 @@ namespace RamuneLib.Piracy
         /// </summary>
         /// <param name="spawnPosition"></param>
         /// <returns></returns>
-        public static IEnumerator SpawnCrashfish(Vector3 spawnPosition)
+        internal static IEnumerator SpawnCrashfish(Vector3 spawnPosition)
         {
             var task = GetPrefabForTechTypeAsync(TechType.Crash);
 

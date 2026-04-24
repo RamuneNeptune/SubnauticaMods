@@ -2,7 +2,7 @@
 
 namespace RamuneLib.Extensions
 {
-    public static class CodeMatcherExtensions
+    internal static class CodeMatcherExtensions
     {
         /// <summary>
         /// 
@@ -10,7 +10,7 @@ namespace RamuneLib.Extensions
         /// <param name="matcher"></param>
         /// <param name="operand"></param>
         /// <returns></returns>
-        public static CodeMatcher SetOperand(this CodeMatcher matcher, object operand)
+        internal static CodeMatcher SetOperand(this CodeMatcher matcher, object operand)
         {
             matcher.Operand = operand;
             return matcher;

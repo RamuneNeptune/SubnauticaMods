@@ -2,13 +2,13 @@
 
 namespace RamuneLib.Utils
 {
-    public static class PatchingUtils
+    internal static class PatchingUtils
     {
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public static IEnumerator WaitForChainloader()
+        internal static IEnumerator WaitForChainloader()
         {
             Type chainloader = typeof(Chainloader);
             FieldInfo loaded = chainloader.GetField("_loaded", BindingFlags.NonPublic | BindingFlags.Static);
@@ -25,7 +25,7 @@ namespace RamuneLib.Utils
         /// <param name="patchMethod">The Harmony method to be applied as a patch.</param>
         /// <param name="patchType">The type of Harmony patch (Prefix, Postfix, or Transpiler) to be applied.</param>
         /// <param name="verbose">If true, logs a message after patching.</param>
-        public static void ApplyPatch(Type targetType, string methodName, HarmonyMethod patchMethod, HarmonyPatchType patchType, bool verbose = false)
+        internal static void ApplyPatch(Type targetType, string methodName, HarmonyMethod patchMethod, HarmonyPatchType patchType, bool verbose = false)
         {
             try
             {

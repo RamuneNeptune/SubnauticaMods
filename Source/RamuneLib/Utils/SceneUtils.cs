@@ -2,12 +2,12 @@
 
 namespace RamuneLib.Utils
 {
-    public static class SceneUtils
+    internal static class SceneUtils
     {
         static SceneUtils() => SceneManager.sceneLoaded += OnSceneLoaded;
 
 
-        public static Dictionary<string, List<Action>> SceneLoadedCallbacks = new()
+        internal static Dictionary<string, List<Action>> SceneLoadedCallbacks = new()
         {
             { "PreStartScreen", new() },
             { "StartScreen", new() },
@@ -41,33 +41,33 @@ namespace RamuneLib.Utils
         }
 
 
-        public static void RegisterOnSceneLoaded(string sceneName, Action callback) => SceneLoadedCallbacks[sceneName].Add(callback);
+        internal static void RegisterOnSceneLoaded(string sceneName, Action callback) => SceneLoadedCallbacks[sceneName].Add(callback);
 
 
-        public static void RegisterOnPreStartScreenLoaded(Action callback) => RegisterOnSceneLoaded("PreStartScreen", callback);
+        internal static void RegisterOnPreStartScreenLoaded(Action callback) => RegisterOnSceneLoaded("PreStartScreen", callback);
 
 
-        public static void RegisterOnStartScreenLoaded(Action callback) => RegisterOnSceneLoaded("StartScreen", callback);
+        internal static void RegisterOnStartScreenLoaded(Action callback) => RegisterOnSceneLoaded("StartScreen", callback);
 
 
-        public static void RegisterOnMenuEnvironmentLoaded(Action callback) => RegisterOnSceneLoaded("MenuEnvironment", callback);
+        internal static void RegisterOnMenuEnvironmentLoaded(Action callback) => RegisterOnSceneLoaded("MenuEnvironment", callback);
 
 
-        public static void RegisterOnXMenuLoaded(Action callback) => RegisterOnSceneLoaded("XMenu", callback);
+        internal static void RegisterOnXMenuLoaded(Action callback) => RegisterOnSceneLoaded("XMenu", callback);
 
 
-        public static void RegisterOnMainLoaded(Action callback) => RegisterOnSceneLoaded("Main", callback);
+        internal static void RegisterOnMainLoaded(Action callback) => RegisterOnSceneLoaded("Main", callback);
 
 
-        public static void RegisterOnEssentialsLoaded(Action callback) => RegisterOnSceneLoaded("Essentials", callback);
+        internal static void RegisterOnEssentialsLoaded(Action callback) => RegisterOnSceneLoaded("Essentials", callback);
 
 
-        public static void RegisterOnCyclopsLoaded(Action callback) => RegisterOnSceneLoaded("Cyclops", callback);
+        internal static void RegisterOnCyclopsLoaded(Action callback) => RegisterOnSceneLoaded("Cyclops", callback);
 
 
-        public static void RegisterOnEscapePodLoaded(Action callback) => RegisterOnSceneLoaded("EscapePod", callback);
+        internal static void RegisterOnEscapePodLoaded(Action callback) => RegisterOnSceneLoaded("EscapePod", callback);
 
 
-        public static void RegisterOnAuroraLoaded(Action callback) => RegisterOnSceneLoaded("Aurora", callback);
+        internal static void RegisterOnAuroraLoaded(Action callback) => RegisterOnSceneLoaded("Aurora", callback);
     }
 }

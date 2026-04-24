@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class BreakableResourcePatch
+    internal static class BreakableResourcePatch
     {
-        public static void BreakIntoResources(BreakableResource __instance)
+        internal static void BreakIntoResources(BreakableResource __instance)
         {
             Player.main.liveMixin.TakeDamage(1f);
 

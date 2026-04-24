@@ -5,7 +5,7 @@ namespace RamuneLib
     /// <summary>
     /// 
     /// </summary>
-    public static class Initializer
+    internal static class Initializer
     {
         /// <summary>
         /// 
@@ -15,7 +15,7 @@ namespace RamuneLib
         /// <param name="name"></param>
         /// <param name="version"></param>
         /// <param name="patchAll"></param>
-        public static bool Initialize(this BaseUnityPlugin instance, Harmony harmony, ManualLogSource logger, string name, string version, bool enableThisMod, string versionJsonUrl, bool patchAll = true)
+        internal static bool Initialize(this BaseUnityPlugin instance, Harmony harmony, ManualLogSource logger, string name, string version, bool enableThisMod, string versionJsonUrl, bool patchAll = true)
         {
             Variables.name = name;
             Variables.harmony = harmony;

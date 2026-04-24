@@ -2,39 +2,39 @@
 
 namespace RamuneLib
 {
-    public static class Variables
+    internal static class Variables
     {
-        public static string name { get; set; }
+        internal static string name { get; set; }
 
-        public static Harmony harmony { get; set; }
+        internal static Harmony harmony { get; set; }
 
-        public static ManualLogSource logger { get; set; }
+        internal static ManualLogSource logger { get; set; }
 
-        public static BaseUnityPlugin instance { get; set; }
+        internal static BaseUnityPlugin instance { get; set; }
 
-        public static class Paths
+        internal static class Paths
         {
             private static readonly string Location = Assembly.GetExecutingAssembly().Location;
 
-            public static string GameFolder => BepInExPaths.GameRootPath;
+            internal static string GameFolder => BepInExPaths.GameRootPath;
 
-            public static string BepInExFolder => BepInExPaths.BepInExRootPath;
+            internal static string BepInExFolder => BepInExPaths.BepInExRootPath;
 
-            public static string BepInExConfigFolder => BepInExPaths.ConfigPath;
+            internal static string BepInExConfigFolder => BepInExPaths.ConfigPath;
 
-            public static string BepInExPluginFolder => BepInExPaths.PluginPath;
+            internal static string BepInExPluginFolder => BepInExPaths.PluginPath;
 
-            public static string BepInExPatcherFolder => BepInExPaths.PatcherPluginPath;
+            internal static string BepInExPatcherFolder => BepInExPaths.PatcherPluginPath;
 
-            public static string PluginFolder => Path.GetDirectoryName(Location);
+            internal static string PluginFolder => Path.GetDirectoryName(Location);
 
-            public static string AssetsFolder => Path.Combine(PluginFolder, "Assets");
+            internal static string AssetsFolder => Path.Combine(PluginFolder, "Assets");
 
-            public static string RecipeFolder => Path.Combine(PluginFolder, "Recipes");
+            internal static string RecipeFolder => Path.Combine(PluginFolder, "Recipes");
 
-            public static string LocalizationFolder => Path.Combine(PluginFolder, "Localization");
+            internal static string LocalizationFolder => Path.Combine(PluginFolder, "Localization");
 
-            public static string ConfigurationFolder => Path.Combine(PluginFolder, "Configuration");
+            internal static string ConfigurationFolder => Path.Combine(PluginFolder, "Configuration");
         }
     }
 }

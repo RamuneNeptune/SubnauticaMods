@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class FireExtinguisherPatch
+    internal static class FireExtinguisherPatch
     {
-        public static void Update(FireExtinguisher __instance)
+        internal static void Update(FireExtinguisher __instance)
         {
             if(!__instance.usedThisFrame || __instance.fuel <= 0f)
                 return;

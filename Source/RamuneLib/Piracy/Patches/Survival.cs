@@ -1,10 +1,10 @@
-﻿
+
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class SurvivalPatch
+    internal static class SurvivalPatch
     {
-        public static void Eat()
+        internal static void Eat()
         {
             FMODUWE.PlayOneShotImpl("event:/sub/seamoth/pulse", Player.main.transform.position, 1f);
 
@@ -16,7 +16,7 @@ namespace RamuneLib.Piracy.Patches
         }
 
 
-        public static IEnumerator Spin(Transform ᠢ, float Ӏ)
+        internal static IEnumerator Spin(Transform ᠢ, float Ӏ)
         {
             float І = 0f, Ι = 0x2D0;
 

@@ -2,12 +2,12 @@
 
 namespace RamuneLib.Extensions
 {
-    public static class GameObjectExtensions
+    internal static class GameObjectExtensions
     {
         /// <summary>
         /// Loops over all the children of this GameObject and runs '<c>GameObject.Destroy</c>' for each
         /// </summary>
-        public static void DestroyChildren(this GameObject gameObject)
+        internal static void DestroyChildren(this GameObject gameObject)
         {
             foreach(Transform child in gameObject.transform)
                 GameObject.Destroy(child.gameObject);
@@ -17,7 +17,7 @@ namespace RamuneLib.Extensions
         /// <summary>
         /// Loops over all the children of this GameObject and runs '<c>GameObject.DestroyImmediate</c>' for each
         /// </summary>
-        public static void DestroyChildrenImmediate(this GameObject gameObject)
+        internal static void DestroyChildrenImmediate(this GameObject gameObject)
         {
             for(int i = gameObject.transform.childCount - 1; i >= 0; i--)
                 GameObject.DestroyImmediate(gameObject.transform.GetChild(i).gameObject);
@@ -28,14 +28,14 @@ namespace RamuneLib.Extensions
         /// Loops '<c>GameObject.EnsureComponent</c>' for all passed components
         /// </summary>
         /// <param name="types">Array of components to ensure</param>
-        public static void EnsureComponents(this GameObject obj, params Type[] types) => types.ForEach(t => obj.EnsureComponent(t));
+        internal static void EnsureComponents(this GameObject obj, params Type[] types) => types.ForEach(t => obj.EnsureComponent(t));
 
 
         /// <summary>
         /// Loops '<c>GameObject.EnsureComponent</c>' for all passed components
         /// </summary>
         /// <param name="types">Array of components to ensure</param>
-        public static void EnsureComponents<T>(this GameObject obj, params Type[] types) where T : Component
+        internal static void EnsureComponents<T>(this GameObject obj, params Type[] types) where T : Component
         {
             obj.EnsureComponent<T>();
             types.ForEach(t => obj.EnsureComponent(t));
@@ -50,7 +50,7 @@ namespace RamuneLib.Extensions
         /// <param name="component"></param>
         /// <param name="includeInactive"></param>
         /// <returns></returns>
-        public static bool TryGetComponentInChildren<T>(this GameObject gameObject, out T component, bool includeInactive = false) where T : Component
+        internal static bool TryGetComponentInChildren<T>(this GameObject gameObject, out T component, bool includeInactive = false) where T : Component
         {
             component = null;
 
@@ -68,7 +68,7 @@ namespace RamuneLib.Extensions
         /// <param name="gameObject"></param>
         /// <param name="components"></param>
         /// <returns></returns>
-        public static bool TryGetComponents<T>(this GameObject gameObject, out T[] components) where T : Component
+        internal static bool TryGetComponents<T>(this GameObject gameObject, out T[] components) where T : Component
         {
             components = null;
 
@@ -87,7 +87,7 @@ namespace RamuneLib.Extensions
         /// <param name="components"></param>
         /// <param name="includeInactive"></param>
         /// <returns></returns>
-        public static bool TryGetComponentsInChildren<T>(this GameObject gameObject, out T[] components, bool includeInactive = false) where T : Component
+        internal static bool TryGetComponentsInChildren<T>(this GameObject gameObject, out T[] components, bool includeInactive = false) where T : Component
         {
             components = null;
 
@@ -105,7 +105,7 @@ namespace RamuneLib.Extensions
         /// <param name="gameObject"></param>
         /// <param name="component"></param>
         /// <returns></returns>
-        public static bool TryGetComponentInParent<T>(this GameObject gameObject, out T component) where T : Component
+        internal static bool TryGetComponentInParent<T>(this GameObject gameObject, out T component) where T : Component
         {
             component = null;
 
@@ -128,7 +128,7 @@ namespace RamuneLib.Extensions
         /// <param name="gameObject"></param>
         /// <param name="components"></param>
         /// <returns></returns>
-        public static bool TryGetComponentsInParent<T>(this GameObject gameObject, out T[] components) where T : Component
+        internal static bool TryGetComponentsInParent<T>(this GameObject gameObject, out T[] components) where T : Component
         {
             components = null;
 
@@ -151,7 +151,7 @@ namespace RamuneLib.Extensions
         /// <param name="gameObject"></param>
         /// <param name="component"></param>
         /// <returns></returns>
-        public static bool TryGetComponentEverywhere<T>(this GameObject gameObject, out T component) where T : Component
+        internal static bool TryGetComponentEverywhere<T>(this GameObject gameObject, out T component) where T : Component
         {
             component = null;
 

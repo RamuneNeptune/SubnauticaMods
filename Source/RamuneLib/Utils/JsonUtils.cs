@@ -2,12 +2,12 @@
 
 namespace RamuneLib.Utils
 {
-    public static class JsonUtils
+    internal static class JsonUtils
     {
         /// <summary>
         /// 
         /// </summary>
-        public static Dictionary<string, RecipeData> RecipeDataCache = new();
+        internal static Dictionary<string, RecipeData> RecipeDataCache = new();
 
 
         /// <summary>
@@ -15,7 +15,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public static string GetJsonRecipe(string filename) => Path.Combine(Paths.RecipeFolder, filename + ".json");
+        internal static string GetJsonRecipe(string filename) => Path.Combine(Paths.RecipeFolder, filename + ".json");
 
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        public static RecipeData GetRecipeData(string filename, bool withJsonExtension = true)
+        internal static RecipeData GetRecipeData(string filename, bool withJsonExtension = true)
         {
             if(RecipeDataCache.TryGetValue(filename, out var cachedRecipeData))
                 return cachedRecipeData;

@@ -2,18 +2,18 @@
 
 namespace RamuneLib.Utils
 {
-    public static class PingUtils
+    internal static class PingUtils
     {
         /// <summary>
         /// 
         /// </summary>
-        public static Dictionary<string, PingInstance> CachedPings = new();
+        internal static Dictionary<string, PingInstance> CachedPings = new();
 
 
         /// <summary>
         /// 
         /// </summary>
-        public enum PingColor
+        internal enum PingColor
         {
             Blue,
             Orange,
@@ -28,7 +28,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static PingType RegisterPingType(string name)
+        internal static PingType RegisterPingType(string name)
         {
             return EnumHandler.AddEntry<PingType>(name)
                 .WithIcon(ImageUtils.GetSprite(name)).Value;
@@ -41,7 +41,7 @@ namespace RamuneLib.Utils
         /// <param name="name"></param>
         /// <param name="sprite"></param>
         /// <returns></returns>
-        public static PingType RegisterPingType(string name, Sprite sprite)
+        internal static PingType RegisterPingType(string name, Sprite sprite)
         {
             return EnumHandler.AddEntry<PingType>(name)
                 .WithIcon(sprite).Value;
@@ -54,7 +54,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="name"></param>
         /// <returns></returns>
-        public static PingType GetModdedPingType(string name)
+        internal static PingType GetModdedPingType(string name)
         {
             if(EnumHandler.TryGetValue<PingType>(name, out var pingType))
                 return pingType;
@@ -73,7 +73,7 @@ namespace RamuneLib.Utils
         /// <param name="type">Type of the ping, e.g. seamoth, cyclops, signal..</param>
         /// <param name="visible">Initial visibility state of the ping</param>
         /// <returns>The created PingInstance.</returns>
-        public static PingInstance Create(string id, string label, PingColor color, PingType type, bool visible = true)
+        internal static PingInstance Create(string id, string label, PingColor color, PingType type, bool visible = true)
         {
             if(CachedPings.ContainsKey(id))
                 throw new ArgumentException($"Ping with ID '{id}' already exists in cache");
@@ -95,7 +95,7 @@ namespace RamuneLib.Utils
         /// <param name="ping"></param>
         /// <param name="parent"></param>
         /// <returns></returns>
-        public static PingInstance WithParent(this PingInstance ping, Transform parent)
+        internal static PingInstance WithParent(this PingInstance ping, Transform parent)
         {
             ping.transform.parent = parent;
             return ping;
@@ -107,7 +107,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public static PingInstance Get(string id)
+        internal static PingInstance Get(string id)
         {
             return CachedPings.ContainsKey(id) ? CachedPings[id] : null;
         }
@@ -117,7 +117,7 @@ namespace RamuneLib.Utils
         /// 
         /// </summary>
         /// <param name="id"></param>
-        public static void Remove(string id)
+        internal static void Remove(string id)
         {
             if(CachedPings.ContainsKey(id))
             {
@@ -131,7 +131,7 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
-        public static void ClearCache()
+        internal static void ClearCache()
         {
             foreach(var ping in CachedPings.Values)
                 GameObject.Destroy(ping);

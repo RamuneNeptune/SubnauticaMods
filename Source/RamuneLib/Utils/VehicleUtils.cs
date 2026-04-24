@@ -3,20 +3,20 @@
 namespace RamuneLib.Utils
 {
     // rewrite this shit
-    public static class VehicleUtils
+    internal static class VehicleUtils
     {
-        public struct SpeedData
+        internal struct SpeedData
         {
-            public float Forward;
+            internal float Forward;
 
-            public float Backward;
+            internal float Backward;
 
-            public float Sideward;
+            internal float Sideward;
 
-            public float Vertical;
+            internal float Vertical;
 
 
-            public SpeedData(float forward, float backward, float sideward, float vertical)
+            internal SpeedData(float forward, float backward, float sideward, float vertical)
             {
                 Forward = forward;
                 Backward = backward;
@@ -26,13 +26,13 @@ namespace RamuneLib.Utils
         }
 
 
-        public static class Seaglide
+        internal static class Seaglide
         {
             /// <summary>
             /// Retrieves an array of speed values for the Seaglide.
             /// </summary>
             /// <returns>An array containing the Seaglide speed values in the following order: forwardMaxSpeed, backwardMaxSpeed, strafeMaxSpeed, verticalMaxSpeed, waterAcceleration, swimDrag.</returns>
-            public static float[] GetSpeeds()
+            internal static float[] GetSpeeds()
             {
                 var controller = Player.main.playerController;
 
@@ -54,7 +54,7 @@ namespace RamuneLib.Utils
             /// <param name="multiplier"></param>
             /// <param name="speedDiff"></param>
             /// <param name="accelDiff"></param>
-            public static void Speedup(float multiplier, out float speedDiff, out float accelDiff)
+            internal static void Speedup(float multiplier, out float speedDiff, out float accelDiff)
             {
                 var controller = Player.main.playerController;
 
@@ -73,7 +73,7 @@ namespace RamuneLib.Utils
             /// </summary>
             /// <param name="speedDiff"></param>
             /// <param name="accelDiff"></param>
-            public static void SpeedDown(float speedDiff, float accelDiff)
+            internal static void SpeedDown(float speedDiff, float accelDiff)
             {
                 var controller = Player.main.playerController;
 
@@ -89,7 +89,7 @@ namespace RamuneLib.Utils
         /// Retrieves an array of speed values on the provided vehicle component.
         /// </summary>
         /// <returns>An array containing the values on the provided vehicle component in the following order: 0 forwardForce, 1 backwardForce, 2 sidewardForce, 3 verticalForce.</returns>
-        public static SpeedData GetSpeeds(this Vehicle vehicle) => new(vehicle.forwardForce, vehicle.backwardForce, vehicle.sidewardForce, vehicle.verticalForce);
+        internal static SpeedData GetSpeeds(this Vehicle vehicle) => new(vehicle.forwardForce, vehicle.backwardForce, vehicle.sidewardForce, vehicle.verticalForce);
 
 
         /// <summary>
@@ -100,7 +100,7 @@ namespace RamuneLib.Utils
         /// <param name="duration"></param>
         /// <param name="onIncrease"></param>
         /// <param name="onDecrease"></param>
-        public static void Speedup(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 1, multiplier, duration, onIncrease, onDecrease));
+        internal static void Speedup(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 1, multiplier, duration, onIncrease, onDecrease));
         
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace RamuneLib.Utils
         /// <param name="duration"></param>
         /// <param name="onIncrease"></param>
         /// <param name="onDecrease"></param>
-        public static void SpeedupForward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 2, multiplier, duration, onIncrease, onDecrease));
+        internal static void SpeedupForward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 2, multiplier, duration, onIncrease, onDecrease));
 
 
         /// <summary>
@@ -122,7 +122,7 @@ namespace RamuneLib.Utils
         /// <param name="duration"></param>
         /// <param name="onIncrease"></param>
         /// <param name="onDecrease"></param>
-        public static void SpeedupBackward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 3, multiplier, duration, onIncrease, onDecrease));
+        internal static void SpeedupBackward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 3, multiplier, duration, onIncrease, onDecrease));
 
 
         /// <summary>
@@ -133,7 +133,7 @@ namespace RamuneLib.Utils
         /// <param name="duration"></param>
         /// <param name="onIncrease"></param>
         /// <param name="onDecrease"></param>
-        public static void SpeedupSideward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 4, multiplier, duration, onIncrease, onDecrease));
+        internal static void SpeedupSideward(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 4, multiplier, duration, onIncrease, onDecrease));
 
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace RamuneLib.Utils
         /// <param name="duration"></param>
         /// <param name="onIncrease"></param>
         /// <param name="onDecrease"></param>
-        public static void SpeedupVertical(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 5, multiplier, duration, onIncrease, onDecrease));
+        internal static void SpeedupVertical(this Vehicle vehicle, float multiplier, float duration = 0, Action onIncrease = null, Action onDecrease = null) => CoroutineHost.StartCoroutine(SpeedupAsync(vehicle, 5, multiplier, duration, onIncrease, onDecrease));
 
 
         /// <summary>

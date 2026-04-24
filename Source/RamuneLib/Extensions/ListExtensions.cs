@@ -2,7 +2,7 @@
 
 namespace RamuneLib.Extensions
 {
-    public static class ListExtensions
+    internal static class ListExtensions
     {
         /// <summary>
         /// 
@@ -11,7 +11,7 @@ namespace RamuneLib.Extensions
         /// <param name="list"></param>
         /// <param name="item"></param>
         /// <returns></returns>
-        public static bool AddUnique<T>(this List<T> list, T item)
+        internal static bool AddUnique<T>(this List<T> list, T item)
         {
             if(!list.Contains(item))
             {
@@ -30,7 +30,7 @@ namespace RamuneLib.Extensions
         /// <param name="list"></param>
         /// <param name="items"></param>
         /// <returns>Amount of items added to the <param name="list"></returns>
-        public static int AddRangeUnique<T>(this List<T> list, IEnumerable<T> items)
+        internal static int AddRangeUnique<T>(this List<T> list, IEnumerable<T> items)
         {
             int added = 0;
 

@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class CrashPatch
+    internal static class CrashPatch
     {
-        public static void Detonate(Crash __instance)
+        internal static void Detonate(Crash __instance)
         {
             if(UnityEngine.Random.value > 0.3f)
             {

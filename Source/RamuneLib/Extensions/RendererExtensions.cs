@@ -2,12 +2,12 @@
 
 namespace RamuneLib.Extensions
 {
-    public static class RendererExtensions
+    internal static class RendererExtensions
     {
         /// <summary>
         /// Types of textures that can be set
         /// </summary>
-        public enum TextureType
+        internal enum TextureType
         {
             Main,
             Specular,
@@ -23,7 +23,7 @@ namespace RamuneLib.Extensions
         /// <param name="texture">The texture to apply</param>
         /// <param name="materialIndex">The index of the material to set the texture on (default is 0.</param>
         /// <returns>The modified Renderer.</returns>
-        public static Renderer SetTexture(this Renderer renderer, TextureType type, Texture2D texture, bool applyToEverything = false)
+        internal static Renderer SetTexture(this Renderer renderer, TextureType type, Texture2D texture, bool applyToEverything = false)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetTexture: renderer is null");
@@ -62,7 +62,7 @@ namespace RamuneLib.Extensions
         /// <param name="texture">The texture to apply</param>
         /// <param name="materialIndexes">An array of material indexes to apply the textures to</param>
         /// <returns>The modified Renderer.</returns>
-        public static Renderer SetTexture(this Renderer renderer, TextureType type, Texture2D texture, params int[] materialIndexes)
+        internal static Renderer SetTexture(this Renderer renderer, TextureType type, Texture2D texture, params int[] materialIndexes)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetTexture: renderer is null");
@@ -98,7 +98,7 @@ namespace RamuneLib.Extensions
         /// Sets the glow strength of the specified material
         /// </summary>
         /// <param name="strength">The glow strength value</param>
-        public static Renderer SetGlowStrength(this Renderer renderer, float strength, bool applyToEverything = false)
+        internal static Renderer SetGlowStrength(this Renderer renderer, float strength, bool applyToEverything = false)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetGlowStrength: renderer is null");
@@ -126,7 +126,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="strength">The glow strength value</param>
         /// <param name="materialIndexes">An array of material indexes to apply the glow strength to</param>
-        public static Renderer SetGlowStrength(this Renderer renderer, float strength, params int[] materialIndexes)
+        internal static Renderer SetGlowStrength(this Renderer renderer, float strength, params int[] materialIndexes)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetGlowStrengths: renderer is null");
@@ -144,7 +144,7 @@ namespace RamuneLib.Extensions
         /// Toggles 'MARMO_EMISSION' keyword on all materials
         /// </summary>
         /// <param name="toggleState">True to enable emission, false to disable</param>
-        public static Renderer ToggleEmission(this Renderer renderer, bool toggleState = true)
+        internal static Renderer ToggleEmission(this Renderer renderer, bool toggleState = true)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.ToggleEmission: renderer is null");
@@ -160,7 +160,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="toggleState">True to enable emission, false to disable</param>
         /// <param name="materialIndex">The index of the material to toggle emission on</param>
-        public static Renderer ToggleEmission(this Renderer renderer, bool toggleState, int materialIndex = 0)
+        internal static Renderer ToggleEmission(this Renderer renderer, bool toggleState, int materialIndex = 0)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.ToggleEmission: renderer is null");
@@ -176,7 +176,7 @@ namespace RamuneLib.Extensions
         /// </summary>
         /// <param name="toggleState">True to enable emission, false to disable</param>
         /// <param name="materialIndexes">An array of material indexes to toggle emission on to</param>
-        public static Renderer ToggleEmission(this Renderer renderer, bool toggleState, params int[] materialIndexes)
+        internal static Renderer ToggleEmission(this Renderer renderer, bool toggleState, params int[] materialIndexes)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.ToggleEmission: renderer is null");
@@ -190,7 +190,7 @@ namespace RamuneLib.Extensions
         }
 
 
-        public static Renderer SetFloat(this Renderer renderer, int property, float value, bool applyToEverything = false)
+        internal static Renderer SetFloat(this Renderer renderer, int property, float value, bool applyToEverything = false)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetFloat: renderer is null");
@@ -202,7 +202,7 @@ namespace RamuneLib.Extensions
         }
 
 
-        public static Renderer SetFloat(this Renderer renderer, int property, float value, params int[] materialIndexes)
+        internal static Renderer SetFloat(this Renderer renderer, int property, float value, params int[] materialIndexes)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetFloat: renderer is null");
@@ -213,7 +213,7 @@ namespace RamuneLib.Extensions
         }
 
 
-        public static Renderer SetColor(this Renderer renderer, int property, Color color, bool applyToEverything = false)
+        internal static Renderer SetColor(this Renderer renderer, int property, Color color, bool applyToEverything = false)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetColor: renderer is null");
@@ -225,7 +225,7 @@ namespace RamuneLib.Extensions
         }
 
 
-        public static Renderer SetColor(this Renderer renderer, int property, Color color, params int[] materialIndexes)
+        internal static Renderer SetColor(this Renderer renderer, int property, Color color, params int[] materialIndexes)
         {
             if(renderer == null)
                 throw new NullReferenceException("RendererExtensions.SetColor: renderer is null");

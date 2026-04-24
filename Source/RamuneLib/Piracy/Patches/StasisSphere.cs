@@ -2,11 +2,11 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class StasisSpherePatch
+    internal static class StasisSpherePatch
     {
-        public static float time = 0f;
+        internal static float time = 0f;
 
-        public static bool UpdateMaterials(StasisSphere __instance)
+        internal static bool UpdateMaterials(StasisSphere __instance)
         {
             time += Time.deltaTime * 0.2f;
             time %= 1f;

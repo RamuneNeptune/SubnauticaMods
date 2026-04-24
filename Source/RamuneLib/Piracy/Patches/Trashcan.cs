@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class TrashcanPatch
+    internal static class TrashcanPatch
     {
-        public static bool Update(Trashcan __instance)
+        internal static bool Update(Trashcan __instance)
         {
             if(__instance.wasteList.Count > 0 && __instance.timeLastWasteDestroyed + __instance.destroyInterval < DayNightCycle.main.timePassed)
             {

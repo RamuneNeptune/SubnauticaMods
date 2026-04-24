@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class SeaglidePatch
+    internal static class SeaglidePatch
     {
-        public static void OnDraw(Player p)
+        internal static void OnDraw(Player p)
         {
             p.playerController.seaglideForwardMaxSpeed *= 1.1f;
         }

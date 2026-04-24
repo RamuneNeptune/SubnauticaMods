@@ -2,7 +2,7 @@
 
 namespace RamuneLib.Utils
 {
-    public static class ImageUtils
+    internal static class ImageUtils
     {
         /// <summary>
         /// 
@@ -22,7 +22,7 @@ namespace RamuneLib.Utils
         /// <param name="filename"></param>
         /// <param name="extension"></param>
         /// <returns></returns>
-        public static string GetAssetPath(string filename, string extension = ".png") => Path.Combine(Paths.AssetsFolder, filename + extension);
+        internal static string GetAssetPath(string filename, string extension = ".png") => Path.Combine(Paths.AssetsFolder, filename + extension);
 
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename">The filename of the sprite to load.</param>
         /// <returns>The loaded <see cref="Atlas.Sprite"/>.
-        public static Sprite GetSprite(string filename, string extension = ".png")
+        internal static Sprite GetSprite(string filename, string extension = ".png")
         {
             if(CachedSprites.TryGetValue(filename + extension, out var cachedSprite))
                 return cachedSprite;
@@ -54,7 +54,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="techType">The TechType of the sprite to retrieve.</param>
         /// <returns>The retrieved <see cref="Atlas.Sprite"/>.
-        public static Sprite GetSprite(TechType techType) => SpriteManager.Get(techType);
+        internal static Sprite GetSprite(TechType techType) => SpriteManager.Get(techType);
 
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename">The filename of the texture to load.</param>
         /// <returns>The loaded <see cref="Texture2D"/>.
-        public static Texture2D GetTexture(string filename, string extension = ".png")
+        internal static Texture2D GetTexture(string filename, string extension = ".png")
         {
             if(CachedTextures.TryGetValue(filename + extension, out var cachedTexture))
                 return cachedTexture;

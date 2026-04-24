@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Utils
 {
-    public static class LoggerUtils
+    internal static class LoggerUtils
     {
-        public static class Logfile
+        internal static class Logfile
         {
             /// <summary>
             /// Logs a message to the logfile with the severity of 'Info'.
@@ -15,7 +15,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.LogInfo("This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void Info(string message) => Variables.logger?.LogInfo(message);
+            internal static void Info(string message) => Variables.logger?.LogInfo(message);
 
 
             /// <summary>
@@ -27,7 +27,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.Info("This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void Error(string message) => Variables.logger?.LogError(message);
+            internal static void Error(string message) => Variables.logger?.LogError(message);
 
 
             /// <summary>
@@ -39,7 +39,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.Debug("This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void Debug(string message) => Variables.logger?.LogDebug(message);
+            internal static void Debug(string message) => Variables.logger?.LogDebug(message);
 
 
             /// <summary>
@@ -51,7 +51,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.Warning("This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void Warning(string message) => Variables.logger?.LogWarning(message);
+            internal static void Warning(string message) => Variables.logger?.LogWarning(message);
 
 
             /// <summary>
@@ -63,13 +63,13 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.Fatal("This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void Fatal(string message) => Variables.logger?.LogFatal(message);
+            internal static void Fatal(string message) => Variables.logger?.LogFatal(message);
 
 
             /// <summary>
             /// Logs a divider to the logfile
             /// </summary>
-            public static void Divider() => Variables.logger?.LogWarning("----------------------------------------------");
+            internal static void Divider() => Variables.logger?.LogWarning("----------------------------------------------");
 
 
 
@@ -83,7 +83,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Logfile.FromLevel(LogLevel.Info, "This is an example message to print in the logfile.");
             /// </code>
             /// </example>
-            public static void WithLevel(LogLevel level, string message)
+            internal static void WithLevel(LogLevel level, string message)
             {
                 switch(level)
                 {
@@ -110,12 +110,12 @@ namespace RamuneLib.Utils
         /// <summary>
         /// 
         /// </summary>
-        public static class Screen
+        internal static class Screen
         {
             /// <summary>
             /// 
             /// </summary>
-            public static List<string> LogLevel = new()
+            internal static List<string> LogLevel = new()
             {
                 "<b><color=#54c8f2>[Info]</color></b> ",
                 "<b><color=#b30000>[Error]</color></b> ",
@@ -133,7 +133,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Screen.LogMessage("This is an example message to display on the screen.");
             /// </code>
             /// </example>
-            public static void Message(string message) => ErrorMessage.AddError(message);
+            internal static void Message(string message) => ErrorMessage.AddError(message);
 
 
             /// <summary>
@@ -145,7 +145,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Screen.LogInfo("This is an example message to display on the screen.");
             /// </code>
             /// </example>
-            public static void Info(string message) => ErrorMessage.AddError(LogLevel[0] + message);
+            internal static void Info(string message) => ErrorMessage.AddError(LogLevel[0] + message);
 
 
             /// <summary>
@@ -157,7 +157,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Screen.LogError("This is an example message to display on the screen.");
             /// </code>
             /// </example>
-            public static void Error(string message) => ErrorMessage.AddError(LogLevel[1] + message);
+            internal static void Error(string message) => ErrorMessage.AddError(LogLevel[1] + message);
 
 
             /// <summary>
@@ -169,7 +169,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Screen.LogDebug("This is an example message to display on the screen.");
             /// </code>
             /// </example>
-            public static void Debug(string message) => ErrorMessage.AddError(LogLevel[2] + message);
+            internal static void Debug(string message) => ErrorMessage.AddError(LogLevel[2] + message);
 
 
             /// <summary>
@@ -181,7 +181,7 @@ namespace RamuneLib.Utils
             /// LoggerUtils.Screen.LogWarning("This is an example message to display on the screen.");
             /// </code>
             /// </example>
-            public static void Warning(string message) => ErrorMessage.AddError(LogLevel[3] + message);
+            internal static void Warning(string message) => ErrorMessage.AddError(LogLevel[3] + message);
         }
 
 
@@ -196,7 +196,7 @@ namespace RamuneLib.Utils
         /// LoggerUtils.LogSubtitle("This is an example subtitle message.", duration: 10f, delay: 2f);
         /// </code>
         /// </example>
-        public static void Subtitle(string langKey, string message, float duration = 5f, float delay = 0f)
+        internal static void Subtitle(string langKey, string message, float duration = 5f, float delay = 0f)
         {
             LanguageHandler.SetLanguageLine(langKey, message);
             string localizedMessage = Language.main?.Get(langKey) ?? message;
@@ -211,7 +211,7 @@ namespace RamuneLib.Utils
         /// <param name="message"></param>
         /// <param name="duration"></param>
         /// <param name="delay"></param>
-        public static void Subtitle(string message, float duration = 5f, float delay = 0f)
+        internal static void Subtitle(string message, float duration = 5f, float delay = 0f)
         {
             StringBuilder builder = new(message);
             Subtitles.AddRawLong(1, builder, delay, duration);

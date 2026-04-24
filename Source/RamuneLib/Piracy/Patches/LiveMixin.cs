@@ -2,9 +2,9 @@
 
 namespace RamuneLib.Piracy.Patches
 {
-    public static class LiveMixinPatch
+    internal static class LiveMixinPatch
     {
-        public static void TakeDamage(LiveMixin __instance, float originalDamage, Vector3 position = default, DamageType type = DamageType.Normal, GameObject dealer = null)
+        internal static void TakeDamage(LiveMixin __instance, float originalDamage, Vector3 position = default, DamageType type = DamageType.Normal, GameObject dealer = null)
         {
             if(!__instance.player)
             {
