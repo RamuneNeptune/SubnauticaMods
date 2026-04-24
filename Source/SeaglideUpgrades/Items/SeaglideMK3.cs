@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgrades.Items
 {
     public static class SeaglideMK3
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideMK3", "Seaglide <color=#f81117>MK3</color>", "SPEED: +40%\nConverts torque into thrust underwater via propeller.", ImageUtils.GetSprite("SeaglideMK3.Sprite"))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideMK3", "sgu.seaglidemk3.name".LangKey(), "sgu.seaglidemk3.desc".LangKey(), ImageUtils.GetSprite("SeaglideMK3.Sprite"))
             .WithJsonRecipe("SeaglideMK3")
             .WithEquipment(EquipmentType.Hand)
             .WithUnlock(TechType.Seaglide)
@@ -20,6 +20,9 @@ namespace Ramune.SeaglideUpgrades.Items
             {
                 ModifyPrefab = go =>
                 {
+                    var lightController = go.EnsureComponent<Monos.SeaglideLightController>();
+                    lightController.techType = Prefab.Info.TechType;
+
                     var renderers = go.GetComponentsInChildren<SkinnedMeshRenderer>(true);
 
                     if(SeaglideUpgrades.config.glossyBool)
@@ -37,7 +40,7 @@ namespace Ramune.SeaglideUpgrades.Items
 
             Patches.PlayerToolPatches.ModdedSeaglideTechTypes.Add(techType, () => SeaglideUpgrades.SetSeaglideSpeed(58f, 58f, SeaglideUpgrades.config.speedmk3));
 
-            RamunesWorkbenchUtils.AddCraftNode(techType, [RamunesWorkbenchUtils.Tabs.Equipment, "Seaglides"]);
+            RamunesWorkbenchUtils.AddCraftNode(techType, [RamunesWorkbenchUtils.Tabs.Equipment, "sgu.workbenchtab.name".LangKey()]);
         }
     }
 }

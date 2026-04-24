@@ -22,7 +22,9 @@ namespace Ramune.SeaglideUpgrades
             if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/SeaglideUpgrades/Version.json"))
                 return;
 
-            RamunesWorkbenchUtils.AddTabNode("Seaglides", SpriteManager.Get(TechType.Seaglide), RamunesWorkbenchUtils.Tabs.Equipment);
+            LanguageHandler.RegisterLocalizationFolder();
+
+            RamunesWorkbenchUtils.AddTabNode("sgu.workbenchtab.name".LangKey(), SpriteManager.Get(TechType.Seaglide), RamunesWorkbenchUtils.Tabs.Equipment);
 
             Items.SeaglideMK1.Patch();
             Items.SeaglideMK2.Patch();
@@ -32,6 +34,9 @@ namespace Ramune.SeaglideUpgrades
 
         public static void SetSeaglideSpeed(float speed, float accel, float multiplier = 1f)
         {
+            if(!Player.main || !Player.main.playerController)
+                return;
+
             Player.main.playerController.seaglideForwardMaxSpeed = speed * multiplier;
             Player.main.playerController.seaglideWaterAcceleration = accel * multiplier;
             Player.main.UpdateMotorMode();

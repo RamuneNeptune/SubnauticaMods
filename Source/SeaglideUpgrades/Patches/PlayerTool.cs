@@ -11,11 +11,18 @@ namespace Ramune.SeaglideUpgrades.Patches
         };
 
 
+        public static TechType ActiveSeaglideTechType;
+
+
         [HarmonyPatch(nameof(PlayerTool.animToolName), MethodType.Getter), HarmonyPostfix]
         public static void Postfix(PlayerTool __instance, ref string __result)
         {
-            if(ModdedSeaglideTechTypes.Keys.Contains(__instance.pickupable?.GetTechType() ?? TechType.None))
-                __result = "seaglide";
+            var techType = __instance.pickupable?.GetTechType() ?? TechType.None;
+
+            if(!ModdedSeaglideTechTypes.Keys.Contains(techType))
+                return;
+            
+            __result = "seaglide";
         }
 
 
@@ -26,7 +33,9 @@ namespace Ramune.SeaglideUpgrades.Patches
 
             if(!ModdedSeaglideTechTypes.Keys.Contains(techType))
                 return;
-            
+
+            ActiveSeaglideTechType = techType;
+
             ModdedSeaglideTechTypes[techType].Invoke();
         }
     }
