@@ -13,6 +13,8 @@ namespace Ramune.SeaglideUpgrades.Items
         public static Texture2D Texture = ImageUtils.GetTexture("SeaglideMK2.Texture");
         public static Texture2D Illum = ImageUtils.GetTexture("SeaglideMK2.Illum");
 
+        public static readonly List<Action<GameObject>> ModifyPrefabCallbacks = [];
+
 
         public static void Patch()
         {
@@ -30,6 +32,8 @@ namespace Ramune.SeaglideUpgrades.Items
 
                     renderers.ForEach(x => x.material.SetTexture(ShaderPropertyID._MainTex, Texture));
                     renderers.ForEach(x => x.material.SetTexture(ShaderPropertyID._Illum, Illum));
+                    
+                    ModifyPrefabCallbacks.ForEach(x => x.Invoke(go));
                 }
             };
 

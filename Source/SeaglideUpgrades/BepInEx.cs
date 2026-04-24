@@ -34,12 +34,16 @@ namespace Ramune.SeaglideUpgrades
 
         public static void SetSeaglideSpeed(float speed, float accel, float multiplier = 1f)
         {
-            if(!Player.main || !Player.main.playerController)
+            var player = Player.main;
+            var playerController = player?.playerController;
+
+            if(!player || !playerController)
                 return;
 
-            Player.main.playerController.seaglideForwardMaxSpeed = speed * multiplier;
-            Player.main.playerController.seaglideWaterAcceleration = accel * multiplier;
-            Player.main.UpdateMotorMode();
+            playerController.seaglideForwardMaxSpeed = speed * multiplier;
+            playerController.seaglideWaterAcceleration = accel * multiplier;
+            playerController.SetMotorMode(Player.MotorMode.Dive);
+            player.UpdateMotorMode();
         }
     }
 }
