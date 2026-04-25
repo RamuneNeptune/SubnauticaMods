@@ -56,7 +56,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
         public float GetCurrentSpeedMultiplier() => GetSpeedModuleMultiplier() + (isBoosting ? SeaglideUpgradesModules.config.BoostMultiplier : 0f);
 
-        // I wrote this method like this so modders can patch them easily if they need to
+        // I wrote this method like this so modders can patch it easily if they need to
         public void ApplyCurrentSpeed(float currentSpeedMultiplier) => SeaglideUpgrades.Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(currentSpeedMultiplier);
 
         // This one too
@@ -197,7 +197,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
         public void UpdateBatterySwap()
         {
-            if(batterySwapModules < 1 || energyMixin == null || energyMixin.IsDepleted())
+            if(batterySwapModules < 1 || energyMixin == null || !energyMixin.IsDepleted())
                 return;
         }
     }
