@@ -333,6 +333,7 @@
     <Compile Include="Items\SeaglideMK1.cs" />
     <Compile Include="Monos\SeaglideLightController.cs" />
     <Compile Include="Patches\PlayerTool.cs" />
+    <Compile Include="Patches\Seaglide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

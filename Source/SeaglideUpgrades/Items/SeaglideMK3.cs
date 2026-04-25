@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgrades.Items
 {
     public static class SeaglideMK3
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideMK3", "sgu.seaglidemk3.name".LangKey(), "sgu.seaglidemk3.desc".LangKey(), ImageUtils.GetSprite("SeaglideMK3.Sprite"))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideMK3", "ramune.sgu.seaglidemk3.name".LangKey(), "ramune.sgu.seaglidemk3.desc".LangKey(), ImageUtils.GetSprite("SeaglideMK3.Sprite"))
             .WithJsonRecipe("SeaglideMK3")
             .WithEquipment(EquipmentType.Hand)
             .WithUnlock(TechType.Seaglide)
@@ -27,7 +27,7 @@ namespace Ramune.SeaglideUpgrades.Items
 
                     var renderers = go.GetComponentsInChildren<SkinnedMeshRenderer>(true);
 
-                    if(SeaglideUpgrades.config.glossyBool)
+                    if(SeaglideUpgrades.config.specTexChoice == 1) 
                         renderers.ForEach(x => x.material.SetTexture(ShaderPropertyID._SpecTex, Texture));
 
                     renderers.ForEach(x => x.material.SetTexture(ShaderPropertyID._MainTex, Texture));
@@ -40,11 +40,7 @@ namespace Ramune.SeaglideUpgrades.Items
             Prefab.SetGameObject(clone);
             Prefab.Register();
 
-            var techType = Prefab.Info.TechType;
-
-            Patches.PlayerToolPatches.ModdedSeaglideTechTypes.Add(techType, () => SeaglideUpgrades.SetSeaglideSpeed(58f, 58f, SeaglideUpgrades.config.speedmk3));
-
-            RamunesWorkbenchUtils.AddCraftNode(techType, [RamunesWorkbenchUtils.Tabs.Equipment, "sgu.workbenchtab.name".LangKey()]);
+            RamunesWorkbenchUtils.AddCraftNode(Prefab.Info.TechType, [RamunesWorkbenchUtils.Tabs.Equipment, "ramune.sgu.workbenchtab.name".LangKey()]);
         }
     }
 }

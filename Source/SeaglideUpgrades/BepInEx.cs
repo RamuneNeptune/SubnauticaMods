@@ -24,7 +24,7 @@ namespace Ramune.SeaglideUpgrades
 
             LanguageHandler.RegisterLocalizationFolder();
 
-            RamunesWorkbenchUtils.AddTabNode("sgu.workbenchtab.name".LangKey(), SpriteManager.Get(TechType.Seaglide), RamunesWorkbenchUtils.Tabs.Equipment);
+            RamunesWorkbenchUtils.AddTabNode("ramune.sgu.workbenchtab.name".LangKey(), SpriteManager.Get(TechType.Seaglide), RamunesWorkbenchUtils.Tabs.Equipment);
 
             Items.SeaglideMK1.Patch();
             Items.SeaglideMK2.Patch();
@@ -32,12 +32,12 @@ namespace Ramune.SeaglideUpgrades
         }
 
 
-        public static void SetSeaglideSpeed(float speed, float accel, float multiplier = 1f)
+        public static void SetSeaglideSpeed(float speed, float accel, float multiplier)
         {
             var player = Player.main;
             var playerController = player?.playerController;
 
-            if(!player || !playerController)
+            if(!player || !playerController || !player.IsUnderwaterForSwimming())
                 return;
 
             playerController.seaglideForwardMaxSpeed = speed * multiplier;

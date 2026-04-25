@@ -9,7 +9,7 @@ namespace Ramune.SeaglideUpgrades
         const string _mk1 = "<color=#37B8FD>MK1</color>";
         const string _mk2 = "<color=#C6FF53>MK2</color>";
         const string _mk3 = "<color=#FE6A4D>MK3</color>";
-        const string _tooltip = "Changes are applied automatically for everything except speed multipliers, you must re-equip your Seaglide to apply those.";
+        const string _tooltip = "Changes are applied immediately.";
         const string _red = "Light Red (<color=#FFDD44>R</color>)";
         const string _green = "Light Green (<color=#FFDD44>G</color>)";
         const string _blue = "Light Blue (<color=#FFDD44>B</color>)";
@@ -31,8 +31,8 @@ namespace Ramune.SeaglideUpgrades
         [Toggle($"<color=#ffc600>Configuration:</color> {_div}")]
         public bool DividerCfg = false;
 
-        [Toggle($" • Use glossy/metallic textures (better clarity)")]
-        public bool glossyBool = true;
+        [Choice($" • Specular Texture", options:["Vanilla", "Modded"])]
+        public int specTexChoice = 1;
 
         [Slider($" • {_mk1} Speed Multiplier", Format = _multiplierFormat, DefaultValue = _default, Min = 0.1f, Max = _multiplierMax, Step = _step, Tooltip = _tooltip), OnChange(nameof(OnChangeSpeedMK1))]
         public float speedmk1 = 1f;
@@ -46,9 +46,24 @@ namespace Ramune.SeaglideUpgrades
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+        //[Toggle(_div)]
+        //public bool divider = false;
 
-        [Toggle(_div)]
-        public bool _divider = false;
+        [Toggle($"<color=#ffc600>Vanilla Seaglide:</color> {_div}")]
+        public bool boolVanilla = true;
+
+        [Slider($" • Seaglide Speed", Format = "{0:F2}", DefaultValue = 25f, Min = 0.1f, Max = 100f, Step = 0.01f, Tooltip = _tooltip + " This setting affects ONLY the vanilla Seaglide."), OnChange(nameof(OnChangeSpeedVanilla))]
+        public float vanillaSpeed = 25f;
+
+        [Slider($" • Seaglide Acceleration", Format = "{0:F2}", DefaultValue = 36.56f, Min = 0.1f, Max = 100f, Step = 0.01f, Tooltip = _tooltip + " This setting affects ONLY the vanilla Seaglide."), OnChange(nameof(OnChangeSpeedVanilla))]
+        public float vanillaAcceleration = 36.56f;
+
+        [Slider($" • Seaglide Speed Multiplier", Format = _multiplierFormat, DefaultValue = _default, Min = 0.1f, Max = _multiplierMax, Step = _step, Tooltip = _tooltip), OnChange(nameof(OnChangeSpeedVanilla))]
+        public float vanillaMultiplier = 1f;
+
+
+        //[Toggle(_div)]
+        //public bool _divider = false;
 
         [Toggle($"<color=#ffc600>Seaglide {_mk1}:</color> {_div}")]
         public bool boolmk1 = true;
@@ -75,8 +90,8 @@ namespace Ramune.SeaglideUpgrades
         //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        [Toggle(_div)]
-        public bool __divider = false;
+        //[Toggle(_div)]
+        //public bool __divider = false;
 
         [Toggle($"<color=#ffc600>Seaglide {_mk2}:</color> {_div}")]
         public bool boolmk2 = true;
@@ -103,8 +118,8 @@ namespace Ramune.SeaglideUpgrades
         //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-        [Toggle(_div)]
-        public bool ___divider = false;
+        //[Toggle(_div)]
+        //public bool ___divider = false;
 
         [Toggle($"<color=#ffc600>Seaglide {_mk3}:</color> {_div}")]
         public bool boolmk3 = true;
@@ -131,14 +146,23 @@ namespace Ramune.SeaglideUpgrades
         //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+        public static void OnChangeSpeedVanilla()
+        {
+            if(Patches.SeaglidePatch.ActiveSeaglideTechType != TechType.Seaglide)
+                return;
+
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[TechType.Seaglide].Invoke(1f);
+        }
+
+
         public static void OnChangeSpeedMK1()
         {
             var techType = Items.SeaglideMK1.Prefab.Info.TechType;
 
-            if(Patches.PlayerToolPatches.ActiveSeaglideTechType != techType)
+            if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatches.ModdedSeaglideTechTypes[techType].Invoke();
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
         }
 
 
@@ -146,10 +170,10 @@ namespace Ramune.SeaglideUpgrades
         {
             var techType = Items.SeaglideMK2.Prefab.Info.TechType;
 
-            if(Patches.PlayerToolPatches.ActiveSeaglideTechType != techType)
+            if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatches.ModdedSeaglideTechTypes[techType].Invoke();
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
         }
 
 
@@ -157,10 +181,10 @@ namespace Ramune.SeaglideUpgrades
         {
             var techType = Items.SeaglideMK3.Prefab.Info.TechType;
 
-            if(Patches.PlayerToolPatches.ActiveSeaglideTechType != techType)
+            if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatches.ModdedSeaglideTechTypes[techType].Invoke();
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
         }
 
 
@@ -175,8 +199,8 @@ namespace Ramune.SeaglideUpgrades
 
         //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        [Toggle(_div)]
-        public bool ____divider = false;
+        //[Toggle(_div)]
+        //public bool ____divider = false;
 
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;
