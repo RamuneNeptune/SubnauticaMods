@@ -49,6 +49,25 @@ namespace RamuneLib.Utils
         }
 
 
+        internal static Sprite GetSprite(string filename, TechType fallbackTechType, string extension = ".png")
+        {
+            if(CachedSprites.TryGetValue(filename + extension, out var cachedSprite))
+                return cachedSprite;
+
+            var sprite = Utility.ImageUtils.LoadSpriteFromFile(GetAssetPath(filename, extension));
+
+            if(sprite == null)
+            {
+                Logfile.Warning($"Failed to load sprite from path: {GetAssetPath(filename, extension)}");
+                return GetSprite(fallbackTechType);
+            }
+
+            CachedSprites.Add(filename + extension, sprite);
+
+            return sprite;
+        }
+
+
         /// <summary>
         /// Gets and returns an <see cref="Atlas.Sprite"/> associated with the given TechType.
         /// </summary>
