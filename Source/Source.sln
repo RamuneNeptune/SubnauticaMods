@@ -132,6 +132,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ramune's Workbench", "Ramun
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{CA672287-7366-4482-8861-13C154A836FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeaglideUpgradesModules", "SeaglideUpgradesModules\SeaglideUpgradesModules.csproj", "{EC4AD197-B882-4EE2-A9EC-04FF33F86D66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -326,6 +328,10 @@ Global
 		{8103E2CB-8279-457C-AAC3-7244D567D300}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8103E2CB-8279-457C-AAC3-7244D567D300}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8103E2CB-8279-457C-AAC3-7244D567D300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4AD197-B882-4EE2-A9EC-04FF33F86D66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4AD197-B882-4EE2-A9EC-04FF33F86D66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4AD197-B882-4EE2-A9EC-04FF33F86D66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4AD197-B882-4EE2-A9EC-04FF33F86D66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -388,6 +394,7 @@ Global
 		{8103E2CB-8279-457C-AAC3-7244D567D300} = {39F8E4B5-942C-4307-94C6-6B5EB9960B74}
 		{69014157-7576-45D9-BC4D-1868ED13B8DB} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
 		{CA672287-7366-4482-8861-13C154A836FA} = {29BC49B6-6D76-4842-B046-62EFB83BE42F}
+		{EC4AD197-B882-4EE2-A9EC-04FF33F86D66} = {69014157-7576-45D9-BC4D-1868ED13B8DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDC6991E-5F9B-4A06-999B-262375729306}

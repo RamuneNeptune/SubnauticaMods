@@ -1,0 +1,13 @@
+{
+  "ramune.sgum.batteryswapupgrade.name": "Seaglide battery swap upgrade",
+  "ramune.sgum.batteryswapupgrade.desc": "Automatically swaps out depleted batteries for the highest charge battery in your battery storage. Each upgrade adds +1 slot to your battery storage. Seaglide compatible. Does stack.",
+
+  "ramune.sgum.boostupgrade.name": "Seaglide boost upgrade",
+  "ramune.sgum.boostupgrade.desc": "While active, enhances mobility at the cost of increased battery usage. Seaglide compatible. Does not stack.",
+
+  "ramune.sgum.efficiencyupgrade.name": "Seaglide efficiency upgrade",
+  "ramune.sgum.efficiencyupgrade.desc": "Recycles heat by-product to minimize power inefficiencies. Seaglide compatible. Does stack.",
+
+  "ramune.sgum.speedupgrade.name": "Seaglide speed upgrade",
+  "ramune.sgum.speedupgrade.desc": "Increases maximum speed without increasing power draw. Seaglide compatible. Does stack."
+}
