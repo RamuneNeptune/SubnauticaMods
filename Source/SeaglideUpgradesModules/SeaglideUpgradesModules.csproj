@@ -335,7 +335,6 @@
     <Compile Include="Items\BoostUpgrade.cs" />
     <Compile Include="Items\BatterySwapUpgrade.cs" />
     <Compile Include="Monos\SeaglideUpgradeManager.cs" />
-    <Compile Include="Patches\Seaglide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
