@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgradesModules.Items
 {
     public static class SpeedUpgrade
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideSpeedUpgrade", "ramune.sgum.speedupgrade.name".LangKey(), "ramune.sgum.speedupgrade.desc".LangKey(), ImageUtils.GetSprite(TechType.MapRoomUpgradeScanSpeed))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideSpeedUpgrade", "ramune.sgum.speedupgrade.name".LangKey(), "ramune.sgum.speedupgrade.desc".LangKey(), ImageUtils.GetSprite("SpeedUpgrade", TechType.MapRoomUpgradeScanSpeed))
             .WithJsonRecipe("SpeedUpgrade")
             .WithUnlock(TechType.Seaglide)
             .WithSize(1, 1);

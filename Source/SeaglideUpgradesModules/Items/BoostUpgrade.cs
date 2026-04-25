@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgradesModules.Items
 {
     public static class BoostUpgrade
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideBoostUpgrade", "ramune.sgum.boostupgrade.name".LangKey(), "ramune.sgum.boostupgrade.desc".LangKey(), ImageUtils.GetSprite(TechType.ExosuitJetUpgradeModule))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideBoostUpgrade", "ramune.sgum.boostupgrade.name".LangKey(), "ramune.sgum.boostupgrade.desc".LangKey(), ImageUtils.GetSprite("BoostUpgrade", TechType.ExosuitJetUpgradeModule))
             .WithJsonRecipe("BoostUpgrade")
             .WithUnlock(TechType.Seaglide)
             .WithSize(1, 1);
