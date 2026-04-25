@@ -35,7 +35,15 @@ namespace RamuneLib.Utils
             if(CachedSprites.TryGetValue(filename + extension, out var cachedSprite))
                 return cachedSprite;
 
-            var sprite = Utility.ImageUtils.LoadSpriteFromFile(GetAssetPath(filename, extension));
+            var path = GetAssetPath(filename, extension);
+
+            if(!File.Exists(path))
+            {
+                Logfile.Error($"Failed to find file at path: {GetAssetPath(filename, extension)}");
+                return GetSprite(TechType.None);
+            }
+
+            var sprite = Utility.ImageUtils.LoadSpriteFromFile(path);
 
             if(sprite == null)
             {
@@ -54,7 +62,15 @@ namespace RamuneLib.Utils
             if(CachedSprites.TryGetValue(filename + extension, out var cachedSprite))
                 return cachedSprite;
 
-            var sprite = Utility.ImageUtils.LoadSpriteFromFile(GetAssetPath(filename, extension));
+            var path = GetAssetPath(filename, extension);
+
+            if(!File.Exists(path))
+            {
+                Logfile.Warning($"Failed to find file at path: {GetAssetPath(filename, extension)}");
+                return GetSprite(fallbackTechType);
+            }
+
+            var sprite = Utility.ImageUtils.LoadSpriteFromFile(path);
 
             if(sprite == null)
             {
@@ -86,7 +102,15 @@ namespace RamuneLib.Utils
             if(CachedTextures.TryGetValue(filename + extension, out var cachedTexture))
                 return cachedTexture;
 
-            var texture = Utility.ImageUtils.LoadTextureFromFile(GetAssetPath(filename, extension));
+            var path = GetAssetPath(filename, extension);
+
+            if(!File.Exists(path))
+            {
+                Logfile.Error($"Failed to find file at path: {GetAssetPath(filename, extension)}");
+                return null;
+            }
+
+            var texture = Utility.ImageUtils.LoadTextureFromFile(path);
 
             if(texture == null)
             {
