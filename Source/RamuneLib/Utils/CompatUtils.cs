@@ -13,10 +13,29 @@ namespace RamuneLib.Utils
         internal static Dictionary<string, PluginInfo> CachedPluginInfos = [];
 
 
+        internal static List<Action> ChainloaderFinishedCallbacks = [];
+
+
         internal static Dictionary<string, List<Action>> ModLoadedCallbacks = [];
 
 
         internal static Dictionary<(string pluginName, string pluginVersion), List<Action>> AdvancedModLoadedCallbacks = [];
+
+
+        private static void InvokeCallbacks(this List<Action> callbacks)
+        {
+            foreach (var callback in callbacks.ToArray())
+            {
+                try
+                {
+                    callback?.Invoke();
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke a CompatUtils OnChainloaderFinished callback:\n{ex}");
+                }
+            }
+        }
 
 
         private static void InvokeCallbacks<TKey>(this Dictionary<TKey, List<Action>> callbacks, Func<TKey, bool> predicate)
@@ -60,9 +79,34 @@ namespace RamuneLib.Utils
 
             CachedPluginInfos = Chainloader.PluginInfos;
 
+            ChainloaderFinishedCallbacks.InvokeCallbacks();
+
             ModLoadedCallbacks.InvokeCallbacks(x => CachedPluginInfos.ContainsKey(x));
 
             AdvancedModLoadedCallbacks.InvokeCallbacks(x => TryGetPluginInfo(x.pluginName, out var pluginInfo) && pluginInfo.Metadata.Version.ToString() == x.pluginVersion);
+        }
+
+
+        internal static void RegisterOnChainloaderFinishedEvent(Action callback)
+        {
+            if(callback == null)
+                return;
+
+            if(ChainloaderFinished)
+            {
+                try
+                {
+                    callback();
+                }
+                catch(Exception ex)
+                {
+                    Logfile.Error($"Failed to invoke CompatUtils OnChainloaderFinished callback:\n{ex}");
+                }
+
+                return;
+            }
+
+            ChainloaderFinishedCallbacks.Add(callback);
         }
 
 
@@ -85,7 +129,7 @@ namespace RamuneLib.Utils
                 return;
             }
 
-            (ModLoadedCallbacks[pluginGuid] = ModLoadedCallbacks.TryGetValue(pluginGuid, out var list) ? list : new()).Add(callback);
+            (ModLoadedCallbacks[pluginGuid] = ModLoadedCallbacks.TryGetValue(pluginGuid, out var list) ? list : []).Add(callback);
         }
 
 
@@ -108,7 +152,7 @@ namespace RamuneLib.Utils
                 return;
             }
 
-            (AdvancedModLoadedCallbacks[(pluginGuid, pluginVersion)] = AdvancedModLoadedCallbacks.TryGetValue((pluginGuid, pluginVersion), out var list) ? list : new()).Add(callback);
+            (AdvancedModLoadedCallbacks[(pluginGuid, pluginVersion)] = AdvancedModLoadedCallbacks.TryGetValue((pluginGuid, pluginVersion), out var list) ? list : []).Add(callback);
         }
 
 
