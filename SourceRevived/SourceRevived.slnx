@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/Mods/" />
   <Folder Name="/Mods/.complete-need-rewrite/">
-    <Project Path="EarlyIonBattery/EarlyIonBattery 5.0.1.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
+    <Project Path="EarlyIonBattery/EarlyIonBattery 5.0.2.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
     <Project Path="IonThermalPlant/IonThermalPlant 5.0.0.csproj" Id="5d22f45d-5827-4921-a221-87bb9f0a34c9" />
     <Project Path="SeaglideBoosting/SeaglideBoosting 5.0.0.csproj" Id="4e26f00a-8060-4619-bd65-06f323c9a5f6" />
     <Project Path="SimpleCoordinates/SimpleCoordinates 5.0.0.csproj" Id="58df0efa-fd16-4bdc-9800-9731fab44465" />
@@ -36,7 +36,7 @@
     <Project Path="DisableTelemetry/DisableTelemetry 5.0.0.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
   </Folder>
-  <Folder Name="/Mods/.develop/redux/">
+  <Folder Name="/Mods/.testing/">
     <Project Path="DropOnDestroyRedux/DropOnDestroyRedux 1.0.0.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
     <Project Path="HideMaskRedux/HideMaskRedux 1.0.0.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />

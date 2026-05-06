@@ -5,15 +5,12 @@ namespace Ramune.EarlyIonBattery.Patches
     [HarmonyPatch(typeof(StoryGoalManager))]
     public static class StoryGoalManagerPatch
     {
-        public const string opt1 = "<color=#ffcf3c><b>1/3 </b></color> QEP Data Terminal";
-
-        public const string opt2 = "<color=#ffcf3c><b>2/3 </b></color> Disease Research Facility";
-
-        public const string opt3 = "<color=#ffcf3c><b>3/3 </b></color> Lost River Cache Terminal";
-
-        public static string battery;
-
-        public static string powercell;
+        public static readonly Dictionary<int, string> UnlocksWithMap = new() 
+        {
+            { 0, "Precursor_Gun_DataDownload1" },
+            { 1, "FindPrecursorLostRiverFacility" },
+            { 2, "Precursor_Cache_DataDownloadLostRiver" }
+        };
 
 
         [HarmonyPatch(nameof(StoryGoalManager.OnGoalComplete)), HarmonyPostfix]
@@ -22,31 +19,8 @@ namespace Ramune.EarlyIonBattery.Patches
             if(KnownTech.Contains(TechType.PrecursorIonBattery) || KnownTech.Contains(TechType.PrecursorIonPowerCell))
                 return;
 
-            switch(EarlyIonBattery.config.unlockBatt)
-            {
-                case opt1:
-                    battery = "Precursor_Gun_DataDownload1";
-                    break;
-                case opt2:
-                    battery = "FindPrecursorLostRiverFacility";
-                    break;
-                case opt3:
-                    battery = "Precursor_Cache_DataDownloadLostRiver";
-                    break;
-            }
-
-            switch(EarlyIonBattery.config.unlockCell)
-            {
-                case opt1:
-                    powercell = "Precursor_Gun_DataDownload1";
-                    break;
-                case opt2:
-                    powercell = "FindPrecursorLostRiverFacility";
-                    break;
-                case opt3:
-                    powercell = "Precursor_Cache_DataDownloadLostRiver";
-                    break;
-            }
+            var battery = UnlocksWithMap[EarlyIonBattery.config.IonBatteryUnlocksWith];
+            var powerCell = UnlocksWithMap[EarlyIonBattery.config.IonPowerCellUnlocksWith];
 
             if(__instance.completedGoals.Contains(battery))
             {
@@ -55,7 +29,7 @@ namespace Ramune.EarlyIonBattery.Patches
                 Screen.Message("<color=#09f88a>Unlocked:</color> Ion battery");
             }
 
-            if(__instance.completedGoals.Contains(powercell))
+            if(__instance.completedGoals.Contains(powerCell))
             {
                 KnownTech.Add(TechType.PrecursorIonPowerCell, true);
                 Logfile.Info("Unlocked: Ion power cell");
