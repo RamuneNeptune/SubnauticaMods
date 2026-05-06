@@ -29,7 +29,7 @@ namespace Ramune.SimpleCoordinates
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/SimpleCoordinates/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/SimpleCoordinates/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

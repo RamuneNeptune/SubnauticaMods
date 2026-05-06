@@ -17,7 +17,7 @@ namespace Ramune.SeaglideUpgrades
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/SeaglideUpgrades/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/SeaglideUpgrades/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

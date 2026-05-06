@@ -18,7 +18,7 @@ namespace Ramune.MegaO2Tank
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/MegaO2Tank/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/MegaO2Tank/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

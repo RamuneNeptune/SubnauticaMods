@@ -17,7 +17,7 @@ namespace Ramune.DisableTelemetry
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/DisableTelemetry/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/DisableTelemetry/Version.json"))
                 return;
         }
     }

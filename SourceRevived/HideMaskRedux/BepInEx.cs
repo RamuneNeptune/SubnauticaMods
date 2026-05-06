@@ -35,7 +35,7 @@ namespace Ramune.HideMaskRedux
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/HideMaskRedux/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/HideMaskRedux/Version.json"))
                 return;
         }
     }

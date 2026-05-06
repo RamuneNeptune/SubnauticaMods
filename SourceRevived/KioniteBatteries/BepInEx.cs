@@ -19,7 +19,7 @@ namespace Ramune.KioniteBatteries
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/KioniteBatteries/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/KioniteBatteries/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

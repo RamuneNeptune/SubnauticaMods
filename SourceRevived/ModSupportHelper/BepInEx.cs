@@ -17,7 +17,7 @@ namespace Ramune.ModSupportHelper
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/ModSupportHelper/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/ModSupportHelper/Version.json"))
                 return;
 
             CompatUtils.RegisterOnChainloaderFinishedEvent(() =>

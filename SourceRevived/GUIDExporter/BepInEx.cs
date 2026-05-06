@@ -17,7 +17,7 @@ namespace Ramune.GUIDExporter
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/GUIDExporter/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/GUIDExporter/Version.json"))
                 return;
 
             StartCoroutine(WaitForChainloader());

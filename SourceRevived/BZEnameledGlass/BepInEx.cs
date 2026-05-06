@@ -17,7 +17,7 @@ namespace Ramune.BZEnameledGlass
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/BZEnameledGlass/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/BZEnameledGlass/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

@@ -23,7 +23,7 @@ namespace Ramune.PrawnSuitLightSwitch
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/PrawnSuitLightSwitch/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/PrawnSuitLightSwitch/Version.json"))
                 return;
 
             LanguageHandler.RegisterLocalizationFolder();

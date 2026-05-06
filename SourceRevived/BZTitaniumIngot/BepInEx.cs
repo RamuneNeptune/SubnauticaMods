@@ -17,7 +17,7 @@ namespace Ramune.BZTitaniumIngot
 
         public void Awake()
         {
-            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/Source/BZTitaniumIngot/Version.json"))
+            if(!this.Initialize(harmony, Logger, Name, Version, config.EnableThisMod, "https://raw.githubusercontent.com/RamuneNeptune/SubnauticaMods/refs/heads/main/SourceRevived/BZTitaniumIngot/Version.json"))
                 return;
 
             CraftDataHandler.SetRecipeData(TechType.TitaniumIngot, JsonUtils.GetJsonRecipeDataOrDefault(JsonUtils.GetJsonRecipePath("TitaniumIngot")));
