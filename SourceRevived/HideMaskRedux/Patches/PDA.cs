@@ -27,7 +27,7 @@ namespace Ramune.HideMaskRedux.Patches
             if(!HideMaskRedux.config.HideMaskPDA)
                 return;
 
-            if(lastState == Player.ScubaMaskState.On)
+            if(lastState == Player.ScubaMaskState.On && Player.main.motorMode == Player.MotorMode.Dive || Player.main.motorMode == Player.MotorMode.Seaglide)
                 Player.main.SetScubaMaskState(Player.ScubaMaskState.On);
         }
     }
