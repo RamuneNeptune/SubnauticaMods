@@ -41,6 +41,7 @@
     <Project Path="HideMaskRedux/HideMaskRedux 1.0.0.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
     <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
+    <Project Path="WhiteLightsRedux/WhiteLightsRedux.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
