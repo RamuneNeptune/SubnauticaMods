@@ -327,7 +327,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
-    <Compile Include="Buildables\RamunesWorkbench.cs" />
+    <Compile Include="Prefabs\Buildable\RamunesWorkbench.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="CraftHandler.cs" />
     <Compile Include="Monos\RamunesWorkbench.cs" />

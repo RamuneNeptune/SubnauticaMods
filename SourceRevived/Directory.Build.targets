@@ -1,0 +1,38 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<ItemGroup>
+		<DistFiles Include="$(MSBuildProjectDirectory)\.dist\**\*.*" Exclude="$(MSBuildProjectDirectory)\.dist\**\.gitkeep" />
+	</ItemGroup>
+
+	<Target Name="PostBuildEvents" AfterTargets="Build" Condition="'$(MSBuildProjectName)' != 'SubnauticaModdingSetup'">
+		
+		<Exec Command='powershell -NoProfile -ExecutionPolicy Bypass -File "$(SolutionDir)Build.ps1" -SourceFile "$(ProjectDir)BepInEx.cs" -JsonFile "$(ProjectDir)Version.json"' />
+
+		<PropertyGroup>
+			<TargetDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)</TargetDirectory>
+			<DistDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\.dist</DistDirectory>
+			<VersionJson>$([System.IO.File]::ReadAllText('$(ProjectDir)Version.json'))</VersionJson>
+			<ModName>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"ModName"\s*:\s*"([^"]+)"').Groups[1].Value)</ModName>
+			<ModVersion>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"LatestVersion"\s*:\s*"([^"]+)"').Groups[1].Value)</ModVersion>
+			<ZipName>$(ModName) $(ModVersion).zip</ZipName>
+		</PropertyGroup>
+
+		<MakeDir Directories="$(TargetDirectory)" />
+		<MakeDir Directories="$(DistDirectory)" />
+
+		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TargetDirectory)" SkipUnchangedFiles="true" />
+		<Copy SourceFiles="@(DistFiles)" DestinationFiles="@(DistFiles->'$(TargetDirectory)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(DistFiles)' != ''" />
+
+		<Delete Files="$(TargetDirectory)\$(ZipName)" />
+		<Delete Files="$(DistDirectory)\$(ZipName)" />
+		
+		<Exec Command='"C:\Program Files\7-Zip\7z.exe" a "$(TargetDirectory)\$(ZipName)" "$(TargetDirectory)" -xr!*.zip' />
+
+		<Copy SourceFiles="$(TargetDirectory)\$(ZipName)" DestinationFolder="$(DistDirectory)" SkipUnchangedFiles="true" />
+		
+		<Exec Command='echo ✅ Built using Directory.Build.targets' />
+		<Exec Command='echo.' />
+		
+	</Target>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+  "ramune.kb.kyanicphur.name": "Kyanicphur",
+  "ramune.kb.kyanicphur.desc": "AlNiSiO₅S. Alloy of Sulphur, Nickel, Kyanite. Used in advanced modification.",
+
+  "ramune.kb.kionitebattery.name": "Kionite battery",
+  "ramune.kb.kionitebattery.desc": "{0}\n Battery enhanced with kyanicphur for additional energy capacity. Inedible.",
+  "ramune.kb.kionitebattery.capacity": "CAPACITY: +50% (750)",
+
+  "ramune.kb.kionitepowercell.name": "Kionite power cell",
+  "ramune.kb.kionitepowercell.desc": "{0}\n Power cell enhanced with kyanicphur for additional energy capacity. Inedible.",
+  "ramune.kb.kionitepowercell.capacity": "CAPACITY: +50% (1500)"
+}

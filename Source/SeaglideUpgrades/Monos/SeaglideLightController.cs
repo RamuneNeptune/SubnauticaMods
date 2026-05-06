@@ -6,6 +6,16 @@ namespace Ramune.SeaglideUpgrades.Monos
     {
         public static readonly Dictionary<TechType, HashSet<SeaglideLightController>> seaglideLightControllers = [];
 
+        public static readonly List<Action<SeaglideLightController, SeaglideLightSettings>> ModifyLightsCallbacks = [];
+
+        public sealed class SeaglideLightSettings
+        {
+            public Color color;
+            public float range;
+            public float intensity;
+            public float conesize;
+        }
+
         public static void Add(SeaglideLightController lightController)
         {
             if(!seaglideLightControllers.TryGetValue(lightController.techType, out var set))
@@ -27,15 +37,35 @@ namespace Ramune.SeaglideUpgrades.Monos
 
         public static void Apply(TechType techType, Color color, float range, float intensity, float conesize)
         {
-            if(!seaglideLightControllers.TryGetValue(techType, out var lightControllers)) 
+            if(!seaglideLightControllers.TryGetValue(techType, out var lightControllers))
                 return;
 
-            foreach(var lightController in lightControllers)
+            foreach(var lightController in lightControllers.ToArray())
             {
                 if(lightController == null)
                     continue;
 
-                lightController.Apply(color, range, intensity, conesize);
+                var settings = new SeaglideLightSettings
+                {
+                    color = color,
+                    range = range,
+                    intensity = intensity,
+                    conesize = conesize
+                };
+
+                foreach(var modifier in ModifyLightsCallbacks.ToArray())
+                {
+                    try
+                    {
+                        modifier?.Invoke(lightController, settings);
+                    }
+                    catch(Exception ex)
+                    {
+                        Logfile.Error($"Failed to invoke Seaglide light modifier:\n{ex}");
+                    }
+                }
+
+                lightController.Apply(settings.color, settings.range, settings.intensity, settings.conesize);
             }
         }
     }

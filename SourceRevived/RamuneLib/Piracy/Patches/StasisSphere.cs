@@ -1,0 +1,22 @@
+
+
+namespace RamuneLib.Piracy.Patches
+{
+    internal static class StasisSpherePatch
+    {
+        internal static float time = 0f;
+
+        internal static bool UpdateMaterials(StasisSphere __instance)
+        {
+            time += Time.deltaTime * 0.2f;
+            time %= 1f;
+
+            var rainbow = Color.HSVToRGB(time, 1f, 1f);
+
+            __instance.GetComponent<Renderer>().materials[0].SetColor(ShaderPropertyID._Color, rainbow);
+            __instance.GetComponent<Renderer>().materials[1].SetColor(ShaderPropertyID._Color, rainbow);
+
+            return false;
+        }
+    }
+}

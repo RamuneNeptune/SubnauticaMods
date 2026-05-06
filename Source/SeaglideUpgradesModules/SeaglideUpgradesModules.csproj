@@ -67,7 +67,8 @@
       <HintPath>..\packages\MonoMod.Utils.21.12.13.1\lib\net452\MonoMod.Utils.dll</HintPath>
     </Reference>
     <Reference Include="Nautilus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Subnautica.Nautilus.1.0.0-pre.49\lib\net472\Nautilus.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\Nautilus\Nautilus.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -330,17 +331,24 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
+    <Compile Include="Items\PowerglideUpgrade.cs" />
+    <Compile Include="Items\LightUpgrade.cs" />
+    <Compile Include="Items\NoiseDampeningUpgrade.cs" />
     <Compile Include="Items\SpeedUpgrade.cs" />
     <Compile Include="Items\EfficiencyUpgrade.cs" />
     <Compile Include="Items\BoostUpgrade.cs" />
     <Compile Include="Items\BatterySwapUpgrade.cs" />
     <Compile Include="Monos\SeaglideUpgradeManager.cs" />
+    <Compile Include="Patches\Seaglide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Configuration\BatterySwapCompatibleTech.json" />
     <None Include="Localization\English.json" />
+    <None Include="Recipes\PowerglideUpgrade.json" />
+    <None Include="Recipes\NoiseDampeningUpgrade.json" />
+    <None Include="Recipes\LightUpgrade.json" />
     <None Include="Recipes\SpeedUpgrade.json" />
     <None Include="Recipes\EfficiencyUpgrade.json" />
     <None Include="Recipes\BoostUpgrade.json" />
@@ -361,4 +369,9 @@
     <PostBuildEvent>
     </PostBuildEvent>
   </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties version_1json__JsonSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

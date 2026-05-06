@@ -1,0 +1,9 @@
+{
+  "ramune.au.tabname": "Unlocker",
+  "ramune.au.headerlabel": "<b><color=#f1c232>Achievement Unlocker</color></b>",
+  "ramune.au.subtext": "<color=#ffffff>Click any button below to unlock the corresponding achievement</color>",
+  "ramune.au.unlockall": "Unlock All",
+  "ramune.au.resetall": "Reset All",
+  "ramune.au.unlocktext": "<color=#ffa618>Unlocked:</color> {0}",
+  "ramune.au.resettext": "<color=#ff4c2d>Reset:</color> {0}"
+}

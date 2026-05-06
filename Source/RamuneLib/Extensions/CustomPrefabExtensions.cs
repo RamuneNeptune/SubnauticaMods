@@ -42,7 +42,7 @@ namespace RamuneLib.Extensions
 
         internal static CustomPrefab WithJsonRecipe(this CustomPrefab customPrefab, string filename, CraftTree.Type craftTreeType, float craftingTime, params string[] stepsToFabricator)
         {
-            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipe(filename))
+            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipePath(filename))
                 .WithFabricatorType(craftTreeType)
                 .WithStepsToFabricatorTab(stepsToFabricator)
                 .WithCraftingTime(craftingTime);
@@ -53,7 +53,7 @@ namespace RamuneLib.Extensions
 
         internal static CustomPrefab WithJsonRecipe(this CustomPrefab customPrefab, string filename, CraftTree.Type craftTreeType, params string[] stepsToFabricator)
         {
-            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipe(filename))
+            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipePath(filename))
                 .WithFabricatorType(craftTreeType)
                 .WithStepsToFabricatorTab(stepsToFabricator);
 
@@ -63,7 +63,7 @@ namespace RamuneLib.Extensions
 
         internal static CustomPrefab WithJsonRecipe(this CustomPrefab customPrefab, string filename, CraftTree.Type craftTreeType)
         {
-            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipe(filename))
+            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipePath(filename))
                 .WithFabricatorType(craftTreeType);
 
             return customPrefab;
@@ -72,7 +72,21 @@ namespace RamuneLib.Extensions
 
         internal static CustomPrefab WithJsonRecipe(this CustomPrefab customPrefab, string filename, float craftingTime)
         {
-            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipe(filename))
+            var path = JsonUtils.GetJsonRecipePath(filename);
+
+            if(!File.Exists(path))
+            {
+                Logfile.Error($"Could not find JSON recipe file at path: {path}");
+                return customPrefab;
+            }
+
+            if(!JsonUtils.TryGetJsonRecipeData(path, out var recipeData))
+            {
+                Logfile.Error($"Failed to load JSON recipe from file at path: {path}");
+                return customPrefab;
+            }
+
+            customPrefab.SetRecipe(recipeData)
                 .WithCraftingTime(craftingTime);
 
             return customPrefab;
@@ -81,7 +95,21 @@ namespace RamuneLib.Extensions
 
         internal static CustomPrefab WithJsonRecipe(this CustomPrefab customPrefab, string filename)
         {
-            customPrefab.SetRecipeFromJson(JsonUtils.GetJsonRecipe(filename));
+            var path = JsonUtils.GetJsonRecipePath(filename);
+
+            if(!File.Exists(path))
+            {
+                Logfile.Error($"Could not find JSON recipe file at path: {path}");
+                return customPrefab;
+            }
+
+            if(!JsonUtils.TryGetJsonRecipeData(path, out var recipeData))
+            {
+                Logfile.Error($"Failed to load JSON recipe from file at path: {path}");
+                return customPrefab;
+            }
+
+            customPrefab.SetRecipe(recipeData);
             return customPrefab;
         }
 

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0DDC580-7ECD-401F-9447-AC8803BFCB75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ramune.SeaglideUpgrades</RootNamespace>
+    <AssemblyName>SeaglideUpgrades</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BepInEx.BaseLib" Version="5.4.20" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
+    <PackageReference Include="HarmonyX" Version="2.7.0" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.4" />
+    <PackageReference Include="MonoMod.RuntimeDetour" Version="21.12.13.1" />
+    <PackageReference Include="MonoMod.Utils" Version="21.12.13.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Subnautica.GameLibs" Version="82304.0.0-r.0" />
+    <PackageReference Include="Subnautica.Nautilus" Version="1.0.0-pre.*" />
+    <PackageReference Include="Unity.InputSystem" Version="1.5.0" />
+    <PackageReference Include="UnityEngine.Modules" Version="2019.4.36">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile;build;native;contentfiles;analyzers;buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BepInEx.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Monos\SeaglideLightController.cs" />
+    <Compile Include="Patches\PlayerTool.cs" />
+    <Compile Include="Patches\Seaglide.cs" />
+    <Compile Include="Prefabs\Deployables\SeaglideMK1.cs" />
+    <Compile Include="Prefabs\Deployables\SeaglideMK2.cs" />
+    <Compile Include="Prefabs\Deployables\SeaglideMK3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".dist\Localization\English.json" />
+    <None Include=".dist\Recipes\SeaglideMK1.json" />
+    <None Include=".dist\Recipes\SeaglideMK2.json" />
+    <None Include=".dist\Recipes\SeaglideMK3.json" />
+    <None Include="app.config" />
+    <None Include="Version.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".dist\Configuration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".dist\Assets\SeaglideMK1.Illum.png" />
+    <Content Include=".dist\Assets\SeaglideMK1.Sprite.png" />
+    <Content Include=".dist\Assets\SeaglideMK1.Texture.png" />
+    <Content Include=".dist\Assets\SeaglideMK2.Illum.png" />
+    <Content Include=".dist\Assets\SeaglideMK2.Sprite.png" />
+    <Content Include=".dist\Assets\SeaglideMK2.Texture.png" />
+    <Content Include=".dist\Assets\SeaglideMK3.Illum.png" />
+    <Content Include=".dist\Assets\SeaglideMK3.Sprite.png" />
+    <Content Include=".dist\Assets\SeaglideMK3.Texture.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

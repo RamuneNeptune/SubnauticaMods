@@ -1,0 +1,17 @@
+{
+    "craftAmount": 1,
+    "Ingredients": [
+    {
+      "techType": "Sulphur",
+      "amount": 2
+    },
+    {
+      "techType": "Nickel",
+      "amount": 1
+    },
+    {
+      "techType": "Kyanite",
+      "amount": 2
+    }
+  ]
+}

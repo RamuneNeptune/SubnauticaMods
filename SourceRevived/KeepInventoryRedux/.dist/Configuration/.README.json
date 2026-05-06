@@ -1,0 +1,10 @@
+
+// This is an example of how your whitelist/blacklist files should look:
+
+[
+  "Silver",
+  "WiringKit",
+  "MegaO2Tank",
+  "SeaglideMK1",
+  "SeaglideMK2"
+]

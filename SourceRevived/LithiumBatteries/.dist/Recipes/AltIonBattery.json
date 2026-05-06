@@ -1,0 +1,20 @@
+{
+  "craftAmount": 0,
+  "Ingredients": [
+    {
+      "techType": "LithiumBattery",
+      "amount": 1
+    },
+    {
+      "techType": "PrecursorIonCrystal",
+      "amount": 1
+     },
+     {
+      "techType": "Gold",
+      "amount": 1
+     }
+  ],
+  "LinkedItems": [
+    "PrecursorIonBattery"
+  ]
+}

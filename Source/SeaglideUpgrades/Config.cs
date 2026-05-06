@@ -151,7 +151,7 @@ namespace Ramune.SeaglideUpgrades
             if(Patches.SeaglidePatch.ActiveSeaglideTechType != TechType.Seaglide)
                 return;
 
-            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[TechType.Seaglide].Invoke(1f);
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[TechType.Seaglide](1f);
         }
 
 
@@ -162,7 +162,7 @@ namespace Ramune.SeaglideUpgrades
             if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType](1f);
         }
 
 
@@ -173,7 +173,7 @@ namespace Ramune.SeaglideUpgrades
             if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType](1f);
         }
 
 
@@ -184,7 +184,7 @@ namespace Ramune.SeaglideUpgrades
             if(Patches.SeaglidePatch.ActiveSeaglideTechType != techType)
                 return;
             
-            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
+            Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType](1f);
         }
 
 

@@ -1,0 +1,49 @@
+﻿
+
+namespace Ramune.RamunesWorkbench.Buildables
+{
+    public static class RamunesWorkbench
+    {
+        public static FabricatorGadget fabricator;
+
+        public static CraftTree.Type craftTreeType = CraftTree.Type.None;
+
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("RamunesWorkbench", "Ramune's workbench", "Used to create items from RamuneNeptune's mods", ImageUtils.GetSprite("RamunesWorkbench"))
+                .WithPDACategoryAfter(TechGroup.InteriorModules, TechCategory.InteriorModule, TechType.Workbench)
+                .WithJsonRecipe("RamunesWorkbench")
+                .WithFabricator(out fabricator)
+                .WithAutoUnlock();
+
+
+        public static void Patch()
+        {
+            craftTreeType = fabricator.CraftTreeType;
+
+            var model = new FabricatorTemplate(Prefab.Info, craftTreeType)
+            {
+                FabricatorModel = FabricatorTemplate.Model.Workbench,
+                ModifyPrefab = go =>
+                {
+                    var renderer = go.GetComponentInChildren<Renderer>();
+
+                    renderer.material.SetTexture(ShaderPropertyID._MainTex, ImageUtils.GetTexture("RamunesWorkbench.Texture1"));
+                    renderer.material.SetTexture(ShaderPropertyID._SpecTex, ImageUtils.GetTexture("RamunesWorkbench.Texture1"));
+                    renderer.material.SetTexture(ShaderPropertyID._Illum, ImageUtils.GetTexture("RamunesWorkbench.Illum1"));
+                    renderer.material.EnableKeyword("MARMO_EMISSION");
+
+                    var workbench = go.GetComponent<Workbench>();
+                    var ramunesWorkbench = go.AddComponent<Monos.RamunesWorkbench>().CopyComponent(workbench);
+
+                    Object.DestroyImmediate(workbench);
+
+                    ramunesWorkbench.renderer = renderer;
+                }
+            };
+
+            Prefab.SetGameObject(model);
+            Prefab.Register();
+
+            CraftHandler.Initialize();
+        }
+    }
+}

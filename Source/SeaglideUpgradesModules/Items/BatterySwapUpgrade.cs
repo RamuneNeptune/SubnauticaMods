@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgradesModules.Items
 {
     public static class BatterySwapUpgrade
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideBatterySwapUpgrade", "ramune.sgum.batteryswapupgrade.name".LangKey(), "ramune.sgum.batteryswapupgrade.desc".LangKey(), ImageUtils.GetSprite("BatterySwapUpgarde", TechType.CyclopsShieldModule))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideBatterySwapUpgrade", "ramune.sgum.batteryswapupgrade.name".LangKey(), "ramune.sgum.batteryswapupgrade.desc".LangKey(), ImageUtils.GetSprite("BatterySwapUpgrade", TechType.CyclopsShieldModule))
             .WithJsonRecipe("BatterySwapUpgrade")
             .WithUnlock(TechType.Seaglide)
             .WithSize(1, 1);

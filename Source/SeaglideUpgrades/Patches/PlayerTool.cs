@@ -7,10 +7,18 @@ namespace Ramune.SeaglideUpgrades.Patches
     {
         public static Dictionary<TechType, Action<float>> ModdedSeaglideTechTypes = new()
         {
-            { TechType.Seaglide, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(SeaglideUpgrades.config.vanillaSpeed, SeaglideUpgrades.config.vanillaAcceleration, SeaglideUpgrades.config.vanillaMultiplier * multiplier) },
-            { Items.SeaglideMK1.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(42f, 42f, SeaglideUpgrades.config.speedmk1 * multiplier) },
-            { Items.SeaglideMK2.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(50f, 50f, SeaglideUpgrades.config.speedmk2 * multiplier) },
-            { Items.SeaglideMK3.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(58f, 58f, SeaglideUpgrades.config.speedmk3 * multiplier) }
+            { 
+                TechType.Seaglide, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(SeaglideUpgrades.config.vanillaSpeed, SeaglideUpgrades.config.vanillaAcceleration, SeaglideUpgrades.config.vanillaMultiplier + multiplier) 
+            },
+            { 
+                Items.SeaglideMK1.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(42f, 42f, SeaglideUpgrades.config.speedmk1 * multiplier) 
+            },
+            { 
+                Items.SeaglideMK2.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(50f, 50f, SeaglideUpgrades.config.speedmk2 * multiplier) 
+            },
+            { 
+                Items.SeaglideMK3.Prefab.Info.TechType, (multiplier) => SeaglideUpgrades.SetSeaglideSpeed(58f, 58f, SeaglideUpgrades.config.speedmk3 * multiplier) 
+            }
         };
 
 

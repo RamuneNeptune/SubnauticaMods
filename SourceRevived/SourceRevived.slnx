@@ -1,0 +1,55 @@
+<Solution>
+  <Folder Name="/Mods/" />
+  <Folder Name="/Mods/.complete-need-rewrite/">
+    <Project Path="EarlyIonBattery/EarlyIonBattery.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
+    <Project Path="IonThermalPlant/IonThermalPlant.csproj" Id="5d22f45d-5827-4921-a221-87bb9f0a34c9" />
+    <Project Path="SeaglideBoosting/SeaglideBoosting.csproj" Id="4e26f00a-8060-4619-bd65-06f323c9a5f6" />
+    <Project Path="SimpleCoordinates/SimpleCoordinates.csproj" Id="58df0efa-fd16-4bdc-9800-9731fab44465" />
+  </Folder>
+  <Folder Name="/Mods/.complete/">
+    <Project Path="AchievementUnlocker/AchievementUnlocker.csproj" Id="72bf8afe-6f12-4008-9bc2-0b25c7d64467" />
+    <Project Path="BZEnameledGlass/BZEnameledGlass.csproj" Id="c1c7202d-80aa-4689-847d-601effd4f6d5" />
+    <Project Path="BZTitaniumIngot/BZTitaniumIngot.csproj" Id="d17a2c8d-0c1e-4cab-b1a3-cad3904de1f4" />
+    <Project Path="MegaO2Tank/MegaO2Tank.csproj" Id="7473f415-9114-4b3a-a49e-301a4f5e4608" />
+    <Project Path="RamunesWorkbench/RamunesWorkbench.csproj" Id="2ba0cb33-65a5-498d-984b-e9982454333f" />
+    <Project Path="DecoFabricator/DecoFabricator.csproj" Id="813fcb99-35c1-4c92-8c76-ea77b4b50c3a" />
+    <Project Path="DisableOptionsTabs/DisableOptionsTabs.csproj" Id="cb1ca669-0e08-4034-8bb3-839446cf3dba" />
+    <Project Path="EnableAchievements/EnableAchievements.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
+    <Project Path="FOVSlider/FOVSlider.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
+    <Project Path="KioniteBatteries/KioniteBatteries.csproj" Id="6ed51396-e20f-4f2a-95f5-69459f00a169" />
+    <Project Path="LithiumBatteries/LithiumBatteries.csproj" Id="79a12cea-f898-48ce-acf9-608b0baee910" />
+    <Project Path="NoEpilepsyWarning/NoEpilepsyWarning.csproj" Id="bde240d0-1274-4096-ba91-734f6d1a7652" />
+    <Project Path="NoRadiationBlur/NoRadiationBlur.csproj" Id="b79c2010-4804-4950-b4b0-542847a718cc" />
+    <Project Path="NoUnderwaterCaustics/NoUnderwaterCaustics.csproj" Id="30c5e499-0f51-47a8-967f-7962bb88f4b7" />
+    <Project Path="PrawnSuitLightSwitch/PrawnSuitLightSwitch.csproj" Id="2d102b26-be22-4748-89e2-0132d81a9fc0" />
+    <Project Path="RamunesFasterBuilding/RamunesFasterBuilding.csproj" Id="00c3b9b4-d149-4589-8599-5982b07bb2bf" />
+    <Project Path="RamunesFasterCrafting/RamunesFasterCrafting.csproj" Id="82fb43e2-1004-4fdd-b945-0733cc7ff6ab" />
+    <Project Path="RamunesFasterGrowing/RamunesFasterGrowing.csproj" Id="81bf9678-1b93-40c1-b6df-b717718dd221" />
+    <Project Path="RamunesFasterScanning/RamunesFasterScanning.csproj" Id="732cf9ab-e1bb-4c33-8578-baca5d21c1fe" />
+    <Project Path="ReaperGoldSkin/ReaperGoldSkin.csproj" Id="78edebca-1097-4829-bcf2-590d18be3f5c" />
+    <Project Path="SeaglideUpgrades/SeaglideUpgrades.csproj" Id="f0ddc580-7ecd-401f-9447-ac8803bfcb75" />
+    <Project Path="StalkersDropTeeth/StalkersDropTeeth.csproj" Id="c63bbccc-a1f3-4c0d-8ca4-55bfc755112a" />
+    <Project Path="TableCoralMultiplier/TableCoralMultiplier.csproj" Id="4fdaba3f-e5f9-4a55-a39c-c462d0da2f6a" />
+    <Project Path="VehicleBayBeacon/VehicleBayBeacon.csproj" Id="d01f095a-a856-4e9c-9263-fcd1bba2b470" />
+  </Folder>
+  <Folder Name="/Mods/.develop/">
+    <Project Path="DisableTelemetry/DisableTelemetry.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
+    <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
+    <Project Path="ModSupportHelper/ModSupportHelper.csproj" Id="9fe3becd-e2b3-48bb-8e66-cb08e76d3b92" />
+    <Project Path="SeamothBoosting/SeamothBoosting.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
+  </Folder>
+  <Folder Name="/Mods/.develop/redux/">
+    <Project Path="DropOnDestroyRedux/DropOnDestroyRedux.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
+    <Project Path="HideMaskRedux/HideMaskRedux.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
+    <Project Path="KeepInventoryRedux/KeepInventoryRedux.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
+  </Folder>
+  <Folder Name="/Other/">
+    <Project Path="RamuneLib/RamuneLib.shproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="Build.ps1" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+    <File Path="nuget.config" />
+  </Folder>
+</Solution>

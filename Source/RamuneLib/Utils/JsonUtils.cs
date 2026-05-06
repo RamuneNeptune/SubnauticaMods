@@ -14,8 +14,9 @@ namespace RamuneLib.Utils
         /// 
         /// </summary>
         /// <param name="filename"></param>
+        /// <param name="extension"></param>
         /// <returns></returns>
-        internal static string GetJsonRecipe(string filename) => Path.Combine(Paths.RecipeFolder, filename + ".json");
+        internal static string GetJsonRecipePath(string filename, string extension = ".json") => Path.Combine(Paths.RecipeFolder, filename + extension);
 
 
         /// <summary>
@@ -23,17 +24,20 @@ namespace RamuneLib.Utils
         /// </summary>
         /// <param name="filename"></param>
         /// <returns></returns>
-        internal static RecipeData GetRecipeData(string filename, bool withJsonExtension = true)
+        internal static bool TryGetJsonRecipeData(string path, out RecipeData outputRecipeData)
         {
-            if(RecipeDataCache.TryGetValue(filename, out var cachedRecipeData))
-                return cachedRecipeData;
-            
-            var path = Path.Combine(Paths.RecipeFolder, filename + (withJsonExtension ? ".json" : ""));
+            outputRecipeData = null;
 
+            if(RecipeDataCache.TryGetValue(path, out var cachedRecipeData))
+            {
+                outputRecipeData = cachedRecipeData;
+                return true;
+            }
+            
             if(!File.Exists(path))
             {
                 Logfile.Error($"Could not find file for recipe at: {path}");
-                return null;
+                return false;
             }
 
             var content = File.ReadAllText(path);
@@ -42,12 +46,13 @@ namespace RamuneLib.Utils
             if(recipeData == null)
             {
                 Logfile.Error($"Invalid RecipeData file at: {path}");
-                return null;
+                return false;
             }
 
-            RecipeDataCache[filename] = recipeData;
+            RecipeDataCache[path] = recipeData;
 
-            return recipeData;
+            outputRecipeData = recipeData;
+            return true;
         }
     }
 }

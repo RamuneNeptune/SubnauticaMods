@@ -1,0 +1,22 @@
+
+
+namespace RamuneLib.Piracy.Patches
+{
+    internal static class FireExtinguisherPatch
+    {
+        internal static void Update(FireExtinguisher __instance)
+        {
+            if(!__instance.usedThisFrame || __instance.fuel <= 0f)
+                return;
+
+            if(Player.main.IsUnderwater())
+            {
+                Player.main.GetComponent<UnderwaterMotor>().SetVelocity(-MainCamera.camera.transform.forward * 100f);
+            }
+            else
+            {
+                Player.main.groundMotor?.SetVelocity(-MainCamera.camera.transform.forward * 100f);
+            }
+        }
+    }
+}

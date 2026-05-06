@@ -23,7 +23,7 @@ namespace Ramune.MegaO2Tank
 
             RamunesWorkbenchUtils.AddTabNode("Tanks", SpriteManager.Get(TechType.PlasteelTank), RamunesWorkbenchUtils.Tabs.Equipment);
 
-            Items.MegaO2Tank.Patch();
+            Prefabs.Equipment.MegaO2Tank.Patch();
         }
     }
 }

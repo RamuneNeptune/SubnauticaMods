@@ -1,0 +1,15 @@
+{
+  "ramune.lb.lithiumbattery.name": "Lithium battery",
+  "ramune.lb.lithiumbattery.desc": "{0}\n Battery enhanced with lithium for additional energy capacity. Inedible.",
+  "ramune.lb.lithiumbattery.capacity": "CAPACITY: +100% (200)",
+
+  "ramune.lb.lithiumpowercell.name": "Lithium power cell",
+  "ramune.lb.lithiumpowercell.desc": "{0}\n Power cell enhanced with lithium for additional energy capacity. Inedible.",
+  "ramune.lb.lithiumpowercell.capacity": "CAPACITY: +100% (400)",
+
+  "ramune.lb.altionbattery.name": "Ion battery",
+  "ramune.lb.altionbattery.desc": "Ion-infused battery.",
+
+  "ramune.lb.altionpowercell.name": "Ion power cell",
+  "ramune.lb.altionpowercell.desc": "Ion-infused power cell."
+}

@@ -1,0 +1,6 @@
+{
+  "ramune.psls.turnlightson": "Turn lights <color=#AEF8F8>on</color> ({0})",
+  "ramune.psls.turnlightsoff": "Turn lights <color=#AEF8F8>off</color> ({0})",
+  "ramune.psls.enablingsubtitle": "PRAWN SUIT: Enabling lighting systems",
+  "ramune.psls.disablingsubtitle": "PRAWN SUIT: Disabling lighting systems"
+}

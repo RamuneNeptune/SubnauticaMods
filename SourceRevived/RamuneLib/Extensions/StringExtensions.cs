@@ -1,0 +1,85 @@
+
+
+namespace RamuneLib.Extensions
+{
+    internal static class StringExtensions
+    {
+        internal enum LangKeyType
+        {
+            Name,
+            Desc
+        }
+
+
+        /// <summary>
+        /// Inserts <paramref name="indentAmount"/> spaces directly before <paramref name="target"/> in the <paramref name="source"/> string.
+        /// </summary>
+        /// <param name="target">The text to target</param>
+        /// <param name="indentAmount">The amount of spaces to add</param>
+        /// <returns></returns>
+        internal static string IndentBefore(this string source, int indentAmount, string target) => source.Replace(target, new string(' ', indentAmount) + target);
+
+
+        /// <summary>
+        /// Inserts <paramref name="indentAmount"/> spaces directly after <paramref name="target"/> in the <paramref name="source"/> string.
+        /// </summary>
+        /// <param name="target">The text to target</param>
+        /// <param name="indentAmount">The amount of spaces to add</param>
+        /// <returns></returns>
+        internal static string IndentAfter(this string source, int indentAmount, string target) => source.Replace(target, target + new string(' ', indentAmount));
+
+
+        /// <summary>
+        /// Inserts <paramref name="textToInsert"/> directly before <paramref name="target"/> in the <paramref name="source"/> string.
+        /// </summary>
+        /// <param name="target">The text to target</param>
+        /// <param name="textToInsert">The text to insert before the target</param>
+        /// <returns></returns>
+        internal static string InsertBefore(this string source, string target, string textToInsert) => source.Replace(target, textToInsert + target);
+
+
+        /// <summary>
+        /// Inserts <paramref name="textToInsert"/> directly after <paramref name="target"/> in the <paramref name="source"/> string.
+        /// </summary>
+        /// <param name="target">The text to target</param>
+        /// <param name="textToInsert">The text to insert after the target</param>
+        /// <returns></returns>
+        internal static string InsertAfter(this string source, string target, string textToInsert) => source.Replace(target, target + textToInsert);
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="count">The amount of times to repeat the <paramref name="source"/> string</param>
+        /// <returns></returns>
+        internal static string Repeat(this string source, int count) => string.Concat(Enumerable.Repeat(source, count));
+
+
+        /// <summary>
+        /// Checks if the <paramref name="source"/> string is a valid http/https URL.
+        /// </summary>
+        /// <returns></returns>
+        internal static bool IsValidURL(this string source)
+        {
+            try
+            {
+                return new Uri(source) is var uri && uri.IsAbsoluteUri && (uri.Scheme == Uri.UriSchemeHttp || uri.Scheme == Uri.UriSchemeHttps);
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+
+        /// <summary>
+        /// Returns the localized text for <paramref name="source"/> string if it exists.
+        /// </summary>
+        /// <returns></returns>
+        internal static string LangKey(this string source) => Language.main?.Get(source) ?? source;
+
+
+        internal static string LangKeyAbbr(this string source) => Language.main?.Get($"ramune.{Variables.abbreviation}.{source}") ?? source;
+    }
+}

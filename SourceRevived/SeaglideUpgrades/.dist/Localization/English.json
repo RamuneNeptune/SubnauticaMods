@@ -1,0 +1,12 @@
+{
+  "ramune.su.workbenchtabname": "Seaglides",
+
+  "ramune.su.seaglidemk1.name": "Seaglide <color=#03f0f1>MK1</color>",
+  "ramune.su.seaglidemk1.desc": "SPEED: +15%\nConverts torque into thrust underwater via propeller.",
+
+  "ramune.su.seaglidemk2.name": "Seaglide <color=#bde170>MK2</color>",
+  "ramune.su.seaglidemk2.desc": "SPEED: +25%\nConverts torque into thrust underwater via propeller.",
+
+  "ramune.su.seaglidemk3.name": "Seaglide <color=#f81117>MK3</color>",
+  "ramune.su.seaglidemk3.desc": "SPEED: +40%\nConverts torque into thrust underwater via propeller."
+}
