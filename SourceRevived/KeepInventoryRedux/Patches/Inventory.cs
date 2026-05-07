@@ -105,16 +105,16 @@ namespace Ramune.KeepInventoryRedux.Patches
                 switch(KeepInventoryRedux.config.WhitelistBehaviour)
                 {
                     case 0:
-                        return isWhitelisted || isHotbar || isEquipped;
+                        return isWhitelisted;
 
                     case 1:
-                        return isWhitelisted || isHotbar;
+                        return isWhitelisted || isHotbar || isEquipped;
 
                     case 2:
-                        return isWhitelisted || isEquipped;
+                        return isWhitelisted || isHotbar;
 
                     case 3:
-                        return isWhitelisted;
+                        return isWhitelisted || isEquipped;
                 }
             }
 

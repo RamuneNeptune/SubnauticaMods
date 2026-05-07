@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Items\MegaO2Tank.cs" />
+    <Compile Include="Prefabs\Equipment\MegaO2Tank.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

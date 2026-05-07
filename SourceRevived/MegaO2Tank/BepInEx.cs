@@ -25,7 +25,7 @@ namespace Ramune.MegaO2Tank
 
             RamunesWorkbenchUtils.AddTabNode("Tanks", ImageUtils.GetSprite(TechType.PlasteelTank), RamunesWorkbenchUtils.Tabs.Equipment);
 
-            Items.MegaO2Tank.Register();
+            Prefabs.Equipment.MegaO2Tank.Register();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿
 
-namespace Ramune.MegaO2Tank.Items
+namespace Ramune.MegaO2Tank.Prefabs.Equipment
 {
     public static class MegaO2Tank
     {

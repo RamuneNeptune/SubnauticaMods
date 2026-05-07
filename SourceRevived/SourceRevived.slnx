@@ -32,6 +32,7 @@
     <Project Path="StalkersDropTeeth/StalkersDropTeeth 5.0.0.csproj" Id="c63bbccc-a1f3-4c0d-8ca4-55bfc755112a" />
     <Project Path="TableCoralMultiplier/TableCoralMultiplier 5.0.0.csproj" Id="4fdaba3f-e5f9-4a55-a39c-c462d0da2f6a" />
     <Project Path="VehicleBayBeacon/VehicleBayBeacon 5.0.0.csproj" Id="d01f095a-a856-4e9c-9263-fcd1bba2b470" />
+    <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Mods/.develop/">
     <Project Path="DisableTelemetry/DisableTelemetry 5.0.0.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
@@ -42,7 +43,6 @@
     <Project Path="HideMaskRedux/HideMaskRedux 1.0.0.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
     <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
-    <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
