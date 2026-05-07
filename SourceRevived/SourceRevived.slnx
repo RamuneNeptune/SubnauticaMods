@@ -13,6 +13,7 @@
     <Project Path="DecoFabricator/DecoFabricator 5.0.1.csproj" Id="813fcb99-35c1-4c92-8c76-ea77b4b50c3a" />
     <Project Path="DisableOptionsTabs/DisableOptionsTabs 5.0.0.csproj" Id="cb1ca669-0e08-4034-8bb3-839446cf3dba" />
     <Project Path="EnableAchievements/EnableAchievements 5.0.0.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
+    <Project Path="FlareDurationIndicator/FlareDurationIndicator 5.0.0.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="FOVSlider/FOVSlider 5.0.0.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
     <Project Path="KioniteBatteries/KioniteBatteries 5.0.0.csproj" Id="6ed51396-e20f-4f2a-95f5-69459f00a169" />
     <Project Path="LithiumBatteries/LithiumBatteries 5.0.0.csproj" Id="79a12cea-f898-48ce-acf9-608b0baee910" />
@@ -38,7 +39,6 @@
   </Folder>
   <Folder Name="/Mods/.testing/">
     <Project Path="DropOnDestroyRedux/DropOnDestroyRedux 1.0.0.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
-    <Project Path="FlareDurationIndicator/FlareDurationIndicator 5.0.0.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="HideMaskRedux/HideMaskRedux 1.0.0.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
     <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
