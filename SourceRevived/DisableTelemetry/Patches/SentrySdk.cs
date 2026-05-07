@@ -9,7 +9,7 @@ namespace Ramune.DisableTelemetry.Patches
         public static bool Start() => false;
 
 
-        [HarmonyPatch(nameof(SentrySdk.DoCaptureEvent)), HarmonyPrefix]
+        [HarmonyPatch("DoCaptureEvent"), HarmonyPrefix]
         public static bool DoCaptureEvent() => false;
 
 

@@ -64,6 +64,7 @@ global using UWE;
 global using FMOD;
 global using Story;
 global using TMPro;
+global using Sentry;
 global using MonoMod.Utils;
 global using Newtonsoft.Json;
 global using static CraftData;

@@ -13,7 +13,12 @@ namespace Ramune.DisableTelemetry.Patches
             if(string.IsNullOrEmpty(url))
                 return true;
 
-            if(url.ToLowerInvariant().Contains("unknownworlds.com"))
+            url = url.ToLowerInvariant();
+
+            if(DisableTelemetry.config.AllowSpecialItemCheck && url.StartsWith("https://economy.unknownworlds.com/api/getcontext"))
+                return true;
+
+            if(url.Contains("unknownworlds.com"))
                 return false;
 
             return true;
