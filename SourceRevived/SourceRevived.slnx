@@ -12,6 +12,7 @@
     <Project Path="BZTitaniumIngot/BZTitaniumIngot 5.0.0.csproj" Id="d17a2c8d-0c1e-4cab-b1a3-cad3904de1f4" />
     <Project Path="DecoFabricator/DecoFabricator 5.0.1.csproj" Id="813fcb99-35c1-4c92-8c76-ea77b4b50c3a" />
     <Project Path="DisableOptionsTabs/DisableOptionsTabs 5.0.0.csproj" Id="cb1ca669-0e08-4034-8bb3-839446cf3dba" />
+    <Project Path="DisableTelemetry/DisableTelemetry 5.0.0.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
     <Project Path="EnableAchievements/EnableAchievements 5.0.0.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
     <Project Path="FlareDurationIndicator/FlareDurationIndicator 5.0.0.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="FOVSlider/FOVSlider 5.0.0.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
@@ -37,7 +38,6 @@
     <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Mods/.develop/">
-    <Project Path="DisableTelemetry/DisableTelemetry 5.0.0.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
   </Folder>
   <Folder Name="/Mods/.testing/">
