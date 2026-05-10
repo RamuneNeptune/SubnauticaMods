@@ -11,11 +11,6 @@ namespace Ramune.DropOnDestroyRedux.Patches
             var position = __instance.gameObject.transform.position;
             var upgrades = __instance.modules?.equipment;
 
-            if(DropOnDestroyRedux.config.DropUpgrades && upgrades != null)
-                foreach(var upgrade in upgrades.ToList())
-                    if(upgrade.Value != null && upgrade.Value.item != null)
-                        upgrade.Value.item.DropRandom(position);
-
             if(DropOnDestroyRedux.config.DropPowerSources)
                 foreach(var source in __instance.energyInterface.sources)
                     if(source != null && source.batterySlot != null && source.batterySlot.storedItem != null)
@@ -76,6 +71,11 @@ namespace Ramune.DropOnDestroyRedux.Patches
                     }
                 }
             }
+
+            if(DropOnDestroyRedux.config.DropUpgrades && upgrades != null)
+                foreach(var upgrade in upgrades.ToList())
+                    if(upgrade.Value != null && upgrade.Value.item != null)
+                        upgrade.Value.item.DropRandom(position);
 
             if(DropOnDestroyRedux.config.DropCraftingMaterials)
             {
