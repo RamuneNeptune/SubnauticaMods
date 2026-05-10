@@ -28,7 +28,7 @@
     <Project Path="PrawnSuitLightSwitch/PrawnSuitLightSwitch 5.0.0.csproj" Id="2d102b26-be22-4748-89e2-0132d81a9fc0" />
     <Project Path="RamunesFasterBuilding/RamunesFasterBuilding 5.0.0.csproj" Id="00c3b9b4-d149-4589-8599-5982b07bb2bf" />
     <Project Path="RamunesFasterCrafting/RamunesFasterCrafting 5.0.0.csproj" Id="82fb43e2-1004-4fdd-b945-0733cc7ff6ab" />
-    <Project Path="RamunesFasterGrowing/RamunesFasterGrowing 5.0.0.csproj" Id="81bf9678-1b93-40c1-b6df-b717718dd221" />
+    <Project Path="RamunesFasterGrowing/RamunesFasterGrowing 1.0.0.csproj" Id="81bf9678-1b93-40c1-b6df-b717718dd221" />
     <Project Path="RamunesFasterScanning/RamunesFasterScanning 5.0.0.csproj" Id="732cf9ab-e1bb-4c33-8578-baca5d21c1fe" />
     <Project Path="RamunesWorkbench/RamunesWorkbench 5.0.0.csproj" Id="2ba0cb33-65a5-498d-984b-e9982454333f" />
     <Project Path="ReaperGoldSkin/ReaperGoldSkin  5.0.0.csproj" Id="78edebca-1097-4829-bcf2-590d18be3f5c" />
