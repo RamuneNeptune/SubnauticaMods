@@ -1,7 +1,6 @@
 <Solution>
   <Folder Name="/Mods/" />
   <Folder Name="/Mods/.complete-need-rewrite/">
-    <Project Path="EarlyIonBattery/EarlyIonBattery 5.0.2.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
     <Project Path="IonThermalPlant/IonThermalPlant 5.0.0.csproj" Id="5d22f45d-5827-4921-a221-87bb9f0a34c9" />
     <Project Path="SeaglideBoosting/SeaglideBoosting 5.0.0.csproj" Id="4e26f00a-8060-4619-bd65-06f323c9a5f6" />
     <Project Path="SimpleCoordinates/SimpleCoordinates 5.0.0.csproj" Id="58df0efa-fd16-4bdc-9800-9731fab44465" />
@@ -13,6 +12,8 @@
     <Project Path="DecoFabricator/DecoFabricator 5.0.1.csproj" Id="813fcb99-35c1-4c92-8c76-ea77b4b50c3a" />
     <Project Path="DisableOptionsTabs/DisableOptionsTabs 5.0.0.csproj" Id="cb1ca669-0e08-4034-8bb3-839446cf3dba" />
     <Project Path="DisableTelemetry/DisableTelemetry 5.0.0.csproj" Id="f87aacd4-7679-40ef-ac62-9186bd6705f5" />
+    <Project Path="DropOnDestroyRedux/DropOnDestroyRedux 1.0.0.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
+    <Project Path="EarlyIonBattery/EarlyIonBattery 5.0.2.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
     <Project Path="EnableAchievements/EnableAchievements 5.0.0.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
     <Project Path="FlareDurationIndicator/FlareDurationIndicator 5.0.0.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="FOVSlider/FOVSlider 5.0.0.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
@@ -32,18 +33,18 @@
     <Project Path="RamunesWorkbench/RamunesWorkbench 5.0.0.csproj" Id="2ba0cb33-65a5-498d-984b-e9982454333f" />
     <Project Path="ReaperGoldSkin/ReaperGoldSkin  5.0.0.csproj" Id="78edebca-1097-4829-bcf2-590d18be3f5c" />
     <Project Path="SeaglideUpgrades/SeaglideUpgrades 5.0.0.csproj" Id="f0ddc580-7ecd-401f-9447-ac8803bfcb75" />
+    <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
     <Project Path="StalkersDropTeeth/StalkersDropTeeth 5.0.0.csproj" Id="c63bbccc-a1f3-4c0d-8ca4-55bfc755112a" />
     <Project Path="TableCoralMultiplier/TableCoralMultiplier 5.0.0.csproj" Id="4fdaba3f-e5f9-4a55-a39c-c462d0da2f6a" />
     <Project Path="VehicleBayBeacon/VehicleBayBeacon 5.0.0.csproj" Id="d01f095a-a856-4e9c-9263-fcd1bba2b470" />
     <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Mods/.develop/">
+    <Project Path="BulkVending/BulkVending 1.0.0.csproj" Id="c394ec2c-645a-4272-8d9b-55396844a2fd" />
+    <Project Path="SeaglideUpgradesModules/SeaglideUpgradesModules 1.0.0.csproj" Id="d2e4b3c8-7c79-4999-b85f-aa2686f84896" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
   </Folder>
-  <Folder Name="/Mods/.testing/">
-    <Project Path="DropOnDestroyRedux/DropOnDestroyRedux 1.0.0.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
-    <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
-  </Folder>
+  <Folder Name="/Mods/.testing/" />
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
     <Project Path="ModSupportHelper/ModSupportHelper.csproj" Id="9fe3becd-e2b3-48bb-8e66-cb08e76d3b92" />

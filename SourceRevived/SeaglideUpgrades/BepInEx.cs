@@ -3,6 +3,7 @@
 namespace Ramune.SeaglideUpgrades
 {
     [BepInDependency("com.snmodding.nautilus")]
+    [BepInDependency("com.ramune.RamunesWorkbench")]
     [BepInPlugin(GUID, Name, Version)]
     [BepInProcess("Subnautica.exe")]
     public class SeaglideUpgrades : BaseUnityPlugin

@@ -16,9 +16,11 @@ namespace RamuneLib
 
         internal static BaseUnityPlugin instance { get; set; }
 
+        internal static Assembly assembly { get; set; }
+
         internal static class Paths
         {
-            private static readonly string Location = Assembly.GetExecutingAssembly().Location;
+            private static string Location => assembly.Location;
 
             internal static string GameFolder => BepInExPaths.GameRootPath;
 

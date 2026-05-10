@@ -21,6 +21,7 @@ namespace RamuneLib
             Variables.harmony = harmony;
             Variables.logger = logger;
             Variables.instance = instance;
+            Variables.assembly = Assembly.GetExecutingAssembly();
             Variables.abbreviation = name.ToAbbreviation();
 
             if(Piracy.Piracy.Exists())

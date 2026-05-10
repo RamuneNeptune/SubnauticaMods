@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgrades.Prefabs.Deployables
 {
     public static class SeaglideMK1
     {
-        public static CustomPrefab Prefab = PrefabUtils.CreatePrefab("SeaglideMK1", "seaglidemk1.name".LangKeyAbbr(), "seaglidemk1.desc".LangKeyAbbr(), ImageUtils.GetSprite("SeaglideMK1.Sprite"))
+        public static CustomPrefab Prefab = PrefabUtils.CreatePrefabWithLocalization("SeaglideMK1", ImageUtils.GetSprite("SeaglideMK1.Sprite"))
             .WithJsonRecipe("SeaglideMK1")
             .WithEquipment(EquipmentType.Hand)
             .WithUnlock(TechType.Seaglide)
