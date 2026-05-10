@@ -8,8 +8,8 @@ namespace Ramune.DropOnDestroyRedux
         [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerCfg = false;
 
-        [Toggle(" • Drop decoys")]
-        public bool DropDecoys = true;
+        //[Toggle(" • Drop decoys")]
+        //public bool DropDecoys = true;
 
         [Toggle(" • Drop upgrades")]
         public bool DropUpgrades = true;
@@ -23,11 +23,11 @@ namespace Ramune.DropOnDestroyRedux
         [Toggle(" • Drop storage items")]
         public bool DropStorageItems = true;
 
-        [Toggle("<color=#ffc600>Materials:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
-        public bool DividerCrafting = false;
-
         [Toggle(" • Drop crafting materials")]
         public bool DropCraftingMaterials = false;
+
+        [Toggle("<color=#ffc600>Materials:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        public bool DividerCrafting = false;
 
         [Slider("• Crafting materials to drop (%)", Format = "{0:F0}%", DefaultValue = 50f, Min = 1f, Max = 100f, Step = 5f)]
         public float CraftingMaterialsPercentage = 50f;

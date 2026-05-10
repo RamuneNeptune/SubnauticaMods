@@ -2,6 +2,7 @@
 
 namespace Ramune.DropOnDestroyRedux.Patches
 {
+    /*
     [HarmonyPatch(typeof(SubRoot))]
     public static class SubRootPatch
     {
@@ -80,4 +81,5 @@ namespace Ramune.DropOnDestroyRedux.Patches
             }
         }
     }
+    */
 }
