@@ -7,6 +7,7 @@ namespace Ramune.ShowUnlockRequirements.Patches
     {
         public static readonly Dictionary<TechType, List<TechType>> UnlockTechTypes = BuildUnlockTechTypes();
 
+
         public static Dictionary<TechType, List<TechType>> BuildUnlockTechTypes()
         {
             var unlockTechTypes = new Dictionary<TechType, List<TechType>>();
@@ -28,6 +29,7 @@ namespace Ramune.ShowUnlockRequirements.Patches
 
 
         public static readonly Dictionary<TechType, List<TechType>> CompoundTechTypes = BuildCompoundTechTypes();
+
 
         public static Dictionary<TechType, List<TechType>> BuildCompoundTechTypes()
         {
