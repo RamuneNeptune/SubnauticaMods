@@ -22,7 +22,6 @@ namespace Ramune.BulkVending
             .WithCategory("Bulk Vending")
             .AvoidConflicts();
 
-
         public static GameInput.Button DecreaseAmount = EnumHandler.AddEntry<GameInput.Button>("ramune.bv.decreaseamount")
             .CreateInput("Decrease Amount To Produce")
             .WithKeyboardBinding(GameInputHandler.Paths.Mouse.ScrollDown)
@@ -38,9 +37,7 @@ namespace Ramune.BulkVending
             LanguageHandler.RegisterLocalizationFolder();
         }
 
-
         public static bool HasEnoughPower(PowerRelay powerRelay, float amount) => amount <= 0f || powerRelay != null && powerRelay.GetPower() >= amount;
-
 
         public static bool TryConsumePower(PowerRelay powerRelay, float amount) => amount <= 0f || powerRelay != null && HasEnoughPower(powerRelay, amount) && powerRelay.ConsumeEnergy(amount, out _);
     }
