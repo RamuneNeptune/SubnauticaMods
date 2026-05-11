@@ -8,7 +8,7 @@ namespace Ramune.ShowUnlockRequirements.Patches
         [HarmonyPatch(nameof(uGUI_CraftingMenu.UpdateNotification)), HarmonyPostfix]
         public static void UpdateNotification(uGUI_CraftingMenu.Node node)
         {
-            if(!ShowUnlockRequirements.config.DarkenUnknownNodes || node == null || node.action != TreeAction.Craft || node.icon == null)
+            if(node == null || node.action != TreeAction.Craft || node.icon == null)
                 return;
 
             var tint = 1f - ShowUnlockRequirements.config.DarkenNodePercent / 100f;
