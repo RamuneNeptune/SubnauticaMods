@@ -42,6 +42,6 @@ namespace Ramune.BulkVending
         public static bool HasEnoughPower(PowerRelay powerRelay, float amount) => amount <= 0f || powerRelay != null && powerRelay.GetPower() >= amount;
 
 
-        public static bool TryConsumePower(PowerRelay powerRelay, float amount) => amount <= 0f || powerRelay != null && powerRelay.ConsumeEnergy(amount, out _);
+        public static bool TryConsumePower(PowerRelay powerRelay, float amount) => amount <= 0f || powerRelay != null && HasEnoughPower(powerRelay, amount) && powerRelay.ConsumeEnergy(amount, out _);
     }
 }
