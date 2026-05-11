@@ -5,6 +5,12 @@ namespace Ramune.BulkVending
     [Menu("BulkVending")]
     public class Config : ConfigFile
     {
+        [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        public bool DividerCfg = false;
+
+        [Toggle(" • Allow scrolling to modify item amount")]
+        public bool AllowScrollEdit = true;
+
         [Toggle("<color=#ffc600>Snacks:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerSnacks = false;
 

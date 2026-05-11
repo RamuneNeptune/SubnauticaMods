@@ -1,5 +1,6 @@
 {
   "ramune.bv.availablein": "Available in {0}s",
   "ramune.bv.snackusetext": "Use x{0}, cooldown for {1}s ({2})",
-  "ramune.bv.coffeeusetext": "Use x{0}, complete in {1}s ({2})"
+  "ramune.bv.coffeeusetext": "Use x{0}, complete in {1}s ({2})",
+  "ramune.bv.subtext": "Modify amount ({0}/{1})"
 }

@@ -11,10 +11,7 @@ namespace Ramune.BulkVending.Patches
 
 
         [HarmonyPatch(nameof(CoffeeVendingMachine.OnDisable)), HarmonyPostfix]
-        public static void OnDisable(CoffeeVendingMachine __instance)
-        {
-            RemainingBulkCoffees.Remove(__instance);
-        }
+        public static void OnDisable(CoffeeVendingMachine __instance) => RemainingBulkCoffees.Remove(__instance);
 
 
         [HarmonyPatch(nameof(CoffeeVendingMachine.OnHover)), HarmonyPrefix]
@@ -22,11 +19,7 @@ namespace Ramune.BulkVending.Patches
         {
             var totalPowerCost = BulkVending.config.CoffeePowerCostPerItem * BulkVending.config.CoffeesPerUse;
             var canUse = BulkVending.config.CoffeesPerUse >= 2 ? Time.time > __instance.timeLastUseSlot1 + Cooldown : Time.time > __instance.timeLastUseSlot1 + Cooldown || Time.time > __instance.timeLastUseSlot2 + Cooldown;
-            var remainingCooldown = BulkVending.config.CoffeesPerUse >= 2
-                ? Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot1 + Cooldown - Time.time))
-                : Mathf.Min(
-                    Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot1 + Cooldown - Time.time)),
-                    Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot2 + Cooldown - Time.time)));
+            var remainingCooldown = BulkVending.config.CoffeesPerUse >= 2 ? Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot1 + Cooldown - Time.time)) : Mathf.Min(Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot1 + Cooldown - Time.time)), Mathf.CeilToInt(Mathf.Max(0f, __instance.timeLastUseSlot2 + Cooldown - Time.time)));
 
             if(!__instance.enabled || __instance.powerRelay == null || !__instance.powerRelay.IsPowered() || BulkVending.config.CoffeeRequiresPower && totalPowerCost > 0f && __instance.powerRelay.GetPower() < totalPowerCost)
                 return false;
@@ -41,8 +34,14 @@ namespace Ramune.BulkVending.Patches
             if(!canUse)
                 return false;
 
+            if(GameInput.GetButtonDown(BulkVending.IncreaseAmount))
+                BulkVending.config.CoffeesPerUse++;
+
+            if(GameInput.GetButtonDown(BulkVending.DecreaseAmount) && BulkVending.config.CoffeesPerUse > 1)
+                BulkVending.config.CoffeesPerUse--;
+
             HandReticle.main.SetText(HandReticle.TextType.Hand, Language.main.GetFormat("coffeeusetext".LangKeyAbbr(), BulkVending.config.CoffeesPerUse, Mathf.RoundToInt(Cooldown), GameInput.FormatButton(GameInput.Button.LeftHand)), false);
-            HandReticle.main.SetText(HandReticle.TextType.HandSubscript, string.Empty, false);
+            HandReticle.main.SetText(HandReticle.TextType.HandSubscript, Language.main.GetFormat("subtext".LangKeyAbbr(), GameInput.FormatButton(BulkVending.IncreaseAmount), GameInput.FormatButton(BulkVending.DecreaseAmount)), false);
             HandReticle.main.SetIcon(HandReticle.IconType.Interact);
             return false;
         }

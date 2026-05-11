@@ -24,8 +24,14 @@ namespace Ramune.BulkVending.Patches
                 return false;
             }
 
+            if(GameInput.GetButtonDown(BulkVending.IncreaseAmount))
+                BulkVending.config.SnacksPerUse++;
+
+            if(GameInput.GetButtonDown(BulkVending.DecreaseAmount) && BulkVending.config.SnacksPerUse > 1)
+                BulkVending.config.SnacksPerUse--;
+
             HandReticle.main.SetText(HandReticle.TextType.Hand, Language.main.GetFormat("snackusetext".LangKeyAbbr(), BulkVending.config.SnacksPerUse, Mathf.RoundToInt(Cooldown), GameInput.FormatButton(GameInput.Button.LeftHand)), false);
-            HandReticle.main.SetText(HandReticle.TextType.HandSubscript, string.Empty, false);
+            HandReticle.main.SetText(HandReticle.TextType.HandSubscript, Language.main.GetFormat("subtext".LangKeyAbbr(), GameInput.FormatButton(BulkVending.IncreaseAmount), GameInput.FormatButton(BulkVending.DecreaseAmount)), false);
             HandReticle.main.SetIcon(HandReticle.IconType.Interact);
             return false;
         }
