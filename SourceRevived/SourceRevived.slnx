@@ -19,7 +19,7 @@
     <Project Path="FOVSlider/FOVSlider 5.0.0.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
     <Project Path="HideMaskRedux/HideMaskRedux 1.0.0.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
-    <Project Path="KioniteBatteries/KioniteBatteries 5.0.0.csproj" Id="6ed51396-e20f-4f2a-95f5-69459f00a169" />
+    <Project Path="KioniteBatteries/KioniteBatteries 5.0.1.csproj" Id="6ed51396-e20f-4f2a-95f5-69459f00a169" />
     <Project Path="LithiumBatteries/LithiumBatteries 5.0.0.csproj" Id="79a12cea-f898-48ce-acf9-608b0baee910" />
     <Project Path="MegaO2Tank/MegaO2Tank 5.0.0.csproj" Id="7473f415-9114-4b3a-a49e-301a4f5e4608" />
     <Project Path="NoEpilepsyWarning/NoEpilepsyWarning 5.0.0.csproj" Id="bde240d0-1274-4096-ba91-734f6d1a7652" />

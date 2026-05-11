@@ -15,7 +15,7 @@ namespace Ramune.KioniteBatteries
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.KioniteBatteries";
         public const string Name = "KioniteBatteries";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {
@@ -40,7 +40,7 @@ namespace Ramune.KioniteBatteries
                 ID = "KioniteBattery",
                 Name = "kionitebattery.name".LangKeyAbbr(),
                 FlavorText = string.Format("kionitebattery.desc".LangKeyAbbr(), "kionitebattery.capacity".LangKeyAbbr()),
-                UnlocksWith = TechType.Lithium,
+                UnlocksWith = TechType.PrecursorIonBattery,
                 CustomIcon = ImageUtils.GetSprite("KioniteBattery"),
                 AddToFabricator = false,
                 CBModelData = new()
@@ -67,7 +67,7 @@ namespace Ramune.KioniteBatteries
                 ID = "KionitePowerCell",
                 Name = "kionitepowercell.name".LangKeyAbbr(),
                 FlavorText = string.Format("kionitepowercell.desc".LangKeyAbbr(), "kionitepowercell.capacity".LangKeyAbbr()),
-                UnlocksWith = TechType.Lithium,
+                UnlocksWith = TechType.PrecursorIonBattery,
                 CustomIcon = ImageUtils.GetSprite("KionitePowerCell"),
                 AddToFabricator = false,
                 CBModelData = new()
