@@ -40,13 +40,14 @@
     <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Mods/.develop/">
-    <Project Path="BulkVending/BulkVending 1.0.0.csproj" Id="c394ec2c-645a-4272-8d9b-55396844a2fd" />
     <Project Path="SeaglideUpgradesModules/SeaglideUpgradesModules 1.0.0.csproj" Id="d2e4b3c8-7c79-4999-b85f-aa2686f84896" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
-    <Project Path="ShowUnknownItems/ShowUnknownItems 1.0.0.csproj" Id="5d29e011-9052-49ea-bd52-9c1d141ece17" />
+    <Project Path="SkipLifepodIntro/SkipLifepodIntro 1.0.0.csproj" Id="8eed1c18-824a-4cc2-89d2-8b2e86d94e71" />
+  </Folder>
+  <Folder Name="/Mods/.testing/">
+    <Project Path="BulkVending/BulkVending 1.0.0.csproj" Id="c394ec2c-645a-4272-8d9b-55396844a2fd" />
     <Project Path="ShowUnlockRequirements/ShowUnlockRequirements 1.0.0.csproj" Id="67c54c07-4b48-4ab8-8dd6-33382c2f8a65" />
   </Folder>
-  <Folder Name="/Mods/.testing/" />
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
     <Project Path="ModSupportHelper/ModSupportHelper.csproj" Id="9fe3becd-e2b3-48bb-8e66-cb08e76d3b92" />

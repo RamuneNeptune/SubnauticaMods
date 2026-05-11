@@ -6,7 +6,7 @@ namespace Ramune.SkipLifepodIntro.Patches
     public static class SceneIntroPatch
     {
         [HarmonyPatch(nameof(uGUI_SceneIntro.Play)), HarmonyPostfix]
-        public static void PlayPostfix(uGUI_SceneIntro __instance)
+        public static void Play(uGUI_SceneIntro __instance)
         {
             if(!__instance.showing)
                 return;
