@@ -62,7 +62,7 @@
   <ItemGroup>
     <Compile Include="BepInEx.cs" />
     <Compile Include="Config.cs" />
-    <Compile Include="Patches\Creature.cs" />
+    <Compile Include="Patches\LargeWorldEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
