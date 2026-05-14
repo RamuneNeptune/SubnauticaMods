@@ -36,7 +36,7 @@ namespace Ramune.BigFriendlyFish
 
                 var prefab = PrefabUtils.CreatePrefab($"BigFriendly{techType.ID()}", $"Big friendly {techType.Name().ToLower()}", techType.Desc(), ImageUtils.GetSprite(techType))
                     .WithRecipe(PrefabUtils.CreateRecipe(1, [new(techType, 10)]), CraftTree.Type.Constructor, "BFF")
-                    .WithEquipmentAndQuickSlotType(EquipmentType.None, QuickSlotType.Instant)
+                    .WithEquipmentAndQuickSlotType(EquipmentType.Hand, QuickSlotType.Instant)
                     .WithPDACategory(TechGroup.Constructor, TechCategory.Constructor)
                     .WithAutoUnlock()
                     .WithSize(3, 3);
