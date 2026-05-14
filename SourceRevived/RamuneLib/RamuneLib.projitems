@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\RendererExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\TechTypeExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)utils\InputUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Miscellaneous\RamunesWorkbenchUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\BreakableResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Charger.cs" />

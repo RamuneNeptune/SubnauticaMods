@@ -108,6 +108,7 @@ namespace RamuneLib.Piracy
             "steam_api64.cdx", "steam_api64.ini", "steam_emu.ini",
             "Torrent-Igruha.Org.URL", "oalinst.exe", "account_name.txt",
             "valve.ini", "chuj.cdx", "SteamUserID.cfg", "Achievements.bin",
+            "steam_interfaces.txt", "LinkNeverDie.com.url", "_LinkNeverDie.com.url",
             "steam_settings", "user_steam_id.txt", "Free Steam Games Pre-installed for PC.url",
             "Subnautica_Data/Plugins/steam_api64.cdx", "Subnautica_Data/Plugins/steam_api64.ini",
             "Subnautica_Data/Plugins/steam_emu.ini", "Subnautica_Data/Plugins/x86_64/steam_settings",
