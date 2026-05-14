@@ -425,20 +425,20 @@ namespace Ramune.SeaglideUpgradesModules.Monos
                 ApplyCurrentSpeed(GetCurrentSpeedMultiplier());
             }
 
-            bool modulePrimaryHeld = GameInputHandler.GetButtonHeld(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Primary);
-            bool moduleSecondaryHeld = GameInputHandler.GetButtonHeld(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Secondary);
-            bool modulePrimaryDown = GameInputHandler.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Primary);
-            bool moduleSecondaryDown = GameInputHandler.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Secondary);
+            bool modulePrimaryHeld = InputUtils.GetButtonHeld(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Primary);
+            bool moduleSecondaryHeld = InputUtils.GetButtonHeld(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Secondary);
+            bool modulePrimaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Primary);
+            bool moduleSecondaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Secondary);
 
             if(modulePrimaryHeld && moduleSecondaryHeld && (modulePrimaryDown || moduleSecondaryDown) && moduleStorage != null && !moduleStorage.open)
             {
                 moduleStorage.Open();
             }
 
-            bool batteryPrimaryHeld = GameInputHandler.GetButtonHeld(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Primary);
-            bool batterySecondaryHeld = GameInputHandler.GetButtonHeld(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Secondary);
-            bool batteryPrimaryDown = GameInputHandler.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Primary);
-            bool batterySecondaryDown = GameInputHandler.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Secondary);
+            bool batteryPrimaryHeld = InputUtils.GetButtonHeld(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Primary);
+            bool batterySecondaryHeld = InputUtils.GetButtonHeld(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Secondary);
+            bool batteryPrimaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Primary);
+            bool batterySecondaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Secondary);
 
             if(batteryPrimaryHeld && batterySecondaryHeld && (batteryPrimaryDown || batterySecondaryDown) && batterySwapModules > 0 && batteryStorage != null && !batteryStorage.open)
             {

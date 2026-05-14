@@ -22,21 +22,21 @@ namespace Ramune.SeaglideUpgradesModules
             .CreateInput("Open Module Storage")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.Y)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.Start, GameInputHandler.Paths.Gamepad.ButtonNorth)
-            .WithCategory("Seaglide Upgrades: Modules")
+            .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
 
         public static GameInput.Button OpenBatteryUpgradeStorage = EnumHandler.AddEntry<GameInput.Button>("ramune.sgum.openbatteryupgradestorage")
             .CreateInput("Open Battery Upgrade Storage")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.U)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.Start, GameInputHandler.Paths.Gamepad.ButtonWest)
-            .WithCategory("Seaglide Upgrades: Modules")
+            .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
 
         public static GameInput.Button UseBoostUpgrade = EnumHandler.AddEntry<GameInput.Button>("ramune.sgum.useboostupgrade")
             .CreateInput("Activate Boost Upgrade (Hold)")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.LeftShift)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.RightStick)
-            .WithCategory("Seaglide Upgrades: Modules")
+            .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
 
 
