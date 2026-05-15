@@ -1,13 +1,12 @@
-﻿using Nautilus.Utility;
-
+﻿
 
 namespace Ramune.SimpleCoordinates.Monos
 {
     public class CoordinateDisplay : MonoBehaviour
     {
-        public static BasicText text, targetText;
+        public static Utility.BasicText text, targetText;
 
-        public static string targetCoordinatesJson = Path.Combine(Paths.ConfigurationFolder, "TargetCoordinates.json");
+        public static string targetCoordinatesJson => Path.Combine(Paths.ConfigurationFolder, "TargetCoordinates.json");
 
         public static bool textHidden, targetTextHidden, stayHidden;
 
@@ -38,7 +37,7 @@ namespace Ramune.SimpleCoordinates.Monos
         }
 
 
-        public static void CheckShouldHide(bool configEnabled, ref bool textHidden, BasicText text)
+        public static void CheckShouldHide(bool configEnabled, ref bool textHidden, Utility.BasicText text)
         {
             if(!configEnabled && !textHidden)
             {
