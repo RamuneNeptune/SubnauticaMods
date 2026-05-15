@@ -58,6 +58,10 @@ namespace Ramune.ShowUnlockRequirements.Patches
         public static bool BuilderItem(TechType techType, bool locked, TooltipData data) => !ShowUnlockRequirements.config.AffectBuildingUI || !locked || !TryWriteLockedTooltip(techType, data);
 
 
+        [HarmonyPatch(nameof(TooltipFactory.Blueprint)), HarmonyPrefix]
+        public static bool Blueprint(TechType techType, bool locked, TooltipData data) => !ShowUnlockRequirements.config.AffectPDAUI || !locked || !TryWriteLockedTooltip(techType, data);
+
+
         public static string Format(string key, params object[] args) => string.Format(key.LangKeyAbbr(), args);
 
 
@@ -82,23 +86,9 @@ namespace Ramune.ShowUnlockRequirements.Patches
             if(CompoundTechTypes.TryGetValue(techType, out List<TechType> dependencies))
                 return Format("unlockcompoundtext", string.Join("</color>, <color=#07fafa>", dependencies.Select(Language.main.Get))) + "</color>";
 
-            var scannerEntries = PDAScanner.GetAllEntriesData();
-
-            while(scannerEntries.MoveNext())
-            {
-                var entry = scannerEntries.Current;
-                var entryData = entry.Value;
-
-                if(entryData.blueprint != techType)
-                    continue;
-
-                var name = Language.main.Get(entry.Key);
-
-                if(PDAScanner.GetPartialEntryByKey(entry.Key, out PDAScanner.Entry partialEntry))
-                    return Format("unlockfragmenttext", name, partialEntry.unlocked, entryData.totalFragments);
-
-                return entryData.totalFragments > 1 || entryData.isFragment ? Format("unlockfragmenttext", name, 0, entryData.totalFragments) : Format("unlocktext", name);
-            }
+            if(KnownTechPatch.ScannerUnlockEntries.TryGetValue(techType, out List<PDAScanner.EntryData> scannerEntries))
+                foreach(var entryData in scannerEntries.OrderByDescending(x => x.totalFragments))
+                    return PDAScanner.GetPartialEntryByKey(entryData.key, out PDAScanner.Entry partialEntry) ? Format("unlockfragmenttext", Language.main.Get(entryData.key), partialEntry.unlocked, entryData.totalFragments) : entryData.totalFragments > 1 || entryData.isFragment ? Format("unlockfragmenttext", Language.main.Get(entryData.key), 0, entryData.totalFragments) : Format("unlocktext", Language.main.Get(entryData.key));
 
             return "";
         }

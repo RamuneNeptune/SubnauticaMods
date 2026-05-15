@@ -8,23 +8,32 @@ namespace Ramune.ShowUnlockRequirements
         [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerConfiguration = false;
 
+        [Toggle(" • Mark <color=#ffc600>hidden</color> nodes as <color=#ffc600>unknown</color>", Tooltip = "While this is enabled, every item in the game that is marked 'hidden' becomes 'unknown'.\n\nThis allows almost all items which you don't have unlocked to now appear in crafting and building menus.\n\nRequires a restart to take effect.")]
+        public bool ShowAllUnknownNodes = true;
+
+        [Slider(" • Darken <color=#ffc600>unknown</color> craft nodes (%)", Format = "{0:F0}%", DefaultValue = 40f, Min = 0f, Max = 100f, Step = 5f, Tooltip = "Applies a tint to unknown item nodes, so you can differentiate them from unlocked item nodes.\n\n100% is fully tinted, 0% is no tint.")]
+        public int DarkenNodePercent = 40;
+
+
+        [Toggle("<color=#ffc600>Vanilla tooltip:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        public bool DividerVanilla = false;
+
         [Toggle(" • Hide \"<color=#ffc600>Ingredients unknown</color>\" text")]
         public bool RemoveIngredientsUnknown = false;
 
-        [Toggle(" • Force <color=#ffc600>hidden</color> nodes to be <color=#ffc600>unknown</color>", Tooltip = "While this is enabled, every item in the game that is marked 'hidden' becomes 'unknown'.\n\nThis allows almost all items which you don't have unlocked to now appear in crafting and building menus.")]
-        public bool ShowAllUnknownNodes = true;
 
-        [Slider(" • Darken <color=#ffc600>unknown</color> nodes (%)", Format = "{0:F0}%", DefaultValue = 40f, Min = 0f, Max = 100f, Step = 5f, Tooltip = "Applies a tint to unknown item nodes, so you can differentiate them from unlocked item nodes.\n\n100% is fully tinted, 0% is no tint.")]
-        public int DarkenNodePercent = 40;
-
-        [Toggle("<color=#ffc600>Affects:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        [Toggle("<color=#ffc600>Modded tooltip:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerAffects = false;
 
-        [Toggle(" • Affect <color=#ffc600>crafting</color> menus", Tooltip = "This affects: fabricators, workbenches, etc.")]
+        [Toggle(" • Show in <color=#ffc600>crafting</color> menus", Tooltip = "This affects: fabricators, workbenches, mobile vehicle bay, etc.")]
         public bool AffectCraftingUI = true;
 
-        [Toggle(" • Affect <color=#ffc600>building</color> menus", Tooltip = "This affects: habitat builder")]
+        [Toggle(" • Show in <color=#ffc600>building</color> menus", Tooltip = "This affects: habitat builder")]
         public bool AffectBuildingUI = true;
+
+        [Toggle(" • Show in <color=#ffc600>PDA</color> menus", Tooltip = "This affects: PDA blueprints tab")]
+        public bool AffectPDAUI = true;
+
 
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;

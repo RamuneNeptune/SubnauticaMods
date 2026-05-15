@@ -13,7 +13,7 @@ namespace Ramune.ShowUnlockRequirements
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.ShowUnlockRequirements";
         public const string Name = "ShowUnlockRequirements";
-        public const string Version = "1.0.0";
+        public const string Version = "2.0.0";
 
         public void Awake()
         {
