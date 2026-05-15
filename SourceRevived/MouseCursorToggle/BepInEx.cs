@@ -18,12 +18,14 @@ namespace Ramune.MouseCursorToggle
         public static GameInput.Button EnterCursorMode = EnumHandler.AddEntry<GameInput.Button>("ramune.mct.togglecursormode")
             .CreateInput("Enter Cursor Mode")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.Backquote)
+            .WithControllerBinding("None")
             .WithCategory("Mouse Cursor Toggle")
             .AvoidConflicts();
 
         public static GameInput.Button ExitCursorMode = EnumHandler.AddEntry<GameInput.Button>("ramune.mct.exitcursormode")
             .CreateInput("Exit Cursor Mode")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.Escape)
+            .WithControllerBinding("None")
             .WithCategory("Mouse Cursor Toggle")
             .AvoidConflicts();
 

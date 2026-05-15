@@ -17,9 +17,6 @@ namespace Ramune.MouseCursorToggle
         [Toggle(" • Show exit hint")]
         public bool ShowExitHint = true;
 
-        [ColorPicker(" • Exit hint color", Advanced = true)]
-        public Color ExitHintColor = new(1f, 1f, 1f);
-
         [Choice(" • Exit hint style")]
         public FontStyles ExitHintStyle = FontStyles.Normal;
 
@@ -31,6 +28,12 @@ namespace Ramune.MouseCursorToggle
 
         [Slider(" • Exit hint offset (Y)", Format = "{0:F0}", DefaultValue = -420f, Min = -1000f, Max = 1000f, Step = 5f)]
         public int ExitHintY = -420;
+
+        [Toggle("<color=#ffc600>Exit hint color:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        public bool DividerExitHintColor = false;
+
+        [ColorPicker(" • Exit hint color", Advanced = true/*, AlphaLabel = " <color=#ffc600>→</color> Alpha (<color=#ffc600>A</color>)", RedLabel = " <color=#ffc600>→</color> Red (<color=#ffc600>R</color>)", GreenLabel = " <color=#ffc600>→</color> Green (<color=#ffc600>G</color>)", BlueLabel = " <color=#ffc600>→</color> Blue (<color=#ffc600>B</color>)"*/)]
+        public Color ExitHintColor = new(1f, 1f, 1f);
 
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;
