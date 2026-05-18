@@ -14,7 +14,7 @@ namespace Ramune.SeaglideUpgradesModules.Prefabs.UpgradeModules
             Prefab.SetGameObject(new CloneTemplate(Prefab.Info, TechType.HullReinforcementModule));
             Prefab.Register();
 
-            RamunesWorkbenchUtils.AddCraftNode(Prefab.Info.TechType, [RamunesWorkbenchUtils.Tabs.Equipment, "ramune.sgu.workbenchtab.name".LangKey()]);
+            RamunesWorkbenchUtils.AddCraftNode(Prefab.Info.TechType, [RamunesWorkbenchUtils.Tabs.Equipment, "ramune.su.workbenchtabname".LangKey()]);
         }
     }
 }

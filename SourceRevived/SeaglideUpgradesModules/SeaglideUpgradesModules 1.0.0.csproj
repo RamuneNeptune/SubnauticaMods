@@ -73,13 +73,12 @@
     <Compile Include="Prefabs\UpgradeModules\PowerglideUpgrade.cs" />
     <Compile Include="Prefabs\UpgradeModules\SpeedUpgrade.cs" />
     <Compile Include="Monos\SeaglideUpgradeManager.cs" />
-    <Compile Include="Patches\Player.cs" />
     <Compile Include="Patches\Seaglide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include=".dist\Configuration\BatterySwapCompatibleTech.json" />
+    <None Include=".dist\Configuration\BatterySwapCompatibleModdedTech.json" />
     <None Include=".dist\Localization\English.json" />
     <None Include=".dist\Recipes\BatterySwapUpgrade.json" />
     <None Include=".dist\Recipes\BoostUpgrade.json" />

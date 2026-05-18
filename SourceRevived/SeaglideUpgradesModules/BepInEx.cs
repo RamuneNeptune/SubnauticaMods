@@ -4,7 +4,7 @@ namespace Ramune.SeaglideUpgradesModules
 {
     [BepInDependency("com.snmodding.nautilus")]
     [BepInDependency("com.ramune.RamunesWorkbench")]
-    [BepInDependency("com.ramune.SeaglideUpgrades")]
+    [BepInDependency("com.ramune.SeaglideUpgrades", "5.0.1")]
     [BepInPlugin(GUID, Name, Version)]
     [BepInProcess("Subnautica.exe")]
     public class SeaglideUpgradesModules : BaseUnityPlugin
@@ -17,28 +17,26 @@ namespace Ramune.SeaglideUpgradesModules
         public const string Name = "SeaglideUpgrades:Modules";
         public const string Version = "1.0.0";
 
-
-        public static GameInput.Button OpenModuleStorage = EnumHandler.AddEntry<GameInput.Button>("ramune.sgum.openmodulestorage")
+        public static GameInput.Button OpenModuleStorage = EnumHandler.AddEntry<GameInput.Button>("ramune.sum.openmodulestorage")
             .CreateInput("Open Module Storage")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.Y)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.Start, GameInputHandler.Paths.Gamepad.ButtonNorth)
             .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
 
-        public static GameInput.Button OpenBatteryUpgradeStorage = EnumHandler.AddEntry<GameInput.Button>("ramune.sgum.openbatteryupgradestorage")
+        public static GameInput.Button OpenBatteryUpgradeStorage = EnumHandler.AddEntry<GameInput.Button>("ramune.sum.openbatteryupgradestorage")
             .CreateInput("Open Battery Upgrade Storage")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.U)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.Start, GameInputHandler.Paths.Gamepad.ButtonWest)
             .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
 
-        public static GameInput.Button UseBoostUpgrade = EnumHandler.AddEntry<GameInput.Button>("ramune.sgum.useboostupgrade")
+        public static GameInput.Button UseBoostUpgrade = EnumHandler.AddEntry<GameInput.Button>("ramune.sum.useboostupgrade")
             .CreateInput("Activate Boost Upgrade (Hold)")
             .WithKeyboardBinding(GameInputHandler.Paths.Keyboard.LeftShift)
             .WithControllerBinding(GameInputHandler.Paths.Gamepad.RightStick)
             .WithCategory("Seaglide Upgrades: Modules (Combo-bind)")
             .AvoidConflicts();
-
 
         public void Awake()
         {
@@ -59,55 +57,37 @@ namespace Ramune.SeaglideUpgradesModules
             {
                 SeaglideUpgrades.Prefabs.Deployables.SeaglideMK1.ModifyPrefabCallbacks.Add(go =>
                 {
-                    var moduleRoot = new GameObject("SeaglideModulesRoot");
-                    moduleRoot.transform.SetParent(go.transform, false);
-
-                    var batteryRoot = new GameObject("SeaglideBatteriesRoot");
-                    batteryRoot.transform.SetParent(go.transform, false);
-
                     var upgradeManager = go.EnsureComponent<Monos.SeaglideUpgradeManager>();
                     upgradeManager.techType = SeaglideUpgrades.Prefabs.Deployables.SeaglideMK1.Prefab.Info.TechType;
 
-                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(moduleRoot, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk1, config.ModuleStorageHeightMk1, true);
+                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk1, config.ModuleStorageHeightMk1, true);
                     upgradeManager.moduleStorage = moduleStorage;
 
-                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(batteryRoot, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
+                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
                     upgradeManager.batteryStorage = batteryStorage;
                 });
 
                 SeaglideUpgrades.Prefabs.Deployables.SeaglideMK2.ModifyPrefabCallbacks.Add(go =>
                 {
-                    var moduleRoot = new GameObject("SeaglideModulesRoot");
-                    moduleRoot.transform.SetParent(go.transform, false);
-
-                    var batteryRoot = new GameObject("SeaglideBatteriesRoot");
-                    batteryRoot.transform.SetParent(go.transform, false);
-
                     var upgradeManager = go.EnsureComponent<Monos.SeaglideUpgradeManager>();
                     upgradeManager.techType = SeaglideUpgrades.Prefabs.Deployables.SeaglideMK2.Prefab.Info.TechType;
 
-                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(moduleRoot, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk2, config.ModuleStorageHeightMk2, true);
+                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk2, config.ModuleStorageHeightMk2, true);
                     upgradeManager.moduleStorage = moduleStorage;
 
-                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(batteryRoot, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
+                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
                     upgradeManager.batteryStorage = batteryStorage;
                 });
 
                 SeaglideUpgrades.Prefabs.Deployables.SeaglideMK3.ModifyPrefabCallbacks.Add(go =>
                 {
-                    var moduleRoot = new GameObject("SeaglideModulesRoot");
-                    moduleRoot.transform.SetParent(go.transform, false);
-
-                    var batteryRoot = new GameObject("SeaglideBatteriesRoot");
-                    batteryRoot.transform.SetParent(go.transform, false);
-
                     var upgradeManager = go.EnsureComponent<Monos.SeaglideUpgradeManager>();
                     upgradeManager.techType = SeaglideUpgrades.Prefabs.Deployables.SeaglideMK3.Prefab.Info.TechType;
 
-                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(moduleRoot, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk3, config.ModuleStorageHeightMk3, true);
+                    var moduleStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideModules", "SeaglideModulesRoot", config.ModuleStorageWidthMk3, config.ModuleStorageHeightMk3, true);
                     upgradeManager.moduleStorage = moduleStorage;
 
-                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(batteryRoot, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
+                    var batteryStorage = Utility.PrefabUtils.AddStorageContainer(go, "SeaglideBatteries", "SeaglideBatteriesRoot", 1, 1, true);
                     upgradeManager.batteryStorage = batteryStorage;
                 });
 
@@ -123,6 +103,41 @@ namespace Ramune.SeaglideUpgradesModules
                     settings.intensity *= manager.GetLightIntensityMultiplier();
                     settings.conesize *= manager.GetLightConesizeMultiplier();
                 });
+
+                SeaglideUpgrades.Patches.PlayerToolPatch.ModdedSeaglideTechTypes[SeaglideUpgrades.Prefabs.Deployables.SeaglideMK1.Prefab.Info.TechType] = multiplier =>
+                {
+                    var speed = config.DisableSpeedMk1 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaSpeed : 42f;
+                    var accel = config.DisableSpeedMk1 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaAcceleration : 42f;
+                    var baseMultiplier = config.DisableSpeedMk1 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaMultiplier : SeaglideUpgrades.SeaglideUpgrades.config.speedmk1;
+
+                    SeaglideUpgrades.SeaglideUpgrades.SetSeaglideSpeed(speed, accel, baseMultiplier * multiplier);
+                };
+
+                SeaglideUpgrades.Patches.PlayerToolPatch.ModdedSeaglideTechTypes[SeaglideUpgrades.Prefabs.Deployables.SeaglideMK2.Prefab.Info.TechType] = multiplier =>
+                {
+                    var speed = config.DisableSpeedMk2 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaSpeed : 50f;
+                    var accel = config.DisableSpeedMk2 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaAcceleration : 50f;
+                    var baseMultiplier = config.DisableSpeedMk2 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaMultiplier : SeaglideUpgrades.SeaglideUpgrades.config.speedmk2;
+
+                    SeaglideUpgrades.SeaglideUpgrades.SetSeaglideSpeed(speed, accel, baseMultiplier * multiplier);
+                };
+
+                SeaglideUpgrades.Patches.PlayerToolPatch.ModdedSeaglideTechTypes[SeaglideUpgrades.Prefabs.Deployables.SeaglideMK3.Prefab.Info.TechType] = multiplier =>
+                {
+                    var speed = config.DisableSpeedMk3 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaSpeed : 58f;
+                    var accel = config.DisableSpeedMk3 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaAcceleration : 58f;
+                    var baseMultiplier = config.DisableSpeedMk3 ? SeaglideUpgrades.SeaglideUpgrades.config.vanillaMultiplier : SeaglideUpgrades.SeaglideUpgrades.config.speedmk3;
+
+                    SeaglideUpgrades.SeaglideUpgrades.SetSeaglideSpeed(speed, accel, baseMultiplier * multiplier);
+                };
+
+                SeaglideUpgrades.Patches.SeaglidePatch.ModifySpeedMultiplier += (seaglide, multiplier) =>
+                {
+                    if(!seaglide.TryGetComponent<Monos.SeaglideUpgradeManager>(out var manager))
+                        return multiplier;
+
+                    return multiplier * manager.GetCurrentSpeedMultiplier();
+                };
             });
         }
     }

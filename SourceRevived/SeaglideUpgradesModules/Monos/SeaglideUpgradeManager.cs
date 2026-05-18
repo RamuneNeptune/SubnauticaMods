@@ -4,15 +4,17 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 {
     public class SeaglideUpgradeManager : MonoBehaviour
     {
-        public Dictionary<InventoryItem, Battery> batteryStorageItems { get; set; } = new Dictionary<InventoryItem, Battery>();
+        public static readonly HashSet<SeaglideUpgradeManager> ActiveManagers = [];
 
-        public Seaglide seaglide { get; set; }
+        public Dictionary<InventoryItem, Battery> batteryStorageItems { get; set; } = [];
 
-        public EnergyMixin energyMixin { get; set; }
+        public Seaglide seaglide;
 
-        public StorageContainer moduleStorage { get; set; }
+        public EnergyMixin energyMixin;
 
-        public StorageContainer batteryStorage { get; set; }
+        public StorageContainer moduleStorage;
+
+        public StorageContainer batteryStorage;
 
         public bool isBoosting { get; set; }
 
@@ -34,7 +36,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
         public int speedModules { get; set; }
 
-        public TechType techType { get; set; }
+        public TechType techType;
 
         public TechType[] moduleAllowedTech { get; set; } =
         [
@@ -57,13 +59,19 @@ namespace Ramune.SeaglideUpgradesModules.Monos
         public string[] batteryAllowedTechModdedStrings { get; set; } = [];
 
 
+        public void OnEnable() => ActiveManagers.Add(this);
+
+
+        public void OnDisable() => ActiveManagers.Remove(this);
+
+
         public int GetTotalModules() => batterySwapModules + boostModules + efficiencyModules + lightModules + noiseModules + powerglideModules + speedModules;
 
 
-        public float GetSpeedModuleMultiplier() => 1f + (speedModules * 0.1f);
+        public float GetSpeedModuleMultiplier() => 1f + (speedModules * (SeaglideUpgradesModules.config.SpeedMultiplier - 1f));
 
 
-        public float GetEfficiencyModuleEnergyToAdd() => efficiencyModules * 0.013f;
+        public float GetEfficiencyModuleEnergyToAdd() => efficiencyModules * SeaglideUpgradesModules.config.EfficiencyAmount / 1000f;
 
         
         public float GetLightRangeMultiplier() => 1f + (lightModules * (SeaglideUpgradesModules.config.LightRangeMultiplier - 1f));
@@ -92,6 +100,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
 
         public void ApplyCurrentSpeed(float currentSpeedMultiplier) => SeaglideUpgrades.Patches.PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(currentSpeedMultiplier);
+
 
 
         public void ApplyCurrentBatteryStorageSize(int batterySwapModules) => batteryStorage.Resize(batterySwapModules == 0 ? 1 : batterySwapModules, 1);
@@ -219,23 +228,29 @@ namespace Ramune.SeaglideUpgradesModules.Monos
             if(energyMixin == null)
                 return;
 
-            moduleStorage.container._label = "SEAGLIDE UPGRADES";
+            InitializeStorage();
+        }
+
+
+        public void InitializeStorage()
+        {
+            moduleStorage.container._label = "upgradestoragename".LangKeyAbbr();
             moduleStorage.container.onAddItem += OnAddModuleItem;
             moduleStorage.container.onRemoveItem += OnRemoveModuleItem;
             moduleStorage.container.isAllowedToAdd = new IsAllowedToAdd(CanAddModuleItem);
             moduleStorage.container.SetAllowedTechTypes(moduleAllowedTech);
 
-            batteryAllowedTechModdedStrings.AddRangeToArray(JsonConvert.DeserializeObject<string[]>(File.ReadAllText(Path.Combine(Paths.ConfigurationFolder, "BatterySwapCompatibleTech.json"))) ?? []);
+            batteryAllowedTechModdedStrings = batteryAllowedTechModdedStrings.AddRangeToArray(JsonConvert.DeserializeObject<string[]>(File.ReadAllText(Path.Combine(Paths.ConfigurationFolder, "BatterySwapCompatibleModdedTech.json"))) ?? []);
 
             foreach(var batteryString in batteryAllowedTechModdedStrings)
             {
                 if(!EnumHandler.TryGetValue(batteryString, out TechType batteryTechType))
                     continue;
-                
+
                 batteryAllowedTech.Add(batteryTechType);
             }
 
-            batteryStorage.container._label = "SEAGLIDE BATTERIES";
+            batteryStorage.container._label = "batterystoragename".LangKeyAbbr();
             batteryStorage.container.onAddItem += OnAddBatteryItem;
             batteryStorage.container.onRemoveItem += OnRemoveBatteryItem;
             batteryStorage.container.SetAllowedTechTypes(batteryAllowedTech);
@@ -262,7 +277,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
                 case var x when x == Prefabs.UpgradeModules.EfficiencyUpgrade.Prefab.Info.TechType:
                     efficiencyModules++;
-                    Screen.Warning(string.Format("Increasing power efficiency to: +{0}%", GetEfficiencyModuleEnergyToAdd() * 1000f));
+                    Screen.Debug(string.Format("Increasing power efficiency to: +{0}%", GetEfficiencyModuleEnergyToAdd() * 1000f));
                     break;
 
                 case var x when x == Prefabs.UpgradeModules.LightUpgrade.Prefab.Info.TechType:
@@ -276,12 +291,13 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
                 case var x when x == Prefabs.UpgradeModules.PowerglideUpgrade.Prefab.Info.TechType:
                     powerglideModules++;
+                    ApplyCurrentSpeed(GetCurrentSpeedMultiplier());
                     break;
 
                 case var x when x == Prefabs.UpgradeModules.SpeedUpgrade.Prefab.Info.TechType:
                     speedModules++;
                     ApplyCurrentSpeed(GetCurrentSpeedMultiplier());
-                    Screen.Warning(string.Format("Increasing speed to: +{0}%", (GetSpeedModuleMultiplier() - 1f) * 100f));
+                    Screen.Debug(string.Format("Increasing speed to: +{0}%", (GetSpeedModuleMultiplier() - 1f) * 100f));
                     break;
             }
         }
@@ -318,6 +334,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
 
                 case var x when x == Prefabs.UpgradeModules.PowerglideUpgrade.Prefab.Info.TechType:
                     powerglideModules--;
+                    ApplyCurrentSpeed(GetCurrentSpeedMultiplier());
                     break;
 
                 case var x when x == Prefabs.UpgradeModules.SpeedUpgrade.Prefab.Info.TechType:
@@ -430,7 +447,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
             bool modulePrimaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Primary);
             bool moduleSecondaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenModuleStorage, GameInput.BindingSet.Secondary);
 
-            if(modulePrimaryHeld && moduleSecondaryHeld && (modulePrimaryDown || moduleSecondaryDown) && moduleStorage != null && !moduleStorage.open)
+            if(!Cursor.visible && modulePrimaryHeld && moduleSecondaryHeld && (modulePrimaryDown || moduleSecondaryDown) && moduleStorage != null && !moduleStorage.open)
             {
                 moduleStorage.Open();
             }
@@ -440,7 +457,7 @@ namespace Ramune.SeaglideUpgradesModules.Monos
             bool batteryPrimaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Primary);
             bool batterySecondaryDown = InputUtils.GetButtonDown(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, GameInput.BindingSet.Secondary);
 
-            if(batteryPrimaryHeld && batterySecondaryHeld && (batteryPrimaryDown || batterySecondaryDown) && batterySwapModules > 0 && batteryStorage != null && !batteryStorage.open)
+            if(!Cursor.visible && batteryPrimaryHeld && batterySecondaryHeld && (batteryPrimaryDown || batterySecondaryDown) && batterySwapModules > 0 && batteryStorage != null && !batteryStorage.open)
             {
                 batteryStorage.Open();
             }

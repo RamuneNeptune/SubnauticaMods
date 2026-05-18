@@ -13,17 +13,13 @@ namespace Ramune.SeaglideUpgradesModules.Patches
 
             var device = GameInput.PrimaryDevice;
 
-            bool showAllModuleStorage = HasPrimaryAndSecondary(device, SeaglideUpgradesModules.OpenModuleStorage);
-            bool showAllBatteryStorage = HasPrimaryAndSecondary(device, SeaglideUpgradesModules.OpenBatteryUpgradeStorage);
+            var showAllModuleStorage = HasPrimaryAndSecondary(device, SeaglideUpgradesModules.OpenModuleStorage);
+            var showAllBatteryStorage = HasPrimaryAndSecondary(device, SeaglideUpgradesModules.OpenBatteryUpgradeStorage);
 
-            __result += $"\n{Language.main?.GetFormat("ramune.sgum.accessupgrades", manager.GetTotalModules(), (manager.moduleStorage?.container?.sizeX ?? 0) * (manager.moduleStorage?.container?.sizeY ?? 0), GameInput.FormatButton(SeaglideUpgradesModules.OpenModuleStorage, showAllModuleStorage))}" + (manager.batterySwapModules > 0 ? $", {Language.main?.GetFormat("ramune.sgum.accessbatteries", manager.batteryStorageItems.Count, manager.batterySwapModules, GameInput.FormatButton(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, showAllBatteryStorage))}" : "");
+            __result += $"\n{Language.main?.GetFormat("ramune.sum.accessupgrades", manager.GetTotalModules(), (manager.moduleStorage?.container?.sizeX ?? 0) * (manager.moduleStorage?.container?.sizeY ?? 0), GameInput.FormatButton(SeaglideUpgradesModules.OpenModuleStorage, showAllModuleStorage))}" + (manager.batterySwapModules > 0 ? $", {Language.main?.GetFormat("ramune.sum.accessbatteries", manager.batteryStorageItems.Count, manager.batterySwapModules, GameInput.FormatButton(SeaglideUpgradesModules.OpenBatteryUpgradeStorage, showAllBatteryStorage))}" : "") + "\n" + string.Format("upgradesummary".LangKeyAbbr(), manager.speedModules, manager.efficiencyModules, manager.boostModules, manager.lightModules, manager.batterySwapModules, manager.noiseModules);
         }
 
 
-        private static bool HasPrimaryAndSecondary(GameInput.Device device, GameInput.Button button)
-        {
-            return !string.IsNullOrWhiteSpace(GameInput.GetBinding(device, button, GameInput.BindingSet.Primary)) &&
-                   !string.IsNullOrWhiteSpace(GameInput.GetBinding(device, button, GameInput.BindingSet.Secondary));
-        }
+        public static bool HasPrimaryAndSecondary(GameInput.Device device, GameInput.Button button) => !string.IsNullOrWhiteSpace(GameInput.GetBinding(device, button, GameInput.BindingSet.Primary)) && !string.IsNullOrWhiteSpace(GameInput.GetBinding(device, button, GameInput.BindingSet.Secondary));
     }
 }
