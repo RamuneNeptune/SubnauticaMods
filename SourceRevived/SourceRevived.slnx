@@ -5,8 +5,13 @@
     <Project Path="SeaglideBoosting/SeaglideBoosting 1.0.0.csproj" Id="4e26f00a-8060-4619-bd65-06f323c9a5f6" />
     <Project Path="SimpleCoordinates/SimpleCoordinates 5.0.1.csproj" Id="58df0efa-fd16-4bdc-9800-9731fab44465" />
   </Folder>
+  <Folder Name="/Mods/.complete-no-release/">
+    <Project Path="BigFriendlyFish/BigFriendlyFish 1.0.0.csproj" Id="0c4e4b0c-f9ea-40aa-b2e3-9d3fbc93b164" />
+    <Project Path="ForceSuperUltrawideResolution/ForceSuperUltrawideResolution 1.0.0.csproj" Id="7c6813a8-4bab-4302-bcce-10e205df4408" />
+  </Folder>
   <Folder Name="/Mods/.complete/">
     <Project Path="AchievementUnlocker/AchievementUnlocker 5.0.0.csproj" Id="72bf8afe-6f12-4008-9bc2-0b25c7d64467" />
+    <Project Path="ArchonCheckDisabler/ArchonCheckDisabler 1.0.0.csproj" Id="635b6d16-be36-45f1-820b-d5e303f70201" />
     <Project Path="BZEnameledGlass/BZEnameledGlass 5.0.0.csproj" Id="c1c7202d-80aa-4689-847d-601effd4f6d5" />
     <Project Path="BZTitaniumIngot/BZTitaniumIngot 5.0.0.csproj" Id="d17a2c8d-0c1e-4cab-b1a3-cad3904de1f4" />
     <Project Path="DecoFabricator/DecoFabricator 5.0.1.csproj" Id="813fcb99-35c1-4c92-8c76-ea77b4b50c3a" />
@@ -15,9 +20,10 @@
     <Project Path="DropOnDestroyRedux/DropOnDestroyRedux 1.0.0.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
     <Project Path="EarlyIonBattery/EarlyIonBattery 5.0.2.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
     <Project Path="EnableAchievements/EnableAchievements 5.0.0.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
+    <Project Path="FindMyUpdates/FindMyUpdates 2.0.0.csproj" Id="1fd2db40-e5a0-434a-8490-2f6647bf40bb" />
     <Project Path="FlareDurationIndicator/FlareDurationIndicator 5.0.0.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="FOVSlider/FOVSlider 5.0.0.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
-    <Project Path="HideMaskRedux/HideMaskRedux 1.0.1.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
+    <Project Path="HideMaskRedux/HideMaskRedux 1.0.2.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />
     <Project Path="KeepInventoryRedux/KeepInventoryRedux 1.0.0.csproj" Id="8859afc0-2205-4d7d-be52-7e2cf1e4bfb7" />
     <Project Path="KioniteBatteries/KioniteBatteries 5.0.1.csproj" Id="6ed51396-e20f-4f2a-95f5-69459f00a169" />
     <Project Path="LithiumBatteries/LithiumBatteries 5.0.0.csproj" Id="79a12cea-f898-48ce-acf9-608b0baee910" />
@@ -32,7 +38,7 @@
     <Project Path="RamunesFasterScanning/RamunesFasterScanning 5.0.0.csproj" Id="732cf9ab-e1bb-4c33-8578-baca5d21c1fe" />
     <Project Path="RamunesWorkbench/RamunesWorkbench 5.0.0.csproj" Id="2ba0cb33-65a5-498d-984b-e9982454333f" />
     <Project Path="ReaperGoldSkin/ReaperGoldSkin  5.0.0.csproj" Id="78edebca-1097-4829-bcf2-590d18be3f5c" />
-    <Project Path="SeaglideUpgrades/SeaglideUpgrades 5.0.0.csproj" Id="f0ddc580-7ecd-401f-9447-ac8803bfcb75" />
+    <Project Path="SeaglideUpgrades/SeaglideUpgrades 5.0.1.csproj" Id="f0ddc580-7ecd-401f-9447-ac8803bfcb75" />
     <Project Path="SeamothDepthModulesRedux/SeamothDepthModulesRedux 1.0.0.csproj" Id="3c5efedd-cefc-4cc0-b850-e3a33c673731" />
     <Project Path="ShowUnlockRequirements/ShowUnlockRequirements 2.0.0.csproj" Id="67c54c07-4b48-4ab8-8dd6-33382c2f8a65" />
     <Project Path="SkipLifepodIntro/SkipLifepodIntro 1.0.0.csproj" Id="8eed1c18-824a-4cc2-89d2-8b2e86d94e71" />
@@ -43,14 +49,12 @@
   </Folder>
   <Folder Name="/Mods/.develop/">
     <Project Path="PridenauticaRedux/PridenauticaRedux 1.0.0.csproj" Id="710ce169-9a36-4029-bfa3-93e50f760427" />
-    <Project Path="SeaglideUpgradesModules/SeaglideUpgradesModules 1.0.0.csproj" Id="d2e4b3c8-7c79-4999-b85f-aa2686f84896" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
   </Folder>
   <Folder Name="/Mods/.testing/">
-    <Project Path="BigFriendlyFish/BigFriendlyFish 1.0.0.csproj" Id="0c4e4b0c-f9ea-40aa-b2e3-9d3fbc93b164" />
     <Project Path="BulkVending/BulkVending 1.0.0.csproj" Id="c394ec2c-645a-4272-8d9b-55396844a2fd" />
-    <Project Path="FindMyUpdates/FindMyUpdates 2.0.0.csproj" Id="1fd2db40-e5a0-434a-8490-2f6647bf40bb" />
     <Project Path="MouseCursorToggle/MouseCursorToggle 1.0.0.csproj" Id="08c0fd0d-4f90-4b58-aabb-f546b825fd53" />
+    <Project Path="SeaglideUpgradesModules/SeaglideUpgradesModules 1.0.0.csproj" Id="d2e4b3c8-7c79-4999-b85f-aa2686f84896" />
   </Folder>
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
