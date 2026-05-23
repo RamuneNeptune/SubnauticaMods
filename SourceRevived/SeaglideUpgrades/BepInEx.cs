@@ -14,7 +14,7 @@ namespace Ramune.SeaglideUpgrades
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.SeaglideUpgrades";
         public const string Name = "SeaglideUpgrades";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {
@@ -41,7 +41,8 @@ namespace Ramune.SeaglideUpgrades
 
             playerController.seaglideForwardMaxSpeed = speed * multiplier;
             playerController.seaglideWaterAcceleration = accel * multiplier;
-            playerController.SetMotorMode(Player.MotorMode.Dive);
+
+            player.SetMotorMode(Player.MotorMode.Dive);
             player.UpdateMotorMode();
         }
     }

@@ -7,6 +7,8 @@ namespace Ramune.SeaglideUpgrades.Patches
     {
         public static TechType ActiveSeaglideTechType;
 
+        public static Func<Seaglide, float, float> ModifySpeedMultiplier;
+
 
         [HarmonyPatch(nameof(Seaglide.OnDraw)), HarmonyPostfix]
         public static void OnDraw(Seaglide __instance)
@@ -18,7 +20,15 @@ namespace Ramune.SeaglideUpgrades.Patches
 
             ActiveSeaglideTechType = techType;
 
-            PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(1f);
+            var multiplier = 1f;
+
+            if(ModifySpeedMultiplier != null)
+            {
+                foreach(var callback in ModifySpeedMultiplier.GetInvocationList().Cast<Func<Seaglide, float, float>>())
+                    multiplier = callback(__instance, multiplier);
+            }
+
+            PlayerToolPatch.ModdedSeaglideTechTypes[techType].Invoke(multiplier);
         }
     }
 }
