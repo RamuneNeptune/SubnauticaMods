@@ -67,8 +67,24 @@
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
     <Project Path="RamuneLib/RamuneLib.shproj" />
   </Folder>
+  <Folder Name="/.dependencies/" />
+  <Folder Name="/.dependencies/publicized/" />
+  <Folder Name="/.dependencies/publicized/Archon/">
+    <File Path=".dependencies\publicized\Archon\AVS-publicized.dll" />
+  </Folder>
+  <Folder Name="/.dependencies/publicized/VehicleFramework/">
+    <File Path=".dependencies\publicized\VehicleFramework\VehicleFramework-publicized.dll" />
+  </Folder>
+  <Folder Name="/.dependencies/tools/" />
+  <Folder Name="/.dependencies/tools/7z2601-extra/">
+    <File Path=".dependencies\tools\7z2601-extra\License.txt" />
+  </Folder>
+  <Folder Name="/.dependencies/tools/7z2601-extra/x64/">
+    <File Path=".dependencies\tools\7z2601-extra\x64\7za.exe" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="Build.ps1" />
+    <File Path="Directory.Build.paths.props" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Build.targets" />
     <File Path="nuget.config" />

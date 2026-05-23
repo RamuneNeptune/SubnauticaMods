@@ -59,7 +59,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="VehicleFramework-publicized">
-      <HintPath>..\..\..\..\..\Downloads\235235\5345345345\VehicleFramework-publicized.dll</HintPath>
+      <HintPath>..\.dependencies\publicized\VehicleFramework\VehicleFramework-publicized.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

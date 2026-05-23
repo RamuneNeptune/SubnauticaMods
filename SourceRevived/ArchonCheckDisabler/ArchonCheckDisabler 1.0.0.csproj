@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="AVS-publicized">
-      <HintPath>..\..\..\..\..\Downloads\ssssssssssss\AVS-publicized.dll</HintPath>
+      <HintPath>..\.dependencies\publicized\Archon\AVS-publicized.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

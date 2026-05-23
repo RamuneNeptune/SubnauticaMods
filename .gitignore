@@ -417,3 +417,4 @@ FodyWeavers.xsd
 *.msp
 
 SourceRevived/A/*
+!SourceRevived/.dependencies/**

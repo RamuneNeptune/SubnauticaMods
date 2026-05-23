@@ -9,8 +9,7 @@
 		<Exec Command='powershell -NoProfile -ExecutionPolicy Bypass -File "$(SolutionDir)Build.ps1" -SourceFile "$(ProjectDir)BepInEx.cs" -JsonFile "$(ProjectDir)Version.json"' />
 
 		<PropertyGroup>
-			<TargetDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\BepInEx\plugins\$(TargetName)</TargetDirectory>
-			<DistDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica\.dist</DistDirectory>
+			<TargetDirectory>$(PluginsDirectory)\$(TargetName)</TargetDirectory>
 			<VersionJson>$([System.IO.File]::ReadAllText('$(ProjectDir)Version.json'))</VersionJson>
 			<ModName>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"ModName"\s*:\s*"([^"]+)"').Groups[1].Value)</ModName>
 			<ModVersion>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"LatestVersion"\s*:\s*"([^"]+)"').Groups[1].Value)</ModVersion>
@@ -26,7 +25,7 @@
 		<Delete Files="$(TargetDirectory)\$(ZipName)" />
 		<Delete Files="$(DistDirectory)\$(ZipName)" />
 		
-		<Exec Command='"C:\Program Files\7-Zip\7z.exe" a "$(TargetDirectory)\$(ZipName)" "$(TargetDirectory)" -xr!*.zip' />
+		<Exec Command='"$(SevenZipExe)" a "$(TargetDirectory)\$(ZipName)" "$(TargetDirectory)" -xr!*.zip' />
 
 		<Copy SourceFiles="$(TargetDirectory)\$(ZipName)" DestinationFolder="$(DistDirectory)" SkipUnchangedFiles="true" />
 		

@@ -11,6 +11,8 @@
 		<NuGetAudit>false</NuGetAudit>
 	</PropertyGroup>
 
+	<Import Project="Directory.Build.paths.props" Condition="Exists('Directory.Build.paths.props')" />
+
 	<ItemGroup Condition="'$(MSBuildProjectName)' != 'SubnauticaModdingSetup'">
 		<Reference Include="System"/>
 		<Reference Include="System.Core"/>
