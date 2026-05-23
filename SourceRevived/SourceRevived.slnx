@@ -48,8 +48,11 @@
     <Project Path="WhiteLightsRedux/WhiteLightsRedux 1.0.0.csproj" Id="2ca27db6-86d5-4e4e-aef0-dd762ce34257" />
   </Folder>
   <Folder Name="/Mods/.develop/">
+    <Project Path="CustomizableLightsRedux/CustomizableLightsRedux 1.0.0.csproj" Id="61e5f139-c636-4a5c-97be-20c572495564" />
+    <Project Path="Headlamp/Headlamp 1.0.0.csproj" Id="af656402-91d1-4eaf-ba4c-28e07454b7d7" />
     <Project Path="PridenauticaRedux/PridenauticaRedux 1.0.0.csproj" Id="710ce169-9a36-4029-bfa3-93e50f760427" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
+    <Project Path="VehicleFrameworkCheckDisabler/VehicleFrameworkCheckDisabler 1.0.0.csproj" Id="727f164d-f03b-4d95-8ac4-b496f462b83a" />
   </Folder>
   <Folder Name="/Mods/.testing/">
     <Project Path="BulkVending/BulkVending 1.0.0.csproj" Id="c394ec2c-645a-4272-8d9b-55396844a2fd" />
