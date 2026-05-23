@@ -415,3 +415,5 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+SourceRevived/A/*
