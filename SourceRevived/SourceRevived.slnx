@@ -32,6 +32,7 @@
     <Project Path="LithiumBatteries/LithiumBatteries 5.0.0.csproj" Id="79a12cea-f898-48ce-acf9-608b0baee910" />
     <Project Path="MegaO2Tank/MegaO2Tank 5.0.0.csproj" Id="7473f415-9114-4b3a-a49e-301a4f5e4608" />
     <Project Path="NoEpilepsyWarning/NoEpilepsyWarning 5.0.0.csproj" Id="bde240d0-1274-4096-ba91-734f6d1a7652" />
+    <Project Path="NoFeedback/NoFeedback 1.0.0.csproj" Id="abd6b728-7649-414e-a286-ad961815850a" />
     <Project Path="NoRadiationBlur/NoRadiationBlur 5.0.0.csproj" Id="b79c2010-4804-4950-b4b0-542847a718cc" />
     <Project Path="NoUnderwaterCaustics/NoUnderwaterCaustics 5.0.0.csproj" Id="30c5e499-0f51-47a8-967f-7962bb88f4b7" />
     <Project Path="PrawnSuitLightSwitch/PrawnSuitLightSwitch 5.0.0.csproj" Id="2d102b26-be22-4748-89e2-0132d81a9fc0" />
@@ -64,7 +65,6 @@
   </Folder>
   <Folder Name="/Other/">
     <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
-    <Project Path="ModSupportHelper/ModSupportHelper.csproj" Id="9fe3becd-e2b3-48bb-8e66-cb08e76d3b92" />
     <Project Path="RamuneLib/RamuneLib.shproj" />
   </Folder>
   <Folder Name="/Solution Items/">
