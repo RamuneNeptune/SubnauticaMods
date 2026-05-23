@@ -62,7 +62,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SeaglideUpgrades\SeaglideUpgrades 5.0.1.csproj">
       <Project>{F0DDC580-7ECD-401F-9447-AC8803BFCB75}</Project>
-      <Name>SeaglideUpgrades</Name>
+      <Name>SeaglideUpgrades 5.0.1</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

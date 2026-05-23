@@ -8,11 +8,11 @@ namespace Ramune.KioniteBatteries
         [Toggle("<color=#ffc600>Configuration:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerCfg = false;
 
-        [Slider("Kionite battery capacity", Format = "{0:0}", DefaultValue = 200f, Min = 10f, Max = 1000f, Step = 10f, Tooltip = "Configuring outside of slider limits can be done manually in BepInEx\\config\\KioniteBatteries\\config.json. Changes are applied on game restart")]
-        public int batteryCapacity = 200;
+        [Slider("Kionite battery capacity", Format = "{0:0}", DefaultValue = 200f, Min = 10f, Max = 2000f, Step = 50f, Tooltip = "Configuring outside of slider limits can be done manually in BepInEx\\config\\KioniteBatteries\\config.json. Changes are applied on game restart")]
+        public int batteryCapacity = 750;
 
-        [Slider("Kionite power cell capacity", Format = "{0:0}", DefaultValue = 400f, Min = 10f, Max = 1000f, Step = 10f, Tooltip = "Configuring outside of slider limits can be done manually in BepInEx\\config\\KioniteBatteries\\config.json. Changes are applied on game restart")]
-        public int powerCellCapacity = 400;
+        [Slider("Kionite power cell capacity", Format = "{0:0}", DefaultValue = 400f, Min = 10f, Max = 2000f, Step = 50f, Tooltip = "Configuring outside of slider limits can be done manually in BepInEx\\config\\KioniteBatteries\\config.json. Changes are applied on game restart")]
+        public int powerCellCapacity = 1500;
 
         [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
         public bool DividerMisc = false;
