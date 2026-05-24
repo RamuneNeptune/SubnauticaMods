@@ -64,7 +64,6 @@
     <Project Path="SeaglideUpgradesModules/SeaglideUpgradesModules 1.0.0.csproj" Id="d2e4b3c8-7c79-4999-b85f-aa2686f84896" />
   </Folder>
   <Folder Name="/Other/">
-    <Project Path="GUIDExporter/GUIDExporter.csproj" Id="b54cb29b-4fd4-4cdc-8c7c-2f9e94a30b34" />
     <Project Path="RamuneLib/RamuneLib.shproj" />
   </Folder>
   <Folder Name="/.dependencies/" />
