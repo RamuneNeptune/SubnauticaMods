@@ -5,76 +5,107 @@ namespace Ramune.FindMyUpdates
     [Menu("Find My Updates")]
     public class Config : ConfigFile
     {
-        [Toggle("<color=#ffc600>Updates:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        [Toggle("<color=#ffc600>Updates:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 0)]
         public bool DividerUpdates = false;
 
-        [Toggle(" • Check for Nexus Mods updates", Tooltip = "Whether to check for updates via Nexus Mods")]
+        [Toggle(" • Check for Nexus Mods updates", Tooltip = "Whether to check for updates via Nexus Mods", Order = 1)]
         public bool DoNexusCheck = true;
 
-        [Toggle(" • Check for GitHub updates", Tooltip = "Whether to check for updates via GitHub for mods that manually register FMU support")]
+        [Toggle(" • Check for GitHub updates", Tooltip = "Whether to check for updates via GitHub for mods that manually register FMU support", Order = 2)]
         public bool DoGitHubCheck = true;
 
-        [Toggle("<color=#ffc600>Notices:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+
+
+        [Toggle("<color=#ffc600>Notices:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 3)]
         public bool DividerLogging = false;
 
-        [Toggle(" • Display main menu notice", Tooltip = "Displays a message on the left side of your screen when you reach the main menu if any mods are found to be oudated")]
+        [Toggle(" • Display main menu notice", Tooltip = "Displays a message on the left side of your screen when you reach the main menu if any mods are found to be oudated", Order = 4)]
         public bool MainMenuNotice = true;
 
-        [Slider(" • Main menu notice duration", Format = "{0:F0}s", DefaultValue = 15f, Min = 1f, Max = 60f, Step = 1f, Tooltip = "The duration in seconds to display the outdated mods main menu notice")]
+        [Slider(" • Main menu notice duration", Format = "{0:F0}s", DefaultValue = 15f, Min = 1f, Max = 60f, Step = 1f, Tooltip = "The duration in seconds to display the outdated mods main menu notice", Order = 5)]
         public float MainMenuNoticeDuration = 15f;
 
-        [Choice(" • Display options menu warnings", Options = new[] { "<color=#ffcf3c><b>(1/3)</b></color> Always", "<color=#ffcf3c><b>(2/3)</b></color> Only once", "<color=#ffcf3c><b>(3/3)</b></color> Never", }, Tooltip = "Determines whether on-screen warnings should show every time you open the options menu, only once, or never")]
+        [Choice(" • Display options menu warnings", Options = new[] { "<color=#ffcf3c><b>(1/3)</b></color> Always", "<color=#ffcf3c><b>(2/3)</b></color> Only once", "<color=#ffcf3c><b>(3/3)</b></color> Never", }, Tooltip = "Determines whether on-screen warnings should show every time you open the options menu, only once, or never", Order = 6)]
         public int DisplayOptionsMenuWarnings = 0;
 
-        [Toggle(" • Show hint in options warnings", Tooltip = "Includes a hint in on-screen warnings about being able to disable them in the mod configuration")]
+        [Toggle(" • Show hint in options warnings", Tooltip = "Includes a hint in on-screen warnings about being able to disable them in the mod configuration", Order = 7)]
         public bool ConfigHint = true;
 
-        [Toggle(" • Display outdated count on tab", Tooltip = "Displays the amount of outdated mods in the \"Updates\" tab text")]
+        [Toggle(" • Display outdated count on tab", Tooltip = "Displays the amount of outdated mods in the \"Updates\" tab text", Order = 8)]
         public bool OutdatedCountOnTab = true;
 
-        [Toggle("<color=#ffc600>Safety:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+        [Toggle("<color=#ffc600>Safety:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 9)]
         public bool DividerSafety = false;
 
-        [Choice(" • URL opening behaviour", Options = new[] { "<color=#ffcf3c><b>(1/2)</b></color> Require confirmation", "<color=#ffcf3c><b>(2/2)</b></color> Open links immediately" }, Tooltip = "Determines whether links should require an additional confirmation click to open, or if they should open immediately in your browser")]
+        [Choice(" • URL opening behaviour", Options = new[] { "<color=#ffcf3c><b>(1/2)</b></color> Require confirmation", "<color=#ffcf3c><b>(2/2)</b></color> Open links immediately" }, Tooltip = "Determines whether links should require an additional confirmation click to open, or if they should open immediately in your browser", Order = 10)]
         public int OpenURLBehaviour = 0;
 
-        [Toggle("<color=#ffc600>Localization:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+
+
+        [Toggle("<color=#ffc600>Localization:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 11)]
         public bool DividerLocalization = false;
 
-        [Toggle(" • Localize \"Find My Updates\"", Tooltip = "Translates the \"Find My Updates\" heading in the \"Updates\" tab into your selected language")]
+        [Toggle(" • Localize \"Find My Updates\"", Tooltip = "Translates the \"Find My Updates\" heading in the \"Updates\" tab into your selected language", Order = 12)]
         public bool TranslateHeadingName = true;
 
-        [Toggle(" • Localize \"Updates\"", Tooltip = "Translates the \"Updates\" tab name into your selected language")]
+        [Toggle(" • Localize \"Updates\"", Tooltip = "Translates the \"Updates\" tab name into your selected language", Order = 13)]
         public bool TranslateTabName = true;
 
-        [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+
+
+        [Toggle("<color=#ffc600>Miscellaneous:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 14)]
         public bool DividerMisc = false;
 
-        [Toggle(" • Log for up-to date mods", Tooltip = "Logs information about up-to date (current version is same as latest version) mods after processing")]
+        [Toggle(" • Log for up-to date mods", Tooltip = "Logs information about up-to date (current version is same as latest version) mods after processing", Order = 15)]
         public bool LogForUpToDateMods = true;
 
-        [Toggle(" • Log for outdated mods", Tooltip = "Logs information about outdated (current version is lower than latest version) mods after processing")]
+        [Toggle(" • Log for outdated mods", Tooltip = "Logs information about outdated (current version is lower than latest version) mods after processing", Order = 16)]
         public bool LogForOutdatedMods = true;
 
-        [Toggle(" • Log for overdated mods", Tooltip = "Logs information about overdated (current version is higher than latest version) mods after processing")]
+        [Toggle(" • Log for overdated mods", Tooltip = "Logs information about overdated (current version is higher than latest version) mods after processing", Order = 17)]
         public bool LogForOverdatedMods = true;
 
-        [Toggle(" • Log web requests to logfile", Tooltip = "Logs all web requests made by the mod to your logfile")]
+        [Toggle(" • Log web requests to logfile", Tooltip = "Logs all web requests made by the mod to your logfile", Order = 18)]
         public bool LogWebRequests = false;
 
-        [Choice(" • Log web requests level", Options = new[] { "<color=#ffcf3c><b>(1/5)</b></color> Debug", "<color=#ffcf3c><b>(2/5)</b></color> Info", "<color=#ffcf3c><b>(3/5)</b></color> Warning", "<color=#ffcf3c><b>(4/5)</b></color> Error", "<color=#ffcf3c><b>(5/5)</b></color> Fatal" }, Tooltip = "The level (info, warning, etc.) to log web requests to your logfile with")]
+        [Choice(" • Log web requests level", Options = new[] { "<color=#ffcf3c><b>(1/5)</b></color> Debug", "<color=#ffcf3c><b>(2/5)</b></color> Info", "<color=#ffcf3c><b>(3/5)</b></color> Warning", "<color=#ffcf3c><b>(4/5)</b></color> Error", "<color=#ffcf3c><b>(5/5)</b></color> Fatal" }, Tooltip = "The level (info, warning, etc.) to log web requests to your logfile with", Order = 19)]
         public int LoggingLevel = 0;
 
-        [Toggle(" • Log clicked URLs on screen", Tooltip = "Displays the opened URL on-screen when you click buttons like \"Update\" and \"Up-to date\"")]
+        [Toggle(" • Log clicked URLs on screen", Tooltip = "Displays the opened URL on-screen when you click buttons like \"Update\" and \"Up-to date\"", Order = 20)]
         public bool LogURLsToScreen = true;
 
-        [Toggle(" • Enable this mod", Tooltip = "Requires a restart to take effect, but allows you to disable the mod without uninstalling it")]
+        [Toggle(" • Enable this mod", Tooltip = "Requires a restart to take effect, but allows you to disable the mod without uninstalling it", Order = 21)]
         public bool EnableThisMod = true;
 
-        [Toggle("<color=#ffc600>Blacklist:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>")]
+
+
+        [Toggle("<color=#ffc600>GUIDs:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 22)]
+        public bool DividerGUIDs = false;
+
+        [Toggle("You can send your GUIDs.json to <color=#ffc600>@ramuneneptune</color> on Discord<alpha=#00>------------------------------------------------------------------------------------------------</alpha>", Order = 23)]
+        public bool DividerGUIDs1 = false;
+
+        [Toggle("More GUIDs means more mods can be checked for updates<alpha=#00>---------------------------------------------------------------------------------------------</alpha>", Order = 24)]
+        public bool DividerGUIDs2 = false;
+
+        [Toggle("You can find the current list of collected GUIDs at:<alpha=#00>---------------------------------------------------------------------------------------------</alpha>", Order = 25)]
+        public bool DividerGUIDs3 = false;
+
+        [Toggle("<color=#ffc600>https://ramune.fyi/guids/</color><alpha=#00>---------------------------------------------------------------------------------------------</alpha>", Order = 26)]
+        public bool DividerGUIDs4 = false;
+
+        [Button("Open GUIDs.json folder", Order = 27)]
+        public void OpenGUIDsFolder(ButtonClickedEventArgs _) => Process.Start(Paths.PluginFolder);
+
+
+
+        [Toggle("<color=#ffc600>Blacklist:</color> <alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 28)]
         public bool DividerBlacklist = false;
 
-        [Button("Open blacklist")]
+        [Toggle("Mods listed in your <color=#ffc600>blacklist</color> will be ignored when checking for updates<alpha=#00>------------------------------------------------------------------------------------------------------------</alpha>", Order = 29)]
+        public bool DividerBlacklist1 = false;
+
+        [Button("Open blacklist", Order = 30)]
         public void OpenBlacklist(ButtonClickedEventArgs _) => Process.Start(Path.Combine(Paths.ConfigurationFolder, "Blacklist.json"));
     }
 }

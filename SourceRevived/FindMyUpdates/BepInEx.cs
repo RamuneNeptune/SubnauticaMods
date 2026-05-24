@@ -11,8 +11,11 @@ namespace Ramune.FindMyUpdates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FindMyUpdates";
         public const string Name = "FindMyUpdates";
-        public const string Version = "2.0.0";
+        public const string Version = "2.0.1";
+
+
         public static readonly HashSet<string> BlacklistedGUIDs = new(StringComparer.OrdinalIgnoreCase);
+
         public static string BlacklistPath => Path.Combine(Paths.ConfigurationFolder, "Blacklist.json");
 
 
@@ -37,14 +40,23 @@ namespace Ramune.FindMyUpdates
                 }
             });
 
+            CompatUtils.RegisterOnChainloaderFinishedEvent(() =>
+            {
+                File.WriteAllText(Path.Combine(Paths.PluginFolder, "GUIDs.json"), JsonConvert.SerializeObject(Chainloader.PluginInfos.ToDictionary(x => x.Key, x => ""), Formatting.Indented));
+            });
+
             StartCoroutine(WaitToCheckUpdates());
         }
 
+
         public static Dictionary<string, Version> PluginInfos = [];
+
 
         public static readonly List<object[]> PendingValidationArgs = [];
 
+
         public static bool InitialValidationComplete = false;
+
 
         public static IEnumerator WaitToCheckUpdates()
         {
@@ -132,9 +144,9 @@ namespace Ramune.FindMyUpdates
                     if(!entry.IsNullOrWhiteSpace())
                         BlacklistedGUIDs.Add(entry.Trim());
             }
-            catch(Exception ex) when(ex is IOException || ex is UnauthorizedAccessException || ex is JsonException)
+            catch(Exception ex)
             {
-                Logfile.Error($"Failed to load blacklist from '{BlacklistPath}'.");
+                Logfile.Error($"Failed to load blacklist from: {BlacklistPath}");
                 Logfile.Error(ex.Message);
             }
         }
@@ -147,9 +159,9 @@ namespace Ramune.FindMyUpdates
                 Directory.CreateDirectory(Paths.ConfigurationFolder);
                 File.WriteAllText(BlacklistPath, JsonConvert.SerializeObject(BlacklistedGUIDs.OrderBy(x => x), Formatting.Indented));
             }
-            catch(Exception ex) when(ex is IOException || ex is UnauthorizedAccessException || ex is JsonException)
+            catch(Exception ex)
             {
-                Logfile.Error($"Failed to save blacklist to '{BlacklistPath}'.");
+                Logfile.Error($"Failed to save blacklist to: {BlacklistPath}");
                 Logfile.Error(ex.Message);
             }
         }
