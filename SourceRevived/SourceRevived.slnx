@@ -55,6 +55,7 @@
   <Folder Name="/Mods/.develop/">
     <Project Path="CustomizableLightsRedux/CustomizableLightsRedux 1.0.0.csproj" Id="61e5f139-c636-4a5c-97be-20c572495564" />
     <Project Path="Headlamp/Headlamp 1.0.0.csproj" Id="af656402-91d1-4eaf-ba4c-28e07454b7d7" />
+    <Project Path="ModularSurvivalKnife/ModularSurvivalKnife 1.0.0.csproj" Id="fc850025-9c0c-4fa0-8869-ba6908a63e64" />
     <Project Path="PridenauticaRedux/PridenauticaRedux 1.0.0.csproj" Id="710ce169-9a36-4029-bfa3-93e50f760427" />
     <Project Path="SeamothBoosting/SeamothBoosting 5.0.0.csproj" Id="7af6f4e2-e4fd-4ce0-8cd7-cf190c5f0df8" />
   </Folder>
