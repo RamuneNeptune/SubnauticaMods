@@ -6,7 +6,7 @@
 		
 		<PluginsDirectory>$(GameDirectory)\BepInEx\plugins</PluginsDirectory>
 		
-		<DistDirectory>$(PluginsDirectory)\.dist</DistDirectory>
+		<DistDirectory>$(GameDirectory)\.dist</DistDirectory>
 		
 		<SevenZipExe>$(MSBuildThisFileDirectory).dependencies\tools\7z2601-extra\x64\7za.exe</SevenZipExe>
 		
