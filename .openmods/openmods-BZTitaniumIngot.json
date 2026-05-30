@@ -5,9 +5,9 @@
   "name": "BZ Titanium Ingot",
   "supportedGameId": 1,
   "releaseAssets": [
-    "BZTitaniumIngot *.zip"
+    "BZTitaniumIngot-*.zip"
   ],
-  "primaryAsset": "BZTitaniumIngot *.zip",
+  "primaryAsset": "BZTitaniumIngot-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

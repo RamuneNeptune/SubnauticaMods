@@ -5,9 +5,9 @@
   "name": "Lithium Batteries",
   "supportedGameId": 1,
   "releaseAssets": [
-    "LithiumBatteries *.zip"
+    "LithiumBatteries-*.zip"
   ],
-  "primaryAsset": "LithiumBatteries *.zip",
+  "primaryAsset": "LithiumBatteries-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

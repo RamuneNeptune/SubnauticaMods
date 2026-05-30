@@ -5,9 +5,9 @@
   "name": "Ramunes Faster Building",
   "supportedGameId": 1,
   "releaseAssets": [
-    "RamunesFasterBuilding *.zip"
+    "RamunesFasterBuilding-*.zip"
   ],
-  "primaryAsset": "RamunesFasterBuilding *.zip",
+  "primaryAsset": "RamunesFasterBuilding-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

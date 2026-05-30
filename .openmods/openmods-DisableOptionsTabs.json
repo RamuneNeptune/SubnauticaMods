@@ -5,9 +5,9 @@
   "name": "Disable Options Tabs",
   "supportedGameId": 1,
   "releaseAssets": [
-    "DisableOptionsTabs *.zip"
+    "DisableOptionsTabs-*.zip"
   ],
-  "primaryAsset": "DisableOptionsTabs *.zip",
+  "primaryAsset": "DisableOptionsTabs-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

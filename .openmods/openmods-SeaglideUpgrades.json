@@ -5,9 +5,9 @@
   "name": "Seaglide Upgrades",
   "supportedGameId": 1,
   "releaseAssets": [
-    "SeaglideUpgrades *.zip"
+    "SeaglideUpgrades-*.zip"
   ],
-  "primaryAsset": "SeaglideUpgrades *.zip",
+  "primaryAsset": "SeaglideUpgrades-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

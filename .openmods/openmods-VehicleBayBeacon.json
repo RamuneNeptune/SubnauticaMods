@@ -5,9 +5,9 @@
   "name": "Vehicle Bay Beacon",
   "supportedGameId": 1,
   "releaseAssets": [
-    "VehicleBayBeacon *.zip"
+    "VehicleBayBeacon-*.zip"
   ],
-  "primaryAsset": "VehicleBayBeacon *.zip",
+  "primaryAsset": "VehicleBayBeacon-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

@@ -5,9 +5,9 @@
   "name": "Skip Lifepod Intro",
   "supportedGameId": 1,
   "releaseAssets": [
-    "SkipLifepodIntro *.zip"
+    "SkipLifepodIntro-*.zip"
   ],
-  "primaryAsset": "SkipLifepodIntro *.zip",
+  "primaryAsset": "SkipLifepodIntro-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

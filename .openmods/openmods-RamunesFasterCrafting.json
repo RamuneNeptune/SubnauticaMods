@@ -5,9 +5,9 @@
   "name": "Ramunes Faster Crafting",
   "supportedGameId": 1,
   "releaseAssets": [
-    "RamunesFasterCrafting *.zip"
+    "RamunesFasterCrafting-*.zip"
   ],
-  "primaryAsset": "RamunesFasterCrafting *.zip",
+  "primaryAsset": "RamunesFasterCrafting-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

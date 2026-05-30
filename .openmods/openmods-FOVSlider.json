@@ -5,9 +5,9 @@
   "name": "FOV Slider",
   "supportedGameId": 1,
   "releaseAssets": [
-    "FOVSlider *.zip"
+    "FOVSlider-*.zip"
   ],
-  "primaryAsset": "FOVSlider *.zip",
+  "primaryAsset": "FOVSlider-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

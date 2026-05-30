@@ -5,9 +5,9 @@
   "name": "White Lights Redux",
   "supportedGameId": 1,
   "releaseAssets": [
-    "WhiteLightsRedux *.zip"
+    "WhiteLightsRedux-*.zip"
   ],
-  "primaryAsset": "WhiteLightsRedux *.zip",
+  "primaryAsset": "WhiteLightsRedux-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

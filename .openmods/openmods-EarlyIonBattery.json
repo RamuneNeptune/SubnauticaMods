@@ -5,9 +5,9 @@
   "name": "Early Ion Battery",
   "supportedGameId": 1,
   "releaseAssets": [
-    "EarlyIonBattery *.zip"
+    "EarlyIonBattery-*.zip"
   ],
-  "primaryAsset": "EarlyIonBattery *.zip",
+  "primaryAsset": "EarlyIonBattery-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

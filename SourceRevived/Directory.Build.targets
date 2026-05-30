@@ -20,13 +20,13 @@
 			
 			<ModVersion>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"LatestVersion"\s*:\s*"([^"]+)"').Groups[1].Value)</ModVersion>
 			
-			<ZipName>$(ModName) $(ModVersion).zip</ZipName>
+			<ZipName>$(ModName)-$(ModVersion).zip</ZipName>
 
 			<ReleaseChangelogSource>$(ProjectDir).release\$(ModVersion).md</ReleaseChangelogSource>
 
 			<ReleaseDirectory>$(SolutionReleaseDirectory)\$(ModName)</ReleaseDirectory>
 
-			<ReleaseZip>$(ReleaseDirectory)\$(ModName) $(ModVersion).zip</ReleaseZip>
+			<ReleaseZip>$(ReleaseDirectory)\$(ZipName)</ReleaseZip>
 
 			<ReleaseChangelog>$(ReleaseDirectory)\$(ModName) $(ModVersion).md</ReleaseChangelog>
 

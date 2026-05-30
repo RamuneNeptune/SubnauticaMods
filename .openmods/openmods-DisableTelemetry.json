@@ -5,9 +5,9 @@
   "name": "Disable Telemetry",
   "supportedGameId": 1,
   "releaseAssets": [
-    "DisableTelemetry *.zip"
+    "DisableTelemetry-*.zip"
   ],
-  "primaryAsset": "DisableTelemetry *.zip",
+  "primaryAsset": "DisableTelemetry-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

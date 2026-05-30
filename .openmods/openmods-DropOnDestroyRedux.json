@@ -5,9 +5,9 @@
   "name": "Drop On Destroy Redux",
   "supportedGameId": 1,
   "releaseAssets": [
-    "DropOnDestroyRedux *.zip"
+    "DropOnDestroyRedux-*.zip"
   ],
-  "primaryAsset": "DropOnDestroyRedux *.zip",
+  "primaryAsset": "DropOnDestroyRedux-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

@@ -5,9 +5,9 @@
   "name": "Archon Check Disabler",
   "supportedGameId": 1,
   "releaseAssets": [
-    "ArchonCheckDisabler *.zip"
+    "ArchonCheckDisabler-*.zip"
   ],
-  "primaryAsset": "ArchonCheckDisabler *.zip",
+  "primaryAsset": "ArchonCheckDisabler-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

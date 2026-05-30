@@ -5,9 +5,9 @@
   "name": "No Feedback",
   "supportedGameId": 1,
   "releaseAssets": [
-    "NoFeedback *.zip"
+    "NoFeedback-*.zip"
   ],
-  "primaryAsset": "NoFeedback *.zip",
+  "primaryAsset": "NoFeedback-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

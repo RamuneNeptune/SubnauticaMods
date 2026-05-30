@@ -5,9 +5,9 @@
   "name": "Prawn Suit Light Switch",
   "supportedGameId": 1,
   "releaseAssets": [
-    "PrawnSuitLightSwitch *.zip"
+    "PrawnSuitLightSwitch-*.zip"
   ],
-  "primaryAsset": "PrawnSuitLightSwitch *.zip",
+  "primaryAsset": "PrawnSuitLightSwitch-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

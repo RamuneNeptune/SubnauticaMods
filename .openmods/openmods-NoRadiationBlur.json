@@ -5,9 +5,9 @@
   "name": "No Radiation Blur",
   "supportedGameId": 1,
   "releaseAssets": [
-    "NoRadiationBlur *.zip"
+    "NoRadiationBlur-*.zip"
   ],
-  "primaryAsset": "NoRadiationBlur *.zip",
+  "primaryAsset": "NoRadiationBlur-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

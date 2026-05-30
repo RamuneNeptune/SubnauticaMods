@@ -5,9 +5,9 @@
   "name": "Ion Thermal Plant",
   "supportedGameId": 1,
   "releaseAssets": [
-    "IonThermalPlant *.zip"
+    "IonThermalPlant-*.zip"
   ],
-  "primaryAsset": "IonThermalPlant *.zip",
+  "primaryAsset": "IonThermalPlant-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

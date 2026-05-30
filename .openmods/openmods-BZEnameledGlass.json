@@ -5,9 +5,9 @@
   "name": "BZ Enameled Glass",
   "supportedGameId": 1,
   "releaseAssets": [
-    "BZEnameledGlass *.zip"
+    "BZEnameledGlass-*.zip"
   ],
-  "primaryAsset": "BZEnameledGlass *.zip",
+  "primaryAsset": "BZEnameledGlass-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

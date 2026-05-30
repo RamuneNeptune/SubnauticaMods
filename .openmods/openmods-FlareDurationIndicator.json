@@ -5,9 +5,9 @@
   "name": "Flare Duration Indicator",
   "supportedGameId": 1,
   "releaseAssets": [
-    "FlareDurationIndicator *.zip"
+    "FlareDurationIndicator-*.zip"
   ],
-  "primaryAsset": "FlareDurationIndicator *.zip",
+  "primaryAsset": "FlareDurationIndicator-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

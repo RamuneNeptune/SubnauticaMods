@@ -5,9 +5,9 @@
   "name": "No Underwater Caustics",
   "supportedGameId": 1,
   "releaseAssets": [
-    "NoUnderwaterCaustics *.zip"
+    "NoUnderwaterCaustics-*.zip"
   ],
-  "primaryAsset": "NoUnderwaterCaustics *.zip",
+  "primaryAsset": "NoUnderwaterCaustics-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

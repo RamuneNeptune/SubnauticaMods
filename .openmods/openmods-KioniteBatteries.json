@@ -5,9 +5,9 @@
   "name": "Kionite Batteries",
   "supportedGameId": 1,
   "releaseAssets": [
-    "KioniteBatteries *.zip"
+    "KioniteBatteries-*.zip"
   ],
-  "primaryAsset": "KioniteBatteries *.zip",
+  "primaryAsset": "KioniteBatteries-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

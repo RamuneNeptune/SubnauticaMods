@@ -5,9 +5,9 @@
   "name": "Stalkers Drop Teeth",
   "supportedGameId": 1,
   "releaseAssets": [
-    "StalkersDropTeeth *.zip"
+    "StalkersDropTeeth-*.zip"
   ],
-  "primaryAsset": "StalkersDropTeeth *.zip",
+  "primaryAsset": "StalkersDropTeeth-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

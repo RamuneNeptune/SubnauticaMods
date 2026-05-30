@@ -5,9 +5,9 @@
   "name": "Vehicle Framework Check Disabler",
   "supportedGameId": 1,
   "releaseAssets": [
-    "VehicleFrameworkCheckDisabler *.zip"
+    "VehicleFrameworkCheckDisabler-*.zip"
   ],
-  "primaryAsset": "VehicleFrameworkCheckDisabler *.zip",
+  "primaryAsset": "VehicleFrameworkCheckDisabler-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

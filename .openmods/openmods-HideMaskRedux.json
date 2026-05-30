@@ -5,9 +5,9 @@
   "name": "Hide Mask Redux",
   "supportedGameId": 1,
   "releaseAssets": [
-    "HideMaskRedux *.zip"
+    "HideMaskRedux-*.zip"
   ],
-  "primaryAsset": "HideMaskRedux *.zip",
+  "primaryAsset": "HideMaskRedux-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

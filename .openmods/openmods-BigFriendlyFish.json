@@ -5,9 +5,9 @@
   "name": "Big Friendly Fish",
   "supportedGameId": 1,
   "releaseAssets": [
-    "BigFriendlyFish *.zip"
+    "BigFriendlyFish-*.zip"
   ],
-  "primaryAsset": "BigFriendlyFish *.zip",
+  "primaryAsset": "BigFriendlyFish-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

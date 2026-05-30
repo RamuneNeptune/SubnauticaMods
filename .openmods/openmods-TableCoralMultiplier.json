@@ -5,9 +5,9 @@
   "name": "Table Coral Multiplier",
   "supportedGameId": 1,
   "releaseAssets": [
-    "TableCoralMultiplier *.zip"
+    "TableCoralMultiplier-*.zip"
   ],
-  "primaryAsset": "TableCoralMultiplier *.zip",
+  "primaryAsset": "TableCoralMultiplier-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

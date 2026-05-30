@@ -5,9 +5,9 @@
   "name": "Show Unlock Requirements",
   "supportedGameId": 1,
   "releaseAssets": [
-    "ShowUnlockRequirements *.zip"
+    "ShowUnlockRequirements-*.zip"
   ],
-  "primaryAsset": "ShowUnlockRequirements *.zip",
+  "primaryAsset": "ShowUnlockRequirements-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

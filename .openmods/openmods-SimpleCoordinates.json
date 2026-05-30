@@ -5,9 +5,9 @@
   "name": "Simple Coordinates",
   "supportedGameId": 1,
   "releaseAssets": [
-    "SimpleCoordinates *.zip"
+    "SimpleCoordinates-*.zip"
   ],
-  "primaryAsset": "SimpleCoordinates *.zip",
+  "primaryAsset": "SimpleCoordinates-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

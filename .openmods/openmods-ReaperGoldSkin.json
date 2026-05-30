@@ -5,9 +5,9 @@
   "name": "Reaper Gold Skin",
   "supportedGameId": 1,
   "releaseAssets": [
-    "ReaperGoldSkin *.zip"
+    "ReaperGoldSkin-*.zip"
   ],
-  "primaryAsset": "ReaperGoldSkin *.zip",
+  "primaryAsset": "ReaperGoldSkin-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

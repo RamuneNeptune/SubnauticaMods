@@ -5,9 +5,9 @@
   "name": "Ramunes Faster Scanning",
   "supportedGameId": 1,
   "releaseAssets": [
-    "RamunesFasterScanning *.zip"
+    "RamunesFasterScanning-*.zip"
   ],
-  "primaryAsset": "RamunesFasterScanning *.zip",
+  "primaryAsset": "RamunesFasterScanning-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

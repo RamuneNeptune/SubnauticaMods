@@ -5,9 +5,9 @@
   "name": "Find My Updates",
   "supportedGameId": 1,
   "releaseAssets": [
-    "FindMyUpdates *.zip"
+    "FindMyUpdates-*.zip"
   ],
-  "primaryAsset": "FindMyUpdates *.zip",
+  "primaryAsset": "FindMyUpdates-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

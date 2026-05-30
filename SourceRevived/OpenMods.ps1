@@ -2,6 +2,7 @@ $sourceDirectory = $PSScriptRoot
 $repositoryDirectory = Split-Path $sourceDirectory -Parent
 $releaseRoot = Join-Path $sourceDirectory ".releases"
 $openModsDirectory = Join-Path $repositoryDirectory ".openmods"
+$mutex = New-Object System.Threading.Mutex($false, "Ramune.SubnauticaMods.OpenMods")
 
 function Split-ModName {
     param([string]$Name)
@@ -32,26 +33,32 @@ function ConvertTo-JsonString {
     return """$escaped"""
 }
 
-if(Test-Path $releaseRoot -PathType Container) {
-    New-Item -ItemType Directory -Force -Path $openModsDirectory | Out-Null
-    Get-ChildItem $openModsDirectory -Filter "openmods-*.json" -File | Remove-Item -Force
+try {
+    $lockTaken = $false
 
-    Get-ChildItem $releaseRoot -Directory | Sort-Object Name | ForEach-Object {
-        $releaseDirectory = $_
-        $modName = $releaseDirectory.Name
-        $versionJson = Join-Path (Join-Path $sourceDirectory $releaseDirectory.Name) "Version.json"
+    try {
+        $lockTaken = $mutex.WaitOne()
 
-        if(Test-Path $versionJson -PathType Leaf) {
-            $versionInfo = Get-Content $versionJson -Raw | ConvertFrom-Json
+        if(Test-Path $releaseRoot -PathType Container) {
+            New-Item -ItemType Directory -Force -Path $openModsDirectory | Out-Null
+            Get-ChildItem $openModsDirectory -Filter "openmods-*.json" -File | Remove-Item -Force -ErrorAction SilentlyContinue
 
-            if($versionInfo.ModName) {
-                $modName = [string]$versionInfo.ModName
-            }
-        }
+            Get-ChildItem $releaseRoot -Directory | Sort-Object Name | ForEach-Object {
+                $releaseDirectory = $_
+                $modName = $releaseDirectory.Name
+                $versionJson = Join-Path (Join-Path $sourceDirectory $releaseDirectory.Name) "Version.json"
 
-        $assetGlob = "$modName *.zip"
-        $manifestPath = Join-Path $openModsDirectory "openmods-$modName.json"
-        $manifestJson = @'
+                if(Test-Path $versionJson -PathType Leaf) {
+                    $versionInfo = Get-Content $versionJson -Raw | ConvertFrom-Json
+
+                    if($versionInfo.ModName) {
+                        $modName = [string]$versionInfo.ModName
+                    }
+                }
+
+                $assetGlob = "$modName-*.zip"
+                $manifestPath = Join-Path $openModsDirectory "openmods-$modName.json"
+                $manifestJson = @'
 {{
   "$schema": {0},
   "schemaVersion": 2,
@@ -67,11 +74,21 @@ if(Test-Path $releaseRoot -PathType Container) {
   }}
 }}
 '@ -f `
-            (ConvertTo-JsonString "https://openmods.net/manifest.schema.json"),
-            (ConvertTo-JsonString (Get-Slug $modName)),
-            (ConvertTo-JsonString (Split-ModName $modName)),
-            (ConvertTo-JsonString $assetGlob)
+                (ConvertTo-JsonString "https://openmods.net/manifest.schema.json"),
+                (ConvertTo-JsonString (Get-Slug $modName)),
+                (ConvertTo-JsonString (Split-ModName $modName)),
+                (ConvertTo-JsonString $assetGlob)
 
-        Set-Content -Path $manifestPath -Value $manifestJson -NoNewline
+                Set-Content -Path $manifestPath -Value $manifestJson -NoNewline
+            }
+        }
     }
+    finally {
+        if($lockTaken) {
+            $mutex.ReleaseMutex() | Out-Null
+        }
+    }
+}
+finally {
+    $mutex.Dispose()
 }

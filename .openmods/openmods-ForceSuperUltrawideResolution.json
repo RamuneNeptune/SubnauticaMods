@@ -5,9 +5,9 @@
   "name": "Force Super Ultrawide Resolution",
   "supportedGameId": 1,
   "releaseAssets": [
-    "ForceSuperUltrawideResolution *.zip"
+    "ForceSuperUltrawideResolution-*.zip"
   ],
-  "primaryAsset": "ForceSuperUltrawideResolution *.zip",
+  "primaryAsset": "ForceSuperUltrawideResolution-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

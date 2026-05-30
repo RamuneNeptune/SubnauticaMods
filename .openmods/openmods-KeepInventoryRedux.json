@@ -5,9 +5,9 @@
   "name": "Keep Inventory Redux",
   "supportedGameId": 1,
   "releaseAssets": [
-    "KeepInventoryRedux *.zip"
+    "KeepInventoryRedux-*.zip"
   ],
-  "primaryAsset": "KeepInventoryRedux *.zip",
+  "primaryAsset": "KeepInventoryRedux-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

@@ -5,9 +5,9 @@
   "name": "Achievement Unlocker",
   "supportedGameId": 1,
   "releaseAssets": [
-    "AchievementUnlocker *.zip"
+    "AchievementUnlocker-*.zip"
   ],
-  "primaryAsset": "AchievementUnlocker *.zip",
+  "primaryAsset": "AchievementUnlocker-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

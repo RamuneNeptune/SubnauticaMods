@@ -5,9 +5,9 @@
   "name": "Enable Achievements",
   "supportedGameId": 1,
   "releaseAssets": [
-    "EnableAchievements *.zip"
+    "EnableAchievements-*.zip"
   ],
-  "primaryAsset": "EnableAchievements *.zip",
+  "primaryAsset": "EnableAchievements-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

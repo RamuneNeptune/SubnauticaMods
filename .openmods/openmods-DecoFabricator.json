@@ -5,9 +5,9 @@
   "name": "Deco Fabricator",
   "supportedGameId": 1,
   "releaseAssets": [
-    "DecoFabricator *.zip"
+    "DecoFabricator-*.zip"
   ],
-  "primaryAsset": "DecoFabricator *.zip",
+  "primaryAsset": "DecoFabricator-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

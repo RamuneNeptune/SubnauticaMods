@@ -5,9 +5,9 @@
   "name": "No Epilepsy Warning",
   "supportedGameId": 1,
   "releaseAssets": [
-    "NoEpilepsyWarning *.zip"
+    "NoEpilepsyWarning-*.zip"
   ],
-  "primaryAsset": "NoEpilepsyWarning *.zip",
+  "primaryAsset": "NoEpilepsyWarning-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }

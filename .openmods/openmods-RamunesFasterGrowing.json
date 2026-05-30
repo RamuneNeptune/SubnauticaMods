@@ -5,9 +5,9 @@
   "name": "Ramunes Faster Growing",
   "supportedGameId": 1,
   "releaseAssets": [
-    "RamunesFasterGrowing *.zip"
+    "RamunesFasterGrowing-*.zip"
   ],
-  "primaryAsset": "RamunesFasterGrowing *.zip",
+  "primaryAsset": "RamunesFasterGrowing-*.zip",
   "install": {
     "path": "BepInEx/plugins"
   }
