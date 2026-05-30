@@ -13,7 +13,7 @@ namespace Ramune.ForceSuperUltrawideResolution
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.ForceSuperUltrawideResolution";
         public const string Name = "ForceSuperUltrawideResolution";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public void Awake()
         {

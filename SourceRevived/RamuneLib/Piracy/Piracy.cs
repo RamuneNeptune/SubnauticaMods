@@ -145,6 +145,8 @@ namespace RamuneLib.Piracy
 
             var steamDllPaths = FindAllSteamDLLs(directory);
 
+            List<string> flags = ["\n<b><color=#ffba1d>⚠ Flagged files:</color></b>"];
+
             if(steamDllPaths.Count > 0)
             {
                 foreach(var steamDllPath in steamDllPaths)
@@ -168,9 +170,7 @@ namespace RamuneLib.Piracy
                             if(!hash.Equals(steamapihash))
                             {
                                 Logfile.Warning($"Non-standard 'steam_api64.dll' file at: {steamDllPath} ({hash})");
-                                new GameObject("IsPirated");
-                                DoPiracyPatches();
-                                return true;
+                                flags.Add($"<size=80%> <color=#ffba1d><b>• steam_api64.dll</b> ({hash}):</color> <color=#a2a2a2>{steamDllPath}</color></size>");
                             }
                         }
                     }
@@ -188,10 +188,17 @@ namespace RamuneLib.Piracy
                 if(File.Exists(path) || Directory.Exists(path))
                 {
                     Logfile.Warning($"Non-standard '{Path.GetFileName(path)}' file at: {path}");
-                    new GameObject("IsPirated");
-                    DoPiracyPatches();
-                    return true;
+                    flags.Add($"<size=80%> <color=#ffba1d><b>• {Path.GetFileName(path)}</b>:</color> <color=#a2a2a2>{path}</color></size>");
                 }
+            }
+
+            if(flags.Count > 1)
+            {
+                new GameObject("IsPirated");
+                flags.Add("\n<color=#ffba1d><b>Ahoy matey!</b></color>");
+                Patches.PlayerPatches.PiracyMessages = [..Patches.PlayerPatches.PiracyMessages, ..flags];
+                DoPiracyPatches();
+                return true;
             }
 
             new GameObject("IsNotPirated");
@@ -222,6 +229,9 @@ namespace RamuneLib.Piracy
         /// </summary>
         private static void DoPiracyPatches()
         {
+            PatchingUtils.ApplyPatch(typeof(ErrorMessage), nameof(ErrorMessage.GetEntry), new(typeof(Patches.ErrorMessagePatch), nameof(Patches.ErrorMessagePatch.GetEntry)), HarmonyPatchType.Postfix);
+
+
             PatchingUtils.ApplyPatch(typeof(Player), nameof(Player.Awake), new(typeof(Patches.PlayerPatches), nameof(Patches.PlayerPatches.Awake)), HarmonyPatchType.Postfix);
 
 

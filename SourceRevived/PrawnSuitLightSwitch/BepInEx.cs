@@ -13,7 +13,7 @@ namespace Ramune.PrawnSuitLightSwitch
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.PrawnSuitLightSwitch";
         public const string Name = "PrawnSuitLightSwitch";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public static GameInput.Button ToggleLights = EnumHandler.AddEntry<GameInput.Button>("ramune.psls.togglelights")
             .CreateInput("Toggle Lights")

@@ -12,14 +12,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Core\Initializer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\References.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Core\Variables.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)extensions\CodeMatcherExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\CodeMatcherExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\CustomPrefabExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\GameObjectExtensions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)extensions\ListExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\ListExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\RendererExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\TechTypeExtensions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)utils\InputUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\ErrorMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\InputUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\Miscellaneous\RamunesWorkbenchUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\BreakableResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Piracy\Patches\Charger.cs" />
@@ -37,7 +38,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ImageUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\JsonUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\LoggerUtils.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)utils\ModMessageUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\ModMessageUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PatchingUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PingUtils.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\PrefabUtils.cs" />

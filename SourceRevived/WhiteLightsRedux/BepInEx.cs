@@ -13,7 +13,7 @@ namespace Ramune.WhiteLightsRedux
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.WhiteLightsRedux";
         public const string Name = "WhiteLightsRedux";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public void Awake()
         {

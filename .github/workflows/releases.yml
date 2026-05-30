@@ -1,0 +1,137 @@
+name: Update Mod Releases
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'SourceRevived/.releases/**/*.zip'
+      - 'SourceRevived/.releases/**/*.md'
+
+permissions:
+  contents: write
+
+jobs:
+  releases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Create or update mod releases
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          $releaseRoot = 'SourceRevived/.releases'
+          $before = $env:BEFORE
+          $after = $env:AFTER
+
+          if([string]::IsNullOrWhiteSpace($before) -or $before -match '^0+$') {
+              $changedFiles = git diff-tree --no-commit-id --name-only -r $after -- $releaseRoot
+          }
+          else {
+              $changedFiles = git diff --name-only $before $after -- $releaseRoot
+          }
+
+          $changedReleaseFiles = $changedFiles |
+              Where-Object { $_ -and ($_.ToLower().EndsWith('.zip') -or $_.ToLower().EndsWith('.md')) } |
+              Sort-Object -Unique
+
+          if(-not $changedReleaseFiles) {
+              Write-Host "No changed release files found under $releaseRoot."
+              exit 0
+          }
+
+          $mods = @{}
+
+          foreach($relativePath in $changedReleaseFiles) {
+              $pathParts = $relativePath -split '/'
+
+              if($pathParts.Count -lt 4) {
+                  continue
+              }
+
+              $modName = $pathParts[2]
+
+              if([string]::IsNullOrWhiteSpace($modName)) {
+                  continue
+              }
+
+              if(-not $mods.ContainsKey($modName)) {
+                  $mods[$modName] = [System.Collections.Generic.List[string]]::new()
+              }
+
+              if($relativePath.ToLower().EndsWith('.zip')) {
+                  $zipFullPath = Join-Path $PWD $relativePath
+
+                  if(Test-Path $zipFullPath -PathType Leaf) {
+                      $mods[$modName].Add($zipFullPath)
+                  }
+                  else {
+                      Write-Host "Skipping missing zip: $relativePath"
+                  }
+              }
+          }
+
+          foreach($modName in $mods.Keys) {
+              $tag = $modName
+              $title = $modName
+              $modReleaseDirectory = Join-Path $PWD "$releaseRoot/$modName"
+
+              $mdFiles = Get-ChildItem $modReleaseDirectory -Filter *.md -File |
+                  Sort-Object {
+                      if($_.BaseName -match '(\d+)\.(\d+)\.(\d+)$') {
+                          [version]$matches[0]
+                      }
+                      else {
+                          [version]'0.0.0'
+                      }
+                  } -Descending
+
+              $tempNotesPath = Join-Path $env:RUNNER_TEMP "$modName-release-notes.md"
+
+              if($mdFiles.Count -gt 0) {
+                  $combinedNotes = ($mdFiles |
+                      ForEach-Object { Get-Content $_.FullName -Raw } |
+                      Where-Object { -not [string]::IsNullOrWhiteSpace($_) }) -join "`r`n`r`n"
+
+                  Set-Content -Path $tempNotesPath -Value $combinedNotes -Encoding utf8
+              }
+              else {
+                  Set-Content -Path $tempNotesPath -Value "Automated release bucket for $modName." -Encoding utf8
+              }
+
+              gh release view $tag --repo $env:REPOSITORY *> $null
+
+              if($LASTEXITCODE -eq 0) {
+                  Write-Host "Updating release: $modName"
+
+                  gh release edit $tag `
+                    --repo $env:REPOSITORY `
+                    --title $title `
+                    --notes-file $tempNotesPath
+              }
+              else {
+                  Write-Host "Creating release: $modName"
+
+                  gh release create $tag `
+                    --repo $env:REPOSITORY `
+                    --title $title `
+                    --notes-file $tempNotesPath
+              }
+
+              foreach($zipFullPath in $mods[$modName]) {
+                  Write-Host "Uploading asset: $zipFullPath"
+
+                  gh release upload $tag $zipFullPath `
+                    --repo $env:REPOSITORY `
+                    --clobber
+              }
+          }

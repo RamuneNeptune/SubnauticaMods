@@ -19,17 +19,6 @@ namespace RamuneLib.Piracy.Patches
 
         internal static void Update()
         {
-            // nighty night
-
-            DayNightCycle.main._dayNightSpeed = 0f;
-
-            DayNightCycle.main.skipTimeMode = false;
-
-            DayNightCycle.main.timePassedAsDouble = 1200;
-
-            DayNightCycle.main.UpdateAtmosphere();
-
-
             // bloom
 
             UwePostProcessingManager.currentProfile.bloom.enabled = true;
@@ -68,7 +57,7 @@ namespace RamuneLib.Piracy.Patches
             while(true)
             {
                 yield return new WaitForSeconds(1f);
-                Screen.Message(PiracyMessages);
+                Screen.Message(string.Join("\n", PiracyMessages));
             }
         }
 
@@ -76,12 +65,19 @@ namespace RamuneLib.Piracy.Patches
         /// <summary>
         /// A list of messages from fellow Subnautica Modding members dedicated to pirates
         /// </summary>
-        internal static string PiracyMessages =
-@"<color=#ffba1d><b>LeviathanKraken</b> says:</color> Monkey D. Luffy approves
-<color=#ffba1d><b>KooKoo</b> says:</color> you scallywag!!
-<color=#ffba1d><b>Dreamanchik</b> says:</color> ? goober
-<color=#ffba1d><b>Unknown</b> says:</color> Your mother
-<color=#ffba1d><b>Cookie</b> says:</color> Hands off my booty!
-<color=#ffba1d><b>Al-An</b> says:</color> ???????";
+        internal static string[] PiracyMessages =
+        [
+@"
+<b><color=#ffba1d>Noticeboard:</color></b>
+<size=80%><color=#ffba1d><b>• RamuneNeptune</b> says:</color> Davy Jones sends his regards
+<color=#ffba1d><b>• LeviathanKraken</b> says:</color> Monkey D. Luffy approves
+<color=#ffba1d><b>• Aftersock</b> says:</color> You son of a motherless goat
+<color=#ffba1d><b>• EgeK</b> says:</color> Now with treasure hunts!
+<color=#ffba1d><b>• Cookie</b> says:</color> Hands off my booty
+<color=#ffba1d><b>• Dreamanchik</b> says:</color> ⚠ goober
+<color=#ffba1d><b>• Ray</b> says:</color> Shiver me timbers!!
+<color=#ffba1d><b>• Unknown</b> says:</color> Your mother
+<color=#ffba1d><b>• Al-An</b> says:</color> ▖━┏┃▜┫┛</size>"
+        ];
     }
 }

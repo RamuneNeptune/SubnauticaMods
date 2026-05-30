@@ -14,7 +14,7 @@ namespace Ramune.MegaO2Tank
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.MegaO2Tank";
         public const string Name = "MegaO2Tank";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {

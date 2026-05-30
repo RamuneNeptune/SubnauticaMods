@@ -13,7 +13,7 @@ namespace Ramune.NoUnderwaterCaustics
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.NoUnderwaterCaustics";
         public const string Name = "NoUnderwaterCaustics";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {
