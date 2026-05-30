@@ -11,7 +11,7 @@ namespace Ramune.FindMyUpdates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FindMyUpdates";
         public const string Name = "FindMyUpdates";
-        public const string Version = "2.0.1";
+        public const string Version = "2.0.2";
 
 
         public static readonly HashSet<string> BlacklistedGUIDs = new(StringComparer.OrdinalIgnoreCase);

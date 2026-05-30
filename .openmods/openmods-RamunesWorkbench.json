@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "ramunes-workbench",
+  "name": "Ramunes Workbench",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "RamunesWorkbench *.zip"
+  ],
+  "primaryAsset": "RamunesWorkbench *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

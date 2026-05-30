@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "force-super-ultrawide-resolution",
+  "name": "Force Super Ultrawide Resolution",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "ForceSuperUltrawideResolution *.zip"
+  ],
+  "primaryAsset": "ForceSuperUltrawideResolution *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

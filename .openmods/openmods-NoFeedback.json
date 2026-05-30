@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "no-feedback",
+  "name": "No Feedback",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "NoFeedback *.zip"
+  ],
+  "primaryAsset": "NoFeedback *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

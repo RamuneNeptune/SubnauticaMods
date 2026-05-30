@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "flare-duration-indicator",
+  "name": "Flare Duration Indicator",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "FlareDurationIndicator *.zip"
+  ],
+  "primaryAsset": "FlareDurationIndicator *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

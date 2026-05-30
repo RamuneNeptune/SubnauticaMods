@@ -1,15 +1,17 @@
 <Project>
 	
 	<PropertyGroup>
-		
+
+		<SolutionReleaseDirectory>$(MSBuildThisFileDirectory).releases</SolutionReleaseDirectory>
+
 		<GameDirectory>C:\Program Files (x86)\Steam\steamapps\common\Subnautica</GameDirectory>
 		
 		<PluginsDirectory>$(GameDirectory)\BepInEx\plugins</PluginsDirectory>
 		
-		<DistDirectory>$(GameDirectory)\.dist</DistDirectory>
+		<DistDirectory>$(GameDirectory)\.dist2</DistDirectory>
 		
 		<SevenZipExe>$(MSBuildThisFileDirectory).dependencies\tools\7z2601-extra\x64\7za.exe</SevenZipExe>
 		
 	</PropertyGroup>
-	
+
 </Project>

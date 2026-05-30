@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "bz-titanium-ingot",
+  "name": "BZ Titanium Ingot",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "BZTitaniumIngot *.zip"
+  ],
+  "primaryAsset": "BZTitaniumIngot *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

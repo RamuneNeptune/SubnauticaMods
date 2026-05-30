@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "vehicle-framework-check-disabler",
+  "name": "Vehicle Framework Check Disabler",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "VehicleFrameworkCheckDisabler *.zip"
+  ],
+  "primaryAsset": "VehicleFrameworkCheckDisabler *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

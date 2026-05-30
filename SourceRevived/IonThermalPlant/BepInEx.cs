@@ -13,7 +13,7 @@ namespace Ramune.IonThermalPlant
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.IonThermalPlant";
         public const string Name = "IonThermalPlant";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {

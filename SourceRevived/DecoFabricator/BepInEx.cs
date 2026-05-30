@@ -13,7 +13,7 @@ namespace Ramune.DecoFabricator
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.DecoFabricator";
         public const string Name = "DecoFabricator";
-        public const string Version = "5.0.2";
+        public const string Version = "5.0.3";
 
         public void Awake()
         {

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "achievement-unlocker",
+  "name": "Achievement Unlocker",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "AchievementUnlocker *.zip"
+  ],
+  "primaryAsset": "AchievementUnlocker *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

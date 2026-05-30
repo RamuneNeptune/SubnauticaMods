@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "keep-inventory-redux",
+  "name": "Keep Inventory Redux",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "KeepInventoryRedux *.zip"
+  ],
+  "primaryAsset": "KeepInventoryRedux *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

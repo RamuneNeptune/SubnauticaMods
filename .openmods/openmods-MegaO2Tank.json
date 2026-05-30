@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "mega-o2-tank",
+  "name": "Mega O2 Tank",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "MegaO2Tank *.zip"
+  ],
+  "primaryAsset": "MegaO2Tank *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

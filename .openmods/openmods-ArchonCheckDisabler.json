@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "archon-check-disabler",
+  "name": "Archon Check Disabler",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "ArchonCheckDisabler *.zip"
+  ],
+  "primaryAsset": "ArchonCheckDisabler *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

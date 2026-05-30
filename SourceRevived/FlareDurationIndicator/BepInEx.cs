@@ -13,7 +13,7 @@ namespace Ramune.FlareDurationIndicator
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.FlareDurationIndicator";
         public const string Name = "FlareDurationIndicator";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {

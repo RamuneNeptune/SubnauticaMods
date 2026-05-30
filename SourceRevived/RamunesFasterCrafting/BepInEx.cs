@@ -13,7 +13,7 @@ namespace Ramune.RamunesFasterCrafting
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.RamunesFasterCrafting";
         public const string Name = "RamunesFasterCrafting";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {

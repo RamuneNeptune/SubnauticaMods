@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "big-friendly-fish",
+  "name": "Big Friendly Fish",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "BigFriendlyFish *.zip"
+  ],
+  "primaryAsset": "BigFriendlyFish *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

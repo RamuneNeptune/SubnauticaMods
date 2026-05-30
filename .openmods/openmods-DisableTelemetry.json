@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "disable-telemetry",
+  "name": "Disable Telemetry",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "DisableTelemetry *.zip"
+  ],
+  "primaryAsset": "DisableTelemetry *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

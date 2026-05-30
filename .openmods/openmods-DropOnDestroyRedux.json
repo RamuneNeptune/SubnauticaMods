@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "drop-on-destroy-redux",
+  "name": "Drop On Destroy Redux",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "DropOnDestroyRedux *.zip"
+  ],
+  "primaryAsset": "DropOnDestroyRedux *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

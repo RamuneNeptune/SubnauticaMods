@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "hide-mask-redux",
+  "name": "Hide Mask Redux",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "HideMaskRedux *.zip"
+  ],
+  "primaryAsset": "HideMaskRedux *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}
