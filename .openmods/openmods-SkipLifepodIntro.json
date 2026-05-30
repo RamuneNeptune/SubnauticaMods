@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "skip-lifepod-intro",
+  "name": "Skip Lifepod Intro",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "SkipLifepodIntro *.zip"
+  ],
+  "primaryAsset": "SkipLifepodIntro *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

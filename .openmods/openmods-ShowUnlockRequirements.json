@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "show-unlock-requirements",
+  "name": "Show Unlock Requirements",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "ShowUnlockRequirements *.zip"
+  ],
+  "primaryAsset": "ShowUnlockRequirements *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

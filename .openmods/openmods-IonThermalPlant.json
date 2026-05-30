@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "ion-thermal-plant",
+  "name": "Ion Thermal Plant",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "IonThermalPlant *.zip"
+  ],
+  "primaryAsset": "IonThermalPlant *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

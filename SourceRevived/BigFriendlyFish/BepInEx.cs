@@ -13,7 +13,7 @@ namespace Ramune.BigFriendlyFish
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.BigFriendlyFish";
         public const string Name = "BigFriendlyFish";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public void Awake()
         {

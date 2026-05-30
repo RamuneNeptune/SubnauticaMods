@@ -1,0 +1,96 @@
+name: Update Mod Releases
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'SourceRevived/.releases/**/*.zip'
+
+permissions:
+  contents: write
+
+jobs:
+  releases:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Create or update shared release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          $releaseRoot = 'SourceRevived/.releases'
+          $releaseTag = 'Releases'
+          $releaseTitle = 'Releases'
+          $before = $env:BEFORE
+          $after = $env:AFTER
+
+          if([string]::IsNullOrWhiteSpace($before) -or $before -match '^0+$') {
+              $changedFiles = git diff-tree --no-commit-id --name-only -r $after -- $releaseRoot
+          }
+          else {
+              $changedFiles = git diff --name-only $before $after -- $releaseRoot
+          }
+
+          $changedZips = $changedFiles |
+              Where-Object { $_ -and $_.ToLower().EndsWith('.zip') } |
+              Sort-Object -Unique
+
+          if(-not $changedZips) {
+              Write-Host "No changed zip files found under $releaseRoot."
+              exit 0
+          }
+
+          $zipFiles = [System.Collections.Generic.List[string]]::new()
+
+          foreach($relativePath in $changedZips) {
+              $zipFullPath = Join-Path $PWD $relativePath
+
+              if(Test-Path $zipFullPath -PathType Leaf) {
+                  $zipFiles.Add($zipFullPath)
+              }
+              else {
+                  Write-Host "Skipping missing zip: $relativePath"
+              }
+          }
+
+          if($zipFiles.Count -eq 0) {
+              Write-Host "No existing zip files to upload."
+              exit 0
+          }
+
+          gh release view $releaseTag --repo $env:REPOSITORY *> $null
+
+          if($LASTEXITCODE -eq 0) {
+              Write-Host "Updating release: $releaseTitle"
+
+              gh release edit $releaseTag `
+                --repo $env:REPOSITORY `
+                --title $releaseTitle `
+                --notes ""
+          }
+          else {
+              Write-Host "Creating release: $releaseTitle"
+
+              gh release create $releaseTag `
+                --repo $env:REPOSITORY `
+                --title $releaseTitle `
+                --notes ""
+          }
+
+          foreach($zipFullPath in $zipFiles) {
+              Write-Host "Uploading asset: $zipFullPath"
+
+              gh release upload $releaseTag $zipFullPath `
+                --repo $env:REPOSITORY `
+                --clobber
+          }

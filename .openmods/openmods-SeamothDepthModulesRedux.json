@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "seamoth-depth-modules-redux",
+  "name": "Seamoth Depth Modules Redux",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "SeamothDepthModulesRedux *.zip"
+  ],
+  "primaryAsset": "SeamothDepthModulesRedux *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

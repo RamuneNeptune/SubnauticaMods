@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "find-my-updates",
+  "name": "Find My Updates",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "FindMyUpdates *.zip"
+  ],
+  "primaryAsset": "FindMyUpdates *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

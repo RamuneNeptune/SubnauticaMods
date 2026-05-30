@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "lithium-batteries",
+  "name": "Lithium Batteries",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "LithiumBatteries *.zip"
+  ],
+  "primaryAsset": "LithiumBatteries *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

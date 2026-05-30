@@ -13,7 +13,7 @@ namespace Ramune.DisableOptionsTabs
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.DisableOptionsTabs";
         public const string Name = "DisableOptionsTabs";
-        public const string Version = "5.0.0";
+        public const string Version = "5.0.1";
 
         public void Awake()
         {

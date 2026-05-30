@@ -13,7 +13,7 @@ namespace Ramune.SeaglideBoosting
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.SeaglideBoosting";
         public const string Name = "SeaglideBoosting";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public static GameInput.Button Boost = EnumHandler.AddEntry<GameInput.Button>("ramune.sb.boostseaglide")
             .CreateInput("Activate Boost (Hold)")

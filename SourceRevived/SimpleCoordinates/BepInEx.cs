@@ -13,7 +13,7 @@ namespace Ramune.SimpleCoordinates
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.SimpleCoordinates";
         public const string Name = "SimpleCoordinates";
-        public const string Version = "5.0.1";
+        public const string Version = "5.0.2";
 
         public static GameInput.Button ToggleCoordinatesDisplay = EnumHandler.AddEntry<GameInput.Button>("ramune.sc.togglecoordinatesdisplay")
             .CreateInput("Toggle Coordinates Display")

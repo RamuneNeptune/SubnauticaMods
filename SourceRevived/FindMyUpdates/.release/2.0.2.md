@@ -1,0 +1,1 @@
+v2.0.2 - Stable for the latest versions of Subnautica and Nautilus @ May 30th 2026

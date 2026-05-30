@@ -14,7 +14,7 @@ namespace Ramune.SeamothDepthModulesRedux
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.SeamothDepthModulesRedux";
         public const string Name = "SeamothDepthModulesRedux";
-        public const string Version = "1.0.0";
+        public const string Version = "1.0.1";
 
         public void Awake()
         {

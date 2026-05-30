@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "vehicle-bay-beacon",
+  "name": "Vehicle Bay Beacon",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "VehicleBayBeacon *.zip"
+  ],
+  "primaryAsset": "VehicleBayBeacon *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

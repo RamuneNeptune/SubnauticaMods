@@ -15,7 +15,7 @@ namespace Ramune.KioniteBatteries
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.KioniteBatteries";
         public const string Name = "KioniteBatteries";
-        public const string Version = "5.0.2";
+        public const string Version = "5.0.3";
 
         public void Awake()
         {

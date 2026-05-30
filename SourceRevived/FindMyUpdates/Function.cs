@@ -106,6 +106,9 @@ namespace Ramune.FindMyUpdates
 
         public static IEnumerator Validate(object[] args)
         {
+            if(!FindMyUpdates.config.DoGitHubCheck)
+                yield break;
+
             if(args == null || args.Length < 1)
             {
                 Logfile.Error(string.Format(ErrorDB[Error.ArgsNotString]));

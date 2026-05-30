@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "enable-achievements",
+  "name": "Enable Achievements",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "EnableAchievements *.zip"
+  ],
+  "primaryAsset": "EnableAchievements *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "no-epilepsy-warning",
+  "name": "No Epilepsy Warning",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "NoEpilepsyWarning *.zip"
+  ],
+  "primaryAsset": "NoEpilepsyWarning *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

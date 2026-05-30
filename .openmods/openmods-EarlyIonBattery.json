@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "early-ion-battery",
+  "name": "Early Ion Battery",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "EarlyIonBattery *.zip"
+  ],
+  "primaryAsset": "EarlyIonBattery *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

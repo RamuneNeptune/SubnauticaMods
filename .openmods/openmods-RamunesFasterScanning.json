@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "ramunes-faster-scanning",
+  "name": "Ramunes Faster Scanning",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "RamunesFasterScanning *.zip"
+  ],
+  "primaryAsset": "RamunesFasterScanning *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

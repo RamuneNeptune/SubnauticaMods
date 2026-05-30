@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "reaper-gold-skin",
+  "name": "Reaper Gold Skin",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "ReaperGoldSkin *.zip"
+  ],
+  "primaryAsset": "ReaperGoldSkin *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

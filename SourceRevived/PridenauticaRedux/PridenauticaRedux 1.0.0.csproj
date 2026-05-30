@@ -75,10 +75,8 @@
     <Folder Include=".dist\Recipes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".dist\Assets\Asexual.png" />
     <Content Include=".dist\Assets\Bisexual.png" />
     <Content Include=".dist\Assets\Lesbian.png" />
-    <Content Include=".dist\Assets\NonBinary.png" />
     <Content Include=".dist\Assets\Pansexual.png" />
     <Content Include=".dist\Assets\Rainbow.png" />
     <Content Include=".dist\Assets\Transgender.png" />

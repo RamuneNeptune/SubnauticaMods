@@ -13,7 +13,7 @@ namespace Ramune.HideMaskRedux
         public static readonly Harmony harmony = new(GUID);
         public const string GUID = "com.ramune.HideMaskRedux";
         public const string Name = "HideMaskRedux";
-        public const string Version = "1.0.2";
+        public const string Version = "1.0.3";
 
         public static GameInput.Button SwitchMask = EnumHandler.AddEntry<GameInput.Button>("ramune.hmr.switchmask")
             .CreateInput("Switch Mask State")

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "seaglide-upgrades",
+  "name": "Seaglide Upgrades",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "SeaglideUpgrades *.zip"
+  ],
+  "primaryAsset": "SeaglideUpgrades *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

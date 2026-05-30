@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "deco-fabricator",
+  "name": "Deco Fabricator",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "DecoFabricator *.zip"
+  ],
+  "primaryAsset": "DecoFabricator *.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}

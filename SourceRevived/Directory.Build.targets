@@ -21,13 +21,23 @@
 			<ModVersion>$([System.Text.RegularExpressions.Regex]::Match($(VersionJson), '"LatestVersion"\s*:\s*"([^"]+)"').Groups[1].Value)</ModVersion>
 			
 			<ZipName>$(ModName) $(ModVersion).zip</ZipName>
-			
+
+			<ReleaseChangelogSource>$(ProjectDir).release\$(ModVersion).md</ReleaseChangelogSource>
+
+			<ReleaseDirectory>$(SolutionReleaseDirectory)\$(ModName)</ReleaseDirectory>
+
+			<ReleaseZip>$(ReleaseDirectory)\$(ModName) $(ModVersion).zip</ReleaseZip>
+
+			<ReleaseChangelog>$(ReleaseDirectory)\$(ModName) $(ModVersion).md</ReleaseChangelog>
+
 		</PropertyGroup>
 
 		<MakeDir Directories="$(TargetDirectory)" />
 		
 		<MakeDir Directories="$(DistDirectory)" />
 
+		<MakeDir Directories="$(ReleaseDirectory)" />
+		
 		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(TargetDirectory)" SkipUnchangedFiles="true" />
 		
 		<Copy SourceFiles="@(DistFiles)" DestinationFiles="@(DistFiles->'$(TargetDirectory)\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" Condition="'@(DistFiles)' != ''" />
@@ -35,10 +45,18 @@
 		<Delete Files="$(TargetDirectory)\$(ZipName)" />
 		
 		<Delete Files="$(DistDirectory)\$(ZipName)" />
-		
+
+		<Delete Files="$(ReleaseZip)" />
+
 		<Exec Command='"$(SevenZipExe)" a "$(TargetDirectory)\$(ZipName)" "$(TargetDirectory)" -xr!*.zip' />
 
 		<Copy SourceFiles="$(TargetDirectory)\$(ZipName)" DestinationFolder="$(DistDirectory)" SkipUnchangedFiles="true" />
+
+		<Copy SourceFiles="$(TargetDirectory)\$(ZipName)" DestinationFiles="$(ReleaseZip)" SkipUnchangedFiles="true" />
+
+		<Copy SourceFiles="$(ReleaseChangelogSource)" DestinationFiles="$(ReleaseChangelog)" SkipUnchangedFiles="true" />
+
+		<Exec Command='powershell -NoProfile -ExecutionPolicy Bypass -File "$(SolutionDir)OpenMods.ps1"' />
 		
 		<Exec Command='echo ✅ Built using Directory.Build.targets' />
 		
