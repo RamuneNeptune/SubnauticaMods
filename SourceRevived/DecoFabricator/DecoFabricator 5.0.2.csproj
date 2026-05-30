@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".dist\Recipes\Misc.json" />
     <None Include=".dist\Recipes\DecoFabricator.json" />
     <None Include=".dist\Recipes\Caps.json" />
     <None Include=".dist\Recipes\Toys.json" />

@@ -37,7 +37,9 @@ namespace Ramune.DecoFabricator.Prefabs.Buildables
                 ("Posters", [TechType.PosterKitty, TechType.Poster, TechType.PosterExoSuit1, TechType.PosterExoSuit2, TechType.PosterAurora], ImageUtils.GetSprite(TechType.PosterKitty)),
                 ("Science", [TechType.LabEquipment3, TechType.LabEquipment2, TechType.LabEquipment1, TechType.LabContainer, TechType.LabContainer2, TechType.LabContainer3], ImageUtils.GetSprite(TechType.LabEquipment3)),
                 ("Toys", [TechType.ArcadeGorgetoy, TechType.ToyCar, TechType.StarshipSouvenir], ImageUtils.GetSprite(TechType.ArcadeGorgetoy)),
-                ("Caps", [TechType.Cap2, TechType.Cap1], ImageUtils.GetSprite(TechType.Cap2))
+                ("Caps", [TechType.Cap2, TechType.Cap1], ImageUtils.GetSprite(TechType.Cap2)),
+//these are buildable not craftable lmaooo ("Hull plates", [TechType.SpecialHullPlate, TechType.BikemanHullPlate, TechType.EatMyDictionHullPlate, TechType.CoralShellPlate, TechType.DioramaHullPlate, TechType.MarkiplierHullPlate, TechType.MuyskermHullPlate, TechType.LordMinionHullPlate, TechType.JackSepticEyeHullPlate, TechType.IGPHullPlate, TechType.GilathissHullPlate], ImageUtils.GetSprite(TechType.SpecialHullPlate)),
+                ("Misc", [TechType.Marki1, TechType.Marki2, TechType.JackSepticEye], ImageUtils.GetSprite(TechType.Marki1))
             ];
 
             foreach(var (tabName, tabItems, tabSprite) in TechMap)
