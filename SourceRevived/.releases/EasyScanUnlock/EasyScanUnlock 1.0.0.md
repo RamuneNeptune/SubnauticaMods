@@ -1,0 +1,1 @@
+v1.0.0 - Initial release for the latest versions of Subnautica and Nautilus @ June 3rd 2026

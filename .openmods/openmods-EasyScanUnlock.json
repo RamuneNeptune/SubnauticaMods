@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openmods.net/manifest.schema.json",
+  "schemaVersion": 2,
+  "slug": "easy-scan-unlock",
+  "name": "Easy Scan Unlock",
+  "supportedGameId": 1,
+  "releaseAssets": [
+    "EasyScanUnlock-*.zip"
+  ],
+  "primaryAsset": "EasyScanUnlock-*.zip",
+  "install": {
+    "path": "BepInEx/plugins"
+  }
+}
