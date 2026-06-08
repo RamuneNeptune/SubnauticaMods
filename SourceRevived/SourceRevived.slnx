@@ -10,6 +10,7 @@
   </Folder>
   <Folder Name="/Mods/.complete-no-release/">
     <Project Path="BigFriendlyFish\BigFriendlyFish 1.0.1.csproj" Id="0c4e4b0c-f9ea-40aa-b2e3-9d3fbc93b164" />
+    <Project Path="EasyScanUnlock/EasyScanUnlock.csproj" Id="cf01f106-e68b-4ee4-aa8f-60ed374b9e91" />
     <Project Path="ForceSuperUltrawideResolution\ForceSuperUltrawideResolution 1.0.1.csproj" Id="7c6813a8-4bab-4302-bcce-10e205df4408" />
   </Folder>
   <Folder Name="/Mods/.complete/">
