@@ -60,9 +60,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SeaglideUpgrades\SeaglideUpgrades 5.0.1.csproj">
+    <ProjectReference Include="..\SeaglideUpgrades\SeaglideUpgrades 5.0.2.csproj">
       <Project>{F0DDC580-7ECD-401F-9447-AC8803BFCB75}</Project>
-      <Name>SeaglideUpgrades 5.0.1</Name>
+      <Name>SeaglideUpgrades 5.0.2</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

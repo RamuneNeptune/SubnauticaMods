@@ -24,7 +24,7 @@
     <Project Path="DropOnDestroyRedux\DropOnDestroyRedux 1.0.1.csproj" Id="f6713d19-52e8-4f7e-93dc-6e1080d10870" />
     <Project Path="EarlyIonBattery\EarlyIonBattery 5.0.3.csproj" Id="e0b067f6-b83b-498a-af75-27c510f0867e" />
     <Project Path="EnableAchievements\EnableAchievements 5.0.1.csproj" Id="940b0345-1ed1-4336-9530-173d2d598456" />
-    <Project Path="FindMyUpdates\FindMyUpdates 2.0.2.csproj" Id="1fd2db40-e5a0-434a-8490-2f6647bf40bb" />
+    <Project Path="FindMyUpdates/FindMyUpdates 2.0.3.csproj" Id="1fd2db40-e5a0-434a-8490-2f6647bf40bb" />
     <Project Path="FlareDurationIndicator\FlareDurationIndicator 5.0.1.csproj" Id="be161fdd-846c-4806-921c-64fdccca17f0" />
     <Project Path="FOVSlider\FOVSlider 5.0.1.csproj" Id="1c983a44-d6f7-499b-a3b7-5c2a01224b8b" />
     <Project Path="HideMaskRedux\HideMaskRedux 1.0.3.csproj" Id="dea4a950-faf5-4712-94d2-b8b43d0bfcb5" />

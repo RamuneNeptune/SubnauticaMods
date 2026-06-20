@@ -1,0 +1,1 @@
+v2.0.3 - Updated Turkish localization (@egek4180)
